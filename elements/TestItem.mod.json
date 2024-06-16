@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tombstone_fragment",
+    "texture": "heart_of_evil",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Tombstone Fragment",
+    "name": "Test Item",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MATERIALS"
@@ -21,7 +21,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -35,6 +35,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "OverworldEventFunction"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {
