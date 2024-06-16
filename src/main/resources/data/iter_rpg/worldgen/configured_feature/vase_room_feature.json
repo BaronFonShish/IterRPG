@@ -1,0 +1,58 @@
+{
+  "type": "iter_rpg:vase_room_feature",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "iter_rpg:structure_feature",
+          "config": {
+            "structure": "iter_rpg:vase_room_small",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:structure_block",
+            "offset": [
+              -2,
+              0,
+              -2
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "iter_rpg:structure_feature",
+          "config": {
+            "structure": "iter_rpg:vase_room_medium",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:structure_block",
+            "offset": [
+              -4,
+              0,
+              -4
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "iter_rpg:structure_feature",
+          "config": {
+            "structure": "iter_rpg:vase_room_big",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:structure_block",
+            "offset": [
+              -6,
+              0,
+              -6
+            ]
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "iter_rpg:block/monolith_stone",
+    "top": "iter_rpg:block/monolith_stone",
+    "side": "iter_rpg:block/monolith_stone"
+  },
+  "render_type": "solid"
+}

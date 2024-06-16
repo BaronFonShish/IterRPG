@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/tear_catcher_bottom1",
+    "up": "iter_rpg:block/tear_catcher_top1",
+    "north": "iter_rpg:block/tear_catcher_side1",
+    "east": "iter_rpg:block/tear_catcher_side1",
+    "south": "iter_rpg:block/tear_catcher_side1",
+    "west": "iter_rpg:block/tear_catcher_side1",
+    "particle": "iter_rpg:block/tear_catcher_side1"
+  },
+  "render_type": "solid"
+}

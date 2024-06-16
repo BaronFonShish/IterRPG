@@ -1,0 +1,70 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.insatiable",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, -1, 0]
+			},
+			"bones": [
+				{
+					"name": "mob",
+					"pivot": [0, 20, 0]
+				},
+				{
+					"name": "head",
+					"parent": "mob",
+					"pivot": [0, 34, -2],
+					"cubes": [
+						{"origin": [-5, 29, -10], "size": [10, 12, 10], "uv": [34, 36]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "mob",
+					"pivot": [0, 22.5, 2],
+					"cubes": [
+						{"origin": [-9, 26, -3], "size": [18, 13, 10], "uv": [0, 0]},
+						{"origin": [-7, 11, -2], "size": [14, 15, 8], "uv": [0, 23]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "mob",
+					"pivot": [-9, 36, 2],
+					"cubes": [
+						{"origin": [-15, 11, -1], "size": [6, 28, 6], "uv": [0, 46]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "mob",
+					"pivot": [9, 36, 2],
+					"cubes": [
+						{"origin": [9, 11, -1], "size": [6, 28, 6], "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "mob",
+					"pivot": [-4, 11, 2],
+					"cubes": [
+						{"origin": [-7, 0, -1], "size": [6, 11, 6], "uv": [48, 58]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "mob",
+					"pivot": [4, 11, 2],
+					"cubes": [
+						{"origin": [1, 0, -1], "size": [6, 11, 6], "uv": [24, 58]}
+					]
+				}
+			]
+		}
+	]
+}

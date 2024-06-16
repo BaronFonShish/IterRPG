@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:coin"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:coin_pile",
+    "count": 1
+  }
+}

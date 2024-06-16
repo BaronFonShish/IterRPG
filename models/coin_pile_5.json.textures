@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "coin_pile_texture"
+      },
+      "name": "default"
+    }
+  }
+}

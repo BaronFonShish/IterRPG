@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:hivestone"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:hivestone_wall",
+    "count": 6
+  }
+}

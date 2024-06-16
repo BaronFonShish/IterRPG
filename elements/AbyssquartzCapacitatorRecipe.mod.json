@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AbyssquartzShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AbyssquartzShard"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:AbyssquartzShard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AbyssquartzShard"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AbyssquartzCapacitator"
+    },
+    "name": "abyssquartz_capacitator_recipe",
+    "namespace": "mod"
+  }
+}

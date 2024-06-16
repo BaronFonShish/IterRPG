@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:ametrine_block",
+    "minecraft:amethyst_block",
+    "minecraft:budding_amethyst",
+    "iter_rpg:ametrine_bricks"
+  ]
+}

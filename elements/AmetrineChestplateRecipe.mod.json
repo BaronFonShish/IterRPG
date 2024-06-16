@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      },
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      },
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      },
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      },
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      },
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      },
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Ametrine.body"
+    },
+    "name": "ametrine_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

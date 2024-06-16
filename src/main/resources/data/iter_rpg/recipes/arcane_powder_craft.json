@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:etherbloom"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "iter_rpg:abyssquartz_shard"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:ether_dust",
+    "count": 4
+  }
+}

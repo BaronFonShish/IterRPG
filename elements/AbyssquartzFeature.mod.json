@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "UNDERGROUND_DECORATION",
+    "restrictionBiomes": [
+      {
+        "value": "#is_overworld"
+      }
+    ],
+    "generateCondition": {
+      "name": "AbyssQuartzConfigCondition"
+    },
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_simple_block\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:AbyssQuartz</field></block></value></block></value><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">15</field></block></value><next><block type=\"placement_height_range\"><value name=\"height\"><block type=\"height_provider_biased_to_bottom\"><field name=\"inner\">1</field><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">-64</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">8</field></block></value></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_environment_scan\"><field name=\"maxSteps\">16</field><field name=\"direction\">UP</field><value name=\"condition\"><block type=\"block_predicate_all_of\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"></mutation><value name=\"condition0\"><block type=\"block_predicate_is_air\"></block></value><value name=\"condition1\"><block type=\"block_predicate_has_sturdy_face\"><field name=\"x\">0</field><field name=\"y\">-1</field><field name=\"z\">0</field><field name=\"direction\">UP</field></block></value></block></value></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

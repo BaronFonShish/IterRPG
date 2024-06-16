@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "GrimLocker",
+    "blockstateList": [
+      {
+        "texture": "grim_locker_bottom_active",
+        "textureTop": "grim_locker_top_active",
+        "textureLeft": "grim_locker_side_active",
+        "textureFront": "grim_locker_side_active",
+        "textureRight": "grim_locker_side_active",
+        "textureBack": "grim_locker_side_active",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 9,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

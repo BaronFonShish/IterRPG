@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:sacred_log"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:sacred_wood",
+    "count": 3
+  }
+}

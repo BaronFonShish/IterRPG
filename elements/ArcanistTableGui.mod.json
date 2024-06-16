@@ -1,0 +1,245 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_arcanists_table",
+          "text": {
+            "fixedValue": "Arcanist's Table"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "scroll_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Scroll1Condition"
+          },
+          "x": 151,
+          "y": 81
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "paper_ink.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PaperinkCondition"
+          },
+          "x": 187,
+          "y": 81
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 222,
+          "y": 80
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 258,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spell_copy.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellCopyCondition"
+          },
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spell_upgrade_base.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellUpgradeCondition"
+          },
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spell_upgrade_lapis.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellLapisCondition"
+          },
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spell_upgrade_diamond.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellDiamondCondition"
+          },
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spell_upgrade_eye.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellEyeCondition"
+          },
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spell_upgrade_essence.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpellEssenceCondition"
+          },
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arcanist_table_button",
+          "image": "arcanist_table_button.png",
+          "hoveredImage": "arcanist_table_button_selected.png",
+          "onClick": {
+            "name": "ArcanistTableFunction"
+          },
+          "displayCondition": {
+            "name": "ArcanistTableButtonCondition"
+          },
+          "x": 203,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arcanist_table_button_deny.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ArcanistTableButtonConditionReverse"
+          },
+          "x": 203,
+          "y": 101
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

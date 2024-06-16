@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:grimstone",
+    "iter_rpg:grimstone_bricks",
+    "iter_rpg:cracked_grimstone_bricks",
+    "iter_rpg:polished_grimstone",
+    "iter_rpg:chiseled_grimstone_bricks",
+    "iter_rpg:charged_grimstone_bricks",
+    "iter_rpg:grim_keyhole"
+  ]
+}

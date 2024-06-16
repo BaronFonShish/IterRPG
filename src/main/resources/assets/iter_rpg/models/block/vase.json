@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/vase",
+  "textures": {
+    "all": "iter_rpg:block/vase",
+    "particle": "iter_rpg:block/small_vase",
+    "0": "iter_rpg:block/vase"
+  },
+  "render_type": "cutout_mipped"
+}

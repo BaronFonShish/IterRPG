@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:stone_geode",
+    "iter_rpg:deepslate_geode",
+    "iter_rpg:netherrack_geode",
+    "iter_rpg:blackstone_geode",
+    "iter_rpg:endstone_geode"
+  ]
+}

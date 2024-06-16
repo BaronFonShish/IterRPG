@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:GobsteelJavelin"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.egg.throw"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 0,
+    "entityModel": "Modelgobjavelin_projectile",
+    "customModelTexture": "gobsteel_javelin_projectile.png",
+    "onHitsEntity": {
+      "name": "SpearHit"
+    }
+  }
+}

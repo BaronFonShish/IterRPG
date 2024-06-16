@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "dark_forest",
+    "soul_sand_valley"
+  ],
+  "features": "iter_rpg:halflower",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/sorrow_warden",
+    "up": "iter_rpg:block/sorrow_warden",
+    "north": "iter_rpg:block/polished_grimstone",
+    "east": "iter_rpg:block/polished_grimstone",
+    "south": "iter_rpg:block/polished_grimstone",
+    "west": "iter_rpg:block/polished_grimstone",
+    "particle": "iter_rpg:block/sorrow_warden"
+  },
+  "render_type": "solid"
+}

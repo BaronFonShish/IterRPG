@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:ether_dust"
+    },
+    "title": {
+      "translate": "advancements.adv_etherdust.title"
+    },
+    "description": {
+      "translate": "advancements.adv_etherdust.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_etherdust_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "iter_rpg:ether_dust"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "iter_rpg:iter_get_voidquartz"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:earth_ingot"
+    },
+    {
+      "item": "iter_rpg:elemental_fragment"
+    },
+    {
+      "item": "iter_rpg:water_ingot"
+    },
+    {
+      "item": "iter_rpg:air_ingot"
+    },
+    {
+      "item": "iter_rpg:fire_ingot"
+    },
+    {
+      "item": "iter_rpg:void_ingot"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:elemental_ingot",
+    "count": 2
+  }
+}

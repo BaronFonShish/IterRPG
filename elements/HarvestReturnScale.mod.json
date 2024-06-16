@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"Number\" id=\"rotation\">rotation</variable><variable type=\"Number\" id=\"distance\">distance</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"0\" y=\"0\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_number\"><value name=\"return\"><block type=\"math_dual_ops\" inline=\"false\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"math_number\"><field name=\"NUM\">0.1</field></block></value><value name=\"B\"><block type=\"math_dual_ops\" inline=\"false\"><field name=\"OP\">DIVIDE</field><value name=\"A\"><block type=\"entity_nbt_num_get\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">scale</field></block></value></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value></block></value></block></value></block></next></block><block type=\"entity_set_invul\" x=\"25\" y=\"1896\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"invul\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></xml>"
+  }
+}

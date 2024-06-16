@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "iter_rpg:shrine_earth",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 350,
+    "separation": 200,
+    "salt": 938323263
+  }
+}

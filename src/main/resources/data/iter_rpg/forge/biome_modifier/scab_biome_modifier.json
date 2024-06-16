@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "nether_wastes",
+  "spawners": {
+    "type": "iter_rpg:scab",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

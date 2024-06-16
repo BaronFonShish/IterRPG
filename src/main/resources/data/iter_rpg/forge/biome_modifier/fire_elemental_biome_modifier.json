@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "nether_wastes",
+    "basalt_deltas"
+  ],
+  "spawners": {
+    "type": "iter_rpg:fire_elemental",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

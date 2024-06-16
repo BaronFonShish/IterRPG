@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "iter_rpg:blocks/giant_phantom_chain",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iter_rpg:giant_chain"
+        }
+      ]
+    }
+  ]
+}

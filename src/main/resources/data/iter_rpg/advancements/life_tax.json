@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:humie_butcher"
+    },
+    "title": {
+      "translate": "advancements.life_tax.title"
+    },
+    "description": {
+      "translate": "advancements.life_tax.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "life_tax_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "iter_rpg:economy"
+}

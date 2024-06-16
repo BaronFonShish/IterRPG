@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:ametrine_ingot"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ametrine_leggings",
+    "count": 1
+  }
+}

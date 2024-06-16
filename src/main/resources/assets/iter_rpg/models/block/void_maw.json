@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/void_maw",
+  "textures": {
+    "all": "iter_rpg:block/maw_of_the_void",
+    "particle": "iter_rpg:block/maw_of_the_void",
+    "0": "iter_rpg:block/maw_of_the_void"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.NETHERRACK"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "CUSTOM:EarthFragment"
+      },
+      {
+        "value": "CUSTOM:ElementalUpgrade"
+      },
+      {
+        "value": "CUSTOM:VoidFragment"
+      },
+      {
+        "value": "CUSTOM:WaterFragment"
+      },
+      {
+        "value": "CUSTOM:AirFragment"
+      },
+      {
+        "value": "CUSTOM:FireFragment"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ElementalUpgrade"
+    },
+    "name": "elemental_upgrade_duplicate",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "type": "iter_rpg:vase_feature",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "iter_rpg:small_vase",
+                "Properties": {
+                  "waterlogged": "false"
+                }
+              }
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "iter_rpg:vase",
+                "Properties": {
+                  "waterlogged": "false"
+                }
+              }
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "iter_rpg:big_vase",
+                "Properties": {
+                  "waterlogged": "false",
+                  "facing": "north"
+                }
+              }
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

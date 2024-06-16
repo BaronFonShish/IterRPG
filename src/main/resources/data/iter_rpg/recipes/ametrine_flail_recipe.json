@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aab",
+    "aac",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:ametrine_ingot"
+    },
+    "b": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "c": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ametrine_flail",
+    "count": 1
+  }
+}

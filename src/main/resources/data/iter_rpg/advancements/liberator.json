@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:hollow_visage"
+    },
+    "title": {
+      "translate": "advancements.liberator.title"
+    },
+    "description": {
+      "translate": "advancements.liberator.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "liberator_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 16
+  },
+  "parent": "iter_rpg:iter_cursed"
+}

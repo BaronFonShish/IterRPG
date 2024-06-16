@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:logs",
+    "#minecraft:logs",
+    "#minecraft:leaves",
+    "#minecraft:leaves",
+    "minecraft:nether_wart_block",
+    "minecraft:warped_wart_block",
+    "minecraft:bone_block",
+    "minecraft:hay_block"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GrimstoneBricks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GrimstoneBricks"
+      },
+      {
+        "value": "CUSTOM:GrimstoneBricks"
+      },
+      {
+        "value": "CUSTOM:GrimstoneBricks"
+      },
+      {
+        "value": "CUSTOM:GrimstoneBricks"
+      },
+      {
+        "value": "CUSTOM:GrimstoneBricks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GrimstoneBricksStairs"
+    },
+    "name": "grimstone_bricks_stairs_craft",
+    "namespace": "mod"
+  }
+}

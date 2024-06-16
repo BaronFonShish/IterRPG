@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/giantchain",
+  "textures": {
+    "all": "iter_rpg:block/giant_chain",
+    "particle": "iter_rpg:block/giant_chain_item",
+    "0": "iter_rpg:block/giant_chain"
+  },
+  "render_type": "cutout_mipped"
+}

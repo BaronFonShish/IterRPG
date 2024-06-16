@@ -1,0 +1,87 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_earth_mode",
+          "image": "earth_mode.png",
+          "hoveredImage": "earth_mode_selected.png",
+          "onClick": {
+            "name": "ArmorSwitchEarth"
+          },
+          "x": 166,
+          "y": 121
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_water_mode",
+          "image": "water_mode.png",
+          "hoveredImage": "water_mode_selected.png",
+          "onClick": {
+            "name": "ArmorSwitchWater"
+          },
+          "x": 246,
+          "y": 121
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_air_mode",
+          "image": "air_mode.png",
+          "hoveredImage": "air_more_selected.png",
+          "onClick": {
+            "name": "ArmorSwitchAir"
+          },
+          "x": 230,
+          "y": 81
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_fire_mode",
+          "image": "fire_mode.png",
+          "hoveredImage": "fire_mode_selected.png",
+          "onClick": {
+            "name": "ArmorSwitchFire"
+          },
+          "x": 182,
+          "y": 81
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_void_mode",
+          "image": "void_mode.png",
+          "hoveredImage": "void_mode_selected.png",
+          "onClick": {
+            "name": "ArmorSwitchVoid"
+          },
+          "x": 206,
+          "y": 153
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 16,
+      "sy": 16,
+      "ox": 11,
+      "oy": 16,
+      "snapOnGrid": false
+    }
+  }
+}

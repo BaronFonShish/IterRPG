@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "#is_overworld"
+      }
+    ],
+    "generateCondition": {
+      "name": "VasesConfigCondition"
+    },
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_simple_random_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"3\"></mutation><value name=\"feature0\"><block type=\"feature_custom_structure\"><field name=\"structure\">vase_room_small</field><field name=\"x\">-2</field><field name=\"y\">0</field><field name=\"z\">-2</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.STRUCTURE_BLOCK</field></block></value></block></value><value name=\"feature1\"><block type=\"feature_custom_structure\"><field name=\"structure\">vase_room_medium</field><field name=\"x\">-4</field><field name=\"y\">0</field><field name=\"z\">-4</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.STRUCTURE_BLOCK</field></block></value></block></value><value name=\"feature2\"><block type=\"feature_custom_structure\"><field name=\"structure\">vase_room_big</field><field name=\"x\">-6</field><field name=\"y\">0</field><field name=\"z\">-6</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.STRUCTURE_BLOCK</field></block></value></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">100</field><next><block type=\"placement_in_square\"><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_above_bottom\"><field name=\"value\">8</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">40</field></block></value><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

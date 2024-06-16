@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone_bricks"
+    },
+    "b": {
+      "item": "iter_rpg:spider_silk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:hivestone",
+    "count": 8
+  }
+}

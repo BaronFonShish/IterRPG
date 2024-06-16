@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:chiseled_grimstone_bricks"
+    },
+    "title": {
+      "translate": "advancements.iter_cursed.title"
+    },
+    "description": {
+      "translate": "advancements.iter_cursed.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iter_cursed_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:nether/root"
+}

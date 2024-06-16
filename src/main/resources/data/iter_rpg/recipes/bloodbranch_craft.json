@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "b c",
+    "bc "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:magmanum_block"
+    },
+    "b": {
+      "item": "iter_rpg:demonbone"
+    },
+    "c": {
+      "item": "iter_rpg:profane_flesh"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:bloodbranch",
+    "count": 1
+  }
+}

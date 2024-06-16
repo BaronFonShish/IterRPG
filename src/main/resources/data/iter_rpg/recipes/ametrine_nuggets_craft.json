@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:ametrine_ingot"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ametrine_nugget",
+    "count": 9
+  }
+}

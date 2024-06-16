@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "iter_rpg:ametrine_block"
+  },
+  "result": "iter_rpg:ametrine_bricks"
+}

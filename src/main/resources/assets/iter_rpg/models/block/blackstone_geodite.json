@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/blackstone_geodite",
+    "particle": "iter_rpg:block/blackstone_geodite"
+  },
+  "render_type": "solid"
+}

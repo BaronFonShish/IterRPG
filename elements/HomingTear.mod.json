@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:GiantWeeperTear"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 4.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "GiantWeeperTearHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "GiantWeeperTearHit"
+    },
+    "onFlyingTick": {
+      "name": "HomingTearTick"
+    }
+  }
+}

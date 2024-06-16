@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.VOID_AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 1.0,
+    "knockback": 0,
+    "entityModel": "Modelsea_arrow",
+    "customModelTexture": "sea_arrow.png",
+    "onHitsBlock": {
+      "name": "SeaArrowHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "SeaArrowHit"
+    }
+  }
+}

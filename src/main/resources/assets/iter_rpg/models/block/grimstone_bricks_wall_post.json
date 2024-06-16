@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "iter_rpg:block/grimstone_bricks",
+    "particle": "iter_rpg:block/grimstone_bricks"
+  },
+  "render_type": "cutout_mipped"
+}

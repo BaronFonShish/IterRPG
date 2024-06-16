@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.NETHERITE_SWORD"
+      },
+      {
+        "value": "CUSTOM:Harvest"
+      },
+      {
+        "value": "CUSTOM:EternalTorrent"
+      },
+      {
+        "value": "CUSTOM:Stormcaller"
+      },
+      {
+        "value": "CUSTOM:Solstice"
+      },
+      {
+        "value": "CUSTOM:Starlessness"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ElementalIngot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ElementalSword"
+    },
+    "name": "elemental_sword_recipe",
+    "namespace": "mod"
+  }
+}

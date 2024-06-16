@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:demonbone"
+    },
+    "b": {
+      "item": "iter_rpg:magmanum_chunk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:marrow",
+    "count": 4
+  }
+}

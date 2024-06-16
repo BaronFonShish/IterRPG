@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NUMPAD6",
+    "keyBindingName": "Spell selection forward",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "SpellSelectionF"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:grimstone_bricks"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:grimstone_bricks_wall",
+    "count": 6
+  }
+}

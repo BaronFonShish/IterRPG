@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "iter_rpg:blocks/cut_hivestone",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iter_rpg:cut_hivestone"
+        }
+      ]
+    }
+  ]
+}

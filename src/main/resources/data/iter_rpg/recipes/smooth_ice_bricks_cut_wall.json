@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "iter_rpg:ice_bricks"
+  },
+  "result": "iter_rpg:ice_brick_wall"
+}

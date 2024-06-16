@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:grave_cross",
+    "iter_rpg:stripped_sacred_log",
+    "iter_rpg:sacred_trapdoor",
+    "iter_rpg:sacred_door",
+    "iter_rpg:sacred_button",
+    "iter_rpg:sacred_pressure_plate",
+    "iter_rpg:sacred_fence_gate",
+    "iter_rpg:sacred_fence",
+    "iter_rpg:sacred_wood",
+    "iter_rpg:sacred_planks",
+    "iter_rpg:sacred_log",
+    "iter_rpg:gunpowder_barrel"
+  ]
+}

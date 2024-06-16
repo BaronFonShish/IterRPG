@@ -1,0 +1,20 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "iter_rpg:item/hell_flail"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 0
+      },
+      "model": "iter_rpg:item/solstice_whole"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "iter_rpg:item/solstice_detached"
+    }
+  ]
+}

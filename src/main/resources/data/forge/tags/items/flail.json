@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:wooden_flail",
+    "iter_rpg:stone_flail",
+    "iter_rpg:iron_flail",
+    "iter_rpg:golden_flail",
+    "iter_rpg:diamond_flail",
+    "iter_rpg:netherite_flail",
+    "iter_rpg:solstice"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "iter_rpg:blocks/ametrine_bricks",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iter_rpg:ametrine_bricks"
+        }
+      ]
+    }
+  ]
+}

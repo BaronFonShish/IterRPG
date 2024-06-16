@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_nether",
+  "features": "iter_rpg:magmanum_ore",
+  "step": "underground_ores"
+}

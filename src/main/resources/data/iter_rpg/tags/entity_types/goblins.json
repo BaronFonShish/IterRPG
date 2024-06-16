@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:goblin_warrior",
+    "iter_rpg:hobgoblin",
+    "iter_rpg:goblin"
+  ]
+}

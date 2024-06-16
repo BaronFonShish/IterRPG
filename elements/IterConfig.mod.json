@@ -1,0 +1,398 @@
+{
+  "_fv": 60,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "mobs",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do elementals spawn?",
+            "vardisplay": "Elementals",
+            "varname": "elementals",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do demons spawn?",
+            "vardisplay": "Demons",
+            "varname": "demons",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do giant spider and spiderlings spawn?",
+            "vardisplay": "Spiders",
+            "varname": "spiders",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do goblins patrols spawn?",
+            "vardisplay": "Goblin patrols",
+            "varname": "goblin_patrols",
+            "enablecomment": false
+          }
+        ]
+      },
+      {
+        "category": "generation",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Does Sorrow Spire generate in the Nether?",
+            "vardisplay": "Sorrow Spire",
+            "varname": "sorrow_spire",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do Arthropod Catacombs generate underground?",
+            "vardisplay": "Arthropod Catacombs",
+            "varname": "arthropod_catacombs",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do goblin camps generate around the world?",
+            "vardisplay": "Goblin camps",
+            "varname": "goblin_camps",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do vases generate underground?",
+            "vardisplay": "Vases",
+            "varname": "vases",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do abyssquartz crystals generate underground?",
+            "vardisplay": "Abyssquartz",
+            "varname": "abyssquartz",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do spider eggs generate underground?",
+            "vardisplay": "Spider eggs",
+            "varname": "spider_eggs",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do generic dungeons generate?",
+            "vardisplay": "Generic dungeons",
+            "varname": "generic_dungeons",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do geodites generate?",
+            "vardisplay": "Geodites",
+            "varname": "geodites",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "functions",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 12000.0,
+            "textDefault": "",
+            "comment": "Amount of ticks it takes for a geodrill to produce a geode",
+            "vardisplay": "Geodrill time",
+            "varname": "geodrill_time",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 12000.0,
+            "textDefault": "",
+            "comment": "Amout of ticks it takes for a goblin spawner to repopulate a goblin camp",
+            "vardisplay": "Goblin spawner cycle",
+            "varname": "goblin_spawner_cycle",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do mobs sometime drop coins?",
+            "vardisplay": "Coin drop",
+            "varname": "coin_drop",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do mobs sometimes drop geodes?",
+            "vardisplay": "Geode drop",
+            "varname": "geode_drop",
+            "enablecomment": true
+          }
+        ]
+      },
+      {
+        "category": "events",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1.0,
+            "textDefault": "",
+            "comment": "How often events happen? (default 1.0)",
+            "vardisplay": "Event rate",
+            "varname": "event_rate",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do goblins sometimes raid the player?",
+            "vardisplay": "Goblin raids",
+            "varname": "goblin_raid",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do Celestials invade the world after the dragon is slain?",
+            "vardisplay": "Skies of Ruin",
+            "varname": "skies_of_ruin",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Does Skies of ruin event sometimes repeat?",
+            "vardisplay": "Repeatable Skies of ruin",
+            "varname": "skies_of_ruin_repeatable",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do demons sometimes breach into the overworld?",
+            "vardisplay": "Demon gates",
+            "varname": "demon_gates",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do end rifts happen?",
+            "vardisplay": "End rifts",
+            "varname": "end_rift",
+            "enablecomment": true
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 0,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 0.0,
+            "textDefault": "",
+            "comment": "Do demons appear in overworld after the nether is discovered?",
+            "vardisplay": "Demon hive",
+            "varname": "demon_hive",
+            "enablecomment": false
+          }
+        ]
+      }
+    ],
+    "file": "iterpg",
+    "configType": 0
+  }
+}

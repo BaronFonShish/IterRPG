@@ -1,0 +1,32 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "iter_rpg:item/bloodbranch"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "iter_rpg:bloodbranch_pulling": 0
+      },
+      "model": "iter_rpg:item/bloodbranch_0"
+    },
+    {
+      "predicate": {
+        "iter_rpg:bloodbranch_pulling": 1
+      },
+      "model": "iter_rpg:item/bloodbranch_1"
+    },
+    {
+      "predicate": {
+        "iter_rpg:bloodbranch_pulling": 2
+      },
+      "model": "iter_rpg:item/bloodbranch_2"
+    },
+    {
+      "predicate": {
+        "iter_rpg:bloodbranch_pulling": 3
+      },
+      "model": "iter_rpg:item/bloodbranch_3"
+    }
+  ]
+}

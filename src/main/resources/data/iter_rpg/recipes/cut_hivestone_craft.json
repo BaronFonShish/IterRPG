@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:hivestone_slab"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:cut_hivestone",
+    "count": 1
+  }
+}

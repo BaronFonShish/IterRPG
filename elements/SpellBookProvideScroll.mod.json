@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"spellbook\" type=\"MCItem\">spellbook</variable><variable id=\"spell\" type=\"MCItem\">spell</variable><variable id=\"valid\" type=\"Boolean\">valid</variable><variable id=\"slot\" type=\"Number\">slot</variable><variable id=\"spellslot\" type=\"Number\">spellslot</variable><variable id=\"cooldown\" type=\"Number\">cooldown</variable><variable id=\"mana\" type=\"Number\">mana</variable></variables><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"variables_set_itemstack\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" has_entity=\"true\" is_player_var=\"true\"/><field name=\"VAR\">global:SpellItem</field><value name=\"VAL\"><block type=\"itemhandler_get_slot\"><value name=\"slotid\"><block type=\"variables_get_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" has_entity=\"true\" is_player_var=\"true\"/><field name=\"VAR\">global:SelectedSpell</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><value name=\"item\"><block type=\"itemstack_to_mcitem\"/></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next></block></xml>"
+  }
+}

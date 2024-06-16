@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "iter_rpg:elemental_upgrade"
+  },
+  "base": {
+    "item": "iter_rpg:netherite_spear"
+  },
+  "addition": {
+    "item": "iter_rpg:water_ingot"
+  },
+  "result": {
+    "item": "iter_rpg:eternal_torrent"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "iter_rpg:blocks/polished_grimstone",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iter_rpg:polished_grimstone"
+        }
+      ]
+    }
+  ]
+}

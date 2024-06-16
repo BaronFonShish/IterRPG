@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "b d",
+    "cd "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "b": {
+      "item": "iter_rpg:water_ingot"
+    },
+    "c": {
+      "item": "minecraft:prismarine"
+    },
+    "d": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:driftbow",
+    "count": 1
+  }
+}

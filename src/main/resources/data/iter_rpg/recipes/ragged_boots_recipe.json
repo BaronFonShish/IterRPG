@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:abstruse_cloth"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ragged_boots",
+    "count": 1
+  }
+}

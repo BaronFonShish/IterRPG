@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:etherbloom"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:arcane_flower_seeds",
+    "count": 3
+  }
+}

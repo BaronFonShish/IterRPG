@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "iter_rpg:elemental_upgrade"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "iter_rpg:elemental_ingot"
+  },
+  "result": {
+    "item": "iter_rpg:elemental_armor_boots"
+  }
+}

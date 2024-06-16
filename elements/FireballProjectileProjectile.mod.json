@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.FIRE_CHARGE"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "item.firecharge.use"
+    },
+    "igniteFire": false,
+    "power": 0.75,
+    "damage": 3.5,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "FireballHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "FireballHit"
+    },
+    "onFlyingTick": {
+      "name": "FireballParticleProjectile"
+    }
+  }
+}

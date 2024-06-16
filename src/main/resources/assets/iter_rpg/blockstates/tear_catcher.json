@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "iter_rpg:block/tear_catcher"
+    },
+    "blockstate=1": {
+      "model": "iter_rpg:block/tear_catcher_blockstate_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "iter_rpg:block/tear_catcher_blockstate_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "iter_rpg:block/tear_catcher_blockstate_blockstate_2"
+    }
+  }
+}

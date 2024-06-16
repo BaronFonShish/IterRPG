@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "tag": "iter_rpg:spell_scrolls"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:gist",
+    "count": 2
+  }
+}

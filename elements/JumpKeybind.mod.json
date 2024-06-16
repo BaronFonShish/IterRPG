@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Air jump/flight",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "SkyArmorJump"
+    }
+  }
+}

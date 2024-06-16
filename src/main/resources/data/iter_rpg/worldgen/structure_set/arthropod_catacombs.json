@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "iter_rpg:arthropod_catacombs",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 500,
+    "separation": 200,
+    "salt": 782435189
+  }
+}

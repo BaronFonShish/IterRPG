@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:monolith_slab",
+    "iter_rpg:sacred_slab",
+    "iter_rpg:hivestone_slab",
+    "iter_rpg:polished_grimstone_slab",
+    "iter_rpg:grimstone_slab",
+    "iter_rpg:grimstone_bricks_slab"
+  ]
+}

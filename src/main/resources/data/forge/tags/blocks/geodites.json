@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:geodite",
+    "iter_rpg:deepslate_geodite",
+    "iter_rpg:netherrack_geodite",
+    "iter_rpg:blackstone_geodite",
+    "iter_rpg:endstone_geodite"
+  ]
+}

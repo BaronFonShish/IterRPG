@@ -1,0 +1,43 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "ametrine_flail",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Ametrine Flail",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 3,
+    "efficiency": 7.0,
+    "attackSpeed": 0.5,
+    "enchantability": 32,
+    "damageVsEntity": 13.0,
+    "usageCount": 152,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:AmetrineIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "AmetrineMend"
+    },
+    "onEntityHitWith": {
+      "name": "FlailPlaysound"
+    }
+  }
+}

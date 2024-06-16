@@ -1,0 +1,114 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.air_elemental",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{"origin": [-4, 8, -4], "size": [8, 8, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "small_cloud_particle1",
+					"pivot": [6, 17, 0],
+					"cubes": [
+						{"origin": [5, 16, -1], "size": [2, 2, 2], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "small_cloud_particle2",
+					"pivot": [6, 7, 0],
+					"cubes": [
+						{"origin": [5, 6, -1], "size": [2, 2, 2], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "small_cloud_particle3",
+					"pivot": [-6, 7, 0],
+					"cubes": [
+						{"origin": [-7, 6, -1], "size": [2, 2, 2], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "small_cloud_particle4",
+					"pivot": [-6, 17, 0],
+					"cubes": [
+						{"origin": [-7, 16, -1], "size": [2, 2, 2], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "small_lightning1",
+					"pivot": [-7.5, 14, -1],
+					"cubes": [
+						{"origin": [-10, 13, -1], "size": [5, 2, 0], "uv": [1, 26], "mirror": true}
+					]
+				},
+				{
+					"name": "small_lightning2",
+					"pivot": [7.5, 14, -1],
+					"cubes": [
+						{"origin": [5, 13, -1], "size": [5, 2, 0], "uv": [1, 23], "mirror": true}
+					]
+				},
+				{
+					"name": "big_lightning1",
+					"pivot": [6.5, 4, -1],
+					"cubes": [
+						{"origin": [3, 3, -1], "size": [7, 2, 0], "uv": [17, 20], "mirror": true}
+					]
+				},
+				{
+					"name": "big_lightning2",
+					"pivot": [-6.5, 4, -1],
+					"cubes": [
+						{"origin": [-10, 3, -1], "size": [7, 2, 0], "uv": [17, 17], "mirror": true}
+					]
+				},
+				{
+					"name": "large_cloud_particle4",
+					"pivot": [0, 18, -1],
+					"cubes": [
+						{"origin": [-2, 17, -3], "size": [4, 2, 4], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "large_cloud_particle3",
+					"pivot": [0, 6, -1],
+					"cubes": [
+						{"origin": [-2, 5, -3], "size": [4, 2, 4], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "storm",
+					"pivot": [0, 11, 0]
+				},
+				{
+					"name": "large_cloud_particle1",
+					"parent": "storm",
+					"pivot": [-7, 12, 0],
+					"cubes": [
+						{"origin": [-9, 11, -2], "size": [4, 2, 4], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "large_cloud_particle2",
+					"parent": "storm",
+					"pivot": [7, 12, 0],
+					"cubes": [
+						{"origin": [5, 11, -2], "size": [4, 2, 4], "uv": [0, 16]}
+					]
+				}
+			]
+		}
+	]
+}

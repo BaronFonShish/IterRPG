@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_dies</field></block><block type=\"controls_if\" x=\"120\" y=\"252\"/><block type=\"logic_entity_compare\" x=\"378\" y=\"265\"><field name=\"entity\">EntityPiglinBrute</field><value name=\"compareTo\"><block type=\"entity_from_deps\"/></value></block><block type=\"controls_if\" x=\"371\" y=\"353\"><value name=\"IF0\"><block type=\"math_binary_ops\"><field name=\"OP\">EQ</field><value name=\"A\"><block type=\"math_random_int_between\"><value name=\"min\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"max\"><block type=\"math_number\"><field name=\"NUM\">8</field></block></value></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">6</field></block></value></block></value></block></xml>"
+  }
+}

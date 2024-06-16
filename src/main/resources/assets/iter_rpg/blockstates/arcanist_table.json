@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "iter_rpg:block/arcanist_table"
+    },
+    "facing=east": {
+      "model": "iter_rpg:block/arcanist_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "iter_rpg:block/arcanist_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "iter_rpg:block/arcanist_table",
+      "y": 270
+    }
+  }
+}

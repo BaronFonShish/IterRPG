@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "iter_rpg:block/grimstone_bricks_slab"
+    },
+    "type=top": {
+      "model": "iter_rpg:block/grimstone_bricks_slab_top"
+    },
+    "type=double": {
+      "model": "iter_rpg:block/grimstone_bricks_slab_full"
+    }
+  }
+}

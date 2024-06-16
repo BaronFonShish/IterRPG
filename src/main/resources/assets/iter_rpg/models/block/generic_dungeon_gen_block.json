@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/generic_dungeon_gen",
+    "particle": "iter_rpg:block/generic_dungeon_gen"
+  },
+  "render_type": "solid"
+}

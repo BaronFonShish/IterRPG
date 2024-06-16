@@ -1,0 +1,6 @@
+{
+  "parent": "iter_rpg:item/bloodbranch",
+  "textures": {
+    "layer0": "iter_rpg:item/bloodbranch"
+  }
+}

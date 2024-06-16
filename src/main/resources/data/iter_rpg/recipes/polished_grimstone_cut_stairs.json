@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "iter_rpg:polished_grimstone"
+  },
+  "result": "iter_rpg:polished_grimstone_stairs"
+}

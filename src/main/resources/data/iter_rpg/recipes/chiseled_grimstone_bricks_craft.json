@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:grimstone_bricks_slab"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:chiseled_grimstone_bricks",
+    "count": 1
+  }
+}

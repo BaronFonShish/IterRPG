@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:spell_heal",
+    "iter_rpg:spell_ignite",
+    "iter_rpg:spell_gust",
+    "iter_rpg:spell_splashes",
+    "iter_rpg:spell_cultivate",
+    "iter_rpg:spell_attract",
+    "iter_rpg:spell_etherbolt",
+    "iter_rpg:spell_etherblast"
+  ]
+}

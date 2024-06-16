@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:ametrine_block"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ametrine_bricks",
+    "count": 4
+  }
+}

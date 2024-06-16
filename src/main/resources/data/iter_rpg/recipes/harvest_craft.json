@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "iter_rpg:elemental_upgrade"
+  },
+  "base": {
+    "item": "iter_rpg:netherite_scythe"
+  },
+  "addition": {
+    "item": "iter_rpg:earth_ingot"
+  },
+  "result": {
+    "item": "iter_rpg:harvest"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "dark_forest",
+    "forest",
+    "plains",
+    "savanna",
+    "jungle",
+    "lush_caves",
+    "dripstone_caves"
+  ]
+}

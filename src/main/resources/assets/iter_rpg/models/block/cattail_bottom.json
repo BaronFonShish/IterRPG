@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "iter_rpg:block/cattail_bottom",
+    "particle": "iter_rpg:block/cattail_bottom"
+  },
+  "render_type": "cutout"
+}

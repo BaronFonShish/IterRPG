@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "lush_caves",
+    "jungle"
+  ],
+  "spawners": {
+    "type": "iter_rpg:earth_elemental",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

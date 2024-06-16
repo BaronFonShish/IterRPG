@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/arthropod_catacombs_gen_block",
+    "particle": "iter_rpg:block/arthropod_catacombs_gen_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"gobamount\" type=\"Number\">gobamount</variable><variable id=\"hobgob\" type=\"Number\">hobgob</variable><variable id=\"gob\" type=\"Number\">gob</variable><variable id=\"gobwar\" type=\"Number\">gobwar</variable><variable id=\"gobpoints\" type=\"Number\">gobpoints</variable><variable id=\"decide\" type=\"Number\">decide</variable><variable id=\"xc\" type=\"Number\">xc</variable><variable id=\"zc\" type=\"Number\">zc</variable></variables><block deletable=\"false\" type=\"event_trigger\" x=\"-90\" y=\"303\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"block_nbt_num_set\"><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">respawnTime</field></block></value><value name=\"x\"><block type=\"coord_x\"/></value><value name=\"y\"><block type=\"coord_y\"/></value><value name=\"z\"><block type=\"coord_z\"/></value><value name=\"tagValue\"><block type=\"math_number\"><field name=\"NUM\">14000</field></block></value></block></next></block></xml>"
+  }
+}

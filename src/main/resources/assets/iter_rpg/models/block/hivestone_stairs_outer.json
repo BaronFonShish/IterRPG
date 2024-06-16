@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "iter_rpg:block/hivestone",
+    "top": "iter_rpg:block/hivestone",
+    "side": "iter_rpg:block/hivestone"
+  },
+  "render_type": "solid"
+}

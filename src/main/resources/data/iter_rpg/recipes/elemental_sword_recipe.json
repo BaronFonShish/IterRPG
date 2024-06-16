@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_sword"
+    },
+    {
+      "item": "iter_rpg:harvest"
+    },
+    {
+      "item": "iter_rpg:eternal_torrent"
+    },
+    {
+      "item": "iter_rpg:stormcaller"
+    },
+    {
+      "item": "iter_rpg:solstice"
+    },
+    {
+      "item": "iter_rpg:starlessness"
+    },
+    {
+      "item": "iter_rpg:elemental_ingot"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:elemental_sword",
+    "count": 1
+  }
+}

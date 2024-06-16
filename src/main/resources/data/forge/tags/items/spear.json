@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:wooden_spear",
+    "iter_rpg:stone_spear",
+    "iter_rpg:iron_spear",
+    "iter_rpg:golden_spear",
+    "iter_rpg:diamond_spear",
+    "iter_rpg:netherite_spear",
+    "iter_rpg:eternal_torrent"
+  ]
+}

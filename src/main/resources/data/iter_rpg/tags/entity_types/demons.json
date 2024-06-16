@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:carcass",
+    "iter_rpg:revenant",
+    "iter_rpg:fiend",
+    "iter_rpg:scab"
+  ]
+}

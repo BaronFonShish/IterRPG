@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:vile_tissue"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:profane_flesh",
+    "count": 1
+  }
+}

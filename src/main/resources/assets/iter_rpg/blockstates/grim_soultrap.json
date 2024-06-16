@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "iter_rpg:block/grim_soultrap"
+    },
+    "facing=east": {
+      "model": "iter_rpg:block/grim_soultrap",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "iter_rpg:block/grim_soultrap",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "iter_rpg:block/grim_soultrap",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "iter_rpg:block/grim_soultrap",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "iter_rpg:block/grim_soultrap",
+      "x": 90
+    }
+  }
+}

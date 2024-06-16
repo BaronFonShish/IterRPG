@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.ARROW"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.generic.splash"
+    },
+    "igniteFire": false,
+    "power": 0.75,
+    "damage": 1.0,
+    "knockback": 0,
+    "entityModel": "Modeldroplet_projectile",
+    "customModelTexture": "droplet.png",
+    "onHitsBlock": {
+      "name": "DropletHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "DropletHit"
+    }
+  }
+}

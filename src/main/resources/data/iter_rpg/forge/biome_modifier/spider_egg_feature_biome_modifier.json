@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "iter_rpg:spider_egg_feature",
+  "step": "underground_decoration"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:fire_ingot"
+    },
+    "title": {
+      "translate": "advancements.infernal.title"
+    },
+    "description": {
+      "translate": "advancements.infernal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "infernal_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "iter_rpg:fire_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "iter_rpg:windswept"
+}

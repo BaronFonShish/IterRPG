@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AmetrineNugget"
+      },
+      {
+        "value": "CUSTOM:Grimstone"
+      },
+      {
+        "value": "CUSTOM:AmetrineNugget"
+      },
+      {
+        "value": "CUSTOM:Grimstone"
+      },
+      {
+        "value": "CUSTOM:BottleOfObsidianTears"
+      },
+      {
+        "value": "CUSTOM:Grimstone"
+      },
+      {
+        "value": "CUSTOM:Grimstone"
+      },
+      {
+        "value": "CUSTOM:Grimstone"
+      },
+      {
+        "value": "CUSTOM:Grimstone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HollowVisage"
+    },
+    "name": "hollow_visage_craft",
+    "namespace": "mod"
+  }
+}

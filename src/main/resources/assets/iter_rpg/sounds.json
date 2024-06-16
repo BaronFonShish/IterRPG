@@ -1,0 +1,262 @@
+{
+  "griever_ambient": {
+    "subtitle": "subtitles.griever_ambient",
+    "sounds": [
+      {
+        "name": "iter_rpg:griever_ambient1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_ambient2",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_ambient3",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_ambient4",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_ambient5",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_ambient6",
+        "stream": false
+      }
+    ]
+  },
+  "griever_death": {
+    "subtitle": "subtitles.griever_death",
+    "sounds": [
+      {
+        "name": "iter_rpg:griever_death1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_death2",
+        "stream": false
+      }
+    ]
+  },
+  "griever_scream": {
+    "subtitle": "subtitles.griever_scream",
+    "sounds": [
+      {
+        "name": "iter_rpg:griever_scream",
+        "stream": false
+      }
+    ]
+  },
+  "flail_strike": {
+    "subtitle": "subtitles.flail_strike",
+    "sounds": [
+      {
+        "name": "iter_rpg:flail_strike",
+        "stream": false
+      }
+    ]
+  },
+  "griever_hurt": {
+    "subtitle": "subtitles.griever_hurt",
+    "sounds": [
+      {
+        "name": "iter_rpg:griever_hurt1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_hurt2",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_hurt3",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_hurt4",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_hurt5",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:griever_hurt6",
+        "stream": false
+      }
+    ]
+  },
+  "weeper_ambient": {
+    "subtitle": "subtitles.weeper_ambient",
+    "sounds": [
+      {
+        "name": "iter_rpg:weeper_ambient1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:weeper_ambient2",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:weeper_ambient3",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:weeper_ambient4",
+        "stream": false
+      }
+    ]
+  },
+  "weeper_death": {
+    "subtitle": "subtitles.weeper_death",
+    "sounds": [
+      {
+        "name": "iter_rpg:weeper_death1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:weeper_death2",
+        "stream": false
+      }
+    ]
+  },
+  "weeper_hurt": {
+    "subtitle": "subtitles.weeper_hurt",
+    "sounds": [
+      {
+        "name": "iter_rpg:weeper_hurt1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:weeper_hurt2",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:weeper_hurt3",
+        "stream": false
+      }
+    ]
+  },
+  "mudkin_hurt": {
+    "subtitle": "subtitles.mudkin_hurt",
+    "sounds": [
+      {
+        "name": "iter_rpg:mudkin_hurt1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_hurt2",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_hurt3",
+        "stream": false
+      }
+    ]
+  },
+  "mudkin_death": {
+    "subtitle": "subtitles.mudkin_death",
+    "sounds": [
+      {
+        "name": "iter_rpg:mudkin_death",
+        "stream": false
+      }
+    ]
+  },
+  "mudkin_run": {
+    "subtitle": "subtitles.mudkin_run",
+    "sounds": [
+      {
+        "name": "iter_rpg:mudkin_run1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_run2",
+        "stream": false
+      }
+    ]
+  },
+  "mudkin_ambient": {
+    "subtitle": "subtitles.mudkin_ambient",
+    "sounds": [
+      {
+        "name": "iter_rpg:mudkin_ambient1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_ambient2",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_ambient3",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_ambient4",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_ambient5",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:mudkin_ambient6",
+        "stream": false
+      }
+    ]
+  },
+  "giant_spider_idle": {
+    "subtitle": "subtitles.giant_spider_idle",
+    "sounds": [
+      {
+        "name": "iter_rpg:giantspider_idle1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:giantspider_idle2",
+        "stream": false
+      }
+    ]
+  },
+  "giant_spider_hurt": {
+    "subtitle": "subtitles.giant_spider_hurt",
+    "sounds": [
+      {
+        "name": "iter_rpg:giantspider_hit1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:giantspider_hit2",
+        "stream": false
+      }
+    ]
+  },
+  "giant_spider_death": {
+    "subtitle": "subtitles.giant_spider_death",
+    "sounds": [
+      {
+        "name": "iter_rpg:giantspider_death1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:giantspider_death2",
+        "stream": false
+      }
+    ]
+  },
+  "fiend_hurt": {
+    "subtitle": "subtitles.fiend_hurt",
+    "sounds": [
+      {
+        "name": "iter_rpg:fiend_hit1",
+        "stream": false
+      },
+      {
+        "name": "iter_rpg:fiend_hit2",
+        "stream": false
+      }
+    ]
+  }
+}

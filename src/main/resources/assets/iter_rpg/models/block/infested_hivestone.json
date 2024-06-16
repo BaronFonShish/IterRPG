@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/hivestone",
+    "up": "iter_rpg:block/hivestone",
+    "north": "iter_rpg:block/infested_hivestone",
+    "east": "iter_rpg:block/infested_hivestone",
+    "south": "iter_rpg:block/infested_hivestone",
+    "west": "iter_rpg:block/infested_hivestone",
+    "particle": "iter_rpg:block/hivestone"
+  },
+  "render_type": "solid"
+}

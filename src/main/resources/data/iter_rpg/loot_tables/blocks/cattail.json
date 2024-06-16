@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "iter_rpg:blocks/cattail",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iter_rpg:cattail",
+          "conditions": [
+            {
+              "block": "iter_rpg:cattail",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

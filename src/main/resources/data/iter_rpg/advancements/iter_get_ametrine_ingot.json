@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:ametrine_ingot"
+    },
+    "title": {
+      "translate": "advancements.iter_get_ametrine_ingot.title"
+    },
+    "description": {
+      "translate": "advancements.iter_get_ametrine_ingot.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iter_get_ametrine_ingot_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "iter_rpg:ametrine_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "iter_rpg:adv_etherdust"
+}

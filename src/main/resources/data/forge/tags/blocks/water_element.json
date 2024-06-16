@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:prismarine",
+    "minecraft:prismarine_bricks",
+    "minecraft:dark_prismarine",
+    "minecraft:water",
+    "minecraft:snow_block",
+    "minecraft:powder_snow",
+    "minecraft:powder_snow_cauldron",
+    "minecraft:bubble_column",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:blue_ice",
+    "minecraft:wet_sponge",
+    "minecraft:prismarine_stairs",
+    "minecraft:prismarine_brick_stairs",
+    "minecraft:dark_prismarine_stairs",
+    "minecraft:prismarine_slab",
+    "minecraft:prismarine_brick_slab",
+    "minecraft:dark_prismarine_slab",
+    "minecraft:prismarine_wall",
+    "iter_rpg:water_seal",
+    "iter_rpg:monolith_stone"
+  ]
+}

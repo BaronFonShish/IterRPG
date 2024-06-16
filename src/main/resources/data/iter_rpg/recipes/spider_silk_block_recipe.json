@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:spider_silk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:spider_silk_block",
+    "count": 1
+  }
+}

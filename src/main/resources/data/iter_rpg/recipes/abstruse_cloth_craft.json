@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "tag": "minecraft:wool"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "iter_rpg:ether_dust"
+    },
+    {
+      "item": "iter_rpg:spider_silk"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:abstruse_cloth",
+    "count": 2
+  }
+}

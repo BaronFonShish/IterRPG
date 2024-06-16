@@ -1,0 +1,42 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "hell_flail",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Solstice",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 4,
+    "efficiency": 10.0,
+    "attackSpeed": 0.5,
+    "enchantability": 16,
+    "damageVsEntity": 18.0,
+    "usageCount": 2048,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "SolsticeRelease"
+    },
+    "onEntityHitWith": {
+      "name": "SolsticeStrike"
+    },
+    "onItemInInventoryTick": {
+      "name": "SolsticeTick"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "iter_rpg:block/big_vase"
+    },
+    "facing=east": {
+      "model": "iter_rpg:block/big_vase",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "iter_rpg:block/big_vase",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "iter_rpg:block/big_vase",
+      "y": 270
+    }
+  }
+}

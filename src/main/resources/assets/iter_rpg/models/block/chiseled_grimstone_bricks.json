@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/cut_brimstone_bricks",
+    "particle": "iter_rpg:block/cut_brimstone_bricks"
+  },
+  "render_type": "solid"
+}

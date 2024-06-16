@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:wooden_scythe",
+    "iter_rpg:stone_scythe",
+    "iter_rpg:iron_scythe",
+    "iter_rpg:golden_scythe",
+    "iter_rpg:diamond_scythe",
+    "iter_rpg:harvest"
+  ]
+}

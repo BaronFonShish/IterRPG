@@ -1,0 +1,15 @@
+{
+  "type": "iter_rpg:abyssquartz_feature",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "iter_rpg:abyss_quartz",
+        "Properties": {
+          "waterlogged": "false",
+          "facing": "up"
+        }
+      }
+    }
+  }
+}

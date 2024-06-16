@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "iter_rpg:shrine_fire",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 400,
+    "separation": 300,
+    "salt": 1925920465
+  }
+}

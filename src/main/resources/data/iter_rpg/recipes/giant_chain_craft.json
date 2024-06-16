@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "b b",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:chain"
+    },
+    "b": {
+      "item": "iter_rpg:abyssquartz_shard"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:giant_chain",
+    "count": 1
+  }
+}

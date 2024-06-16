@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NUMPAD4",
+    "keyBindingName": "Spell selection backwards",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "SpellSelectionB"
+    }
+  }
+}

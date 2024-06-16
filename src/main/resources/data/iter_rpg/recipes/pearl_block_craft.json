@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:pearl"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:pearl_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 2.0,
+    "knockback": 0,
+    "entityModel": "Modeldroplet_projectile",
+    "customModelTexture": "droplet.png",
+    "onHitsBlock": {
+      "name": "BubbleProjectileHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "BubbleProjectileHit"
+    },
+    "onFlyingTick": {
+      "name": "BubbleProjectileHome"
+    }
+  }
+}

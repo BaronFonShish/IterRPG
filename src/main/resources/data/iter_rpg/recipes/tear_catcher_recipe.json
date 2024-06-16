@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:hollow_visage"
+    },
+    "b": {
+      "item": "minecraft:cauldron"
+    },
+    "c": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:tear_catcher",
+    "count": 1
+  }
+}

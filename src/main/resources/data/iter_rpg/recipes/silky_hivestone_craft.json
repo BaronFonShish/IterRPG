@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:hivestone"
+    },
+    "b": {
+      "item": "minecraft:cobweb"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:silky_hivestone",
+    "count": 8
+  }
+}

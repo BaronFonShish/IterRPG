@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"-198\" y=\"-6\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_repeat_ext\"><value name=\"TIMES\"><block type=\"math_random_number_between\"><value name=\"min\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"max\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value></block></value><statement name=\"DO\"><block type=\"spawn_xporb\"><value name=\"x\"><block type=\"coord_x\"/></value><value name=\"y\"><block type=\"coord_y\"/></value><value name=\"z\"><block type=\"coord_z\"/></value><value name=\"xpamount\"><block type=\"math_random_number_between\"><value name=\"min\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"max\"><block type=\"math_number\"><field name=\"NUM\">3</field></block></value></block></value></block></statement></block></next></block></xml>"
+  }
+}

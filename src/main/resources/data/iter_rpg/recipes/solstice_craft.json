@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "iter_rpg:elemental_upgrade"
+  },
+  "base": {
+    "item": "iter_rpg:netherite_flail"
+  },
+  "addition": {
+    "item": "iter_rpg:fire_ingot"
+  },
+  "result": {
+    "item": "iter_rpg:solstice"
+  }
+}

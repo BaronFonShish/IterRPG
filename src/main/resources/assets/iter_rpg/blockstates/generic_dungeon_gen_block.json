@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "iter_rpg:block/generic_dungeon_gen_block"
+    }
+  }
+}

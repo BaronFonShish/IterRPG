@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:NetheriteScythe"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:EarthIngot"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:ElementalUpgrade"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Harvest"
+    },
+    "name": "harvest_craft",
+    "namespace": "mod"
+  }
+}

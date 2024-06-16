@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " ba",
+    "cb "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    },
+    "b": {
+      "item": "iter_rpg:hollow_visage"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:tormentor",
+    "count": 1
+  }
+}

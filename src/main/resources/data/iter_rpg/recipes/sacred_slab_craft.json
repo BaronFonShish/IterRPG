@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:sacred_planks"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:sacred_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:abyss_quartz"
+    },
+    "title": {
+      "translate": "advancements.iter_get_voidquartz.title"
+    },
+    "description": {
+      "translate": "advancements.iter_get_voidquartz.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iter_get_voidquartz_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "iter_rpg:abyssquartz_shard"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "iter_rpg:adv_etherbloom"
+}

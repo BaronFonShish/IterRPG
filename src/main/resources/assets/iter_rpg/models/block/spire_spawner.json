@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/spire_spawner_top",
+    "up": "iter_rpg:block/spire_spawner_top",
+    "north": "iter_rpg:block/spire_spawner",
+    "east": "iter_rpg:block/spire_spawner",
+    "south": "iter_rpg:block/spire_spawner",
+    "west": "iter_rpg:block/spire_spawner",
+    "particle": "iter_rpg:block/spire_spawner"
+  },
+  "render_type": "cutout_mipped"
+}

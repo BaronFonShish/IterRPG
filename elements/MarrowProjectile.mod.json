@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Marrow"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 2.0,
+    "knockback": 0,
+    "entityModel": "Modelmarrow",
+    "customModelTexture": "marrow_entity.png",
+    "onHitsBlock": {
+      "name": "MarrowHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "MarrowHitEntity"
+    },
+    "onFlyingTick": {
+      "name": "MarrowParticle"
+    }
+  }
+}

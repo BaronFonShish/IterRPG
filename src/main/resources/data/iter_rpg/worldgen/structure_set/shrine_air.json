@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "iter_rpg:shrine_air",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1000,
+    "separation": 750,
+    "salt": 267431354
+  }
+}

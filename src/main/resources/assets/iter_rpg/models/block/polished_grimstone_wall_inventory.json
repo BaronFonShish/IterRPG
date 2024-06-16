@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "iter_rpg:block/polished_grimstone",
+    "particle": "iter_rpg:block/polished_grimstone"
+  },
+  "render_type": "cutout_mipped"
+}

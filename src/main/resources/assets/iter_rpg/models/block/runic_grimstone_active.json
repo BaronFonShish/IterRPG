@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/demonrune_top_active",
+    "particle": "iter_rpg:block/demonrune_top_active"
+  },
+  "render_type": "solid"
+}

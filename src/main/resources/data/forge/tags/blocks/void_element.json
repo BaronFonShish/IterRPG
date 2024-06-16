@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:monolith_stone",
+    "iter_rpg:void_seal",
+    "iter_rpg:abyss_quartz",
+    "iter_rpg:abyssquartz_block",
+    "minecraft:bedrock",
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "iter_rpg:endstone_geodite",
+    "minecraft:ender_chest",
+    "minecraft:end_portal",
+    "minecraft:end_portal_frame",
+    "minecraft:end_gateway",
+    "minecraft:end_stone",
+    "minecraft:end_stone_bricks",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_slab",
+    "minecraft:end_stone_brick_wall",
+    "minecraft:end_rod",
+    "minecraft:chorus_plant",
+    "minecraft:chorus_flower",
+    "minecraft:respawn_anchor",
+    "minecraft:purpur_stairs",
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:purpur_slab"
+  ]
+}

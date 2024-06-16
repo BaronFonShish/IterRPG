@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/gobsteel_block",
+    "particle": "iter_rpg:block/gobsteel_block"
+  },
+  "render_type": "solid"
+}

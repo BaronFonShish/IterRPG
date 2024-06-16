@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/wooden_cross",
+  "textures": {
+    "all": "iter_rpg:block/wooden_cross",
+    "particle": "iter_rpg:block/wooden_cross_item",
+    "0": "iter_rpg:block/wooden_cross"
+  },
+  "render_type": "solid"
+}

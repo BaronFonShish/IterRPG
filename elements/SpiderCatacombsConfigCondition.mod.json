@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"File\" id=\"configfile\">configfile</variable><variable type=\"JsonObject\" id=\"mainjsonobject\">mainjsonobject</variable><variable type=\"JsonObject\" id=\"goblins\">goblins</variable><variable type=\"JsonObject\" id=\"magic\">magic</variable><variable type=\"JsonObject\" id=\"mobs\">mobs</variable><variable type=\"JsonObject\" id=\"generation\">generation</variable><variable type=\"JsonObject\" id=\"functions\">functions</variable><variable type=\"JsonObject\" id=\"checkfor\">checkfor</variable><variable type=\"Boolean\" id=\"flag\">flag</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"0\" y=\"0\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_logic\"><value name=\"return\"><block type=\"variables_get_logic\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">global:config_spider_catacombs</field></block></value></block></next></block></xml>"
+  }
+}

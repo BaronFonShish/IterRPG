@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/grim_locker_bottom",
+    "up": "iter_rpg:block/grim_locker_top",
+    "north": "iter_rpg:block/grim_locker_side",
+    "east": "iter_rpg:block/grim_locker_side",
+    "south": "iter_rpg:block/grim_locker_side",
+    "west": "iter_rpg:block/grim_locker_side",
+    "particle": "iter_rpg:block/grim_locker_bottom"
+  },
+  "render_type": "cutout_mipped"
+}

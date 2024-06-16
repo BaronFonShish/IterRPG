@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "meadow",
+    "plains",
+    "frozen_peaks",
+    "stony_peaks",
+    "jagged_peaks",
+    "flower_forest",
+    "birch_forest",
+    "cherry_grove",
+    "forest",
+    "dark_forest"
+  ],
+  "features": "iter_rpg:etherbloom",
+  "step": "vegetal_decoration"
+}

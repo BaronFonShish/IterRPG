@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "attribute",
+  "definition": {
+    "description": "Base Mana Capacity",
+    "minValue": 0.0,
+    "maxValue": 10000.0,
+    "defaultValue": 50.0,
+    "isPersistent": true,
+    "entities": [
+      {
+        "value": "EntityPlayer"
+      }
+    ]
+  }
+}

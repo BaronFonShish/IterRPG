@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    {
+      "item": "iter_rpg:grimstone"
+    },
+    {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    {
+      "item": "iter_rpg:grimstone"
+    },
+    {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    },
+    {
+      "item": "iter_rpg:grimstone"
+    },
+    {
+      "item": "iter_rpg:grimstone"
+    },
+    {
+      "item": "iter_rpg:grimstone"
+    },
+    {
+      "item": "iter_rpg:grimstone"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:hollow_visage",
+    "count": 1
+  }
+}

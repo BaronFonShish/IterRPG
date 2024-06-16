@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:monolith_stone"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:monolith_wall",
+    "count": 6
+  }
+}

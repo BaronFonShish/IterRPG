@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:air_elemental",
+    "iter_rpg:earth_elemental",
+    "iter_rpg:fire_elemental",
+    "iter_rpg:mournstone",
+    "iter_rpg:void_elemental",
+    "iter_rpg:water_elemental"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/tombstone",
+  "textures": {
+    "all": "iter_rpg:block/tombstone",
+    "particle": "iter_rpg:block/tombstone_item",
+    "0": "iter_rpg:block/tombstone"
+  },
+  "render_type": "solid"
+}

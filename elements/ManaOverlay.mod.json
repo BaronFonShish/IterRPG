@@ -1,0 +1,195 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_spell_number",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSpellNumber"
+          },
+          "color": {
+            "value": -3381505,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 5
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_exhaustion_return",
+          "text": {
+            "fixedValue": "",
+            "name": "ManaReturn"
+          },
+          "color": {
+            "value": -16750900,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 17,
+          "y": 28
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manabar_horizontal_10.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell1Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 6,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell2Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 14,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell3Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 22,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell4Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 30,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell5Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 38,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell6Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 46,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell7Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 54,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell8Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 62,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell9Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 70,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manacell_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ManaCell10Display"
+          },
+          "anchorPoint": "CENTER_LEFT",
+          "x": 78,
+          "y": 18
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "MageStatusReturn"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

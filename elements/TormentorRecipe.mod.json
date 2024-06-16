@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BottleOfObsidianTears"
+      },
+      {
+        "value": "CUSTOM:HollowVisage"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HollowVisage"
+      },
+      {
+        "value": "CUSTOM:BottleOfObsidianTears"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:HollowVisage"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Tormentor"
+    },
+    "name": "tormentor_recipe",
+    "namespace": "mod"
+  }
+}

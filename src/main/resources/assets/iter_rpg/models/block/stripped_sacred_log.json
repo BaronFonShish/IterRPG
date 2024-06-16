@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/striped_sacred_log_top",
+    "up": "iter_rpg:block/striped_sacred_log_top",
+    "north": "iter_rpg:block/striped_sacred_log_side",
+    "east": "iter_rpg:block/striped_sacred_log_side",
+    "south": "iter_rpg:block/striped_sacred_log_side",
+    "west": "iter_rpg:block/striped_sacred_log_side",
+    "particle": "iter_rpg:block/striped_sacred_log_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "iter_rpg:block/stripped_sacred_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "iter_rpg:block/stripped_sacred_log"
+    },
+    "axis=z": {
+      "model": "iter_rpg:block/stripped_sacred_log",
+      "x": 90
+    }
+  }
+}

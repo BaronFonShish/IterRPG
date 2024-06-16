@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "iter_rpg:block/sacred_planks",
+    "top": "iter_rpg:block/sacred_planks",
+    "side": "iter_rpg:block/sacred_planks"
+  },
+  "render_type": "solid"
+}

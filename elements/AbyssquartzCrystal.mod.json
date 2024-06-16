@@ -1,0 +1,13 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "UNDERGROUND_DECORATION",
+    "restrictionBiomes": [
+      {
+        "value": "#is_overworld"
+      }
+    ],
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"75\" y=\"103\"><value name=\"feature\"><block type=\"feature_block_column_simple\"><value name=\"height\"><block type=\"int_provider_biased_to_bottom\"><field name=\"min\">3</field><field name=\"max\">6</field></block></value><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:AbyssquartzBlock</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">32</field><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_uniform\"><field name=\"min\">4</field><field name=\"max\">6</field></block></value><next><block type=\"placement_offset\"><value name=\"xz\"><block type=\"int_provider_uniform\"><field name=\"min\">-4</field><field name=\"max\">4</field></block></value><value name=\"y\"><block type=\"int_provider_uniform\"><field name=\"min\">-1</field><field name=\"max\">1</field></block></value><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_above_bottom\"><field name=\"value\">0</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">0</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_environment_scan\"><field name=\"maxSteps\">16</field><field name=\"direction\">UP</field><value name=\"condition\"><block type=\"block_predicate_all_of\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"/><value name=\"condition0\"><block type=\"block_predicate_is_air\"/></value><value name=\"condition1\"><block type=\"block_predicate_has_sturdy_face\"><field name=\"x\">0</field><field name=\"y\">-1</field><field name=\"z\">0</field><field name=\"direction\">UP</field></block></value></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

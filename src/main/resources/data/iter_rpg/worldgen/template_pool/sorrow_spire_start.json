@@ -1,0 +1,24 @@
+{
+  "name": "iter_rpg:sorrow_spire_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+	{	
+      "weight": 2,
+      "element": {
+        "location": "iter_rpg:sorrow_spire_base1",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 2,
+      "element": {
+        "location": "iter_rpg:sorrow_spire_base2",
+        "processors": "minecraft:empty",
+		"projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

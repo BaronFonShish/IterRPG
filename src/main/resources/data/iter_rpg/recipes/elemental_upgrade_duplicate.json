@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "item": "minecraft:netherrack"
+    },
+    "c": {
+      "item": "minecraft:end_stone"
+    },
+    "d": {
+      "item": "iter_rpg:earth_fragment"
+    },
+    "e": {
+      "item": "iter_rpg:elemental_upgrade"
+    },
+    "f": {
+      "item": "iter_rpg:void_fragment"
+    },
+    "g": {
+      "item": "iter_rpg:water_fragment"
+    },
+    "h": {
+      "item": "iter_rpg:air_fragment"
+    },
+    "i": {
+      "item": "iter_rpg:fire_fragment"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:elemental_upgrade",
+    "count": 2
+  }
+}

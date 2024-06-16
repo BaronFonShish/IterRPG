@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "iter_rpg:arcane_flower_seeds"
+    },
+    "title": {
+      "translate": "advancements.adv_arcane_florist.title"
+    },
+    "description": {
+      "translate": "advancements.adv_arcane_florist.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adv_arcane_florist_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "iter_rpg:arcane_flower_seeds"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "iter_rpg:adv_etherbloom"
+}

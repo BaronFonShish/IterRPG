@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "iter_rpg:packed_snow"
+  },
+  "result": "iter_rpg:packed_snow_bricks_slab"
+}

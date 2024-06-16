@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.VOID_AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": ""
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 4.0,
+    "knockback": 0,
+    "entityModel": "Modelaetherbolt",
+    "customModelTexture": "aetherbolt.png",
+    "onHitsBlock": {
+      "name": "ArcaneBlastHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "ArcaneBlastHit"
+    },
+    "onFlyingTick": {
+      "name": "ArcaneBlastTick"
+    }
+  }
+}

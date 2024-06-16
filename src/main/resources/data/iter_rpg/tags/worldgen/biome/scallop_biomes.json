@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "beach",
+    "snowy_beach",
+    "ocean",
+    "warm_ocean",
+    "lukewarm_ocean",
+    "deep_lukewarm_ocean",
+    "deep_ocean",
+    "plains"
+  ]
+}

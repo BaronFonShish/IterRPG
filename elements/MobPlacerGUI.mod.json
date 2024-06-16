@@ -1,0 +1,111 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_mob_placer_coordinates_retu",
+          "text": {
+            "fixedValue": "",
+            "name": "MobPlacerCoordinatesReturn"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 142,
+          "y": 47
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spawn",
+          "text": "Spawn",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MobPlacerSpawn"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 187,
+          "y": 176
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "MobPlacerModelProvider"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 200,
+          "y": 149
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g",
+          "text": "G",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MobPlacerGoblinCycle"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 133,
+          "y": 66
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_d",
+          "text": "D",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MobPlacerDungeonCycle"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 253,
+          "y": 66
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_s",
+          "text": "S",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MobPlacerGrieverCycle"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 195,
+          "y": 66
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

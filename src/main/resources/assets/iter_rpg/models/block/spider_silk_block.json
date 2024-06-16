@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/spider_silk_block_top",
+    "up": "iter_rpg:block/spider_silk_block_top",
+    "north": "iter_rpg:block/spider_silk_block",
+    "east": "iter_rpg:block/spider_silk_block",
+    "south": "iter_rpg:block/spider_silk_block",
+    "west": "iter_rpg:block/spider_silk_block",
+    "particle": "iter_rpg:block/spider_silk_block_top"
+  },
+  "render_type": "solid"
+}

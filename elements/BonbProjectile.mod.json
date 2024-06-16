@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Bonb"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.egg.throw"
+    },
+    "igniteFire": false,
+    "power": 0.8,
+    "damage": 1.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "BonbExplodeBlock"
+    },
+    "onHitsEntity": {
+      "name": "BonbExplode"
+    },
+    "onFlyingTick": {
+      "name": "BonbParticle"
+    }
+  }
+}

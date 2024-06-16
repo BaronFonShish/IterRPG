@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"xvec\" type=\"Number\">xvec</variable><variable id=\"yvec\" type=\"Number\">yvec</variable><variable id=\"zvec\" type=\"Number\">zvec</variable><variable id=\"ypos\" type=\"Number\">ypos</variable><variable id=\"zpos\" type=\"Number\">zpos</variable><variable id=\"xpos\" type=\"Number\">xpos</variable><variable id=\"k\" type=\"Number\">k</variable></variables><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_number\"><value name=\"return\"><block type=\"entity_data_integer_get\"><field name=\"customEntity\">CUSTOM:Windswirl</field><field name=\"accessor\">scale</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/tnt_barrel_bottom",
+    "up": "iter_rpg:block/tnt_barrel_top",
+    "north": "iter_rpg:block/tnt_barrel_side",
+    "east": "iter_rpg:block/tnt_barrel_side",
+    "south": "iter_rpg:block/tnt_barrel_side",
+    "west": "iter_rpg:block/tnt_barrel_side",
+    "particle": "iter_rpg:block/tnt_barrel_bottom"
+  },
+  "render_type": "solid"
+}

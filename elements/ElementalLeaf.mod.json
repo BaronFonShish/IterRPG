@@ -1,0 +1,21 @@
+{
+  "_fv": 60,
+  "_type": "particle",
+  "definition": {
+    "texture": "elemental_leaves.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 1.5,
+    "speedFactor": 1.0,
+    "gravity": 0.30000000000000004,
+    "maxAge": 54,
+    "maxAgeDiff": 12,
+    "angularVelocity": -0.05,
+    "angularAcceleration": 9.999999999999992E-4,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "OPAQUE"
+  }
+}

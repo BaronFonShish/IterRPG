@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "iter_rpg:vase_room_feature",
+  "step": "underground_structures"
+}

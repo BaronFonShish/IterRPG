@@ -1,0 +1,23 @@
+{
+  "_fv": 60,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Arcane Conduction",
+    "icon": "arcane_conduction.png",
+    "color": {
+      "value": -3407668,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "ArcaneConductionFunction"
+    },
+    "onExpired": {
+      "name": "ArcaneConductionReset"
+    }
+  }
+}

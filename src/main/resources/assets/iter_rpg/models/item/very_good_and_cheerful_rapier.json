@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "iter_rpg:item/very_good_and_cheerful_rapier"
+  }
+}

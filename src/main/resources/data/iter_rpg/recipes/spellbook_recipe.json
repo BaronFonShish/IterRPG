@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "dbc",
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:ametrine_nugget"
+    },
+    "b": {
+      "item": "iter_rpg:abstruse_cloth"
+    },
+    "c": {
+      "item": "minecraft:paper"
+    },
+    "d": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:spell_book",
+    "count": 1
+  }
+}

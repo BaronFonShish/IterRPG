@@ -1,0 +1,23 @@
+{
+  "_fv": 60,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Ionized",
+    "icon": "ionized.png",
+    "color": {
+      "value": -16724737,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "IonizedEffect"
+    },
+    "onExpired": {
+      "name": "IonizedDischarge"
+    }
+  }
+}

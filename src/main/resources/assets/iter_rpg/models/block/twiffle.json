@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "iter_rpg:block/gryb",
+    "particle": "iter_rpg:block/gryb"
+  },
+  "render_type": "cutout"
+}

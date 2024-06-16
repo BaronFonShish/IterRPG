@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "iter_rpg:block/arcane_flower_seeds"
+    },
+    "stage=1": {
+      "model": "iter_rpg:block/arcane_flower_stage_1"
+    },
+    "stage=2": {
+      "model": "iter_rpg:block/arcane_flower_stage_2"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "TearCatcher",
+    "blockstateList": [
+      {
+        "texture": "tear_catcher_bottom1",
+        "textureTop": "tear_catcher_top1",
+        "textureLeft": "tear_catcher_side1",
+        "textureFront": "tear_catcher_side1",
+        "textureRight": "tear_catcher_side1",
+        "textureBack": "tear_catcher_side1",
+        "particleTexture": "tear_catcher_side1",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "tear_catcher_bottom2",
+        "textureTop": "tear_catcher_top2",
+        "textureLeft": "tear_catcher_side2",
+        "textureFront": "tear_catcher_side2",
+        "textureRight": "tear_catcher_side2",
+        "textureBack": "tear_catcher_side2",
+        "particleTexture": "tear_catcher_side2",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 6,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "tear_catcher_bottom3",
+        "textureTop": "tear_catcher_top3",
+        "textureLeft": "tear_catcher_side3",
+        "textureFront": "tear_catcher_side3",
+        "textureRight": "tear_catcher_side3",
+        "textureBack": "tear_catcher_side3",
+        "particleTexture": "tear_catcher_side3",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 9,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

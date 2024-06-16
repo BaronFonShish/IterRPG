@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Set Bonus Toggle",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "ToggleSetBonus"
+    }
+  }
+}

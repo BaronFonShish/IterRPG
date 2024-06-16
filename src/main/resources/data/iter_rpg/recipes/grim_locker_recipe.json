@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:hollow_visage"
+    },
+    "b": {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    },
+    "c": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:grim_locker",
+    "count": 1
+  }
+}

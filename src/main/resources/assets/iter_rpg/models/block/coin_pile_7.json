@@ -1,0 +1,9 @@
+{
+  "parent": "iter_rpg:custom/coin_pile_7",
+  "textures": {
+    "all": "iter_rpg:block/coin_pile_texture",
+    "particle": "iter_rpg:block/coin_pile_texture",
+    "0": "iter_rpg:block/coin_pile_texture"
+  },
+  "render_type": "cutout_mipped"
+}

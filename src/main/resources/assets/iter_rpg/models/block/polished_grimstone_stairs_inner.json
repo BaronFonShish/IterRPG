@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "iter_rpg:block/polished_grimstone",
+    "bottom": "iter_rpg:block/polished_grimstone",
+    "top": "iter_rpg:block/polished_grimstone",
+    "side": "iter_rpg:block/polished_grimstone"
+  },
+  "render_type": "solid"
+}

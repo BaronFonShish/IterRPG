@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:aura_boulder",
+    "iter_rpg:aura_mobspawn",
+    "iter_rpg:aura_soulfire",
+    "iter_rpg:aura_tearburst",
+    "iter_rpg:bloated",
+    "iter_rpg:earth_elemental",
+    "iter_rpg:fire_elemental",
+    "iter_rpg:water_elemental",
+    "iter_rpg:griever",
+    "iter_rpg:grim_boulder",
+    "iter_rpg:sorrowsealed",
+    "iter_rpg:mournstone",
+    "iter_rpg:weeper",
+    "iter_rpg:mudkin"
+  ]
+}

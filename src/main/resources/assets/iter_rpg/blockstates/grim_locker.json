@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "iter_rpg:block/grim_locker"
+    },
+    "blockstate=1": {
+      "model": "iter_rpg:block/grim_locker_blockstates_blockstate_0"
+    }
+  }
+}

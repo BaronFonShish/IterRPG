@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "iter_rpg:item/small_vase_item"
+  },
+  "render_type": "translucent"
+}
