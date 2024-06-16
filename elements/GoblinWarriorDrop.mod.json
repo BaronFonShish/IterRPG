@@ -56,7 +56,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:AbstruseCloth"
+              "value": "Items.LEATHER"
             },
             "weight": 2,
             "minCount": 1,

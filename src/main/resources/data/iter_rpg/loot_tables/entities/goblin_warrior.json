@@ -48,7 +48,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "iter_rpg:abstruse_cloth",
+          "name": "minecraft:leather",
           "weight": 2,
           "functions": [
             {

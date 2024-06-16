@@ -22,7 +22,6 @@ import net.thirdlife.iterrpg.item.UnidentifiedSpellItem;
 import net.thirdlife.iterrpg.item.TwiffleLumpItem;
 import net.thirdlife.iterrpg.item.TormentorItem;
 import net.thirdlife.iterrpg.item.TombstoneFragmentItem;
-import net.thirdlife.iterrpg.item.TestItemItem;
 import net.thirdlife.iterrpg.item.StormcallerItem;
 import net.thirdlife.iterrpg.item.StoneSpearItem;
 import net.thirdlife.iterrpg.item.StoneScytheItem;
@@ -440,7 +439,6 @@ public class IterRpgModItems {
 	public static final RegistryObject<Item> GRAVE_CROSS = block(IterRpgModBlocks.GRAVE_CROSS);
 	public static final RegistryObject<Item> ECTOPLASM = REGISTRY.register("ectoplasm", () -> new EctoplasmItem());
 	public static final RegistryObject<Item> OTHERWORDLY_INGOT = REGISTRY.register("otherwordly_ingot", () -> new OtherwordlyIngotItem());
-	public static final RegistryObject<Item> TEST_ITEM = REGISTRY.register("test_item", () -> new TestItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

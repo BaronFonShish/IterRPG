@@ -267,7 +267,6 @@ public class IterRpgModTabs {
 			tabData.accept(IterRpgModItems.HAUNTED_SPLINTER.get());
 			tabData.accept(IterRpgModItems.ECTOPLASM.get());
 			tabData.accept(IterRpgModItems.OTHERWORDLY_INGOT.get());
-			tabData.accept(IterRpgModItems.TEST_ITEM.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(IterRpgModBlocks.ETHERBLOOM.get().asItem());
 			tabData.accept(IterRpgModBlocks.ABYSS_QUARTZ.get().asItem());

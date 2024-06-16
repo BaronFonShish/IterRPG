@@ -23152,21 +23152,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "TestItem",
-      "type": "item",
-      "sortid": 1280,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/thirdlife/iterrpg/item/TestItemItem.java",
-          "src/main/resources/assets/iter_rpg/models/item/test_item.json"
-        ]
-      },
-      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -24679,7 +24664,6 @@
       "iterpg.spell.domain.basic": "§dОсновной домен",
       "item.iter_rpg.unbound_soul_spawn_egg": "Unbound Soul Spawn Egg",
       "block.iter_rpg.twiffle": "Вьюфель",
-      "item.iter_rpg.test_item": "Test Item",
       "entity.iter_rpg.scallop": "Гребешок",
       "iterpg.mark_of_tepes1": "§cПКМ чтобы вызвать кровавые хребты в линии по направлению вгляда",
       "item.iter_rpg.endstone_geode": "Эндерняковая жеода",
@@ -25234,7 +25218,6 @@
       "iterpg.spell.domain.basic": "§dBasic Domain",
       "item.iter_rpg.unbound_soul_spawn_egg": "Unbound Soul Spawn Egg",
       "block.iter_rpg.twiffle": "Twiffle",
-      "item.iter_rpg.test_item": "Test Item",
       "entity.iter_rpg.scallop": "Scallop",
       "iterpg.mark_of_tepes1": "§cRight-click to summon demonspines in the line of player\u0027s sight",
       "item.iter_rpg.endstone_geode": "Endstone Geode",
