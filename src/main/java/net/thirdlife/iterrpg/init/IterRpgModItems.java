@@ -440,8 +440,6 @@ public class IterRpgModItems {
 	public static final RegistryObject<Item> ECTOPLASM = REGISTRY.register("ectoplasm", () -> new EctoplasmItem());
 	public static final RegistryObject<Item> OTHERWORDLY_INGOT = REGISTRY.register("otherwordly_ingot", () -> new OtherwordlyIngotItem());
 
-	// Start of user code block custom items
-	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
 	}
