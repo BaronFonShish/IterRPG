@@ -14,7 +14,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
 public class IterRpgModSounds {
-	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, IterRpgMod.MODID);
+	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, IterRpgMod.MOD_ID);
 	public static final RegistryObject<SoundEvent> GRIEVER_AMBIENT = REGISTRY.register("griever_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "griever_ambient")));
 	public static final RegistryObject<SoundEvent> GRIEVER_DEATH = REGISTRY.register("griever_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "griever_death")));
 	public static final RegistryObject<SoundEvent> GRIEVER_SCREAM = REGISTRY.register("griever_scream", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "griever_scream")));

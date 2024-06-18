@@ -1,8 +1,8 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.procedures.DemonspineShakeProcedure;
-import net.thirdlife.iterrpg.entity.ForestVinesEntity;
+import net.thirdlife.iterrpg.common.procedures.DemonspineShakeProcedure;
+import net.thirdlife.iterrpg.common.entity.ForestVinesEntity;
 import net.thirdlife.iterrpg.client.model.Modelforest_vines;
 
 import net.minecraft.world.level.Level;

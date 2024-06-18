@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.UnboundSoulEntity;
+import net.thirdlife.iterrpg.common.entity.UnboundSoulEntity;
 import net.thirdlife.iterrpg.client.model.Modelunbound_soul;
 
 import net.minecraft.resources.ResourceLocation;

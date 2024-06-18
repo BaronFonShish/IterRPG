@@ -1,6 +1,6 @@
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.ArcaneBlastEntity;
+import net.thirdlife.iterrpg.common.entity.ArcaneBlastEntity;
 import net.thirdlife.iterrpg.client.model.Modelaetherbolt;
 
 import net.minecraft.util.Mth;

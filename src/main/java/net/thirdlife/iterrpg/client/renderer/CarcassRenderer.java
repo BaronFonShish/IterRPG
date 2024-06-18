@@ -1,9 +1,9 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.procedures.CarcassReturnInjuredProcedure;
-import net.thirdlife.iterrpg.procedures.CarcassReturnArmoredProcedure;
-import net.thirdlife.iterrpg.entity.CarcassEntity;
+import net.thirdlife.iterrpg.common.procedures.CarcassReturnInjuredProcedure;
+import net.thirdlife.iterrpg.common.procedures.CarcassReturnArmoredProcedure;
+import net.thirdlife.iterrpg.common.entity.CarcassEntity;
 import net.thirdlife.iterrpg.client.model.Modelcarcass;
 
 import net.minecraft.world.level.Level;

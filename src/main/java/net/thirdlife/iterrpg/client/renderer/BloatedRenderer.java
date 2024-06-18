@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.BloatedEntity;
+import net.thirdlife.iterrpg.common.entity.BloatedEntity;
 import net.thirdlife.iterrpg.client.model.Modelbloated;
 
 import net.minecraft.resources.ResourceLocation;

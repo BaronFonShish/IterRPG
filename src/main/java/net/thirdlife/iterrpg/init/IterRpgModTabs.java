@@ -20,7 +20,7 @@ import net.minecraft.core.registries.Registries;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IterRpgModTabs {
-	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IterRpgMod.MODID);
+	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IterRpgMod.MOD_ID);
 	public static final RegistryObject<CreativeModeTab> ITER_MAGIC = REGISTRY.register("iter_magic",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.iter_rpg.iter_magic")).icon(() -> new ItemStack(IterRpgModItems.SPELL_ETHERBOLT.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(IterRpgModItems.SPELL_BOOK.get());

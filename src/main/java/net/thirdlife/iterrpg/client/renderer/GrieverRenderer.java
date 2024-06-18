@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.GrieverEntity;
+import net.thirdlife.iterrpg.common.entity.GrieverEntity;
 import net.thirdlife.iterrpg.client.model.Modelgriever;
 
 import net.minecraft.resources.ResourceLocation;

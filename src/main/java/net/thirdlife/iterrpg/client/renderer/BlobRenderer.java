@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.BlobEntity;
+import net.thirdlife.iterrpg.common.entity.BlobEntity;
 import net.thirdlife.iterrpg.client.model.Modelblob;
 
 import net.minecraft.resources.ResourceLocation;

@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.VoidPortalEntity;
+import net.thirdlife.iterrpg.common.entity.VoidPortalEntity;
 import net.thirdlife.iterrpg.client.model.Modelvoid_portal;
 
 import net.minecraft.resources.ResourceLocation;

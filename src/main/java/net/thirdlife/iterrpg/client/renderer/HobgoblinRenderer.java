@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.HobgoblinEntity;
+import net.thirdlife.iterrpg.common.entity.HobgoblinEntity;
 import net.thirdlife.iterrpg.client.model.ModelHobGoblin;
 
 import net.minecraft.resources.ResourceLocation;

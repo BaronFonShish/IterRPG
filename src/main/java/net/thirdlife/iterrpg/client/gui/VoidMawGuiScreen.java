@@ -1,9 +1,9 @@
 package net.thirdlife.iterrpg.client.gui;
 
-import net.thirdlife.iterrpg.world.inventory.VoidMawGuiMenu;
-import net.thirdlife.iterrpg.procedures.VoidMawNotEnoughProcedure;
-import net.thirdlife.iterrpg.procedures.VoidMawEnoughConditionProcedure;
-import net.thirdlife.iterrpg.network.VoidMawGuiButtonMessage;
+import net.thirdlife.iterrpg.common.world.inventory.VoidMawGuiMenu;
+import net.thirdlife.iterrpg.common.procedures.VoidMawNotEnoughProcedure;
+import net.thirdlife.iterrpg.common.procedures.VoidMawEnoughConditionProcedure;
+import net.thirdlife.iterrpg.common.network.VoidMawGuiButtonMessage;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraft.world.level.Level;

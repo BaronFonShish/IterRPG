@@ -3,9 +3,9 @@ package net.thirdlife.iterrpg.client.screens;
 
 import org.checkerframework.checker.units.qual.h;
 
-import net.thirdlife.iterrpg.procedures.ReturnDamageRecievedProcedure;
-import net.thirdlife.iterrpg.procedures.ReturnDamageDealtProcedure;
-import net.thirdlife.iterrpg.procedures.ReturnCallensEquippedProcedure;
+import net.thirdlife.iterrpg.common.procedures.ReturnDamageRecievedProcedure;
+import net.thirdlife.iterrpg.common.procedures.ReturnDamageDealtProcedure;
+import net.thirdlife.iterrpg.common.procedures.ReturnCallensEquippedProcedure;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

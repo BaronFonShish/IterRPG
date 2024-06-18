@@ -4,8 +4,8 @@ package net.thirdlife.iterrpg.client.renderer;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 
-import net.thirdlife.iterrpg.entity.model.WaterElementalModel;
-import net.thirdlife.iterrpg.entity.WaterElementalEntity;
+import net.thirdlife.iterrpg.common.entity.model.WaterElementalModel;
+import net.thirdlife.iterrpg.common.entity.WaterElementalEntity;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

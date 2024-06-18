@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.EarthElementalEntity;
+import net.thirdlife.iterrpg.common.entity.EarthElementalEntity;
 import net.thirdlife.iterrpg.client.model.Modelearth_elemental;
 
 import net.minecraft.resources.ResourceLocation;

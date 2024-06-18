@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.SolsphereEntity;
+import net.thirdlife.iterrpg.common.entity.SolsphereEntity;
 import net.thirdlife.iterrpg.client.model.Modelsolsphere;
 
 import net.minecraft.resources.ResourceLocation;

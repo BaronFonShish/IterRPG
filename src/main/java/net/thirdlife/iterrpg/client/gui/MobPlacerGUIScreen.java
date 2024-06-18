@@ -1,9 +1,9 @@
 package net.thirdlife.iterrpg.client.gui;
 
-import net.thirdlife.iterrpg.world.inventory.MobPlacerGUIMenu;
-import net.thirdlife.iterrpg.procedures.MobPlacerModelProviderProcedure;
-import net.thirdlife.iterrpg.procedures.MobPlacerCoordinatesReturnProcedure;
-import net.thirdlife.iterrpg.network.MobPlacerGUIButtonMessage;
+import net.thirdlife.iterrpg.common.world.inventory.MobPlacerGUIMenu;
+import net.thirdlife.iterrpg.common.procedures.MobPlacerModelProviderProcedure;
+import net.thirdlife.iterrpg.common.procedures.MobPlacerCoordinatesReturnProcedure;
+import net.thirdlife.iterrpg.common.network.MobPlacerGUIButtonMessage;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraft.world.level.Level;

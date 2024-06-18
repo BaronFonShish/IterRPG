@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.DwarfEntity;
+import net.thirdlife.iterrpg.common.entity.DwarfEntity;
 import net.thirdlife.iterrpg.client.model.Modeldwarf;
 
 import net.minecraft.resources.ResourceLocation;

@@ -1,6 +1,6 @@
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.SeaArrowEntity;
+import net.thirdlife.iterrpg.common.entity.SeaArrowEntity;
 import net.thirdlife.iterrpg.client.model.Modelsea_arrow;
 
 import net.minecraft.util.Mth;

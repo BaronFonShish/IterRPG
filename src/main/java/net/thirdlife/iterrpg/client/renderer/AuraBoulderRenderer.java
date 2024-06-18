@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.AuraBoulderEntity;
+import net.thirdlife.iterrpg.common.entity.AuraBoulderEntity;
 import net.thirdlife.iterrpg.client.model.Modelaura_boulder;
 
 import net.minecraft.resources.ResourceLocation;

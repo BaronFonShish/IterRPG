@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-@Mod.EventBusSubscriber(modid = IterRpgMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = IterRpgMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IterRpgModConfigs {
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {

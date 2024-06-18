@@ -1,6 +1,6 @@
 package net.thirdlife.iterrpg.client.gui;
 
-import net.thirdlife.iterrpg.world.inventory.SpellbookGuiMenu;
+import net.thirdlife.iterrpg.common.world.inventory.SpellbookGuiMenu;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;

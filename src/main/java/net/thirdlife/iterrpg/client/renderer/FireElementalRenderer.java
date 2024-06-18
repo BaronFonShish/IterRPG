@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.FireElementalEntity;
+import net.thirdlife.iterrpg.common.entity.FireElementalEntity;
 import net.thirdlife.iterrpg.client.model.Modelfire_elemental;
 
 import net.minecraft.resources.ResourceLocation;

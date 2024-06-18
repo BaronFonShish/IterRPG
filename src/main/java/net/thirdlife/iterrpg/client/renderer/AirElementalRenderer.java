@@ -4,8 +4,8 @@ package net.thirdlife.iterrpg.client.renderer;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 
-import net.thirdlife.iterrpg.entity.model.AirElementalModel;
-import net.thirdlife.iterrpg.entity.AirElementalEntity;
+import net.thirdlife.iterrpg.common.entity.model.AirElementalModel;
+import net.thirdlife.iterrpg.common.entity.AirElementalEntity;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

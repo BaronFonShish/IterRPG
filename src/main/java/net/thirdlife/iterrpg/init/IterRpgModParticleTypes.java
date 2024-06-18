@@ -14,7 +14,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleType;
 
 public class IterRpgModParticleTypes {
-	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, IterRpgMod.MODID);
+	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, IterRpgMod.MOD_ID);
 	public static final RegistryObject<SimpleParticleType> ARCANE_PARTICLE = REGISTRY.register("arcane_particle", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> WEEPER_TEAR_PARTICLE = REGISTRY.register("weeper_tear_particle", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> ELEMENTAL_DROPLET = REGISTRY.register("elemental_droplet", () -> new SimpleParticleType(false));

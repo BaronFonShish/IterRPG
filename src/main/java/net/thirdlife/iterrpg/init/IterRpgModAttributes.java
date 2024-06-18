@@ -22,9 +22,9 @@ import net.minecraft.world.entity.EntityType;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IterRpgModAttributes {
-	public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, IterRpgMod.MODID);
-	public static final RegistryObject<Attribute> BASEMANAREGENERATION = ATTRIBUTES.register("base_mana_regeneration", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".base_mana_regeneration", 0.025, 0, 10000)).setSyncable(true));
-	public static final RegistryObject<Attribute> BASEMANACAPACITY = ATTRIBUTES.register("base_mana_capacity", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".base_mana_capacity", 50, 0, 10000)).setSyncable(true));
+	public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, IterRpgMod.MOD_ID);
+	public static final RegistryObject<Attribute> BASEMANAREGENERATION = ATTRIBUTES.register("base_mana_regeneration", () -> (new RangedAttribute("attribute." + IterRpgMod.MOD_ID + ".base_mana_regeneration", 0.025, 0, 10000)).setSyncable(true));
+	public static final RegistryObject<Attribute> BASEMANACAPACITY = ATTRIBUTES.register("base_mana_capacity", () -> (new RangedAttribute("attribute." + IterRpgMod.MOD_ID + ".base_mana_capacity", 50, 0, 10000)).setSyncable(true));
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {

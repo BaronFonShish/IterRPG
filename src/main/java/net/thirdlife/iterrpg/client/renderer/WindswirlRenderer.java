@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.WindswirlEntity;
+import net.thirdlife.iterrpg.common.entity.WindswirlEntity;
 import net.thirdlife.iterrpg.client.model.Modelwindswirl;
 
 import net.minecraft.resources.ResourceLocation;

@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.SmallScallopEntity;
+import net.thirdlife.iterrpg.common.entity.SmallScallopEntity;
 import net.thirdlife.iterrpg.client.model.Modeltiny_scallop;
 
 import net.minecraft.resources.ResourceLocation;

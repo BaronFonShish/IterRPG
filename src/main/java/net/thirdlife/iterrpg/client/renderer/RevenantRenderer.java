@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.RevenantEntity;
+import net.thirdlife.iterrpg.common.entity.RevenantEntity;
 import net.thirdlife.iterrpg.client.model.Modelrevenant;
 
 import net.minecraft.resources.ResourceLocation;

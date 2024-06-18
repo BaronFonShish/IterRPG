@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.SpiderlingEntity;
+import net.thirdlife.iterrpg.common.entity.SpiderlingEntity;
 import net.thirdlife.iterrpg.client.model.Modelspider_hatchling;
 
 import net.minecraft.resources.ResourceLocation;

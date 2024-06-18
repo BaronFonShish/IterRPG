@@ -4,25 +4,25 @@
  */
 package net.thirdlife.iterrpg.init;
 
-import net.thirdlife.iterrpg.block.entity.VoidMawBlockEntity;
-import net.thirdlife.iterrpg.block.entity.VaseDecoBlockEntity;
-import net.thirdlife.iterrpg.block.entity.TwiffleBlockBlockEntity;
-import net.thirdlife.iterrpg.block.entity.TearCatcherBlockEntity;
-import net.thirdlife.iterrpg.block.entity.SpireSpawnerBlockEntity;
-import net.thirdlife.iterrpg.block.entity.SmallVaseDecoBlockEntity;
-import net.thirdlife.iterrpg.block.entity.SacredSaplingBlockEntity;
-import net.thirdlife.iterrpg.block.entity.RunicGrimstoneBlockEntity;
-import net.thirdlife.iterrpg.block.entity.RunicGrimstoneActiveBlockEntity;
-import net.thirdlife.iterrpg.block.entity.GunpowderBarrelBlockEntity;
-import net.thirdlife.iterrpg.block.entity.GrimaceTrapBlockEntity;
-import net.thirdlife.iterrpg.block.entity.GrimSoultrapBlockEntity;
-import net.thirdlife.iterrpg.block.entity.GrimLockerBlockEntity;
-import net.thirdlife.iterrpg.block.entity.GrandSpireSpawnerBlockEntity;
-import net.thirdlife.iterrpg.block.entity.GoblinSpawnerBlockEntity;
-import net.thirdlife.iterrpg.block.entity.GiantPhantomChainBlockEntity;
-import net.thirdlife.iterrpg.block.entity.DrillBlockEntity;
-import net.thirdlife.iterrpg.block.entity.BigVaseDecoBlockEntity;
-import net.thirdlife.iterrpg.block.entity.ArcaneFlowerSeedsBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.VoidMawBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.VaseDecoBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.TwiffleBlockBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.TearCatcherBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.SpireSpawnerBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.SmallVaseDecoBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.SacredSaplingBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.RunicGrimstoneBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.RunicGrimstoneActiveBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.GunpowderBarrelBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.GrimaceTrapBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.GrimSoultrapBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.GrimLockerBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.GrandSpireSpawnerBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.GoblinSpawnerBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.GiantPhantomChainBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.DrillBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.BigVaseDecoBlockEntity;
+import net.thirdlife.iterrpg.common.block.entity.ArcaneFlowerSeedsBlockEntity;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -33,7 +33,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 public class IterRpgModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, IterRpgMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, IterRpgMod.MOD_ID);
 	public static final RegistryObject<BlockEntityType<?>> ARCANE_FLOWER_SEEDS = register("arcane_flower_seeds", IterRpgModBlocks.ARCANE_FLOWER_SEEDS, ArcaneFlowerSeedsBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> TWIFFLE_BLOCK = register("twiffle_block", IterRpgModBlocks.TWIFFLE_BLOCK, TwiffleBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SMALL_VASE_DECO = register("small_vase_deco", IterRpgModBlocks.SMALL_VASE_DECO, SmallVaseDecoBlockEntity::new);

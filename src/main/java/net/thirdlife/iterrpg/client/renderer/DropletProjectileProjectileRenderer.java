@@ -1,6 +1,6 @@
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.DropletProjectileProjectileEntity;
+import net.thirdlife.iterrpg.common.entity.DropletProjectileProjectileEntity;
 import net.thirdlife.iterrpg.client.model.Modeldroplet_projectile;
 
 import net.minecraft.util.Mth;

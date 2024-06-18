@@ -1,8 +1,8 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.procedures.ScallopPearlConditionProcedure;
-import net.thirdlife.iterrpg.entity.ScallopEntity;
+import net.thirdlife.iterrpg.common.procedures.ScallopPearlConditionProcedure;
+import net.thirdlife.iterrpg.common.entity.ScallopEntity;
 import net.thirdlife.iterrpg.client.model.Modelmussel;
 
 import net.minecraft.world.level.Level;

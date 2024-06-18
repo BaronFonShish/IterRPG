@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.PeeperEntity;
+import net.thirdlife.iterrpg.common.entity.PeeperEntity;
 import net.thirdlife.iterrpg.client.model.Modelpeeper;
 
 import net.minecraft.resources.ResourceLocation;

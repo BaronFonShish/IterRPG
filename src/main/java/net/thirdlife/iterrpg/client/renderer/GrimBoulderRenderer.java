@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.GrimBoulderEntity;
+import net.thirdlife.iterrpg.common.entity.GrimBoulderEntity;
 import net.thirdlife.iterrpg.client.model.Modelgrim_boulder;
 
 import net.minecraft.resources.ResourceLocation;

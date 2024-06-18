@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.ChainHandleEntity;
+import net.thirdlife.iterrpg.common.entity.ChainHandleEntity;
 import net.thirdlife.iterrpg.client.model.Modelchain_handle;
 
 import net.minecraft.resources.ResourceLocation;

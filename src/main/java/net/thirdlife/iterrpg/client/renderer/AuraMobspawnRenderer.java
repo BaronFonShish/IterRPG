@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.AuraMobspawnEntity;
+import net.thirdlife.iterrpg.common.entity.AuraMobspawnEntity;
 import net.thirdlife.iterrpg.client.model.Modelaura_mobspawn;
 
 import net.minecraft.resources.ResourceLocation;

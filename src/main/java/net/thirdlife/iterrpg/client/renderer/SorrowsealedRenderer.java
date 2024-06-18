@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.SorrowsealedEntity;
+import net.thirdlife.iterrpg.common.entity.SorrowsealedEntity;
 import net.thirdlife.iterrpg.client.model.Modelsorrowsealed;
 
 import net.minecraft.resources.ResourceLocation;

@@ -1,17 +1,17 @@
 package net.thirdlife.iterrpg.client.gui;
 
-import net.thirdlife.iterrpg.world.inventory.ArcanistTableGuiMenu;
-import net.thirdlife.iterrpg.procedures.SpellUpgradeConditionProcedure;
-import net.thirdlife.iterrpg.procedures.SpellLapisConditionProcedure;
-import net.thirdlife.iterrpg.procedures.SpellEyeConditionProcedure;
-import net.thirdlife.iterrpg.procedures.SpellEssenceConditionProcedure;
-import net.thirdlife.iterrpg.procedures.SpellDiamondConditionProcedure;
-import net.thirdlife.iterrpg.procedures.SpellCopyConditionProcedure;
-import net.thirdlife.iterrpg.procedures.Scroll1ConditionProcedure;
-import net.thirdlife.iterrpg.procedures.PaperinkConditionProcedure;
-import net.thirdlife.iterrpg.procedures.ArcanistTableButtonConditionReverseProcedure;
-import net.thirdlife.iterrpg.procedures.ArcanistTableButtonConditionProcedure;
-import net.thirdlife.iterrpg.network.ArcanistTableGuiButtonMessage;
+import net.thirdlife.iterrpg.common.world.inventory.ArcanistTableGuiMenu;
+import net.thirdlife.iterrpg.common.procedures.SpellUpgradeConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.SpellLapisConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.SpellEyeConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.SpellEssenceConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.SpellDiamondConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.SpellCopyConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.Scroll1ConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.PaperinkConditionProcedure;
+import net.thirdlife.iterrpg.common.procedures.ArcanistTableButtonConditionReverseProcedure;
+import net.thirdlife.iterrpg.common.procedures.ArcanistTableButtonConditionProcedure;
+import net.thirdlife.iterrpg.common.network.ArcanistTableGuiButtonMessage;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraft.world.level.Level;

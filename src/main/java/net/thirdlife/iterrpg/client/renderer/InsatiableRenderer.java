@@ -4,8 +4,8 @@ package net.thirdlife.iterrpg.client.renderer;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 
-import net.thirdlife.iterrpg.entity.model.InsatiableModel;
-import net.thirdlife.iterrpg.entity.InsatiableEntity;
+import net.thirdlife.iterrpg.common.entity.model.InsatiableModel;
+import net.thirdlife.iterrpg.common.entity.InsatiableEntity;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

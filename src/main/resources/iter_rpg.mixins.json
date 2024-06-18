@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.thirdlife.iterrpg.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "pyromancer.refmap.json",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+  ]
+}

@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.MudkinEntity;
+import net.thirdlife.iterrpg.common.entity.MudkinEntity;
 import net.thirdlife.iterrpg.client.model.Modelmudkin;
 
 import net.minecraft.resources.ResourceLocation;

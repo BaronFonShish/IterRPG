@@ -3,19 +3,19 @@ package net.thirdlife.iterrpg.client.screens;
 
 import org.checkerframework.checker.units.qual.h;
 
-import net.thirdlife.iterrpg.procedures.ReturnSpellNumberProcedure;
-import net.thirdlife.iterrpg.procedures.ManaReturnProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell9DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell8DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell7DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell6DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell5DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell4DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell3DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell2DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell1DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.ManaCell10DisplayProcedure;
-import net.thirdlife.iterrpg.procedures.MageStatusReturnProcedure;
+import net.thirdlife.iterrpg.common.procedures.ReturnSpellNumberProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaReturnProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell9DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell8DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell7DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell6DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell5DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell4DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell3DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell2DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell1DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.ManaCell10DisplayProcedure;
+import net.thirdlife.iterrpg.common.procedures.MageStatusReturnProcedure;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

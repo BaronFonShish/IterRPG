@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.ScabEntity;
+import net.thirdlife.iterrpg.common.entity.ScabEntity;
 import net.thirdlife.iterrpg.client.model.ModelScab;
 
 import net.minecraft.resources.ResourceLocation;

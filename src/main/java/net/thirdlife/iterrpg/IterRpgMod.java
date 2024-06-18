@@ -3,7 +3,7 @@ package net.thirdlife.iterrpg;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.thirdlife.iterrpg.world.features.StructureFeature;
+import net.thirdlife.iterrpg.common.world.features.StructureFeature;
 import net.thirdlife.iterrpg.init.IterRpgModTabs;
 import net.thirdlife.iterrpg.init.IterRpgModSounds;
 import net.thirdlife.iterrpg.init.IterRpgModParticleTypes;
@@ -42,7 +42,7 @@ import java.util.AbstractMap;
 @Mod("iter_rpg")
 public class IterRpgMod {
 	public static final Logger LOGGER = LogManager.getLogger(IterRpgMod.class);
-	public static final String MODID = "iter_rpg";
+	public static final String MOD_ID = "iter_rpg";
 
 	public IterRpgMod() {
 		MinecraftForge.EVENT_BUS.register(this);
@@ -64,7 +64,7 @@ public class IterRpgMod {
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
+	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MOD_ID, MOD_ID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	private static int messageID = 0;
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {

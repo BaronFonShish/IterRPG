@@ -1,6 +1,6 @@
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.JavelinProjectileEntity;
+import net.thirdlife.iterrpg.common.entity.JavelinProjectileEntity;
 import net.thirdlife.iterrpg.client.model.Modelgobjavelin_projectile;
 
 import net.minecraft.util.Mth;

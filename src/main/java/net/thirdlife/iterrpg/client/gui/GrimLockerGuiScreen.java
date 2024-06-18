@@ -1,11 +1,11 @@
 package net.thirdlife.iterrpg.client.gui;
 
-import net.thirdlife.iterrpg.world.inventory.GrimLockerGuiMenu;
-import net.thirdlife.iterrpg.procedures.GrimLockerArrow4Procedure;
-import net.thirdlife.iterrpg.procedures.GrimLockerArrow3Procedure;
-import net.thirdlife.iterrpg.procedures.GrimLockerArrow2Procedure;
-import net.thirdlife.iterrpg.procedures.GrimLockerArrow1Procedure;
-import net.thirdlife.iterrpg.procedures.GrimLockerArrow0Procedure;
+import net.thirdlife.iterrpg.common.world.inventory.GrimLockerGuiMenu;
+import net.thirdlife.iterrpg.common.procedures.GrimLockerArrow4Procedure;
+import net.thirdlife.iterrpg.common.procedures.GrimLockerArrow3Procedure;
+import net.thirdlife.iterrpg.common.procedures.GrimLockerArrow2Procedure;
+import net.thirdlife.iterrpg.common.procedures.GrimLockerArrow1Procedure;
+import net.thirdlife.iterrpg.common.procedures.GrimLockerArrow0Procedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;

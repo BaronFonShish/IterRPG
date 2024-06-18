@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.GoblinEntity;
+import net.thirdlife.iterrpg.common.entity.GoblinEntity;
 import net.thirdlife.iterrpg.client.model.Modelgoblin;
 
 import net.minecraft.resources.ResourceLocation;

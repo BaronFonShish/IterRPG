@@ -4,10 +4,10 @@
  */
 package net.thirdlife.iterrpg.init;
 
-import net.thirdlife.iterrpg.potion.WrathOfTheDepthsMobEffect;
-import net.thirdlife.iterrpg.potion.IonizedMobEffect;
-import net.thirdlife.iterrpg.potion.CursedMobEffect;
-import net.thirdlife.iterrpg.potion.ArcaneConductionMobEffect;
+import net.thirdlife.iterrpg.common.potion.WrathOfTheDepthsMobEffect;
+import net.thirdlife.iterrpg.common.potion.IonizedMobEffect;
+import net.thirdlife.iterrpg.common.potion.CursedMobEffect;
+import net.thirdlife.iterrpg.common.potion.ArcaneConductionMobEffect;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -17,7 +17,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.effect.MobEffect;
 
 public class IterRpgModMobEffects {
-	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, IterRpgMod.MODID);
+	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, IterRpgMod.MOD_ID);
 	public static final RegistryObject<MobEffect> CURSED = REGISTRY.register("cursed", () -> new CursedMobEffect());
 	public static final RegistryObject<MobEffect> ARCANE_CONDUCTION = REGISTRY.register("arcane_conduction", () -> new ArcaneConductionMobEffect());
 	public static final RegistryObject<MobEffect> IONIZED = REGISTRY.register("ionized", () -> new IonizedMobEffect());

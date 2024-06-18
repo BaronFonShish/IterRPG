@@ -6,10 +6,10 @@ package net.thirdlife.iterrpg.init;
 
 import org.lwjgl.glfw.GLFW;
 
-import net.thirdlife.iterrpg.network.SpellScrollFMessage;
-import net.thirdlife.iterrpg.network.SpellScrollBMessage;
-import net.thirdlife.iterrpg.network.SetBonusToggleKeyMessage;
-import net.thirdlife.iterrpg.network.JumpKeybindMessage;
+import net.thirdlife.iterrpg.common.network.SpellScrollFMessage;
+import net.thirdlife.iterrpg.common.network.SpellScrollBMessage;
+import net.thirdlife.iterrpg.common.network.SetBonusToggleKeyMessage;
+import net.thirdlife.iterrpg.common.network.JumpKeybindMessage;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraftforge.fml.common.Mod;

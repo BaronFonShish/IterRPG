@@ -1,10 +1,10 @@
 package net.thirdlife.iterrpg.init;
 
-import net.thirdlife.iterrpg.entity.WaterElementalEntity;
-import net.thirdlife.iterrpg.entity.VoidElementalEntity;
-import net.thirdlife.iterrpg.entity.InsatiableEntity;
-import net.thirdlife.iterrpg.entity.FiendEntity;
-import net.thirdlife.iterrpg.entity.AirElementalEntity;
+import net.thirdlife.iterrpg.common.entity.WaterElementalEntity;
+import net.thirdlife.iterrpg.common.entity.VoidElementalEntity;
+import net.thirdlife.iterrpg.common.entity.InsatiableEntity;
+import net.thirdlife.iterrpg.common.entity.FiendEntity;
+import net.thirdlife.iterrpg.common.entity.AirElementalEntity;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

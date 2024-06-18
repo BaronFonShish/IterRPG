@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.GiantSpiderEntity;
+import net.thirdlife.iterrpg.common.entity.GiantSpiderEntity;
 import net.thirdlife.iterrpg.client.model.Modelgiant_spider;
 
 import net.minecraft.resources.ResourceLocation;

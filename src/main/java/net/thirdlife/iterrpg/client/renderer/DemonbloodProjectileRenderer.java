@@ -1,6 +1,6 @@
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.DemonbloodProjectileEntity;
+import net.thirdlife.iterrpg.common.entity.DemonbloodProjectileEntity;
 import net.thirdlife.iterrpg.client.model.Modelmarrow;
 
 import net.minecraft.util.Mth;

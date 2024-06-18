@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.GrimhookEntity;
+import net.thirdlife.iterrpg.common.entity.GrimhookEntity;
 import net.thirdlife.iterrpg.client.model.Modelgrimhook;
 
 import net.minecraft.resources.ResourceLocation;

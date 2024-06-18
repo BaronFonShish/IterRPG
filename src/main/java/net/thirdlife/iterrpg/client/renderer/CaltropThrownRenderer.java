@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.CaltropThrownEntity;
+import net.thirdlife.iterrpg.common.entity.CaltropThrownEntity;
 import net.thirdlife.iterrpg.client.model.Modelcaltrop;
 
 import net.minecraft.resources.ResourceLocation;

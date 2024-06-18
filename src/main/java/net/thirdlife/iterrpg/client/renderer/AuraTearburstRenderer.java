@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.AuraTearburstEntity;
+import net.thirdlife.iterrpg.common.entity.AuraTearburstEntity;
 import net.thirdlife.iterrpg.client.model.Modelaura_tearburst;
 
 import net.minecraft.resources.ResourceLocation;

@@ -1,7 +1,7 @@
 package net.thirdlife.iterrpg.client.gui;
 
-import net.thirdlife.iterrpg.world.inventory.ElementalArmorModeSwitchGuiMenu;
-import net.thirdlife.iterrpg.network.ElementalArmorModeSwitchGuiButtonMessage;
+import net.thirdlife.iterrpg.common.world.inventory.ElementalArmorModeSwitchGuiMenu;
+import net.thirdlife.iterrpg.common.network.ElementalArmorModeSwitchGuiButtonMessage;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraft.world.level.Level;

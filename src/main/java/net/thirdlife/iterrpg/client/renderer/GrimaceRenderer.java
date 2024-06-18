@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.GrimaceEntity;
+import net.thirdlife.iterrpg.common.entity.GrimaceEntity;
 import net.thirdlife.iterrpg.client.model.Modelgrimace;
 
 import net.minecraft.resources.ResourceLocation;

@@ -1,8 +1,8 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.procedures.HarvestReturnScaleProcedure;
-import net.thirdlife.iterrpg.entity.HarvestSpiralEntity;
+import net.thirdlife.iterrpg.common.procedures.HarvestReturnScaleProcedure;
+import net.thirdlife.iterrpg.common.entity.HarvestSpiralEntity;
 import net.thirdlife.iterrpg.client.model.Modelharvest_spiral;
 
 import net.minecraft.world.level.Level;

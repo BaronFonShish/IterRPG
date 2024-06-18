@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.client.renderer;
 
-import net.thirdlife.iterrpg.entity.AuraSoulfireEntity;
+import net.thirdlife.iterrpg.common.entity.AuraSoulfireEntity;
 import net.thirdlife.iterrpg.client.model.Modelaura_soulfire;
 
 import net.minecraft.resources.ResourceLocation;
