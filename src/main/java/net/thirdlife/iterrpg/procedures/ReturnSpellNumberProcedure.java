@@ -44,14 +44,19 @@ public class ReturnSpellNumberProcedure {
 				spellname = Component.translatable("iterpg.spell.attract").getString();
 			} else if (spell.getItem() == IterRpgModItems.SPELL_ETHERBLAST.get()) {
 				spellname = Component.translatable("iterpg.spell.etherblast").getString();
+			} else if (spell.getItem() == IterRpgModItems.SPELL_EMBERS.get()) {
+				spellname = Component.translatable("iterpg.spell.embers").getString();
+			}
+			if (spell.getItem() == IterRpgModItems.SPELL_DROPLETS.get()) {
+				spellname = Component.translatable("iterpg.spell.droplets").getString();
 			}
 		}
 		for (int index0 = 0; index0 < (int) spell.getOrCreateTag().getDouble("level"); index0++) {
 			spellname = spellname + "*";
 		}
-		if (entity instanceof Player _plrCldCheck18 && _plrCldCheck18.getCooldowns().isOnCooldown(spell.getItem())) {
+		if (entity instanceof Player _plrCldCheck22 && _plrCldCheck22.getCooldowns().isOnCooldown(spell.getItem())) {
 			return Math.round((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SelectedSpell) + ": " + spellname
-					+ (" [" + Math.round(entity instanceof Player _plrCldRem19 ? _plrCldRem19.getCooldowns().getCooldownPercent(spell.getItem(), 0f) * 100 : 0) + "]");
+					+ (" [" + Math.round(entity instanceof Player _plrCldRem23 ? _plrCldRem23.getCooldowns().getCooldownPercent(spell.getItem(), 0f) * 100 : 0) + "]");
 		}
 		return Math.round((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SelectedSpell) + ": " + spellname;
 	}

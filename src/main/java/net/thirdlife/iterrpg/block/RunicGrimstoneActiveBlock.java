@@ -6,7 +6,6 @@ import net.thirdlife.iterrpg.init.IterRpgModBlocks;
 import net.thirdlife.iterrpg.block.entity.RunicGrimstoneActiveBlockEntity;
 
 import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -24,9 +23,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
-
-import java.util.List;
-import java.util.Collections;
 
 public class RunicGrimstoneActiveBlock extends Block implements EntityBlock {
 	public RunicGrimstoneActiveBlock() {
@@ -48,14 +44,6 @@ public class RunicGrimstoneActiveBlock extends Block implements EntityBlock {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(IterRpgModBlocks.GRIMSTONE.get()));
 	}
 
 	@Override

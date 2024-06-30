@@ -22,7 +22,7 @@ public class SpellEtherboltItem extends Item {
 		list.add(Component.literal(" "));
 		list.add(Component.translatable("iterpg.spell.domain.arcane"));
 		list.add(Component.translatable("iterpg.spell.level.basic"));
-		list.add(Component.translatable("terpg.spell.etherbolt.damage"));
+		list.add(Component.translatable("iterpg.spell.etherbolt.damage"));
 		list.add(Component.translatable("iterpg.spell.mana.2"));
 		list.add(Component.translatable("iterpg.spell.desc.etherbolt"));
 	}

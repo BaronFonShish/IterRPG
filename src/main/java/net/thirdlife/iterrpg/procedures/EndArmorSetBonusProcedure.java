@@ -58,7 +58,7 @@ public class EndArmorSetBonusProcedure {
 			amount = 0;
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(20 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(30 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (amount < 1 && entityiterator instanceof Monster && !(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
 							&& !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage"))) && !(entity == entityiterator)) {
@@ -90,7 +90,7 @@ public class EndArmorSetBonusProcedure {
 							}
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.PORTAL_SPARK_PARTICLE.get()), (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 16, 0, 0, 0, 0);
-							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 6);
+							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 4);
 							for (int index2 = 0; index2 < 16; index2++) {
 								if (world instanceof ServerLevel _level)
 									_level.sendParticles(ParticleTypes.DRAGON_BREATH, (entity.getX() + dist * xdir), (entity.getY() + offset + ydir * dist), (entity.getZ() + dist * zdir), 1, 0.1, 0.1, 0.1,

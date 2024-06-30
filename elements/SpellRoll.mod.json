@@ -16,7 +16,7 @@
             "item": {
               "value": "CUSTOM:SpellCultivate"
             },
-            "weight": 10,
+            "weight": 40,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -30,7 +30,7 @@
             "item": {
               "value": "CUSTOM:SpellSplashes"
             },
-            "weight": 10,
+            "weight": 40,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -44,7 +44,7 @@
             "item": {
               "value": "CUSTOM:SpellGust"
             },
-            "weight": 10,
+            "weight": 40,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -58,7 +58,7 @@
             "item": {
               "value": "CUSTOM:SpellIgnite"
             },
-            "weight": 10,
+            "weight": 40,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -72,7 +72,7 @@
             "item": {
               "value": "CUSTOM:SpellAttract"
             },
-            "weight": 10,
+            "weight": 40,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -86,7 +86,7 @@
             "item": {
               "value": "CUSTOM:SpellEtherbolt"
             },
-            "weight": 24,
+            "weight": 60,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -100,7 +100,21 @@
             "item": {
               "value": "CUSTOM:SpellEtherblast"
             },
-            "weight": 8,
+            "weight": 20,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:SpellEmbers"
+            },
+            "weight": 32,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

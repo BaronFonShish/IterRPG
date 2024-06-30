@@ -96,6 +96,21 @@ public class SpellCastBaseProcedure {
 					cast = true;
 					CultivateCastProcedure.execute(world, x, y, z, entity);
 				}
+			} else if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_EMBERS.get()) {
+				cooldown = 25 * WandReturnCooldownProcedure.execute(entity);
+				mana = 2 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					EmbersCastProcedure.execute(world, x, y, z, entity);
+				}
+			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_DROPLETS.get()) {
+				cooldown = 10 * WandReturnCooldownProcedure.execute(entity);
+				mana = 1 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					DropletsCastProcedure.execute(world, x, y, z, entity);
+				}
 			}
 			if (cast) {
 				if (entity instanceof Player _player)

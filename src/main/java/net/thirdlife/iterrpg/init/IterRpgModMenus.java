@@ -9,6 +9,7 @@ import net.thirdlife.iterrpg.world.inventory.SpellbookGuiMenu;
 import net.thirdlife.iterrpg.world.inventory.MobPlacerGUIMenu;
 import net.thirdlife.iterrpg.world.inventory.GrimLockerGuiMenu;
 import net.thirdlife.iterrpg.world.inventory.ElementalArmorModeSwitchGuiMenu;
+import net.thirdlife.iterrpg.world.inventory.CoinPouchGuiMenu;
 import net.thirdlife.iterrpg.world.inventory.ArcanistTableGuiMenu;
 import net.thirdlife.iterrpg.IterRpgMod;
 
@@ -27,4 +28,5 @@ public class IterRpgModMenus {
 	public static final RegistryObject<MenuType<VoidMawGuiMenu>> VOID_MAW_GUI = REGISTRY.register("void_maw_gui", () -> IForgeMenuType.create(VoidMawGuiMenu::new));
 	public static final RegistryObject<MenuType<ArcanistTableGuiMenu>> ARCANIST_TABLE_GUI = REGISTRY.register("arcanist_table_gui", () -> IForgeMenuType.create(ArcanistTableGuiMenu::new));
 	public static final RegistryObject<MenuType<ElementalArmorModeSwitchGuiMenu>> ELEMENTAL_ARMOR_MODE_SWITCH_GUI = REGISTRY.register("elemental_armor_mode_switch_gui", () -> IForgeMenuType.create(ElementalArmorModeSwitchGuiMenu::new));
+	public static final RegistryObject<MenuType<CoinPouchGuiMenu>> COIN_POUCH_GUI = REGISTRY.register("coin_pouch_gui", () -> IForgeMenuType.create(CoinPouchGuiMenu::new));
 }

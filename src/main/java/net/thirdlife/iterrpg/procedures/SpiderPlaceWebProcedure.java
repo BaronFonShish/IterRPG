@@ -4,6 +4,7 @@ import net.thirdlife.iterrpg.init.IterRpgModBlocks;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -21,6 +22,8 @@ public class SpiderPlaceWebProcedure {
 		double decideblock = 0;
 		entity.getPersistentData().putDouble("tileplace", (entity.getPersistentData().getDouble("tileplace") + 1));
 		entity.getPersistentData().putDouble("timer", (800 - entity.getPersistentData().getDouble("cocooncharge")));
+		if (entity instanceof Spider _spider)
+			_spider.setClimbing(true);
 		if (entity.getPersistentData().getDouble("tileplace") >= entity.getPersistentData().getDouble("timer")) {
 			xplace = Mth.nextInt(RandomSource.create(), -2, 2);
 			yplace = Mth.nextInt(RandomSource.create(), -1, 0);

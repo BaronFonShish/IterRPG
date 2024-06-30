@@ -9,6 +9,7 @@ import net.thirdlife.iterrpg.client.gui.SpellbookGuiScreen;
 import net.thirdlife.iterrpg.client.gui.MobPlacerGUIScreen;
 import net.thirdlife.iterrpg.client.gui.GrimLockerGuiScreen;
 import net.thirdlife.iterrpg.client.gui.ElementalArmorModeSwitchGuiScreen;
+import net.thirdlife.iterrpg.client.gui.CoinPouchGuiScreen;
 import net.thirdlife.iterrpg.client.gui.ArcanistTableGuiScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -29,6 +30,7 @@ public class IterRpgModScreens {
 			MenuScreens.register(IterRpgModMenus.VOID_MAW_GUI.get(), VoidMawGuiScreen::new);
 			MenuScreens.register(IterRpgModMenus.ARCANIST_TABLE_GUI.get(), ArcanistTableGuiScreen::new);
 			MenuScreens.register(IterRpgModMenus.ELEMENTAL_ARMOR_MODE_SWITCH_GUI.get(), ElementalArmorModeSwitchGuiScreen::new);
+			MenuScreens.register(IterRpgModMenus.COIN_POUCH_GUI.get(), CoinPouchGuiScreen::new);
 		});
 	}
 }

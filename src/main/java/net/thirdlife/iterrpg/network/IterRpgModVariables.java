@@ -87,6 +87,7 @@ public class IterRpgModVariables {
 			clone.AetherExhaustionDissipation = original.AetherExhaustionDissipation;
 			clone.MaxMana = original.MaxMana;
 			clone.ManaOverlay = original.ManaOverlay;
+			clone.PlayerCoinAmount = original.PlayerCoinAmount;
 			if (!event.isWasDeath()) {
 				clone.SpellItem = original.SpellItem;
 				clone.SpellbookSlot = original.SpellbookSlot;
@@ -381,6 +382,7 @@ public class IterRpgModVariables {
 		public double void_lure = 0;
 		public double DropLuck = 0;
 		public boolean ManaOverlay = false;
+		public double PlayerCoinAmount = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -415,6 +417,7 @@ public class IterRpgModVariables {
 			nbt.putDouble("void_lure", void_lure);
 			nbt.putDouble("DropLuck", DropLuck);
 			nbt.putBoolean("ManaOverlay", ManaOverlay);
+			nbt.putDouble("PlayerCoinAmount", PlayerCoinAmount);
 			return nbt;
 		}
 
@@ -446,6 +449,7 @@ public class IterRpgModVariables {
 			void_lure = nbt.getDouble("void_lure");
 			DropLuck = nbt.getDouble("DropLuck");
 			ManaOverlay = nbt.getBoolean("ManaOverlay");
+			PlayerCoinAmount = nbt.getDouble("PlayerCoinAmount");
 		}
 	}
 
@@ -496,6 +500,7 @@ public class IterRpgModVariables {
 					variables.void_lure = message.data.void_lure;
 					variables.DropLuck = message.data.DropLuck;
 					variables.ManaOverlay = message.data.ManaOverlay;
+					variables.PlayerCoinAmount = message.data.PlayerCoinAmount;
 				}
 			});
 			context.setPacketHandled(true);

@@ -27,7 +27,7 @@ import net.minecraft.core.BlockPos;
 
 public class GunpowderBarrelBlock extends Block implements EntityBlock {
 	public GunpowderBarrelBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f).noLootTable());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f));
 	}
 
 	@Override

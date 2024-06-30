@@ -1,0 +1,132 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 170,
+    "height": 157,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": -1,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "coin_pouch_gui_2.png",
+          "use1Xscale": false,
+          "x": 173,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "small_coin.png",
+          "use1Xscale": false,
+          "x": 198,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_64",
+          "text": {
+            "fixedValue": "64",
+            "name": "CoinAmountReturn"
+          },
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "x": 207,
+          "y": 75
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "CoinPouchCoinCondition"
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 57
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "CoinTaken"
+          },
+          "onStackTransfer": {
+            "name": "CoinTakenBulk"
+          },
+          "x": 189,
+          "y": 85
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "CoinPileTaken"
+          },
+          "onStackTransfer": {
+            "name": "CoinPileTakeBulk"
+          },
+          "x": 205,
+          "y": 85
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "CoinBlockTaken"
+          },
+          "onStackTransfer": {
+            "name": "CoinBlockTakeBulk"
+          },
+          "x": 221,
+          "y": 85
+        }
+      }
+    ],
+    "onTick": {
+      "name": "CoinPouchTick"
+    },
+    "gridSettings": {
+      "sx": 16,
+      "sy": 16,
+      "ox": 24,
+      "oy": 24,
+      "snapOnGrid": false
+    }
+  }
+}

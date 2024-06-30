@@ -123,5 +123,6 @@ public class IterRpgModEntityRenderers {
 		event.registerEntityRenderer(IterRpgModEntities.GRIMACE.get(), GrimaceRenderer::new);
 		event.registerEntityRenderer(IterRpgModEntities.SMALL_SCALLOP.get(), SmallScallopRenderer::new);
 		event.registerEntityRenderer(IterRpgModEntities.UNBOUND_SOUL.get(), UnboundSoulRenderer::new);
+		event.registerEntityRenderer(IterRpgModEntities.EMBER_PROJ.get(), ThrownItemRenderer::new);
 	}
 }

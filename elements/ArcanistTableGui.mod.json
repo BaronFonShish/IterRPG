@@ -136,70 +136,10 @@
       {
         "type": "image",
         "data": {
-          "image": "spell_copy.png",
+          "image": "spell_copy_new.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "SpellCopyCondition"
-          },
-          "x": 186,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "spell_upgrade_base.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "SpellUpgradeCondition"
-          },
-          "x": 186,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "spell_upgrade_lapis.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "SpellLapisCondition"
-          },
-          "x": 186,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "spell_upgrade_diamond.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "SpellDiamondCondition"
-          },
-          "x": 186,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "spell_upgrade_eye.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "SpellEyeCondition"
-          },
-          "x": 186,
-          "y": 80
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "spell_upgrade_essence.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "SpellEssenceCondition"
           },
           "x": 186,
           "y": 80

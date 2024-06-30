@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 2,
   "ingredient": {
-    "item": "iter_rpg:smooth_ice"
+    "item": "iter_rpg:deleted_mod_element"
   },
-  "result": "iter_rpg:smooth_ice_slab"
+  "result": "iter_rpg:deleted_mod_element"
 }

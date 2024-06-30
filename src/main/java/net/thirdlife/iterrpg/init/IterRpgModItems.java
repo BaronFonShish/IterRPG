@@ -33,12 +33,15 @@ import net.thirdlife.iterrpg.item.StarlessnessItem;
 import net.thirdlife.iterrpg.item.StarfishItem;
 import net.thirdlife.iterrpg.item.SpiderSilkItem;
 import net.thirdlife.iterrpg.item.SpiderMeadMugItem;
+import net.thirdlife.iterrpg.item.SpellZapItem;
 import net.thirdlife.iterrpg.item.SpellSplashesItem;
 import net.thirdlife.iterrpg.item.SpellIgniteItem;
 import net.thirdlife.iterrpg.item.SpellHealItem;
 import net.thirdlife.iterrpg.item.SpellGustItem;
 import net.thirdlife.iterrpg.item.SpellEtherboltItem;
 import net.thirdlife.iterrpg.item.SpellEtherblastItem;
+import net.thirdlife.iterrpg.item.SpellEmbersItem;
+import net.thirdlife.iterrpg.item.SpellDropletsItem;
 import net.thirdlife.iterrpg.item.SpellCultivateItem;
 import net.thirdlife.iterrpg.item.SpellBookItem;
 import net.thirdlife.iterrpg.item.SpellAttractItem;
@@ -110,6 +113,7 @@ import net.thirdlife.iterrpg.item.DeepsteelIngotItem;
 import net.thirdlife.iterrpg.item.DeepslateGeodeItem;
 import net.thirdlife.iterrpg.item.CrystalTearItem;
 import net.thirdlife.iterrpg.item.CrescentItem;
+import net.thirdlife.iterrpg.item.CoinPouchItem;
 import net.thirdlife.iterrpg.item.CoinItem;
 import net.thirdlife.iterrpg.item.CaltropItem;
 import net.thirdlife.iterrpg.item.CalibratedLensItem;
@@ -439,6 +443,10 @@ public class IterRpgModItems {
 	public static final RegistryObject<Item> GRAVE_CROSS = block(IterRpgModBlocks.GRAVE_CROSS);
 	public static final RegistryObject<Item> ECTOPLASM = REGISTRY.register("ectoplasm", () -> new EctoplasmItem());
 	public static final RegistryObject<Item> OTHERWORDLY_INGOT = REGISTRY.register("otherwordly_ingot", () -> new OtherwordlyIngotItem());
+	public static final RegistryObject<Item> COIN_POUCH = REGISTRY.register("coin_pouch", () -> new CoinPouchItem());
+	public static final RegistryObject<Item> SPELL_EMBERS = REGISTRY.register("spell_embers", () -> new SpellEmbersItem());
+	public static final RegistryObject<Item> SPELL_DROPLETS = REGISTRY.register("spell_droplets", () -> new SpellDropletsItem());
+	public static final RegistryObject<Item> SPELL_ZAP = REGISTRY.register("spell_zap", () -> new SpellZapItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

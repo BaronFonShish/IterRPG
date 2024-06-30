@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "blaze"
+    "blaze",
+    "magma_cube",
+    "iter_rpg:fire_elemental"
   ]
 }

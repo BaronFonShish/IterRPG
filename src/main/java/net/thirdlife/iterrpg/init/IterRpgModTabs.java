@@ -23,19 +23,22 @@ public class IterRpgModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IterRpgMod.MODID);
 	public static final RegistryObject<CreativeModeTab> ITER_MAGIC = REGISTRY.register("iter_magic",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.iter_rpg.iter_magic")).icon(() -> new ItemStack(IterRpgModItems.SPELL_ETHERBOLT.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(IterRpgModBlocks.ARCANIST_TABLE.get().asItem());
+				tabData.accept(IterRpgModItems.GIST.get());
 				tabData.accept(IterRpgModItems.SPELL_BOOK.get());
 				tabData.accept(IterRpgModItems.AMETHYST_WAND.get());
+				tabData.accept(IterRpgModItems.UNIDENTIFIED_SPELL.get());
+				tabData.accept(IterRpgModItems.SPELL_ETHERBOLT.get());
+				tabData.accept(IterRpgModItems.SPELL_ETHERBLAST.get());
 				tabData.accept(IterRpgModItems.SPELL_CULTIVATE.get());
 				tabData.accept(IterRpgModItems.SPELL_SPLASHES.get());
 				tabData.accept(IterRpgModItems.SPELL_GUST.get());
 				tabData.accept(IterRpgModItems.SPELL_IGNITE.get());
+				tabData.accept(IterRpgModItems.SPELL_EMBERS.get());
 				tabData.accept(IterRpgModItems.SPELL_ATTRACT.get());
 				tabData.accept(IterRpgModItems.SPELL_HEAL.get());
-				tabData.accept(IterRpgModItems.UNIDENTIFIED_SPELL.get());
-				tabData.accept(IterRpgModBlocks.ARCANIST_TABLE.get().asItem());
-				tabData.accept(IterRpgModItems.SPELL_ETHERBOLT.get());
-				tabData.accept(IterRpgModItems.SPELL_ETHERBLAST.get());
-				tabData.accept(IterRpgModItems.GIST.get());
+				tabData.accept(IterRpgModItems.SPELL_DROPLETS.get());
+				tabData.accept(IterRpgModItems.SPELL_ZAP.get());
 			})
 
 					.build());
@@ -151,6 +154,7 @@ public class IterRpgModTabs {
 			tabData.accept(IterRpgModItems.BONB.get());
 			tabData.accept(IterRpgModItems.VERY_GOOD_AND_CHEERFUL_RAPIER.get());
 			tabData.accept(IterRpgModItems.CALTROP.get());
+			tabData.accept(IterRpgModItems.DEEPSTEEL_SWORD.get());
 			tabData.accept(IterRpgModItems.MAGMANUM_SWORD.get());
 			tabData.accept(IterRpgModItems.BLOODTHIRST.get());
 			tabData.accept(IterRpgModItems.BLOODBRANCH.get());
@@ -177,13 +181,12 @@ public class IterRpgModTabs {
 			tabData.accept(IterRpgModItems.MAGMANUM_ARMOR_CHESTPLATE.get());
 			tabData.accept(IterRpgModItems.MAGMANUM_ARMOR_LEGGINGS.get());
 			tabData.accept(IterRpgModItems.MAGMANUM_ARMOR_BOOTS.get());
-			tabData.accept(IterRpgModItems.AMETRINE_PENDANT.get());
-			tabData.accept(IterRpgModItems.ABYSSQUARTZ_CAPACITATOR.get());
-			tabData.accept(IterRpgModItems.DEEPSTEEL_SWORD.get());
 			tabData.accept(IterRpgModItems.ELEMENTAL_ARMOR_HELMET.get());
 			tabData.accept(IterRpgModItems.ELEMENTAL_ARMOR_CHESTPLATE.get());
 			tabData.accept(IterRpgModItems.ELEMENTAL_ARMOR_LEGGINGS.get());
 			tabData.accept(IterRpgModItems.ELEMENTAL_ARMOR_BOOTS.get());
+			tabData.accept(IterRpgModItems.AMETRINE_PENDANT.get());
+			tabData.accept(IterRpgModItems.ABYSSQUARTZ_CAPACITATOR.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(IterRpgModBlocks.GOBLIN_SPAWNER.get().asItem());
 			tabData.accept(IterRpgModItems.GOBLIN_SPAWN_EGG.get());
@@ -209,9 +212,7 @@ public class IterRpgModTabs {
 			tabData.accept(IterRpgModItems.FIEND_SPAWN_EGG.get());
 			tabData.accept(IterRpgModItems.REVENANT_SPAWN_EGG.get());
 			tabData.accept(IterRpgModItems.CARCASS_SPAWN_EGG.get());
-			tabData.accept(IterRpgModItems.DWARF_SPAWN_EGG.get());
 			tabData.accept(IterRpgModItems.SMALL_SCALLOP_SPAWN_EGG.get());
-			tabData.accept(IterRpgModItems.UNBOUND_SOUL_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(IterRpgModBlocks.ARCANE_FLOWER_SEEDS.get().asItem());
 			tabData.accept(IterRpgModItems.ABYSSQUARTZ_SHARD.get());
@@ -294,10 +295,10 @@ public class IterRpgModTabs {
 			tabData.accept(IterRpgModBlocks.TEAR_CATCHER.get().asItem());
 			tabData.accept(IterRpgModBlocks.HALFLOWER.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(IterRpgModItems.ETHERBLOOM_DECOCTION.get());
+			tabData.accept(IterRpgModItems.TWIFFLE_LUMP.get());
 			tabData.accept(IterRpgModItems.BEER_MUG.get());
 			tabData.accept(IterRpgModItems.SPIDER_MEAD_MUG.get());
-			tabData.accept(IterRpgModItems.TWIFFLE_LUMP.get());
-			tabData.accept(IterRpgModItems.ETHERBLOOM_DECOCTION.get());
 			tabData.accept(IterRpgModItems.WARPED_GOO.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(IterRpgModItems.AMETRINE_PICKAXE.get());
@@ -306,6 +307,7 @@ public class IterRpgModTabs {
 			tabData.accept(IterRpgModItems.AMETRINE_HOE.get());
 			tabData.accept(IterRpgModItems.MAGMANUM_PICKAXE.get());
 			tabData.accept(IterRpgModItems.DEEPSTEEL_PICKAXE.get());
+			tabData.accept(IterRpgModItems.COIN_POUCH.get());
 		}
 	}
 }

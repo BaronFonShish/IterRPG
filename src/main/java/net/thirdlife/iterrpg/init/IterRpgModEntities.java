@@ -39,6 +39,7 @@ import net.thirdlife.iterrpg.entity.ForestVinesEntity;
 import net.thirdlife.iterrpg.entity.FireballProjectileProjectileEntity;
 import net.thirdlife.iterrpg.entity.FireElementalEntity;
 import net.thirdlife.iterrpg.entity.FiendEntity;
+import net.thirdlife.iterrpg.entity.EmberProjEntity;
 import net.thirdlife.iterrpg.entity.EarthElementalEntity;
 import net.thirdlife.iterrpg.entity.EarthBoulderEntity;
 import net.thirdlife.iterrpg.entity.DwarfEntity;
@@ -232,6 +233,8 @@ public class IterRpgModEntities {
 					.sized(0.5f, 0.3f));
 	public static final RegistryObject<EntityType<UnboundSoulEntity>> UNBOUND_SOUL = register("unbound_soul", EntityType.Builder.<UnboundSoulEntity>of(UnboundSoulEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(UnboundSoulEntity::new).fireImmune().sized(0.7f, 1.3f));
+	public static final RegistryObject<EntityType<EmberProjEntity>> EMBER_PROJ = register("ember_proj",
+			EntityType.Builder.<EmberProjEntity>of(EmberProjEntity::new, MobCategory.MISC).setCustomClientFactory(EmberProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
