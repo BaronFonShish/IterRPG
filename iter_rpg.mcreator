@@ -3770,21 +3770,6 @@
       "path": "~/Mobs/MobProcedures"
     },
     {
-      "name": "PearlWandManaCheck",
-      "type": "procedure",
-      "sortid": 369,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pearl_wand_mana_check",
-      "metadata": {
-        "files": [
-          "src/main/java/net/thirdlife/iterrpg/procedures/PearlWandManaCheckProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Weapons/Magic/ManaProcedures"
-    },
-    {
       "name": "PearlWandProjectile",
       "type": "procedure",
       "sortid": 370,
@@ -3815,21 +3800,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "EnchantomeUsed",
-      "type": "procedure",
-      "sortid": 371,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enchantome_used",
-      "metadata": {
-        "files": [
-          "src/main/java/net/thirdlife/iterrpg/procedures/EnchantomeUsedProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Weapons/Magic/ManaProcedures"
     },
     {
       "name": "CompactedSorrowsealed",
@@ -6617,21 +6587,6 @@
       "path": "~/Mobs/MobProcedures"
     },
     {
-      "name": "MarkOfTepesUsed",
-      "type": "procedure",
-      "sortid": 464,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mark_of_tepes_used",
-      "metadata": {
-        "files": [
-          "src/main/java/net/thirdlife/iterrpg/procedures/MarkOfTepesUsedProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Weapons/Magic/ManaProcedures"
-    },
-    {
       "name": "SummonSpines8",
       "type": "procedure",
       "sortid": 465,
@@ -7330,21 +7285,6 @@
         ]
       },
       "path": "~/Armor/ArmorProcedures"
-    },
-    {
-      "name": "HydraUsed",
-      "type": "procedure",
-      "sortid": 488,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydra_used",
-      "metadata": {
-        "files": [
-          "src/main/java/net/thirdlife/iterrpg/procedures/HydraUsedProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Weapons/Magic/ManaProcedures"
     },
     {
       "name": "Blob",
@@ -23643,6 +23583,30 @@
         ]
       },
       "path": "~/Weapons/Magic/Spells"
+    },
+    {
+      "name": "ZapCast",
+      "type": "procedure",
+      "sortid": 1113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zap_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/thirdlife/iterrpg/procedures/ZapCastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Magic/Spells/SpellProcedures"
     }
   ],
   "variable_elements": [
@@ -24805,7 +24769,8 @@
       "CUSTOM:SpellEtherbolt",
       "CUSTOM:SpellEtherblast",
       "CUSTOM:SpellEmbers",
-      "CUSTOM:SpellDroplets"
+      "CUSTOM:SpellDroplets",
+      "CUSTOM:SpellZap"
     ],
     "ITEMS:mod:bonus_damage_stone": [
       "CUSTOM:StoneScythe"

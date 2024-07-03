@@ -10,6 +10,7 @@
     "iter_rpg:spell_etherbolt",
     "iter_rpg:spell_etherblast",
     "iter_rpg:spell_embers",
-    "iter_rpg:spell_droplets"
+    "iter_rpg:spell_droplets",
+    "iter_rpg:spell_zap"
   ]
 }

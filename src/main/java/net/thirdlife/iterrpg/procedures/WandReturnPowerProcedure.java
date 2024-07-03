@@ -32,8 +32,8 @@ public class WandReturnPowerProcedure {
 			power = 0.75;
 		}
 		if (EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get(), wand) != 0) {
-			power = power * (1 + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 25);
-			power = power + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 50;
+			power = power * (1 + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 50);
+			power = power + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 25;
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == IterRpgModItems.RAGGED_LEGGINGS.get()) {
 			power = power * 1.05;

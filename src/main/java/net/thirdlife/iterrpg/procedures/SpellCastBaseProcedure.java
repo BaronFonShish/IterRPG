@@ -112,6 +112,14 @@ public class SpellCastBaseProcedure {
 					DropletsCastProcedure.execute(world, x, y, z, entity);
 				}
 			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_ZAP.get()) {
+				cooldown = 20 * WandReturnCooldownProcedure.execute(entity);
+				mana = 2 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					ZapCastProcedure.execute(world, entity);
+				}
+			}
 			if (cast) {
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem(), (int) cooldown);

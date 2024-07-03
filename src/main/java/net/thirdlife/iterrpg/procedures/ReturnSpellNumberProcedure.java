@@ -50,13 +50,16 @@ public class ReturnSpellNumberProcedure {
 			if (spell.getItem() == IterRpgModItems.SPELL_DROPLETS.get()) {
 				spellname = Component.translatable("iterpg.spell.droplets").getString();
 			}
+			if (spell.getItem() == IterRpgModItems.SPELL_ZAP.get()) {
+				spellname = Component.translatable("iterpg.spell.zap").getString();
+			}
 		}
 		for (int index0 = 0; index0 < (int) spell.getOrCreateTag().getDouble("level"); index0++) {
 			spellname = spellname + "*";
 		}
-		if (entity instanceof Player _plrCldCheck22 && _plrCldCheck22.getCooldowns().isOnCooldown(spell.getItem())) {
+		if (entity instanceof Player _plrCldCheck24 && _plrCldCheck24.getCooldowns().isOnCooldown(spell.getItem())) {
 			return Math.round((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SelectedSpell) + ": " + spellname
-					+ (" [" + Math.round(entity instanceof Player _plrCldRem23 ? _plrCldRem23.getCooldowns().getCooldownPercent(spell.getItem(), 0f) * 100 : 0) + "]");
+					+ (" [" + Math.round(entity instanceof Player _plrCldRem25 ? _plrCldRem25.getCooldowns().getCooldownPercent(spell.getItem(), 0f) * 100 : 0) + "]");
 		}
 		return Math.round((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SelectedSpell) + ": " + spellname;
 	}
