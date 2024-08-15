@@ -31,7 +31,7 @@ public class BlobExplodeProcedure {
 		if (entity == null)
 			return;
 		double attacktype = 0;
-		entity.getPersistentData().putDouble("deathtime", 45);
+		entity.getPersistentData().putDouble("deathtime", 25);
 		if (entity.getPersistentData().getDouble("timer") >= entity.getPersistentData().getDouble("deathtime") && entity.getPersistentData().getDouble("timer") >= 2) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.BUBBLE_POP, x, y, z, 16, 0.5, 0.5, 0.5, 0.025);
@@ -55,7 +55,7 @@ public class BlobExplodeProcedure {
 						}
 					}.getArrow(projectileLevel, 1, 0);
 					_entityToSpawn.setPos(x, y, z);
-					_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) Mth.nextDouble(RandomSource.create(), 0.4, 0.6), 0);
+					_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) Mth.nextDouble(RandomSource.create(), 0.4, 0.5), 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}

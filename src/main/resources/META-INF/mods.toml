@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="iter_rpg"
-version="0.7.0"
+version="0.7.1"
 displayName="Iter RPG"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/iter-rpg"
 logoFile="logo.png"
@@ -30,19 +30,7 @@ description="Global semi-vanilla RPG mod"
     ordering="NONE"
     side="BOTH"
 [[dependencies.iter_rpg]]
-    modId="bettercombat"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.iter_rpg]]
     modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.iter_rpg]]
-    modId="playeranimator"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

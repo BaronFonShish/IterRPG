@@ -14,10 +14,10 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Grimstone"
+              "value": "CUSTOM:GrimstonePebble"
             },
             "weight": 4,
-            "minCount": 1,
+            "minCount": 2,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,

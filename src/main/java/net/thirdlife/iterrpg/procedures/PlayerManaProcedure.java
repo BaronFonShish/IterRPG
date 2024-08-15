@@ -49,6 +49,7 @@ public class PlayerManaProcedure {
 		double capacity = 0;
 		double exhaustion = 0;
 		double dissipation = 0;
+		double iteration = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("iter_rpg:spellcasting_focuses")))
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("iter_rpg:spellcasting_focuses")))
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("iter_rpg:magic_item")))
@@ -128,31 +129,14 @@ public class PlayerManaProcedure {
 		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.ABYSSQUARTZ_CAPACITATOR.get(), lv).isPresent() : false) {
 			capacity = capacity + 15;
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == IterRpgModItems.RAGGED_HELMET.get()) {
-			capacity = capacity + 10;
-		} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == IterRpgModItems.AMETRINE_HELMET.get()) {
-			capacity = capacity + 2.5;
-			regen = regen + 0.0025;
-		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == IterRpgModItems.RAGGED_CHESTPLATE.get()) {
-			regen = regen * 1.15;
-		} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == IterRpgModItems.AMETRINE_CHESTPLATE.get()) {
-			capacity = capacity + 2.5;
-			regen = regen + 0.0025;
-		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == IterRpgModItems.AMETRINE_LEGGINGS.get()) {
-			capacity = capacity + 2.5;
-			regen = regen + 0.0025;
-		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == IterRpgModItems.AMETRINE_BOOTS.get()) {
-			capacity = capacity + 2.5;
-			regen = regen + 0.0025;
+		for (int index1 = 0; index1 < 4; index1++) {
+			regen = regen + (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) iteration)) : ItemStack.EMPTY)
+					.getEnchantmentLevel(IterRpgModEnchantments.ARCANE_CONDUCTIVITY.get()) * 0.0025;
+			capacity = capacity + (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.byTypeAndIndex(EquipmentSlot.Type.ARMOR, (int) iteration)) : ItemStack.EMPTY)
+					.getEnchantmentLevel(IterRpgModEnchantments.ARCANE_CAPACITY.get()) * 2.5;
+			iteration = iteration + 1;
 		}
 		regen = regen + capacity / 7500;
-		regen = regen + (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getEnchantmentLevel(IterRpgModEnchantments.ARCANE_CONDUCTIVITY.get()) * 0.0025;
-		regen = regen + (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getEnchantmentLevel(IterRpgModEnchantments.ARCANE_CONDUCTIVITY.get()) * 0.0025;
-		regen = regen + (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getEnchantmentLevel(IterRpgModEnchantments.ARCANE_CONDUCTIVITY.get()) * 0.0025;
-		regen = regen + (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getEnchantmentLevel(IterRpgModEnchantments.ARCANE_CONDUCTIVITY.get()) * 0.0025;
 		{
 			double _setval = capacity;
 			entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -160,7 +144,8 @@ public class PlayerManaProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		regen = regen / 25;
+		regen = regen / 5;
+		iteration = 0;
 		if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana < (entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new IterRpgModVariables.PlayerVariables())).MaxMana) {
 			if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).MaxMana

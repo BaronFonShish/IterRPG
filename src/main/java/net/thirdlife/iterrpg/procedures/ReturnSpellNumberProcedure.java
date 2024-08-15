@@ -53,13 +53,22 @@ public class ReturnSpellNumberProcedure {
 			if (spell.getItem() == IterRpgModItems.SPELL_ZAP.get()) {
 				spellname = Component.translatable("iterpg.spell.zap").getString();
 			}
+			if (spell.getItem() == IterRpgModItems.SPELL_POISON_GAS.get()) {
+				spellname = Component.translatable("iterpg.spell.poison_gas").getString();
+			}
+			if (spell.getItem() == IterRpgModItems.SPELL_SHADELASH.get()) {
+				spellname = Component.translatable("iterpg.spell.shade_lash").getString();
+			}
+			if (spell.getItem() == IterRpgModItems.SPELL_FLAMEBOLT.get()) {
+				spellname = Component.translatable("iterpg.spell.flamebolt").getString();
+			}
 		}
 		for (int index0 = 0; index0 < (int) spell.getOrCreateTag().getDouble("level"); index0++) {
 			spellname = spellname + "*";
 		}
-		if (entity instanceof Player _plrCldCheck24 && _plrCldCheck24.getCooldowns().isOnCooldown(spell.getItem())) {
+		if (entity instanceof Player _plrCldCheck30 && _plrCldCheck30.getCooldowns().isOnCooldown(spell.getItem())) {
 			return Math.round((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SelectedSpell) + ": " + spellname
-					+ (" [" + Math.round(entity instanceof Player _plrCldRem25 ? _plrCldRem25.getCooldowns().getCooldownPercent(spell.getItem(), 0f) * 100 : 0) + "]");
+					+ (" [" + Math.round(entity instanceof Player _plrCldRem31 ? _plrCldRem31.getCooldowns().getCooldownPercent(spell.getItem(), 0f) * 100 : 0) + "]");
 		}
 		return Math.round((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SelectedSpell) + ": " + spellname;
 	}

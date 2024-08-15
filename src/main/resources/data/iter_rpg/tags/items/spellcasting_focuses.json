@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "iter_rpg:amethyst_wand"
+    "iter_rpg:amethyst_wand",
+    "iter_rpg:pearl_wand"
   ]
 }

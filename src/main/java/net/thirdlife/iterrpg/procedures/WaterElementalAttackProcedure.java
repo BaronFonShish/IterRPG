@@ -1,6 +1,7 @@
 package net.thirdlife.iterrpg.procedures;
 
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
+import net.thirdlife.iterrpg.entity.DropletProjectileProjectileEntity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -9,6 +10,8 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -100,6 +103,9 @@ public class WaterElementalAttackProcedure {
 					}
 					(entitytospawn).getPersistentData().putBoolean("summoned", true);
 				}
+			} else if (entity.getPersistentData().getDouble("attacktype") >= 1) {
+				entity.getPersistentData().putDouble("attacktype", (entity.getPersistentData().getDouble("attacktype") + 1));
+				entity.getPersistentData().putDouble("barrage", 20);
 			} else {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = IterRpgModEntities.BLOB.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 0.8, entity.getZ()), MobSpawnType.MOB_SUMMONED);
@@ -125,6 +131,27 @@ public class WaterElementalAttackProcedure {
 			}
 			if (shouldattack) {
 				entity.getPersistentData().putDouble("attack", (entity.getPersistentData().getDouble("attack") + 1));
+			}
+		}
+		if (entity.getPersistentData().getDouble("barrage") >= 1) {
+			entity.getPersistentData().putDouble("barrage", (entity.getPersistentData().getDouble("barrage") - 1));
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level();
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = new Object() {
+						public Projectile getArrow(Level level, float damage, int knockback) {
+							AbstractArrow entityToSpawn = new DropletProjectileProjectileEntity(IterRpgModEntities.DROPLET_PROJECTILE_PROJECTILE.get(), level);
+							entityToSpawn.setBaseDamage(damage);
+							entityToSpawn.setKnockback(knockback);
+							entityToSpawn.setSilent(true);
+							return entityToSpawn;
+						}
+					}.getArrow(projectileLevel, 1, 0);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) Mth.nextDouble(RandomSource.create(), 0.5, 1), 15);
+					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
 			}
 		}
 	}

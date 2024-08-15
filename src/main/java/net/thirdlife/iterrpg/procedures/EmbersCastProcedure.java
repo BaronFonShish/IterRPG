@@ -30,9 +30,9 @@ public class EmbersCastProcedure {
 						entityToSpawn.setPierceLevel(piercing);
 						return entityToSpawn;
 					}
-				}.getArrow(projectileLevel, entity, (float) (0.25 * power), 0, (byte) 1);
+				}.getArrow(projectileLevel, entity, (float) (0.25 * (1 + Math.log(power + 1) / 5)), 0, (byte) 1);
 				_entityToSpawn.setPos(x, (y + entity.getBbHeight() * 0.85), z);
-				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) (0.75 * power), (float) (25 * (1 / power)));
+				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) (0.75 * (1 + Math.log(power + 1) / 5)), (float) (25 * (1 / (1 + Math.log(power + 1) / 5))));
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
 		}

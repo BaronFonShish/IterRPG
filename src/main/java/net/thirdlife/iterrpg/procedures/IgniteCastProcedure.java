@@ -56,7 +56,7 @@ public class IgniteCastProcedure {
 			}
 		}
 		hit = true;
-		for (int index0 = 0; index0 < (int) (3.5 * WandReturnPowerProcedure.execute(entity) * 5); index0++) {
+		for (int index0 = 0; index0 < (int) (20 * power); index0++) {
 			if (hit) {
 				if (((world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).is(BlockTags.create(new ResourceLocation("minecraft:campfires")))
 						|| (world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).is(BlockTags.create(new ResourceLocation("minecraft:candles"))))
@@ -91,7 +91,7 @@ public class IgniteCastProcedure {
 						if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
 								&& entityiterator instanceof LivingEntity && !(entity == entityiterator)) {
 							hit = false;
-							entityiterator.setSecondsOnFire((int) (5 * WandReturnPowerProcedure.execute(entity)));
+							entityiterator.setSecondsOnFire((int) (5 * power));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.FLAME, (entityiterator.getX()), (entityiterator.getY() + entityiterator.getBbHeight() / 2), (entityiterator.getZ()), 5, 0.3, (entityiterator.getBbHeight() / 3), 0.3, 0.05);
 							if (world instanceof ServerLevel _level)

@@ -120,6 +120,30 @@ public class SpellCastBaseProcedure {
 					ZapCastProcedure.execute(world, entity);
 				}
 			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_POISON_GAS.get()) {
+				cooldown = 40 * WandReturnCooldownProcedure.execute(entity);
+				mana = 2 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					PoisonGasCastProcedure.execute(world, x, y, z, entity);
+				}
+			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_SHADELASH.get()) {
+				cooldown = 16 * WandReturnCooldownProcedure.execute(entity);
+				mana = 2 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					ShadeLashCastProcedure.execute(world, x, y, z, entity);
+				}
+			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_FLAMEBOLT.get()) {
+				cooldown = 35 * WandReturnCooldownProcedure.execute(entity);
+				mana = 4 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					FlameboltCastProcedure.execute(world, x, y, z, entity);
+				}
+			}
 			if (cast) {
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem(), (int) cooldown);
@@ -160,6 +184,13 @@ public class SpellCastBaseProcedure {
 							}
 						}
 					}
+					if (cooldown >= 100) {
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), 75);
+					} else {
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem(), (int) (cooldown * 0.75));
+					}
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("iter_rpg:spellcasting_focuses")))) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.OFF_HAND, true);
@@ -181,6 +212,13 @@ public class SpellCastBaseProcedure {
 								_ist.setDamageValue(0);
 							}
 						}
+					}
+					if (cooldown >= 100) {
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem(), 75);
+					} else {
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem(), (int) (cooldown * 0.75));
 					}
 				}
 			}

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "iter_rpg:monolith_door",
+    "iter_rpg:smooth_monolith_stone",
     "iter_rpg:tombstone",
     "iter_rpg:grim_locker",
     "iter_rpg:tear_catcher",

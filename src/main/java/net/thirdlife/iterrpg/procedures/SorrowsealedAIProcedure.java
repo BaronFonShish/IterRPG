@@ -72,7 +72,7 @@ public class SorrowsealedAIProcedure {
 				}
 			}
 		}
-		if (entity.getPersistentData().getDouble("attackCooldown") >= 100) {
+		if (entity.getPersistentData().getDouble("attackCooldown") >= 75) {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo((entity.getPersistentData().getDouble("brainX")), (entity.getPersistentData().getDouble("brainY")), (entity.getPersistentData().getDouble("brainZ")));
@@ -325,7 +325,7 @@ public class SorrowsealedAIProcedure {
 		doattack = false;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(48 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof Player && (new Object() {
 					public boolean checkGamemode(Entity _ent) {

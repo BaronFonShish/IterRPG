@@ -31,21 +31,25 @@ public class ArmorSwitchFireProcedure {
 					_player.closeContainer();
 				IterRpgMod.queueServerWork(4, () -> {
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getOrCreateTag().putDouble("element", 3);
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getOrCreateTag().putDouble("CustomModelData", 3);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.FIRE_SIGIL.get()), (entity.getX()), (entity.getY() + 0), (entity.getZ()), 8, 0.25, 0.1, 0.25, 0.025);
 				});
 				IterRpgMod.queueServerWork(8, () -> {
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getOrCreateTag().putDouble("element", 3);
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getOrCreateTag().putDouble("CustomModelData", 3);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.FIRE_SIGIL.get()), (entity.getX()), (entity.getY() + 0.6), (entity.getZ()), 8, 0.25, 0.1, 0.25, 0.025);
 				});
 				IterRpgMod.queueServerWork(12, () -> {
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getOrCreateTag().putDouble("element", 3);
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getOrCreateTag().putDouble("CustomModelData", 3);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.FIRE_SIGIL.get()), (entity.getX()), (entity.getY() + 1.2), (entity.getZ()), 8, 0.25, 0.1, 0.25, 0.025);
 				});
 				IterRpgMod.queueServerWork(16, () -> {
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getOrCreateTag().putDouble("element", 3);
+					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getOrCreateTag().putDouble("CustomModelData", 3);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.FIRE_SIGIL.get()), (entity.getX()), (entity.getY() + 1.8), (entity.getZ()), 8, 0.25, 0.1, 0.25, 0.025);
 				});

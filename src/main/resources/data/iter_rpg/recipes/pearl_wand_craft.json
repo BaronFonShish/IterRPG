@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:pearl"
+    },
+    "b": {
+      "item": "iter_rpg:seashell"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:pearl_wand",
+    "count": 1
+  }
+}

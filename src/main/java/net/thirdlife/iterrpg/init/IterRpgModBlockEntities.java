@@ -13,6 +13,7 @@ import net.thirdlife.iterrpg.block.entity.SmallVaseDecoBlockEntity;
 import net.thirdlife.iterrpg.block.entity.SacredSaplingBlockEntity;
 import net.thirdlife.iterrpg.block.entity.RunicGrimstoneBlockEntity;
 import net.thirdlife.iterrpg.block.entity.RunicGrimstoneActiveBlockEntity;
+import net.thirdlife.iterrpg.block.entity.MonolithDoorBlockEntity;
 import net.thirdlife.iterrpg.block.entity.GunpowderBarrelBlockEntity;
 import net.thirdlife.iterrpg.block.entity.GrimaceTrapBlockEntity;
 import net.thirdlife.iterrpg.block.entity.GrimSoultrapBlockEntity;
@@ -53,6 +54,7 @@ public class IterRpgModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> TEAR_CATCHER = register("tear_catcher", IterRpgModBlocks.TEAR_CATCHER, TearCatcherBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> GRIM_LOCKER = register("grim_locker", IterRpgModBlocks.GRIM_LOCKER, GrimLockerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> VOID_MAW = register("void_maw", IterRpgModBlocks.VOID_MAW, VoidMawBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> MONOLITH_DOOR = register("monolith_door", IterRpgModBlocks.MONOLITH_DOOR, MonolithDoorBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

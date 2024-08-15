@@ -8,6 +8,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 
 public class DropletsCastProcedure {
@@ -31,12 +33,16 @@ public class DropletsCastProcedure {
 						entityToSpawn.setSilent(true);
 						return entityToSpawn;
 					}
-				}.getArrow(projectileLevel, entity, (float) (0.75 * power), 0);
+				}.getArrow(projectileLevel, entity, (float) (0.5 * (0.75 + Math.log(power + 1) / 2.5)), 0);
 				_entityToSpawn.setPos(x, (y + entity.getBbHeight() * 0.85), z);
-				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) (velocity * power), (float) (10 / (velocity * power)));
+				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) (velocity * (0.75 + Math.log(power + 1) / 2.5)), (float) (10 / velocity));
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
-			velocity = velocity + 0.25;
+			if (velocity <= 3) {
+				velocity = velocity + 0.25;
+			} else {
+				velocity = Mth.nextDouble(RandomSource.create(), 1, 3);
+			}
 		}
 	}
 }

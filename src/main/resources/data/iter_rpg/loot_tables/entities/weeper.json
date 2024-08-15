@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "iter_rpg:grimstone",
+          "name": "iter_rpg:grimstone_pebble",
           "weight": 3,
           "functions": [
             {

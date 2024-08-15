@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/smooth_monolith_stone",
+    "particle": "iter_rpg:block/smooth_monolith_stone"
+  },
+  "render_type": "solid"
+}

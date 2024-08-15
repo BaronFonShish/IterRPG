@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "WaterRunestone",
+    "blockstateList": [
+      {
+        "texture": "monolith_keyhole_water_active",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "monolith_keyhole_water_active",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 12,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

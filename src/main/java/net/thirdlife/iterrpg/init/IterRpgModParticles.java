@@ -11,6 +11,7 @@ import net.thirdlife.iterrpg.client.particle.VoidEyeParticleParticle;
 import net.thirdlife.iterrpg.client.particle.VengefulParticleParticle;
 import net.thirdlife.iterrpg.client.particle.SpiritParticleParticle;
 import net.thirdlife.iterrpg.client.particle.PortalSparkParticleParticle;
+import net.thirdlife.iterrpg.client.particle.PoisonCloudParticle;
 import net.thirdlife.iterrpg.client.particle.LightningParticleParticle;
 import net.thirdlife.iterrpg.client.particle.GobsteelShardsParticle;
 import net.thirdlife.iterrpg.client.particle.FireSigilParticle;
@@ -18,6 +19,7 @@ import net.thirdlife.iterrpg.client.particle.ElementalVoidParticle;
 import net.thirdlife.iterrpg.client.particle.ElementalParticleParticle;
 import net.thirdlife.iterrpg.client.particle.ElementalLeafParticle;
 import net.thirdlife.iterrpg.client.particle.ElementalDropletParticle;
+import net.thirdlife.iterrpg.client.particle.ElemFlameParticle;
 import net.thirdlife.iterrpg.client.particle.EarthSigilParticle;
 import net.thirdlife.iterrpg.client.particle.DemonbloodParticle;
 import net.thirdlife.iterrpg.client.particle.CoinParticleParticle;
@@ -54,5 +56,7 @@ public class IterRpgModParticles {
 		event.registerSpriteSet(IterRpgModParticleTypes.LIGHTNING_PARTICLE.get(), LightningParticleParticle::provider);
 		event.registerSpriteSet(IterRpgModParticleTypes.SPIRIT_PARTICLE.get(), SpiritParticleParticle::provider);
 		event.registerSpriteSet(IterRpgModParticleTypes.VENGEFUL_PARTICLE.get(), VengefulParticleParticle::provider);
+		event.registerSpriteSet(IterRpgModParticleTypes.ELEM_FLAME.get(), ElemFlameParticle::provider);
+		event.registerSpriteSet(IterRpgModParticleTypes.POISON_CLOUD.get(), PoisonCloudParticle::provider);
 	}
 }

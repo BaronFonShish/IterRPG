@@ -1,12 +1,11 @@
 package net.thirdlife.iterrpg.procedures;
 
-import net.thirdlife.iterrpg.init.IterRpgModItems;
 import net.thirdlife.iterrpg.init.IterRpgModEnchantments;
+import net.thirdlife.iterrpg.init.IterRpgModAttributes;
 
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
@@ -26,17 +25,9 @@ public class WandReturnCooldownProcedure {
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("iter_rpg:spellcasting_focuses")))) {
 			wand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 		}
-		cooldown = 1;
-		if (wand.getItem() == IterRpgModItems.AMETHYST_WAND.get()) {
-			cooldown = 1;
-		} else if (wand.getItem() == ItemStack.EMPTY.getItem()) {
-			cooldown = 1.1;
-		}
+		cooldown = ((LivingEntity) entity).getAttribute(IterRpgModAttributes.SPELLCOOLDOWN.get()).getValue();
 		if (EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.DEXTERITY.get(), wand) != 0) {
 			cooldown = cooldown * (1 - wand.getEnchantmentLevel(IterRpgModEnchantments.DEXTERITY.get()) / 7.5);
-		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == IterRpgModItems.RAGGED_CHESTPLATE.get()) {
-			cooldown = cooldown * 0.9;
 		}
 		return cooldown;
 	}

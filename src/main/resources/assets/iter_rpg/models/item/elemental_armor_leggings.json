@@ -1,6 +1,38 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "iter_rpg:item/forest_leggings"
-  }
+    "layer0": "iter_rpg:item/elemental_armor_leggings_earth"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 0
+      },
+      "model": "iter_rpg:item/elemental_armor_leggings_earth"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "iter_rpg:item/elemental_armor_leggings_water"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "iter_rpg:item/elemental_armor_leggings_air"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "iter_rpg:item/elemental_armor_leggings_fire"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "iter_rpg:item/elemental_armor_leggings_void"
+    }
+  ]
 }

@@ -33,9 +33,9 @@ public class ElementalFragmentDropProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof WitherBoss) {
-			for (int index0 = 0; index0 < 6; index0++) {
+			for (int index0 = 0; index0 < 1; index0++) {
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.ELEMENTAL_FRAGMENT.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.ELEMENTAL_UPGRADE.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

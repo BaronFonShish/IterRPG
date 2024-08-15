@@ -35,6 +35,7 @@ import net.thirdlife.iterrpg.client.renderer.GoblinWarriorRenderer;
 import net.thirdlife.iterrpg.client.renderer.GoblinRenderer;
 import net.thirdlife.iterrpg.client.renderer.GiantSpiderRenderer;
 import net.thirdlife.iterrpg.client.renderer.ForestVinesRenderer;
+import net.thirdlife.iterrpg.client.renderer.FlameboltRenderer;
 import net.thirdlife.iterrpg.client.renderer.FireElementalRenderer;
 import net.thirdlife.iterrpg.client.renderer.FiendRenderer;
 import net.thirdlife.iterrpg.client.renderer.EarthElementalRenderer;
@@ -44,6 +45,7 @@ import net.thirdlife.iterrpg.client.renderer.DropletProjectileProjectileRenderer
 import net.thirdlife.iterrpg.client.renderer.DemonspineRenderer;
 import net.thirdlife.iterrpg.client.renderer.DemonbloodProjectileRenderer;
 import net.thirdlife.iterrpg.client.renderer.DebugMobmorphRenderer;
+import net.thirdlife.iterrpg.client.renderer.ChaosApparitionRenderer;
 import net.thirdlife.iterrpg.client.renderer.ChainHandleRenderer;
 import net.thirdlife.iterrpg.client.renderer.CarcassRenderer;
 import net.thirdlife.iterrpg.client.renderer.CaltropThrownRenderer;
@@ -124,5 +126,7 @@ public class IterRpgModEntityRenderers {
 		event.registerEntityRenderer(IterRpgModEntities.SMALL_SCALLOP.get(), SmallScallopRenderer::new);
 		event.registerEntityRenderer(IterRpgModEntities.UNBOUND_SOUL.get(), UnboundSoulRenderer::new);
 		event.registerEntityRenderer(IterRpgModEntities.EMBER_PROJ.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(IterRpgModEntities.CHAOS_APPARITION.get(), ChaosApparitionRenderer::new);
+		event.registerEntityRenderer(IterRpgModEntities.FLAMEBOLT.get(), FlameboltRenderer::new);
 	}
 }

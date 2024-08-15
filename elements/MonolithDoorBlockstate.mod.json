@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "MonolithDoor",
+    "blockstateList": [
+      {
+        "texture": "monolith_door_active",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "monolith_door_active",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 12,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

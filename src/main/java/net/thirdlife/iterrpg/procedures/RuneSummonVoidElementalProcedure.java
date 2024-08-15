@@ -28,7 +28,7 @@ public class RuneSummonVoidElementalProcedure {
 		double zpos = 0;
 		double count = 0;
 		double max = 0;
-		max = 0.0025;
+		max = 0.025;
 		if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.END || (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD && y <= -48) {
 			max = max + 0.025;
 		}
@@ -49,7 +49,7 @@ public class RuneSummonVoidElementalProcedure {
 		}
 		if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).void_lure >= 50) {
 			{
-				double _setval = 40;
+				double _setval = 45;
 				entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.void_lure = _setval;
 					capability.syncPlayerVariables(entity);

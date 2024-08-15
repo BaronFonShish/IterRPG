@@ -36,6 +36,7 @@ import net.thirdlife.iterrpg.entity.GoblinWarriorEntity;
 import net.thirdlife.iterrpg.entity.GoblinEntity;
 import net.thirdlife.iterrpg.entity.GiantSpiderEntity;
 import net.thirdlife.iterrpg.entity.ForestVinesEntity;
+import net.thirdlife.iterrpg.entity.FlameboltEntity;
 import net.thirdlife.iterrpg.entity.FireballProjectileProjectileEntity;
 import net.thirdlife.iterrpg.entity.FireElementalEntity;
 import net.thirdlife.iterrpg.entity.FiendEntity;
@@ -47,6 +48,7 @@ import net.thirdlife.iterrpg.entity.DropletProjectileProjectileEntity;
 import net.thirdlife.iterrpg.entity.DemonspineEntity;
 import net.thirdlife.iterrpg.entity.DemonbloodProjectileEntity;
 import net.thirdlife.iterrpg.entity.DebugMobmorphEntity;
+import net.thirdlife.iterrpg.entity.ChaosApparitionEntity;
 import net.thirdlife.iterrpg.entity.ChainHandleEntity;
 import net.thirdlife.iterrpg.entity.CarcassEntity;
 import net.thirdlife.iterrpg.entity.CaltropThrownEntity;
@@ -235,6 +237,10 @@ public class IterRpgModEntities {
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(UnboundSoulEntity::new).fireImmune().sized(0.7f, 1.3f));
 	public static final RegistryObject<EntityType<EmberProjEntity>> EMBER_PROJ = register("ember_proj",
 			EntityType.Builder.<EmberProjEntity>of(EmberProjEntity::new, MobCategory.MISC).setCustomClientFactory(EmberProjEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ChaosApparitionEntity>> CHAOS_APPARITION = register("chaos_apparition", EntityType.Builder.<ChaosApparitionEntity>of(ChaosApparitionEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChaosApparitionEntity::new).fireImmune().sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<FlameboltEntity>> FLAMEBOLT = register("flamebolt",
+			EntityType.Builder.<FlameboltEntity>of(FlameboltEntity::new, MobCategory.MISC).setCustomClientFactory(FlameboltEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -287,6 +293,7 @@ public class IterRpgModEntities {
 			GrimaceEntity.init();
 			SmallScallopEntity.init();
 			UnboundSoulEntity.init();
+			ChaosApparitionEntity.init();
 		});
 	}
 
@@ -336,5 +343,6 @@ public class IterRpgModEntities {
 		event.put(GRIMACE.get(), GrimaceEntity.createAttributes().build());
 		event.put(SMALL_SCALLOP.get(), SmallScallopEntity.createAttributes().build());
 		event.put(UNBOUND_SOUL.get(), UnboundSoulEntity.createAttributes().build());
+		event.put(CHAOS_APPARITION.get(), ChaosApparitionEntity.createAttributes().build());
 	}
 }

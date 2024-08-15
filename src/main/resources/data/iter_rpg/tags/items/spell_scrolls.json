@@ -11,6 +11,9 @@
     "iter_rpg:spell_etherblast",
     "iter_rpg:spell_embers",
     "iter_rpg:spell_droplets",
-    "iter_rpg:spell_zap"
+    "iter_rpg:spell_zap",
+    "iter_rpg:spell_poison_gas",
+    "iter_rpg:spell_shadelash",
+    "iter_rpg:spell_flamebolt"
   ]
 }

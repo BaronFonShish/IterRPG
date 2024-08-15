@@ -46,7 +46,7 @@ public class IterRpgModTrades {
 					new ItemStack(Items.EMERALD, 8), 2, 10, 0.05f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(IterRpgModItems.PEARL.get()),
 
-					new ItemStack(Items.EMERALD, 4), 10, 5, 0.05f));
+					new ItemStack(Items.EMERALD, 16), 10, 5, 0.05f));
 		}
 		if (event.getType() == VillagerProfession.CLERIC) {
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4),

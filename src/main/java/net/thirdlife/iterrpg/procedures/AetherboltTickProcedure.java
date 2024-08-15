@@ -12,7 +12,7 @@ public class AetherboltTickProcedure {
 		if (immediatesourceentity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ARCANE_PARTICLE.get()), x, y, z, 1, 0, 0, 0, 0.01);
+			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ARCANE_PARTICLE.get()), x, y, z, 1, 0, 0, 0, 0);
 		immediatesourceentity.setNoGravity(true);
 		if (immediatesourceentity.getPersistentData().getDouble("lifetime") >= 500) {
 			if (world instanceof ServerLevel _level)

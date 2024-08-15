@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/monolith_keyhole_fire",
+    "particle": "iter_rpg:block/monolith_keyhole_fire"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "iter_rpg:block/earth_runestone"
+    },
+    "blockstate=1": {
+      "model": "iter_rpg:block/earth_runestone_states_blockstate_0"
+    }
+  }
+}

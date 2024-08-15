@@ -26,7 +26,7 @@ public class RuneSummonAirElementalProcedure {
 		double ypos = 0;
 		double zpos = 0;
 		double max = 0;
-		max = 0.0025;
+		max = 0.025;
 		if (y >= 110 || y >= 60 && (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("plains")) || world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("plains"))
 				|| world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("plains")) || world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("plains"))
 				|| world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("jagged_peaks")) || world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("frozen_peaks"))
@@ -50,7 +50,7 @@ public class RuneSummonAirElementalProcedure {
 		}
 		if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).air_lure >= 50) {
 			{
-				double _setval = 40;
+				double _setval = 45;
 				entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.air_lure = _setval;
 					capability.syncPlayerVariables(entity);

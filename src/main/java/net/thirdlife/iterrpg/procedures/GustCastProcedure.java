@@ -47,7 +47,7 @@ public class GustCastProcedure {
 		xdir = entity.getLookAngle().x;
 		ydir = entity.getLookAngle().y;
 		zdir = entity.getLookAngle().z;
-		push = power * 1.05;
+		push = 1.2 * (0.75 + Math.log(power + 1) / 2.5);
 		hit = true;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
@@ -56,7 +56,7 @@ public class GustCastProcedure {
 				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_elytra")), SoundSource.PLAYERS, (float) 0.5, (float) 1.5, false);
 			}
 		}
-		for (int index0 = 0; index0 < (int) (4 * power * 5); index0++) {
+		for (int index0 = 0; index0 < (int) (25 * (2 / 3 + Math.log(power + 1) / 2)); index0++) {
 			if (hit) {
 				if (world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist)).canOcclude()) {
 					hit = false;

@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.VOID_AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.blaze.shoot"
+    },
+    "igniteFire": true,
+    "power": 1.0,
+    "damage": 2.0,
+    "knockback": 0,
+    "entityModel": "Modelflamebolt",
+    "customModelTexture": "flamebolt.png",
+    "onHitsBlock": {
+      "name": "FlameboltHitBlock"
+    },
+    "onHitsEntity": {
+      "name": "FlameboltHit"
+    },
+    "onFlyingTick": {
+      "name": "FlameboltTick"
+    }
+  }
+}

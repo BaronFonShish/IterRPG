@@ -1,6 +1,38 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "iter_rpg:item/forest_boots"
-  }
+    "layer0": "iter_rpg:item/elemental_armor_boots_earth"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 0
+      },
+      "model": "iter_rpg:item/elemental_armor_boots_earth"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "iter_rpg:item/elemental_armor_boots_water"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "iter_rpg:item/elemental_armor_boots_air"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "iter_rpg:item/elemental_armor_boots_fire"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "iter_rpg:item/elemental_armor_boots_void"
+    }
+  ]
 }

@@ -1,6 +1,5 @@
 package net.thirdlife.iterrpg.procedures;
 
-import net.thirdlife.iterrpg.network.IterRpgModVariables;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
 import net.thirdlife.iterrpg.entity.ArcaneBoltEntity;
 
@@ -29,10 +28,9 @@ public class ArcaneBoltCastProcedure {
 					entityToSpawn.setSilent(true);
 					return entityToSpawn;
 				}
-			}.getArrow(projectileLevel, entity,
-					(float) ((1.5 + ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getOrCreateTag().getDouble("level") / 2) * power), 0);
+			}.getArrow(projectileLevel, entity, (float) (1.5 * (0.75 + Math.log(power + 1) / 2.5)), 0);
 			_entityToSpawn.setPos(x, (y + entity.getBbHeight() * 0.85), z);
-			_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) (1.25 + power), (float) (0.25 * (1 / power)));
+			_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) (0.5 + Math.log(power + 1)), (float) (0.25 * (1 / power)));
 			projectileLevel.addFreshEntity(_entityToSpawn);
 		}
 	}

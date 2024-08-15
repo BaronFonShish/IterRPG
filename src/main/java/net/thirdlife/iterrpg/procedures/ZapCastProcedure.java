@@ -17,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Comparator;
@@ -63,13 +64,16 @@ public class ZapCastProcedure {
 						if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
 								&& !(entity == entityiterator) && entityiterator instanceof LivingEntity) {
 							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("iter_rpg:arcane_damage"))), entity),
-									(float) (2 * power));
+									(float) (3.5 + Math.log(power + 1)));
 							hitcontinue = false;
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.LIGHTNING_PARTICLE.get()), (entityiterator.getX()), (entityiterator.getY() + entityiterator.getBbHeight() * 0.6), (entityiterator.getZ()),
-										(int) (5 * power), 0.05, (entityiterator.getBbHeight() * 0.2), 0.05, 0.025);
+										(int) (5 + Math.log(power + 1)), 0.05, (entityiterator.getBbHeight() * 0.2), 0.05, 0.025);
 						}
 					}
+				}
+				if (world.getBlockState(BlockPos.containing(xnew, ynew, znew)).canOcclude()) {
+					hitcontinue = false;
 				}
 				dist = dist + 0.025;
 			}

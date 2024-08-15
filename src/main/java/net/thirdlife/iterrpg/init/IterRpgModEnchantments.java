@@ -9,6 +9,7 @@ import net.thirdlife.iterrpg.enchantment.DexterityEnchantment;
 import net.thirdlife.iterrpg.enchantment.BlightedBladeEnchantment;
 import net.thirdlife.iterrpg.enchantment.AttunementEnchantment;
 import net.thirdlife.iterrpg.enchantment.ArcaneConductivityEnchantment;
+import net.thirdlife.iterrpg.enchantment.ArcaneCapacityEnchantment;
 import net.thirdlife.iterrpg.IterRpgMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -24,4 +25,5 @@ public class IterRpgModEnchantments {
 	public static final RegistryObject<Enchantment> ATTUNEMENT = REGISTRY.register("attunement", () -> new AttunementEnchantment());
 	public static final RegistryObject<Enchantment> DEXTERITY = REGISTRY.register("dexterity", () -> new DexterityEnchantment());
 	public static final RegistryObject<Enchantment> RIGOUR = REGISTRY.register("rigour", () -> new RigourEnchantment());
+	public static final RegistryObject<Enchantment> ARCANE_CAPACITY = REGISTRY.register("arcane_capacity", () -> new ArcaneCapacityEnchantment());
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "iter_rpg:block/air_runestone"
+    },
+    "blockstate=1": {
+      "model": "iter_rpg:block/air_runestone_state_blockstate_0"
+    }
+  }
+}

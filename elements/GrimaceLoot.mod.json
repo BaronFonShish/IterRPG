@@ -14,7 +14,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Grimstone"
+              "value": "CUSTOM:GrimstonePebble"
             },
             "weight": 4,
             "minCount": 0,

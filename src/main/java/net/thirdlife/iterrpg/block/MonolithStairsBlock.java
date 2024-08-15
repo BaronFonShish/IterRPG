@@ -15,7 +15,7 @@ import net.minecraft.core.BlockPos;
 
 public class MonolithStairsBlock extends StairBlock {
 	public MonolithStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(64f, 1200f).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(128f, 1200f).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK).dynamicShape());
 	}
 
 	@Override

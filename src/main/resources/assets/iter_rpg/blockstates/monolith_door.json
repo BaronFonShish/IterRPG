@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "iter_rpg:block/monolith_door"
+    },
+    "blockstate=1": {
+      "model": "iter_rpg:block/monolith_door_blockstate_blockstate_0"
+    }
+  }
+}

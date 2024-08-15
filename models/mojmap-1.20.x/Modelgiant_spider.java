@@ -1,5 +1,5 @@
-// Made with Blockbench 4.5.2
-// Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
+// Made with Blockbench 4.10.4
+// Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
 public class Modelgiant_spider<T extends Entity> extends EntityModel<T> {
@@ -7,7 +7,6 @@ public class Modelgiant_spider<T extends Entity> extends EntityModel<T> {
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
 			new ResourceLocation("modid", "giant_spider"), "main");
-
 	private final ModelPart spider;
 	// spider
 	public final ModelPart body;
@@ -67,14 +66,14 @@ public class Modelgiant_spider<T extends Entity> extends EntityModel<T> {
 				PartPose.offsetAndRotation(-2.2F, 2.2F, -5.0F, 0.2182F, 0.3491F, -0.3927F));
 
 		PartDefinition body = spider.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 32).addBox(-5.0F,
-				-4.5F, -4.5F, 10.0F, 7.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.25F, -12.0F, 0.0F));
+				-3.5F, -5.0F, 10.0F, 7.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -13.0F, 0.5F));
 
 		PartDefinition brushko = body.addOrReplaceChild("brushko", CubeListBuilder.create(),
-				PartPose.offset(0.0F, -1.0F, 4.0F));
+				PartPose.offset(7.05F, 0.0F, 3.5F));
 
 		PartDefinition body3_r1 = brushko
 				.addOrReplaceChild("body3_r1",
-						CubeListBuilder.create().texOffs(0, 0).addBox(-7.0F, -11.0F, -3.0F, 14.0F, 14.0F, 18.0F,
+						CubeListBuilder.create().texOffs(0, 0).addBox(-14.05F, -11.0F, -3.0F, 14.0F, 14.0F, 18.0F,
 								new CubeDeformation(0.0F)),
 						PartPose.offsetAndRotation(0.0F, 0.5F, 1.5F, -0.3491F, 0.0F, 0.0F));
 
