@@ -20,9 +20,9 @@ public class BloodbranchUsedProcedure {
 		double strength = 0;
 		if ((entity instanceof LivingEntity _entUseTicks0 ? _entUseTicks0.getTicksUsingItem() : 0) >= 22) {
 			if ((entity instanceof LivingEntity _entUseTicks1 ? _entUseTicks1.getTicksUsingItem() : 0) >= 35) {
-				strength = 4.375;
+				strength = 4;
 			} else {
-				strength = (entity instanceof LivingEntity _entUseTicks2 ? _entUseTicks2.getTicksUsingItem() : 0) / 8;
+				strength = (entity instanceof LivingEntity _entUseTicks2 ? _entUseTicks2.getTicksUsingItem() : 0) / 8.75;
 			}
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), (float) 1.5);
 			{

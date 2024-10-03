@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.item;
 
-import net.thirdlife.iterrpg.procedures.RapierStrikeProcedure;
+import net.thirdlife.iterrpg.procedures.CheerfulRapierStrikeProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -28,7 +28,7 @@ public class VeryGoodAndCheerfulRapierItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 0f;
 			}
 
 			public int getLevel() {
@@ -40,7 +40,7 @@ public class VeryGoodAndCheerfulRapierItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Items.IRON_INGOT), new ItemStack(Items.IRON_NUGGET));
+				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
 		}, 3, -2.2f, new Item.Properties());
 	}
@@ -54,7 +54,7 @@ public class VeryGoodAndCheerfulRapierItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		RapierStrikeProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		CheerfulRapierStrikeProcedure.execute(entity.level(), entity, itemstack);
 		return retval;
 	}
 }

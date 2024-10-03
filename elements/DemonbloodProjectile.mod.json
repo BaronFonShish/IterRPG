@@ -16,7 +16,7 @@
     "entityModel": "Modelmarrow",
     "customModelTexture": "marrow_entity.png",
     "onHitsBlock": {
-      "name": "DemonbloodBurst"
+      "name": "DemonbloodBurstBlock"
     },
     "onHitsEntity": {
       "name": "DemonbloodBurst"

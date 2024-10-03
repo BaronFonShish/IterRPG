@@ -3,6 +3,26 @@
   "textures": {
     "layer0": "iter_rpg:item/driftbow"
   },
+  "overrides": [
+    {
+      "predicate": {
+        "iter_rpg:driftbow_pulling": 8
+      },
+      "model": "iter_rpg:item/driftbow_0"
+    },
+    {
+      "predicate": {
+        "iter_rpg:driftbow_pulling": 15
+      },
+      "model": "iter_rpg:item/driftbow_1"
+    },
+    {
+      "predicate": {
+        "iter_rpg:driftbow_pulling": 20
+      },
+      "model": "iter_rpg:item/driftbow_2"
+    }
+  ],
   "display": {
     "thirdperson_righthand": {
       "rotation": [

@@ -1,7 +1,6 @@
 {
   "replace": "false",
   "values": [
-    "minecraft:air",
-    "iter_rpg:ametrine_pendant"
+    "minecraft:air"
   ]
 }

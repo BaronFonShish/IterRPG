@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TombstoneFragment"
+      },
+      {
+        "value": "CUSTOM:HauntedSplinter"
+      },
+      {
+        "value": "CUSTOM:Ectoplasm"
+      },
+      {
+        "value": "CUSTOM:Ectoplasm"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Halflower"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:OtherwordlyIngot"
+    },
+    "name": "otherwordly_ingot_craft",
+    "namespace": "mod"
+  }
+}

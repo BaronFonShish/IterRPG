@@ -56,10 +56,6 @@ public class WorldLoadConditionCheckProcedure {
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
 		IterRpgModVariables.MapVariables.get(world).config_elementals = IterConfigConfiguration.ELEMENTALS.get();
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
-		IterRpgModVariables.MapVariables.get(world).config_demons = IterConfigConfiguration.DEMONS.get();
-		IterRpgModVariables.MapVariables.get(world).syncData(world);
-		IterRpgModVariables.MapVariables.get(world).config_demon_hive = IterConfigConfiguration.DEMON_HIVE.get();
-		IterRpgModVariables.MapVariables.get(world).syncData(world);
 		IterRpgModVariables.MapVariables.get(world).config_spiderlings = IterConfigConfiguration.SPIDERS.get();
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
 		IterRpgModVariables.MapVariables.get(world).config_giant_spiders = IterConfigConfiguration.SPIDERS.get();
@@ -68,13 +64,19 @@ public class WorldLoadConditionCheckProcedure {
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
 		IterRpgModVariables.MapVariables.get(world).config_goblinspawner_time = (double) IterConfigConfiguration.GOBLIN_SPAWNER_CYCLE.get();
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
-		IterRpgModVariables.MapVariables.get(world).config_event_rate = (double) IterConfigConfiguration.EVENT_RATE.get();
+		IterRpgModVariables.MapVariables.get(world).config_events = IterConfigConfiguration.EVENTS.get();
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
 		IterRpgModVariables.MapVariables.get(world).config_coins_drop = IterConfigConfiguration.COIN_DROP.get();
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
 		IterRpgModVariables.MapVariables.get(world).config_skies_of_ruin = IterConfigConfiguration.SKIES_OF_RUIN.get();
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
 		IterRpgModVariables.MapVariables.get(world).config_skies_of_ruin_repeatable = IterConfigConfiguration.SKIES_OF_RUIN_REPEATABLE.get();
+		IterRpgModVariables.MapVariables.get(world).syncData(world);
+		IterRpgModVariables.MapVariables.get(world).event_duration = (double) IterConfigConfiguration.EVENT_DURATION.get();
+		IterRpgModVariables.MapVariables.get(world).syncData(world);
+		IterRpgModVariables.MapVariables.get(world).event_mintime = (double) IterConfigConfiguration.EVENT_MINTIME.get();
+		IterRpgModVariables.MapVariables.get(world).syncData(world);
+		IterRpgModVariables.MapVariables.get(world).event_maxtime = (double) IterConfigConfiguration.EVENT_MAXTIME.get();
 		IterRpgModVariables.MapVariables.get(world).syncData(world);
 	}
 }

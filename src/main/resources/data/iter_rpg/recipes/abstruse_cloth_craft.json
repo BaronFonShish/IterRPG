@@ -9,16 +9,10 @@
       "item": "minecraft:string"
     },
     {
-      "tag": "minecraft:wool"
-    },
-    {
-      "item": "minecraft:leather"
+      "item": "iter_rpg:spider_silk"
     },
     {
       "item": "iter_rpg:ether_dust"
-    },
-    {
-      "item": "iter_rpg:spider_silk"
     }
   ],
   "result": {

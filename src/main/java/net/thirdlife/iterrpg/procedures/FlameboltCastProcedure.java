@@ -33,7 +33,7 @@ public class FlameboltCastProcedure {
 					entityToSpawn.setSilent(true);
 					return entityToSpawn;
 				}
-			}.getArrow(projectileLevel, entity, (float) (2 * (1 + Math.log(power + 1) / 2)), 0);
+			}.getArrow(projectileLevel, entity, (float) (1 * (1 / 3 + Math.log(power + 1))), 0);
 			_entityToSpawn.setPos(x, (y + entity.getBbHeight() * 0.85), z);
 			_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), (float) (1.4 + Math.log(power + 1)), (float) (0.25 * (1 / (0.75 + Math.log(power + 1) / 2.5))));
 			projectileLevel.addFreshEntity(_entityToSpawn);

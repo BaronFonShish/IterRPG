@@ -31,9 +31,5 @@ public class InsatiableSpawnedProcedure {
 			entity.getPersistentData().putDouble("cooldown", 80);
 			entity.getPersistentData().putDouble("decide", 0);
 		});
-		IterRpgMod.queueServerWork(70, () -> {
-			if (!entity.level().isClientSide())
-				entity.discard();
-		});
 	}
 }

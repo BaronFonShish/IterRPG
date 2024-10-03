@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "iter_rpg:block/twiffle_block"
+    },
+    "blockstate=1": {
+      "model": "iter_rpg:block/twiffle_blockstates_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "iter_rpg:block/twiffle_blockstates_blockstate_1"
     }
   }
 }

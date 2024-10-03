@@ -1,6 +1,7 @@
 package net.thirdlife.iterrpg.procedures;
 
 import net.thirdlife.iterrpg.init.IterRpgModItems;
+import net.thirdlife.iterrpg.init.IterRpgModBlocks;
 
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,7 +16,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
@@ -33,9 +36,8 @@ public class ScytheReapProcedure {
 				|| blockstate.getBlock() == Blocks.CARROTS && (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip7 ? blockstate.getValue(_getip7) : -1) == 7
 				|| blockstate.getBlock() == Blocks.POTATOES && (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip11 ? blockstate.getValue(_getip11) : -1) == 7
 				|| blockstate.getBlock() == Blocks.BEETROOTS && (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip15 ? blockstate.getValue(_getip15) : -1) == 3
-				|| blockstate.getBlock() == Blocks.NETHER_WART && ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip19
-						? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip19)
-						: -1) == 3) {
+				|| blockstate.getBlock() == Blocks.NETHER_WART && (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip19 ? blockstate.getValue(_getip19) : -1) == 3
+				|| blockstate.getBlock() == IterRpgModBlocks.ETHERBLOOM.get() && (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("iter_rpg:arcane_flower_soil")))) {
 			if (!(new Object() {
 				public boolean checkGamemode(Entity _ent) {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -82,8 +84,8 @@ public class ScytheReapProcedure {
 			for (int index0 = 0; index0 < (int) repeatamount; index0++) {
 				for (int index1 = 0; index1 < (int) repeatamount; index1++) {
 					if ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock() == Blocks.WHEAT
-							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip47
-									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip47)
+							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip51
+									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip51)
 									: -1) == 7) {
 						{
 							BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);
@@ -106,8 +108,8 @@ public class ScytheReapProcedure {
 						}
 					}
 					if ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock() == Blocks.POTATOES
-							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip56
-									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip56)
+							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip60
+									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip60)
 									: -1) == 7) {
 						{
 							BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);
@@ -130,8 +132,8 @@ public class ScytheReapProcedure {
 						}
 					}
 					if ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock() == Blocks.CARROTS
-							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip65
-									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip65)
+							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip69
+									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip69)
 									: -1) == 7) {
 						{
 							BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);
@@ -154,8 +156,8 @@ public class ScytheReapProcedure {
 						}
 					}
 					if ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock() == Blocks.BEETROOTS
-							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip74
-									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip74)
+							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip78
+									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip78)
 									: -1) == 3) {
 						{
 							BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);
@@ -178,8 +180,8 @@ public class ScytheReapProcedure {
 						}
 					}
 					if ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock() == Blocks.NETHER_WART
-							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip83
-									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip83)
+							&& ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip87
+									? (world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getValue(_getip87)
 									: -1) == 3) {
 						{
 							BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);
@@ -192,6 +194,28 @@ public class ScytheReapProcedure {
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 							}
 							world.setBlock(BlockPos.containing(x + xstart, y, z + zstart), Blocks.NETHER_WART.defaultBlockState(), 3);
+							{
+								int _value = 0;
+								BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);
+								BlockState _bs = world.getBlockState(_pos);
+								if (_bs.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+									world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+							}
+						}
+					}
+					if ((world.getBlockState(BlockPos.containing(x + xstart, y, z + zstart))).getBlock() == IterRpgModBlocks.ETHERBLOOM.get()
+							&& (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("iter_rpg:arcane_flower_soil")))) {
+						{
+							BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);
+							Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x + xstart + 0.5, y + 0.25, z + zstart + 0.5), null);
+							world.destroyBlock(_pos, false);
+						}
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(IterRpgModBlocks.ARCANE_FLOWER_SEEDS.get())) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(IterRpgModBlocks.ARCANE_FLOWER_SEEDS.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
+							world.setBlock(BlockPos.containing(x + xstart, y, z + zstart), IterRpgModBlocks.ARCANE_FLOWER_SEEDS.get().defaultBlockState(), 3);
 							{
 								int _value = 0;
 								BlockPos _pos = BlockPos.containing(x + xstart, y, z + zstart);

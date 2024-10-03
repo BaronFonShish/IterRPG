@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modelpeeper",
     "mobModelTexture": "peeper.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.9,
@@ -60,6 +72,9 @@
     "health": 6,
     "xpAmount": 3,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },

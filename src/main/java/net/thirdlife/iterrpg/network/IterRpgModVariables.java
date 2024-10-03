@@ -88,6 +88,7 @@ public class IterRpgModVariables {
 			clone.MaxMana = original.MaxMana;
 			clone.ManaOverlay = original.ManaOverlay;
 			clone.PlayerCoinAmount = original.PlayerCoinAmount;
+			clone.demon_friendly = original.demon_friendly;
 			if (!event.isWasDeath()) {
 				clone.SpellItem = original.SpellItem;
 				clone.SpellbookSlot = original.SpellbookSlot;
@@ -192,6 +193,13 @@ public class IterRpgModVariables {
 		public double config_event_rate = 0;
 		public String OverworldEvent = "\"\"";
 		public String NetherEvent = "\"\"";
+		public double OverworldEventTimer = 0;
+		public double OverworldEventChance = 0;
+		public double NetherEventTimer = 0;
+		public double NetherEventChance = 0;
+		public double event_duration = 0;
+		public double event_mintime = 0;
+		public double event_maxtime = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -230,6 +238,13 @@ public class IterRpgModVariables {
 			config_event_rate = nbt.getDouble("config_event_rate");
 			OverworldEvent = nbt.getString("OverworldEvent");
 			NetherEvent = nbt.getString("NetherEvent");
+			OverworldEventTimer = nbt.getDouble("OverworldEventTimer");
+			OverworldEventChance = nbt.getDouble("OverworldEventChance");
+			NetherEventTimer = nbt.getDouble("NetherEventTimer");
+			NetherEventChance = nbt.getDouble("NetherEventChance");
+			event_duration = nbt.getDouble("event_duration");
+			event_mintime = nbt.getDouble("event_mintime");
+			event_maxtime = nbt.getDouble("event_maxtime");
 		}
 
 		@Override
@@ -264,6 +279,13 @@ public class IterRpgModVariables {
 			nbt.putDouble("config_event_rate", config_event_rate);
 			nbt.putString("OverworldEvent", OverworldEvent);
 			nbt.putString("NetherEvent", NetherEvent);
+			nbt.putDouble("OverworldEventTimer", OverworldEventTimer);
+			nbt.putDouble("OverworldEventChance", OverworldEventChance);
+			nbt.putDouble("NetherEventTimer", NetherEventTimer);
+			nbt.putDouble("NetherEventChance", NetherEventChance);
+			nbt.putDouble("event_duration", event_duration);
+			nbt.putDouble("event_mintime", event_mintime);
+			nbt.putDouble("event_maxtime", event_maxtime);
 			return nbt;
 		}
 
@@ -383,6 +405,7 @@ public class IterRpgModVariables {
 		public double DropLuck = 0;
 		public boolean ManaOverlay = false;
 		public double PlayerCoinAmount = 0;
+		public boolean demon_friendly = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -418,6 +441,7 @@ public class IterRpgModVariables {
 			nbt.putDouble("DropLuck", DropLuck);
 			nbt.putBoolean("ManaOverlay", ManaOverlay);
 			nbt.putDouble("PlayerCoinAmount", PlayerCoinAmount);
+			nbt.putBoolean("demon_friendly", demon_friendly);
 			return nbt;
 		}
 
@@ -450,6 +474,7 @@ public class IterRpgModVariables {
 			DropLuck = nbt.getDouble("DropLuck");
 			ManaOverlay = nbt.getBoolean("ManaOverlay");
 			PlayerCoinAmount = nbt.getDouble("PlayerCoinAmount");
+			demon_friendly = nbt.getBoolean("demon_friendly");
 		}
 	}
 
@@ -501,6 +526,7 @@ public class IterRpgModVariables {
 					variables.DropLuck = message.data.DropLuck;
 					variables.ManaOverlay = message.data.ManaOverlay;
 					variables.PlayerCoinAmount = message.data.PlayerCoinAmount;
+					variables.demon_friendly = message.data.demon_friendly;
 				}
 			});
 			context.setPacketHandled(true);

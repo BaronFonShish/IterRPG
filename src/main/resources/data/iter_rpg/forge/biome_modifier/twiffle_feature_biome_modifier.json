@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "iter_rpg:twiffle_feature",
+  "step": "underground_decoration"
+}

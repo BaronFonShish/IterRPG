@@ -53,14 +53,14 @@ public class StormcallerStrikeProcedure {
 			_entity.removeEffect(IterRpgModMobEffects.IONIZED.get());
 		if (entity.onGround()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(IterRpgModMobEffects.IONIZED.get(), 60, 0, false, true));
+				_entity.addEffect(new MobEffectInstance(IterRpgModMobEffects.IONIZED.get(), 50, 1, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 30, 2, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 16, 1, false, true));
+				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 10, 2, false, true));
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(IterRpgModMobEffects.IONIZED.get(), 60, 2, false, true));
+				_entity.addEffect(new MobEffectInstance(IterRpgModMobEffects.IONIZED.get(), 60, 5, false, true));
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.SLOW_FALLING);
 			IterRpgMod.queueServerWork(5, () -> {
@@ -70,10 +70,11 @@ public class StormcallerStrikeProcedure {
 							(entity.getBbWidth() / 3), 0.05);
 			});
 			IterRpgMod.queueServerWork(15, () -> {
-				entity.setDeltaMovement(new Vec3(0, (-0.75), 0));
+				entity.setDeltaMovement(new Vec3(0, (-1), 0));
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.LIGHTNING_PARTICLE.get()), (entity.getX()), (entity.getY() + entity.getBbHeight() * 0.48), (entity.getZ()), 8, (entity.getBbWidth() / 3),
 							(entity.getBbHeight() / 4), (entity.getBbWidth() / 3), 0.05);
+				entity.fallDistance = 8;
 			});
 		}
 		if (world instanceof ServerLevel _level)

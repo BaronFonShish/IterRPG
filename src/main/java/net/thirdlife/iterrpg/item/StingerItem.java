@@ -19,7 +19,7 @@ import java.util.List;
 
 public class StingerItem extends Item {
 	public StingerItem() {
-		super(new Item.Properties().durability(92).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(136).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -38,16 +38,16 @@ public class StingerItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.translatable("iterpg.desc.stinger"));
-	}
-
-	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		entity.startUsingItem(hand);
 		return ar;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.translatable("iterpg.desc.stinger"));
 	}
 
 	@Override

@@ -2,7 +2,6 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"animation.insatiable.spawn": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 4.28,
 			"bones": {
 				"mob": {
@@ -948,7 +947,6 @@
 			}
 		},
 		"animation.insatiable.dive-in": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 1.56,
 			"bones": {
 				"mob": {
@@ -1195,7 +1193,6 @@
 			}
 		},
 		"animation.insatiable.dive-out": {
-			"loop": "hold_on_last_frame",
 			"animation_length": 1.16,
 			"bones": {
 				"mob": {

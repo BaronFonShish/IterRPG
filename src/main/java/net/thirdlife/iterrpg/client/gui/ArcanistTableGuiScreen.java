@@ -3,7 +3,6 @@ package net.thirdlife.iterrpg.client.gui;
 import net.thirdlife.iterrpg.world.inventory.ArcanistTableGuiMenu;
 import net.thirdlife.iterrpg.procedures.SpellCopyConditionProcedure;
 import net.thirdlife.iterrpg.procedures.Scroll1ConditionProcedure;
-import net.thirdlife.iterrpg.procedures.PaperinkConditionProcedure;
 import net.thirdlife.iterrpg.procedures.ArcanistTableButtonConditionReverseProcedure;
 import net.thirdlife.iterrpg.procedures.ArcanistTableButtonConditionProcedure;
 import net.thirdlife.iterrpg.network.ArcanistTableGuiButtonMessage;
@@ -56,13 +55,10 @@ public class ArcanistTableGuiScreen extends AbstractContainerScreen<ArcanistTabl
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		if (Scroll1ConditionProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/scroll_icon.png"), this.leftPos + 25, this.topPos + 44, 0, 0, 16, 16, 16, 16);
-		}
-		if (PaperinkConditionProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/paper_ink.png"), this.leftPos + 61, this.topPos + 44, 0, 0, 33, 16, 33, 16);
+			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/scroll_icon.png"), this.leftPos + 25, this.topPos + 35, 0, 0, 16, 16, 16, 16);
 		}
 		if (SpellCopyConditionProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/spell_copy_new.png"), this.leftPos + 60, this.topPos + 43, 0, 0, 54, 18, 54, 18);
+			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/spell_copy_new.png"), this.leftPos + 60, this.topPos + 25, 0, 0, 54, 18, 54, 18);
 		}
 		if (ArcanistTableButtonConditionReverseProcedure.execute(entity)) {
 			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/arcanist_table_button_deny.png"), this.leftPos + 77, this.topPos + 64, 0, 0, 20, 15, 20, 15);

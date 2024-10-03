@@ -1,9 +1,15 @@
 
 package net.thirdlife.iterrpg.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.thirdlife.iterrpg.procedures.TwiffleFunctionProcedure;
 import net.thirdlife.iterrpg.block.entity.TwiffleBlockBlockEntity;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -20,8 +26,18 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 public class TwiffleBlockBlock extends Block implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 2);
+
 	public TwiffleBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SHROOMLIGHT).strength(1f, 3f).randomTicks());
+		super(BlockBehaviour.Properties.of().sound(SoundType.SHROOMLIGHT).strength(1f, 3f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 2)
+					return 0;
+				return 0;
+			}
+		}.getLightLevel())).randomTicks());
 	}
 
 	@Override
@@ -30,12 +46,22 @@ public class TwiffleBlockBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return box(0, 0, 0, 16, 16, 16);
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(BLOCKSTATE);
+	}
+
+	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		TwiffleFunctionProcedure.execute(world, x, y, z);
+		TwiffleFunctionProcedure.execute(world, x, y, z, blockstate);
 	}
 
 	@Override

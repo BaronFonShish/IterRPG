@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHERBRICK"
+      },
+      {
+        "value": "CUSTOM:MagmanumChunk"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHERBRICK"
+      },
+      {
+        "value": "Items.NETHERBRICK"
+      },
+      {
+        "value": "Items.NETHERBRICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MagmanumStaff"
+    },
+    "name": "magmanum_staff_recipe",
+    "namespace": "mod"
+  }
+}

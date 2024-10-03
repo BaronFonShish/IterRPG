@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    " a ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:bone_wand",
+    "count": 1
+  }
+}

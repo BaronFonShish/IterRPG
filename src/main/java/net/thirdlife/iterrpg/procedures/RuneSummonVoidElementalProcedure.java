@@ -4,6 +4,7 @@ import net.thirdlife.iterrpg.network.IterRpgModVariables;
 import net.thirdlife.iterrpg.init.IterRpgModParticleTypes;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
 
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -29,7 +30,8 @@ public class RuneSummonVoidElementalProcedure {
 		double count = 0;
 		double max = 0;
 		max = 0.025;
-		if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.END || (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD && y <= -48) {
+		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END
+				|| (world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD && y <= -48) {
 			max = max + 0.025;
 		}
 		for (int index0 = 0; index0 < 6; index0++) {

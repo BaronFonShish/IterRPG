@@ -17,9 +17,9 @@
     },
     "harvestLevel": 2,
     "efficiency": 5.0,
-    "attackSpeed": 1.8,
+    "attackSpeed": 1.6,
     "enchantability": 12,
-    "damageVsEntity": 1.0,
+    "damageVsEntity": 2.0,
     "usageCount": 112,
     "blocksAffected": [],
     "glowCondition": {

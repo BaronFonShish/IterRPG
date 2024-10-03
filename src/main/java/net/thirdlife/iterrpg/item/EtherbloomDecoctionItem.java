@@ -30,7 +30,7 @@ public class EtherbloomDecoctionItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		EtherbloomDecoctionEffectProcedure.execute(entity);
+		EtherbloomDecoctionEffectProcedure.execute(entity, itemstack);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

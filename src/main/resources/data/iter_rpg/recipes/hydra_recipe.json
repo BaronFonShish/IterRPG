@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " ca",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:water_fragment"
+    },
+    "b": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "c": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:hydra_staff",
+    "count": 1
+  }
+}

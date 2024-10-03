@@ -30,13 +30,13 @@
         "value": "Items.ECHO_SHARD"
       },
       {
-        "value": "CUSTOM:AbyssquartzShard"
+        "value": "CUSTOM:AbyssquartzBlock"
       },
       {
         "value": "Blocks.OBSIDIAN"
       },
       {
-        "value": "CUSTOM:AbyssquartzShard"
+        "value": "CUSTOM:AbyssquartzBlock"
       }
     ],
     "recipeReturnStack": {

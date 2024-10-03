@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "dbc",
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:fire_fragment"
+    },
+    "b": {
+      "item": "minecraft:nether_brick"
+    },
+    "c": {
+      "item": "minecraft:leather"
+    },
+    "d": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:smoldering_tome",
+    "count": 1
+  }
+}

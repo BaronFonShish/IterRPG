@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:tombstone_fragment"
+    },
+    {
+      "item": "iter_rpg:haunted_splinter"
+    },
+    {
+      "item": "iter_rpg:ectoplasm"
+    },
+    {
+      "item": "iter_rpg:ectoplasm"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "iter_rpg:halflower"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:otherwordly_ingot",
+    "count": 2
+  }
+}

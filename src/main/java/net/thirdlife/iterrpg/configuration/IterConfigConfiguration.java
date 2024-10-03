@@ -21,13 +21,13 @@ public class IterConfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Double> GOBLIN_SPAWNER_CYCLE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> COIN_DROP;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> GEODE_DROP;
-	public static final ForgeConfigSpec.ConfigValue<Double> EVENT_RATE;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> EVENTS;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> GOBLIN_RAID;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SKIES_OF_RUIN;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SKIES_OF_RUIN_REPEATABLE;
-	public static final ForgeConfigSpec.ConfigValue<Boolean> DEMON_GATES;
-	public static final ForgeConfigSpec.ConfigValue<Boolean> END_RIFT;
-	public static final ForgeConfigSpec.ConfigValue<Boolean> DEMON_HIVE;
+	public static final ForgeConfigSpec.ConfigValue<Double> EVENT_DURATION;
+	public static final ForgeConfigSpec.ConfigValue<Double> EVENT_MINTIME;
+	public static final ForgeConfigSpec.ConfigValue<Double> EVENT_MAXTIME;
 	static {
 		BUILDER.push("mobs");
 		ELEMENTALS = BUILDER.comment("Do elementals spawn?").define("Elementals", true);
@@ -52,16 +52,14 @@ public class IterConfigConfiguration {
 		GEODE_DROP = BUILDER.comment("Do mobs sometimes drop geodes?").define("Geode drop", true);
 		BUILDER.pop();
 		BUILDER.push("events");
-		EVENT_RATE = BUILDER.comment("How often events happen? (default 1.0)").define("Event rate", (double) 1);
+		EVENTS = BUILDER.comment("Do world events happen?").define("Events", true);
 		GOBLIN_RAID = BUILDER.comment("Do goblins sometimes raid the player?").define("Goblin raids", true);
 		SKIES_OF_RUIN = BUILDER.comment("Do Celestials invade the world after the dragon is slain?").define("Skies of Ruin", true);
 		SKIES_OF_RUIN_REPEATABLE = BUILDER.comment("Does Skies of ruin event sometimes repeat?").define("Repeatable Skies of ruin", true);
-		DEMON_GATES = BUILDER.comment("Do demons sometimes breach into the overworld?").define("Demon gates", true);
-		END_RIFT = BUILDER.comment("Do end rifts happen?").define("End rifts", true);
-		DEMON_HIVE = BUILDER.define("Demon hive", true);
+		EVENT_DURATION = BUILDER.define("Event duration", (double) 1);
+		EVENT_MINTIME = BUILDER.define("Event min time", (double) 7);
+		EVENT_MAXTIME = BUILDER.define("Event max time", (double) 28);
 		BUILDER.pop();
-
 		SPEC = BUILDER.build();
 	}
-
 }

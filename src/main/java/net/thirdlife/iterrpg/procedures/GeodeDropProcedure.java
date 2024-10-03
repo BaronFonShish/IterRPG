@@ -7,6 +7,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GameRules;
@@ -43,7 +44,7 @@ public class GeodeDropProcedure {
 				if (GeodesConfigConditionProcedure.execute(world) && world.getLevelData().getGameRules().getBoolean(GameRules.RULE_DOMOBLOOT)) {
 					luck = Mth.nextInt(RandomSource.create(), 1, 512);
 					if (luck == 64) {
-						if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD) {
+						if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD) {
 							if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.DEEPSLATE_GEODE.get()));
@@ -57,7 +58,7 @@ public class GeodeDropProcedure {
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
-						} else if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.NETHER) {
+						} else if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.NETHER) {
 							if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.BLACKSTONE_GEODE.get()));
@@ -71,7 +72,7 @@ public class GeodeDropProcedure {
 									_level.addFreshEntity(entityToSpawn);
 								}
 							}
-						} else if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.END) {
+						} else if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.ENDSTONE_GEODE.get()));
 								entityToSpawn.setPickUpDelay(10);

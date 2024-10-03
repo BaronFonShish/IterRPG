@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "iter_rpg:block/tendons",
-    "particle": "iter_rpg:block/tendons"
-  },
-  "render_type": "solid"
-}

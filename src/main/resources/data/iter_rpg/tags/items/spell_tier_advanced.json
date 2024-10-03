@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:spell_etherblast",
+    "iter_rpg:spell_flamebolt",
+    "iter_rpg:spell_voidbeam"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "iter_rpg:event_spawn",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

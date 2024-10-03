@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:drill",
+    "iter_rpg:arthropod_catacombs_gen_block",
+    "iter_rpg:goblin_dungeon_gen",
+    "iter_rpg:compacted_sorrowsealed",
+    "iter_rpg:sorrow_spire_gen_block",
+    "iter_rpg:magmanum_block",
+    "iter_rpg:generic_dungeon_gen_block"
+  ]
+}

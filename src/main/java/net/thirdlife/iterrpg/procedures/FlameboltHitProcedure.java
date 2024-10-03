@@ -26,7 +26,7 @@ public class FlameboltHitProcedure {
 			return;
 		double distance = 0;
 		if (!entity.fireImmune()) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("iter_rpg:arcane_damage"))), immediatesourceentity), 4);
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("iter_rpg:arcane_damage"))), immediatesourceentity), 5);
 			entity.setSecondsOnFire(6);
 		}
 		if (world instanceof ServerLevel _level)

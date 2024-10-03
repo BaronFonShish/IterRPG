@@ -18,16 +18,16 @@
         "value": "Items.STRING"
       },
       {
-        "value": "Blocks.WOOL"
-      },
-      {
-        "value": "Items.LEATHER"
+        "value": "CUSTOM:SpiderSilk"
       },
       {
         "value": "CUSTOM:ArcanePowder"
       },
       {
-        "value": "CUSTOM:SpiderSilk"
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": ""

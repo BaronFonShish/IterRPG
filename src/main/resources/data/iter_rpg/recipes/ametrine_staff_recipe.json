@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    " db",
+    "b a"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:gist"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "iter_rpg:ametrine_ingot"
+    },
+    "d": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ametrine_staff",
+    "count": 1
+  }
+}

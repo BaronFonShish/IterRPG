@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Seashell"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.SEA_PICKLE"
+      },
+      {
+        "value": "Items.FISH"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SevenSeasConcoction"
+    },
+    "name": "seven_seas_concoction_craft",
+    "namespace": "mod"
+  }
+}

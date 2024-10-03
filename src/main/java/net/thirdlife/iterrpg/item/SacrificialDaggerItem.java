@@ -20,7 +20,7 @@ public class SacrificialDaggerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return -3f;
+				return -2f;
 			}
 
 			public int getLevel() {
@@ -34,6 +34,6 @@ public class SacrificialDaggerItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 			}
-		}, 3, -2.2f, new Item.Properties());
+		}, 3, -2.4f, new Item.Properties());
 	}
 }

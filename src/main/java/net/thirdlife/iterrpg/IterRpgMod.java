@@ -45,6 +45,8 @@ public class IterRpgMod {
 	public static final String MODID = "iter_rpg";
 
 	public IterRpgMod() {
+		// Start of user code block mod constructor
+		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		IterRpgModSounds.REGISTRY.register(bus);

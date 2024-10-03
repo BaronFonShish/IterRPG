@@ -2,6 +2,14 @@
   "replace": false,
   "values": [
     "iter_rpg:amethyst_wand",
-    "iter_rpg:pearl_wand"
+    "iter_rpg:pearl_wand",
+    "iter_rpg:ametrine_staff",
+    "iter_rpg:bone_wand",
+    "iter_rpg:nimble_copper_shortstaff",
+    "iter_rpg:hydra_staff",
+    "iter_rpg:abyssquartz_wand",
+    "iter_rpg:magmanum_staff",
+    "iter_rpg:smoldering_tome",
+    "iter_rpg:enchantome"
   ]
 }

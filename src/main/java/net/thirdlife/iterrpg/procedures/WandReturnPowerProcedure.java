@@ -1,5 +1,8 @@
 package net.thirdlife.iterrpg.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
+import net.thirdlife.iterrpg.init.IterRpgModItems;
 import net.thirdlife.iterrpg.init.IterRpgModEnchantments;
 import net.thirdlife.iterrpg.init.IterRpgModAttributes;
 
@@ -28,6 +31,9 @@ public class WandReturnPowerProcedure {
 		if (EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get(), wand) != 0) {
 			power = power * (1 + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 50);
 			power = power + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 25;
+		}
+		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.ARCANE_BOUQUETE.get(), lv).isPresent() : false) {
+			power = power + 0.05;
 		}
 		return power;
 	}

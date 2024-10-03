@@ -6,7 +6,7 @@ import net.thirdlife.iterrpg.procedures.SpiderEggsConfigConditionProcedure;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.SimpleBlockFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.level.WorldGenLevel;
 
 public class SpiderEggFeatureFeature extends SimpleBlockFeature {
 	public SpiderEggFeatureFeature() {
@@ -14,7 +14,7 @@ public class SpiderEggFeatureFeature extends SimpleBlockFeature {
 	}
 
 	public boolean place(FeaturePlaceContext<SimpleBlockConfiguration> context) {
-		Level world = context.level().getLevel();
+		WorldGenLevel world = context.level();
 		int x = context.origin().getX();
 		int y = context.origin().getY();
 		int z = context.origin().getZ();

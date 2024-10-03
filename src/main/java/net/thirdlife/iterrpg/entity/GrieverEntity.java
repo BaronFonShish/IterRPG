@@ -3,7 +3,6 @@ package net.thirdlife.iterrpg.entity;
 
 import net.thirdlife.iterrpg.procedures.SoulsReleaseProcedure;
 import net.thirdlife.iterrpg.procedures.GrieverSpawnProcedure;
-import net.thirdlife.iterrpg.procedures.GrieverScreamProcedure;
 import net.thirdlife.iterrpg.procedures.GrieverAiProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
 
@@ -31,7 +30,6 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
@@ -101,15 +99,6 @@ public class GrieverEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Level world = this.level();
-		Entity entity = this;
-		Entity sourceentity = damagesource.getEntity();
-		Entity immediatesourceentity = damagesource.getDirectEntity();
-
-		GrieverScreamProcedure.execute(world, x, y, z, entity, sourceentity);
 		if (damagesource.is(DamageTypes.DROWN))
 			return false;
 		return super.hurt(damagesource, amount);

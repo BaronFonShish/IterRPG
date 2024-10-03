@@ -18,7 +18,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 public class CaltropUsedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		boolean dospawn = false;
@@ -42,7 +42,7 @@ public class CaltropUsedProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.swing(InteractionHand.MAIN_HAND, true);
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = IterRpgModEntities.CALTROP_THROWN.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
+			Entity entityToSpawn = IterRpgModEntities.CALTROP_THROWN.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 1, entity.getZ()), MobSpawnType.MOB_SUMMONED);
 			if (entityToSpawn != null) {
 				entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
 				entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));

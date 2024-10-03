@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "a",
-    "b",
-    "b"
+    " ab",
+    " aa",
+    "a  "
   ],
   "key": {
     "a": {
-      "item": "iter_rpg:pearl"
+      "item": "iter_rpg:seashell"
     },
     "b": {
-      "item": "iter_rpg:seashell"
+      "item": "iter_rpg:pearl"
     }
   },
   "result": {

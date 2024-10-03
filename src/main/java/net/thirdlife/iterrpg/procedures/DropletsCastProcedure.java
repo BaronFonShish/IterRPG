@@ -1,7 +1,7 @@
 package net.thirdlife.iterrpg.procedures;
 
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
-import net.thirdlife.iterrpg.entity.DropletProjectileProjectileEntity;
+import net.thirdlife.iterrpg.entity.DropletMagicEntity;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -22,11 +22,11 @@ public class DropletsCastProcedure {
 		double velocity = 0;
 		power = WandReturnPowerProcedure.execute(entity);
 		velocity = 0.75;
-		for (int index0 = 0; index0 < (int) Math.round(power * 3); index0++) {
+		for (int index0 = 0; index0 < (int) (2 + Math.round(power * 1.25)); index0++) {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
 					public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-						AbstractArrow entityToSpawn = new DropletProjectileProjectileEntity(IterRpgModEntities.DROPLET_PROJECTILE_PROJECTILE.get(), level);
+						AbstractArrow entityToSpawn = new DropletMagicEntity(IterRpgModEntities.DROPLET_MAGIC.get(), level);
 						entityToSpawn.setOwner(shooter);
 						entityToSpawn.setBaseDamage(damage);
 						entityToSpawn.setKnockback(knockback);

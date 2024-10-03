@@ -7,7 +7,7 @@
     "mobModelName": "Modelunbound_soul",
     "mobModelTexture": "unbound_soul.png",
     "transparentModelCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "isShakingCondition": {
       "fixedValue": false
@@ -42,7 +42,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -75,7 +75,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 32,
-    "health": 50,
+    "health": 30,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
@@ -93,16 +93,16 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": true,
-    "immuneToArrows": true,
+    "immuneToArrows": false,
     "immuneToFallDamage": true,
     "immuneToCactus": true,
     "immuneToDrowning": true,
-    "immuneToLightning": true,
+    "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": true,
-    "immuneToTrident": true,
-    "immuneToAnvil": true,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
     "immuneToWither": true,
     "immuneToDragonBreath": false,
     "mobDrop": {
@@ -126,7 +126,7 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">20</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">20</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -137,13 +137,17 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 2,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_forest"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

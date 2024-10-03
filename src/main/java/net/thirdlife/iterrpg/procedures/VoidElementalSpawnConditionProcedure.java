@@ -5,6 +5,7 @@ import net.thirdlife.iterrpg.entity.VoidElementalEntity;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
@@ -25,8 +26,8 @@ public class VoidElementalSpawnConditionProcedure {
 				}
 			}
 		}
-		if (Math.abs(x) + Math.abs(z) > 1250 && (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.END && count <= 1 && ElementalsSpawnConditionProcedure.execute(world, x, y, z)
-				&& IterRpgModVariables.MapVariables.get(world).unlocked_void) {
+		if (Math.abs(x) + Math.abs(z) > 1250 && (world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END && count <= 1
+				&& ElementalsSpawnConditionProcedure.execute(world, x, y, z) && IterRpgModVariables.MapVariables.get(world).unlocked_void) {
 			return true;
 		}
 		return false;

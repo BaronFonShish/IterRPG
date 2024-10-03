@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "TRANSPORTATION"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

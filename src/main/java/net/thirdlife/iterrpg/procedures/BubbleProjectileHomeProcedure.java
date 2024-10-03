@@ -6,6 +6,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.TamableAnimal;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerLevel;
@@ -54,9 +55,10 @@ public class BubbleProjectileHomeProcedure {
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(radius / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
-					if (flag && !(entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("forge:player_allies")))
-							|| entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage"))) || (entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
-							|| !(entityiterator instanceof Monster) || entityiterator instanceof Player)) {
+					if (flag && (entityiterator instanceof LivingEntity _entity ? _entity.hasLineOfSight(immediatesourceentity) : false)
+							&& !(entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("forge:player_allies")))
+									|| entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage"))) || (entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false)
+									|| !(entityiterator instanceof Monster) || entityiterator instanceof Player)) {
 						flag = false;
 						xdir = entityiterator.getX() - immediatesourceentity.getX();
 						ydir = (entityiterator.getY() + entityiterator.getBbHeight() / 2) - immediatesourceentity.getY();

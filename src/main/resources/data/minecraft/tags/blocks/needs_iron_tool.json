@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "iter_rpg:grim_locker",
+    "iter_rpg:runic_grimstone_active",
+    "iter_rpg:runic_grimstone",
+    "iter_rpg:barrier_projector",
+    "iter_rpg:grim_soultrap",
     "iter_rpg:magmanum_ore",
     "iter_rpg:abyss_quartz"
   ]

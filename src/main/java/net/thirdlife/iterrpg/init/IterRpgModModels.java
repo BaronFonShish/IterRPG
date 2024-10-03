@@ -31,6 +31,7 @@ import net.thirdlife.iterrpg.client.model.Modelgrimhook;
 import net.thirdlife.iterrpg.client.model.Modelgrimace;
 import net.thirdlife.iterrpg.client.model.Modelgrim_boulder;
 import net.thirdlife.iterrpg.client.model.Modelgriever;
+import net.thirdlife.iterrpg.client.model.Modelgreat_bubble;
 import net.thirdlife.iterrpg.client.model.Modelgoblin_warrior;
 import net.thirdlife.iterrpg.client.model.Modelgoblin;
 import net.thirdlife.iterrpg.client.model.Modelgobjavelin_projectile;
@@ -100,6 +101,7 @@ public class IterRpgModModels {
 		event.registerLayerDefinition(Modelweeper.LAYER_LOCATION, Modelweeper::createBodyLayer);
 		event.registerLayerDefinition(Modelgoblin_warrior.LAYER_LOCATION, Modelgoblin_warrior::createBodyLayer);
 		event.registerLayerDefinition(Modelgrimhook.LAYER_LOCATION, Modelgrimhook::createBodyLayer);
+		event.registerLayerDefinition(Modelgreat_bubble.LAYER_LOCATION, Modelgreat_bubble::createBodyLayer);
 		event.registerLayerDefinition(Modelrevenant.LAYER_LOCATION, Modelrevenant::createBodyLayer);
 		event.registerLayerDefinition(Modelgriever.LAYER_LOCATION, Modelgriever::createBodyLayer);
 		event.registerLayerDefinition(Modelearth_elemental.LAYER_LOCATION, Modelearth_elemental::createBodyLayer);

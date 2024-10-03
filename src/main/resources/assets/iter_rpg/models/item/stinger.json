@@ -3,6 +3,20 @@
   "textures": {
     "layer0": "iter_rpg:item/gobsteel_crossbow"
   },
+  "overrides": [
+    {
+      "predicate": {
+        "iter_rpg:stinger_pulling": 4
+      },
+      "model": "iter_rpg:item/stinger_0"
+    },
+    {
+      "predicate": {
+        "iter_rpg:stinger_pulling": 8
+      },
+      "model": "iter_rpg:item/stinger_1"
+    }
+  ],
   "display": {
     "thirdperson_righthand": {
       "rotation": [

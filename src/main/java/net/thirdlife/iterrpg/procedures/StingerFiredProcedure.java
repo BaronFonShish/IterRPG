@@ -88,9 +88,9 @@ public class StingerFiredProcedure {
 								entityToSpawn.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, (float) 1.5, 0);
+						}.getArrow(projectileLevel, entity, 1, 0);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 1);
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 2.5, 1);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}

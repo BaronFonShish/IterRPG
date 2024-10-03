@@ -9,8 +9,8 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 400,
-    "separation": 300,
+    "spacing": 50,
+    "separation": 25,
     "restrictionBiomes": [
       {
         "value": "#minecraft:is_nether"

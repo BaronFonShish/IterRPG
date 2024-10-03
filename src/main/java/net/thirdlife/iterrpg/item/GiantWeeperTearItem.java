@@ -33,24 +33,18 @@ public class GiantWeeperTearItem extends Item {
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.success(entity.getItemInHand(hand));
-		entity.startUsingItem(hand);
+		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
+		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
+			entity.startUsingItem(hand);
+		}
 		return ar;
 	}
 
 	@Override
 	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int count) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
-			ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == HomingTearEntity.PROJECTILE_ITEM.getItem());
-			if (stack == ItemStack.EMPTY) {
-				for (int i = 0; i < player.getInventory().items.size(); i++) {
-					ItemStack teststack = player.getInventory().items.get(i);
-					if (teststack != null && teststack.getItem() == HomingTearEntity.PROJECTILE_ITEM.getItem()) {
-						stack = teststack;
-						break;
-					}
-				}
-			}
+			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
 				HomingTearEntity projectile = HomingTearEntity.shoot(world, entity, world.getRandom());
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
@@ -73,5 +67,19 @@ public class GiantWeeperTearItem extends Item {
 			}
 			entity.releaseUsingItem();
 		}
+	}
+
+	private ItemStack findAmmo(Player player) {
+		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == HomingTearEntity.PROJECTILE_ITEM.getItem());
+		if (stack == ItemStack.EMPTY) {
+			for (int i = 0; i < player.getInventory().items.size(); i++) {
+				ItemStack teststack = player.getInventory().items.get(i);
+				if (teststack != null && teststack.getItem() == HomingTearEntity.PROJECTILE_ITEM.getItem()) {
+					stack = teststack;
+					break;
+				}
+			}
+		}
+		return stack;
 	}
 }

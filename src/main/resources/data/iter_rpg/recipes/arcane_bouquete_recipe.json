@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:etherbloom"
+    },
+    {
+      "item": "minecraft:poppy"
+    },
+    {
+      "item": "minecraft:dandelion"
+    },
+    {
+      "item": "minecraft:cornflower"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:arcane_bouquete",
+    "count": 1
+  }
+}

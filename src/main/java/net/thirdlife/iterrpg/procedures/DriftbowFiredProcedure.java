@@ -4,7 +4,6 @@ import net.thirdlife.iterrpg.init.IterRpgModEntities;
 import net.thirdlife.iterrpg.entity.SeaArrowEntity;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -23,8 +22,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
-
-import java.util.concurrent.atomic.AtomicReference;
 
 public class DriftbowFiredProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -51,35 +48,14 @@ public class DriftbowFiredProcedure {
 			} else {
 				shoot = false;
 			}
-			for (int index0 = 0; index0 < 35; index0++) {
-				if (!((new Object() {
-					public ItemStack getItemStack(int sltid, Entity entity) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack((int) slot, entity)).getItem() == Items.ARROW)) {
-					slot = slot + 1;
-				} else {
-					shoot = true;
-					ammo = (new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
-						}
-					}.getItemStack((int) slot, entity));
-				}
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.GLASS_BOTTLE)) : false) {
+				shoot = true;
 			}
 			if (shoot) {
-				if ((entity instanceof LivingEntity _entUseTicks5 ? _entUseTicks5.getTicksUsingItem() : 0) >= 20) {
+				if ((entity instanceof LivingEntity _entUseTicks3 ? _entUseTicks3.getTicksUsingItem() : 0) >= 20) {
 					strength = 2.5;
 				} else {
-					strength = (entity instanceof LivingEntity _entUseTicks6 ? _entUseTicks6.getTicksUsingItem() : 0) / 16;
+					strength = (entity instanceof LivingEntity _entUseTicks4 ? _entUseTicks4.getTicksUsingItem() : 0) / 16;
 				}
 				{
 					Entity _shootFrom = entity;
@@ -95,7 +71,7 @@ public class DriftbowFiredProcedure {
 								entityToSpawn.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 								return entityToSpawn;
 							}
-						}.getArrow(projectileLevel, entity, (float) (1.5 * strength), 0);
+						}.getArrow(projectileLevel, entity, 2, 0);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) (strength + 0.25), 1);
 						projectileLevel.addFreshEntity(_entityToSpawn);
@@ -121,7 +97,7 @@ public class DriftbowFiredProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = ammo;
+						ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					{

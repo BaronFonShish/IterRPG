@@ -6,6 +6,7 @@ package net.thirdlife.iterrpg.init;
 
 import net.thirdlife.iterrpg.world.features.VaseRoomFeatureFeature;
 import net.thirdlife.iterrpg.world.features.VaseFeatureFeature;
+import net.thirdlife.iterrpg.world.features.TwiffleFeatureFeature;
 import net.thirdlife.iterrpg.world.features.SpiderEggFeatureFeature;
 import net.thirdlife.iterrpg.world.features.GeoditeFeatureFeature;
 import net.thirdlife.iterrpg.world.features.AbyssquartzFeatureFeature;
@@ -26,4 +27,5 @@ public class IterRpgModFeatures {
 	public static final RegistryObject<Feature<?>> GEODITE_FEATURE = REGISTRY.register("geodite_feature", GeoditeFeatureFeature::new);
 	public static final RegistryObject<Feature<?>> VASE_ROOM_FEATURE = REGISTRY.register("vase_room_feature", VaseRoomFeatureFeature::new);
 	public static final RegistryObject<Feature<?>> VASE_FEATURE = REGISTRY.register("vase_feature", VaseFeatureFeature::new);
+	public static final RegistryObject<Feature<?>> TWIFFLE_FEATURE = REGISTRY.register("twiffle_feature", TwiffleFeatureFeature::new);
 }

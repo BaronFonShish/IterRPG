@@ -84,10 +84,12 @@ public class Modelrevenant<T extends Entity> extends EntityModel<T> {
 		this.head.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.head.xRot = headPitch / (180F / (float) Math.PI);
 		this.jaw.xRot = (Mth.sin(ageInTicks / 12) / 20) + (30 * Mth.PI / 180);
-		this.arm_right.xRot = Mth.cos(limbSwing * 0.666F + (float) Math.PI) * limbSwingAmount - 1.6F * Mth.sin(attackTime * Mth.PI);
+		this.arm_right.xRot = Mth.cos(limbSwing * 0.666F) * -1.0F * limbSwingAmount - 1.6F * Mth.sin(attackTime * Mth.PI);
 		this.arm_right.yRot = 0.6F * Mth.sin(attackTime * Mth.PI * 2F);
+		this.arm_left.xRot = Mth.cos(limbSwing * 0.666F) * 1.0F * limbSwingAmount - 1.6F * Mth.sin(attackTime * Mth.PI);
+		this.arm_right.yRot = 0.6F * Mth.sin(attackTime * Mth.PI * 2F);
+		this.arm_left.yRot = -0.6F * Mth.sin(attackTime * Mth.PI * 2F);
 		this.leg_left.xRot = Mth.cos(limbSwing * 0.666F) * -1.0F * limbSwingAmount;
-		this.arm_left.xRot = Mth.cos(limbSwing * 0.666F) * limbSwingAmount;
 		this.leg_right.xRot = Mth.cos(limbSwing * 0.666F) * 1.0F * limbSwingAmount;
 		this.arm_right.zRot = (Mth.sin(ageInTicks / 16) / 20) + 0.1F;
 		this.arm_left.zRot = (Mth.sin(ageInTicks / 16) / -20) - 0.1F;

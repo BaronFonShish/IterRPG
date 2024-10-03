@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:tombstone_fragment"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:tombstone_fragments_block",
+    "count": 1
+  }
+}

@@ -32,6 +32,6 @@ public class DeepsteelPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 1, -2.4f, new Item.Properties().fireResistant());
+		}, 1, -2.8f, new Item.Properties().fireResistant());
 	}
 }

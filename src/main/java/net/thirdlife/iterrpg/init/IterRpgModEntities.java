@@ -7,6 +7,7 @@ package net.thirdlife.iterrpg.init;
 import net.thirdlife.iterrpg.entity.WindswirlEntity;
 import net.thirdlife.iterrpg.entity.WeeperEntity;
 import net.thirdlife.iterrpg.entity.WaterElementalEntity;
+import net.thirdlife.iterrpg.entity.VolatileFireballEntity;
 import net.thirdlife.iterrpg.entity.VoidPortalEntity;
 import net.thirdlife.iterrpg.entity.VoidElementalEntity;
 import net.thirdlife.iterrpg.entity.UnboundSoulEntity;
@@ -16,14 +17,13 @@ import net.thirdlife.iterrpg.entity.SolsphereEntity;
 import net.thirdlife.iterrpg.entity.SmallScallopEntity;
 import net.thirdlife.iterrpg.entity.SeaArrowEntity;
 import net.thirdlife.iterrpg.entity.ScallopEntity;
-import net.thirdlife.iterrpg.entity.ScabEntity;
-import net.thirdlife.iterrpg.entity.RevenantEntity;
 import net.thirdlife.iterrpg.entity.PeeperEntity;
 import net.thirdlife.iterrpg.entity.MudkinEntity;
 import net.thirdlife.iterrpg.entity.MournstoneEntity;
 import net.thirdlife.iterrpg.entity.MarrowProjectileEntity;
 import net.thirdlife.iterrpg.entity.JavelinProjectileEntity;
 import net.thirdlife.iterrpg.entity.InsatiableEntity;
+import net.thirdlife.iterrpg.entity.HydraBubbleEntity;
 import net.thirdlife.iterrpg.entity.HomingTearEntity;
 import net.thirdlife.iterrpg.entity.HomingBubbleEntity;
 import net.thirdlife.iterrpg.entity.HobgoblinEntity;
@@ -39,18 +39,18 @@ import net.thirdlife.iterrpg.entity.ForestVinesEntity;
 import net.thirdlife.iterrpg.entity.FlameboltEntity;
 import net.thirdlife.iterrpg.entity.FireballProjectileProjectileEntity;
 import net.thirdlife.iterrpg.entity.FireElementalEntity;
-import net.thirdlife.iterrpg.entity.FiendEntity;
+import net.thirdlife.iterrpg.entity.EventSpawnEntity;
 import net.thirdlife.iterrpg.entity.EmberProjEntity;
 import net.thirdlife.iterrpg.entity.EarthElementalEntity;
 import net.thirdlife.iterrpg.entity.EarthBoulderEntity;
 import net.thirdlife.iterrpg.entity.DwarfEntity;
 import net.thirdlife.iterrpg.entity.DropletProjectileProjectileEntity;
+import net.thirdlife.iterrpg.entity.DropletMagicEntity;
 import net.thirdlife.iterrpg.entity.DemonspineEntity;
 import net.thirdlife.iterrpg.entity.DemonbloodProjectileEntity;
 import net.thirdlife.iterrpg.entity.DebugMobmorphEntity;
 import net.thirdlife.iterrpg.entity.ChaosApparitionEntity;
 import net.thirdlife.iterrpg.entity.ChainHandleEntity;
-import net.thirdlife.iterrpg.entity.CarcassEntity;
 import net.thirdlife.iterrpg.entity.CaltropThrownEntity;
 import net.thirdlife.iterrpg.entity.BonbProjectileEntity;
 import net.thirdlife.iterrpg.entity.BlobEntity;
@@ -127,10 +127,6 @@ public class IterRpgModEntities {
 			EntityType.Builder.<SpiderlingEntity>of(SpiderlingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpiderlingEntity::new)
 
 					.sized(0.6f, 0.5f));
-	public static final RegistryObject<EntityType<RevenantEntity>> REVENANT = register("revenant",
-			EntityType.Builder.<RevenantEntity>of(RevenantEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RevenantEntity::new)
-
-					.sized(0.6f, 1.95f));
 	public static final RegistryObject<EntityType<MudkinEntity>> MUDKIN = register("mudkin",
 			EntityType.Builder.<MudkinEntity>of(MudkinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MudkinEntity::new)
 
@@ -193,16 +189,8 @@ public class IterRpgModEntities {
 			.setCustomClientFactory(MarrowProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<DemonbloodProjectileEntity>> DEMONBLOOD_PROJECTILE = register("demonblood_projectile", EntityType.Builder.<DemonbloodProjectileEntity>of(DemonbloodProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(DemonbloodProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FiendEntity>> FIEND = register("fiend",
-			EntityType.Builder.<FiendEntity>of(FiendEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FiendEntity::new)
-
-					.sized(0.9f, 1.5f));
 	public static final RegistryObject<EntityType<ArcaneBoltEntity>> ARCANE_BOLT = register("arcane_bolt",
 			EntityType.Builder.<ArcaneBoltEntity>of(ArcaneBoltEntity::new, MobCategory.MISC).setCustomClientFactory(ArcaneBoltEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<CarcassEntity>> CARCASS = register("carcass",
-			EntityType.Builder.<CarcassEntity>of(CarcassEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CarcassEntity::new)
-
-					.sized(0.8f, 2.9f));
 	public static final RegistryObject<EntityType<HarvestSpiralEntity>> HARVEST_SPIRAL = register("harvest_spiral", EntityType.Builder.<HarvestSpiralEntity>of(HarvestSpiralEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(HarvestSpiralEntity::new).fireImmune().sized(1.25f, 0.25f));
 	public static final RegistryObject<EntityType<HomingBubbleEntity>> HOMING_BUBBLE = register("homing_bubble",
@@ -219,10 +207,6 @@ public class IterRpgModEntities {
 			EntityType.Builder.<GrimhookEntity>of(GrimhookEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrimhookEntity::new).fireImmune().sized(0.4f, 0.4f));
 	public static final RegistryObject<EntityType<HomingTearEntity>> HOMING_TEAR = register("homing_tear",
 			EntityType.Builder.<HomingTearEntity>of(HomingTearEntity::new, MobCategory.MISC).setCustomClientFactory(HomingTearEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ScabEntity>> SCAB = register("scab",
-			EntityType.Builder.<ScabEntity>of(ScabEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ScabEntity::new)
-
-					.sized(0.8f, 0.5f));
 	public static final RegistryObject<EntityType<BonbProjectileEntity>> BONB_PROJECTILE = register("bonb_projectile",
 			EntityType.Builder.<BonbProjectileEntity>of(BonbProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(BonbProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<JavelinProjectileEntity>> JAVELIN_PROJECTILE = register("javelin_projectile", EntityType.Builder.<JavelinProjectileEntity>of(JavelinProjectileEntity::new, MobCategory.MISC)
@@ -241,6 +225,14 @@ public class IterRpgModEntities {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChaosApparitionEntity::new).fireImmune().sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<FlameboltEntity>> FLAMEBOLT = register("flamebolt",
 			EntityType.Builder.<FlameboltEntity>of(FlameboltEntity::new, MobCategory.MISC).setCustomClientFactory(FlameboltEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EventSpawnEntity>> EVENT_SPAWN = register("event_spawn", EntityType.Builder.<EventSpawnEntity>of(EventSpawnEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(EventSpawnEntity::new).fireImmune().sized(0.1f, 0.1f));
+	public static final RegistryObject<EntityType<DropletMagicEntity>> DROPLET_MAGIC = register("droplet_magic",
+			EntityType.Builder.<DropletMagicEntity>of(DropletMagicEntity::new, MobCategory.MISC).setCustomClientFactory(DropletMagicEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HydraBubbleEntity>> HYDRA_BUBBLE = register("hydra_bubble", EntityType.Builder.<HydraBubbleEntity>of(HydraBubbleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(HydraBubbleEntity::new).fireImmune().sized(0.8f, 0.8f));
+	public static final RegistryObject<EntityType<VolatileFireballEntity>> VOLATILE_FIREBALL = register("volatile_fireball", EntityType.Builder.<VolatileFireballEntity>of(VolatileFireballEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(VolatileFireballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -265,7 +257,6 @@ public class IterRpgModEntities {
 			ScallopEntity.init();
 			GiantSpiderEntity.init();
 			SpiderlingEntity.init();
-			RevenantEntity.init();
 			MudkinEntity.init();
 			DemonspineEntity.init();
 			HobgoblinEntity.init();
@@ -283,17 +274,16 @@ public class IterRpgModEntities {
 			DebugMobmorphEntity.init();
 			EarthBoulderEntity.init();
 			VoidPortalEntity.init();
-			FiendEntity.init();
-			CarcassEntity.init();
 			HarvestSpiralEntity.init();
 			DwarfEntity.init();
 			SolsphereEntity.init();
 			GrimhookEntity.init();
-			ScabEntity.init();
 			GrimaceEntity.init();
 			SmallScallopEntity.init();
 			UnboundSoulEntity.init();
 			ChaosApparitionEntity.init();
+			EventSpawnEntity.init();
+			HydraBubbleEntity.init();
 		});
 	}
 
@@ -315,7 +305,6 @@ public class IterRpgModEntities {
 		event.put(SCALLOP.get(), ScallopEntity.createAttributes().build());
 		event.put(GIANT_SPIDER.get(), GiantSpiderEntity.createAttributes().build());
 		event.put(SPIDERLING.get(), SpiderlingEntity.createAttributes().build());
-		event.put(REVENANT.get(), RevenantEntity.createAttributes().build());
 		event.put(MUDKIN.get(), MudkinEntity.createAttributes().build());
 		event.put(DEMONSPINE.get(), DemonspineEntity.createAttributes().build());
 		event.put(HOBGOBLIN.get(), HobgoblinEntity.createAttributes().build());
@@ -333,16 +322,15 @@ public class IterRpgModEntities {
 		event.put(DEBUG_MOBMORPH.get(), DebugMobmorphEntity.createAttributes().build());
 		event.put(EARTH_BOULDER.get(), EarthBoulderEntity.createAttributes().build());
 		event.put(VOID_PORTAL.get(), VoidPortalEntity.createAttributes().build());
-		event.put(FIEND.get(), FiendEntity.createAttributes().build());
-		event.put(CARCASS.get(), CarcassEntity.createAttributes().build());
 		event.put(HARVEST_SPIRAL.get(), HarvestSpiralEntity.createAttributes().build());
 		event.put(DWARF.get(), DwarfEntity.createAttributes().build());
 		event.put(SOLSPHERE.get(), SolsphereEntity.createAttributes().build());
 		event.put(GRIMHOOK.get(), GrimhookEntity.createAttributes().build());
-		event.put(SCAB.get(), ScabEntity.createAttributes().build());
 		event.put(GRIMACE.get(), GrimaceEntity.createAttributes().build());
 		event.put(SMALL_SCALLOP.get(), SmallScallopEntity.createAttributes().build());
 		event.put(UNBOUND_SOUL.get(), UnboundSoulEntity.createAttributes().build());
 		event.put(CHAOS_APPARITION.get(), ChaosApparitionEntity.createAttributes().build());
+		event.put(EVENT_SPAWN.get(), EventSpawnEntity.createAttributes().build());
+		event.put(HYDRA_BUBBLE.get(), HydraBubbleEntity.createAttributes().build());
 	}
 }

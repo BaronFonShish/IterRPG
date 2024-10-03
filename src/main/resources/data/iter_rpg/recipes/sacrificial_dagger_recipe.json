@@ -2,18 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "a",
-    "b",
-    "c"
+    " aa",
+    "aa ",
+    "b  "
   ],
   "key": {
     "a": {
       "item": "minecraft:iron_nugget"
     },
     "b": {
-      "item": "minecraft:andesite"
-    },
-    "c": {
       "item": "minecraft:stick"
     }
   },

@@ -4,7 +4,6 @@ import net.thirdlife.iterrpg.init.IterRpgModEntities;
 import net.thirdlife.iterrpg.entity.ScallopEntity;
 import net.thirdlife.iterrpg.entity.InsatiableEntity;
 import net.thirdlife.iterrpg.entity.DropletProjectileProjectileEntity;
-import net.thirdlife.iterrpg.entity.CaltropThrownEntity;
 import net.thirdlife.iterrpg.entity.BloatedEntity;
 
 import net.minecraft.world.phys.Vec3;
@@ -22,15 +21,12 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
@@ -71,15 +67,6 @@ public class InsatiableAiProcedure {
 				_ent.teleportTo(x, (y + 0.25), z);
 				if (_ent instanceof ServerPlayer _serverPlayer)
 					_serverPlayer.connection.teleport(x, (y + 0.25), z, _ent.getYRot(), _ent.getXRot());
-			}
-		}
-		{
-			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
-				if (entityiterator instanceof CaltropThrownEntity) {
-					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 8);
-				}
 			}
 		}
 		if (entity.getPersistentData().getDouble("timer") >= entity.getPersistentData().getDouble("cooldown")) {

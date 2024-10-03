@@ -34,6 +34,8 @@ public class BonbExplodeProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 8, 0.016, 0.016, 0.016, 0.08);
 		if (world instanceof ServerLevel _level)
+			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ELEM_FLAME.get()), x, y, z, 8, 0.016, 0.016, 0.016, 0.08);
+		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 4, 0.016, 0.016, 0.016, 0.08);
 		distance = 1;
 		damage = 5;
@@ -44,12 +46,12 @@ public class BonbExplodeProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
 							&& !(entityiterator instanceof ItemEntity)) {
-						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION), immediatesourceentity), (float) damage);
+						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.EXPLOSION), immediatesourceentity), (float) (damage / 2));
 					}
 				}
 			}
 			damage = damage - 1;
-			distance = distance + 1.5;
+			distance = distance + 1.25;
 		}
 		if (world instanceof Level _level && !_level.isClientSide())
 			_level.explode(null, x, y, z, (float) 0.1, Level.ExplosionInteraction.NONE);

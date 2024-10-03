@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "iter_rpg:block/twiffle_bulb",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "iter_rpg:block/twiffle_bulb",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "iter_rpg:block/twiffle_bulb",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "iter_rpg:block/twiffle_bulb",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "iter_rpg:block/twiffle_bulb"
+    },
+    "facing=west": {
+      "model": "iter_rpg:block/twiffle_bulb",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

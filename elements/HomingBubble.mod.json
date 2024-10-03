@@ -16,10 +16,10 @@
     "entityModel": "Modeldroplet_projectile",
     "customModelTexture": "droplet.png",
     "onHitsBlock": {
-      "name": "BubbleProjectileHitBlock"
+      "name": "DropletHitBlock"
     },
     "onHitsEntity": {
-      "name": "BubbleProjectileHit"
+      "name": "DropletHit"
     },
     "onFlyingTick": {
       "name": "BubbleProjectileHome"

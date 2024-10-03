@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:tombstone_fragment"
+    },
+    "b": {
+      "item": "iter_rpg:haunted_splinter"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:sword_of_bounding",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ArcaneFlower"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#0"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.YELLOW_FLOWER"
+      },
+      {
+        "value": "Blocks.CORNFLOWER"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ArcaneBouquete"
+    },
+    "name": "arcane_bouquete_recipe",
+    "namespace": "mod"
+  }
+}

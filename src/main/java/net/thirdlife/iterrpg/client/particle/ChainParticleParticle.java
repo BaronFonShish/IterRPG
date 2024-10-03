@@ -26,7 +26,8 @@ public class ChainParticleParticle extends TextureSheetParticle {
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-			return new ChainParticleParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			ChainParticleParticle particle = new ChainParticleParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			return particle;
 		}
 	}
 

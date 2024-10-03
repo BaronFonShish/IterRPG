@@ -5,8 +5,61 @@
     "renderType": 0,
     "texture": "driftbow",
     "customModelName": "Ranged item",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "pulling": {
+        "name": "GetPullingValue"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "driftbow_0",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 8.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "driftbow_1",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 15.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "driftbow_2",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 20.0
+          }
+        ]
+      }
+    ],
     "name": "Driftbow",
     "rarity": "COMMON",
     "creativeTab": {

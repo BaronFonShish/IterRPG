@@ -8,6 +8,10 @@
     "minecraft:nether_wart_block",
     "minecraft:warped_wart_block",
     "minecraft:bone_block",
-    "minecraft:hay_block"
+    "minecraft:hay_block",
+    "minecraft:pumpkin",
+    "minecraft:melon",
+    "minecraft:carved_pumpkin",
+    "minecraft:cake"
   ]
 }

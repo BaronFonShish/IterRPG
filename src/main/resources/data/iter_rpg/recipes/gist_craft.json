@@ -1,16 +1,10 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
-      "tag": "iter_rpg:spell_scrolls"
-    }
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "iter_rpg:gist_source"
   },
-  "result": {
-    "item": "iter_rpg:gist",
-    "count": 2
-  }
+  "result": "iter_rpg:gist"
 }

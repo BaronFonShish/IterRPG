@@ -9,8 +9,8 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 100,
-    "separation": 70,
+    "spacing": 25,
+    "separation": 20,
     "restrictionBiomes": [
       {
         "value": "#iter_rpg:goblin_biomes"

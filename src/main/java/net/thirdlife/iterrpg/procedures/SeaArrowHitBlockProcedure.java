@@ -33,7 +33,7 @@ public class SeaArrowHitBlockProcedure {
 						entityToSpawn.setSilent(true);
 						return entityToSpawn;
 					}
-				}.getArrow(projectileLevel, (float) 1.75, 0);
+				}.getArrow(projectileLevel, (float) 2.5, 0);
 				_entityToSpawn.setPos((x + 0.5), (y + 1), (z + 0.5));
 				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.75), 0);
 				projectileLevel.addFreshEntity(_entityToSpawn);

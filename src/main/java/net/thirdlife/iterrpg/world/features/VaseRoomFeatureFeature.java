@@ -6,7 +6,7 @@ import net.thirdlife.iterrpg.procedures.VasesConfigConditionProcedure;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.SimpleRandomSelectorFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.level.WorldGenLevel;
 
 public class VaseRoomFeatureFeature extends SimpleRandomSelectorFeature {
 	public VaseRoomFeatureFeature() {
@@ -14,7 +14,7 @@ public class VaseRoomFeatureFeature extends SimpleRandomSelectorFeature {
 	}
 
 	public boolean place(FeaturePlaceContext<SimpleRandomFeatureConfiguration> context) {
-		Level world = context.level().getLevel();
+		WorldGenLevel world = context.level();
 		int x = context.origin().getX();
 		int y = context.origin().getY();
 		int z = context.origin().getZ();

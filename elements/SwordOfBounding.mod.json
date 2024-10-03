@@ -1,0 +1,40 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "bounding_sword",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Sword of Bounding",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 1,
+    "efficiency": 7.0,
+    "attackSpeed": 1.6,
+    "enchantability": 14,
+    "damageVsEntity": 6.0,
+    "usageCount": 180,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:TombstoneFragment"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "SwordOfBoundingHit"
+    }
+  }
+}

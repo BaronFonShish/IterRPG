@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " bb",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:ether_dust"
+    },
+    "b": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:nimble_copper_shortstaff",
+    "count": 1
+  }
+}

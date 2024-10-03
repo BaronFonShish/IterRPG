@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:VolatileFireballLauncher"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "item.firecharge.use"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "VolatileFireballHitBlocks"
+    },
+    "onHitsEntity": {
+      "name": "VolatileFireballHit"
+    },
+    "onFlyingTick": {
+      "name": "VolatileFireballParticle"
+    }
+  }
+}

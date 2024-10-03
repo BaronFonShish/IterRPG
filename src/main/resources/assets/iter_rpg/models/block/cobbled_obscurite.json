@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/cobbled_obscurite",
+    "particle": "iter_rpg:block/cobbled_obscurite"
+  },
+  "render_type": "solid"
+}

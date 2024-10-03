@@ -19,7 +19,7 @@ public class IonizedMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		IonizedEffectProcedure.execute(entity.level(), entity.getY(), entity, amplifier);
+		IonizedEffectProcedure.execute(entity.level(), entity.getY(), entity);
 	}
 
 	@Override

@@ -5,6 +5,7 @@ import net.thirdlife.iterrpg.init.IterRpgModParticleTypes;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -104,8 +105,8 @@ public class EndArmorSetBonusProcedure {
 		if (itemstack.getOrCreateTag().getDouble("voidcooldown") >= 1) {
 			itemstack.getOrCreateTag().putDouble("voidcooldown", (itemstack.getOrCreateTag().getDouble("voidcooldown") - 1));
 		}
-		if (itemstack.getOrCreateTag().getDouble("voidcooldown") <= 1
-				&& (y <= -65 && (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD || y <= 0 && !((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD))) {
+		if (itemstack.getOrCreateTag().getDouble("voidcooldown") <= 1 && (y <= -65 && (world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD
+				|| y <= 0 && !((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD))) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ELEMENTAL_VOID.get()), (entity.getX()), (entity.getY() + entity.getBbHeight() / 2), (entity.getZ()), 16, 0.5, 1, 0.5, 0);
 			if (world instanceof ServerLevel _level)

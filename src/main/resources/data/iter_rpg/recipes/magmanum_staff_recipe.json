@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " aa",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nether_brick"
+    },
+    "b": {
+      "item": "iter_rpg:magmanum_chunk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:magmanum_staff",
+    "count": 1
+  }
+}

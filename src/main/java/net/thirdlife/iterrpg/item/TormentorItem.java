@@ -29,7 +29,7 @@ public class TormentorItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 0f;
 			}
 
 			public int getLevel() {
@@ -49,7 +49,7 @@ public class TormentorItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		TormentorChainProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
+		TormentorChainProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity, itemstack);
 		return retval;
 	}
 

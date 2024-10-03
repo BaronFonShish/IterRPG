@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WaterFragment"
+      },
+      {
+        "value": "Items.HEART_OF_THE_SEA"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "CUSTOM:WaterFragment"
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HydraStaff"
+    },
+    "name": "hydra_recipe",
+    "namespace": "mod"
+  }
+}

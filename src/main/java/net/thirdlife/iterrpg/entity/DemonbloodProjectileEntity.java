@@ -3,6 +3,7 @@ package net.thirdlife.iterrpg.entity;
 
 import net.thirdlife.iterrpg.procedures.DemonbloodParticleProcedure;
 import net.thirdlife.iterrpg.procedures.DemonbloodBurstProcedure;
+import net.thirdlife.iterrpg.procedures.DemonbloodBurstBlockProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -77,7 +78,7 @@ public class DemonbloodProjectileEntity extends AbstractArrow implements ItemSup
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		DemonbloodBurstProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
+		DemonbloodBurstBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
 	}
 
 	@Override

@@ -9,8 +9,8 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 300,
-    "separation": 200,
+    "spacing": 250,
+    "separation": 100,
     "restrictionBiomes": [
       {
         "value": "soul_sand_valley"

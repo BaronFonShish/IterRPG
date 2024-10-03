@@ -123,6 +123,9 @@ public class PlayerManaProcedure {
 		}
 		regen = ((LivingEntity) entity).getAttribute(IterRpgModAttributes.BASEMANAREGENERATION.get()).getValue();
 		capacity = ((LivingEntity) entity).getAttribute(IterRpgModAttributes.BASEMANACAPACITY.get()).getValue();
+		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.ARCANE_BOUQUETE.get(), lv).isPresent() : false) {
+			regen = regen + 0.01;
+		}
 		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.AMETRINE_PENDANT.get(), lv).isPresent() : false) {
 			regen = regen + 0.025;
 		}

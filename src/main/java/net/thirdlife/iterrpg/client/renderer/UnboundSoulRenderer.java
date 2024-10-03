@@ -39,9 +39,4 @@ public class UnboundSoulRenderer extends MobRenderer<UnboundSoulEntity, Modelunb
 	public ResourceLocation getTextureLocation(UnboundSoulEntity entity) {
 		return new ResourceLocation("iter_rpg:textures/entities/unbound_soul.png");
 	}
-
-	@Override
-	protected boolean isBodyVisible(UnboundSoulEntity entity) {
-		return false;
-	}
 }

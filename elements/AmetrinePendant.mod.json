@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Ametrine Pendant",
     "rarity": "COMMON",
-    "slotType": "NECKLACE",
+    "slotType": "CHARM",
     "baubleModel": "Default",
     "baubleModelTexture": "",
     "creativeTab": {
@@ -29,7 +29,9 @@
     "addSlot": true,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Increases mana regeneration"
+      ]
     },
     "hasGlow": false,
     "customProperties": {},

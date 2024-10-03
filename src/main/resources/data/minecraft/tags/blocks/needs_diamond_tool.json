@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:monolith_door",
+    "iter_rpg:void_runestone",
+    "iter_rpg:fire_runestone",
+    "iter_rpg:air_runestone",
+    "iter_rpg:water_runestone",
+    "iter_rpg:earth_runestone",
+    "iter_rpg:smooth_monolith_stone",
+    "iter_rpg:tear_catcher",
+    "iter_rpg:monolith_wall",
+    "iter_rpg:monolith_slab",
+    "iter_rpg:monolith_stairs",
+    "iter_rpg:monolith_stone"
+  ]
+}

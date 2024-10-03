@@ -62,7 +62,7 @@ public class DemonsoulTickProcedure {
 							entity.getPersistentData().putDouble("charges", 10);
 							entity.getPersistentData().putDouble("projectile", 1);
 						} else {
-							entity.getPersistentData().putDouble("charges", 4);
+							entity.getPersistentData().putDouble("charges", 1);
 							entity.getPersistentData().putDouble("projectile", 2);
 						}
 					}
@@ -105,9 +105,9 @@ public class DemonsoulTickProcedure {
 							entityToSpawn.setSilent(true);
 							return entityToSpawn;
 						}
-					}.getArrow(projectileLevel, entity, 2, 0);
+					}.getArrow(projectileLevel, entity, 1, 0);
 					_entityToSpawn.setPos((entity.getX()), (entity.getY() + entity.getBbHeight() * 0.1), (entity.getZ()));
-					_entityToSpawn.shoot(xort, yort, zort, (float) 0.75, 10);
+					_entityToSpawn.shoot(xort, yort, zort, (float) 0.75, (float) 2.5);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}

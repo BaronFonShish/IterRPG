@@ -1,6 +1,7 @@
 package net.thirdlife.iterrpg.procedures;
 
 import net.thirdlife.iterrpg.init.IterRpgModParticleTypes;
+import net.thirdlife.iterrpg.entity.UnboundSoulEntity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -33,6 +34,9 @@ public class GhostAiProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.SPIRIT_PARTICLE.get()), x, (y + 1), z, 1, 0.5, 0.75, 0.5, 0.0025);
 		}
+		if (entity.getPersistentData().getDouble("evade") > 0) {
+			entity.getPersistentData().putDouble("evade", (entity.getPersistentData().getDouble("evade") - 1));
+		}
 		if (entity.getPersistentData().getDouble("mischief") >= Mth.nextInt(RandomSource.create(), 120, 400)) {
 			entity.getPersistentData().putDouble("mischief", 0);
 			flag = true;
@@ -50,6 +54,15 @@ public class GhostAiProcedure {
 			entity.getPersistentData().putDouble("mischief", (entity.getPersistentData().getDouble("mischief") + 1));
 		}
 		if (entity.getPersistentData().getDouble("cavecooldown") >= Mth.nextInt(RandomSource.create(), 5000, 25000)) {
+			{
+				final Vec3 _center = new Vec3(x, y, z);
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				for (Entity entityiterator : _entfound) {
+					if (entityiterator instanceof UnboundSoulEntity) {
+						entityiterator.getPersistentData().putDouble("cavecooldown", 0);
+					}
+				}
+			}
 			entity.getPersistentData().putDouble("cavecooldown", 0);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {

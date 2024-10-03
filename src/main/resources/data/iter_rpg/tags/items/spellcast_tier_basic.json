@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:amethyst_wand",
+    "iter_rpg:abyssquartz_wand",
+    "iter_rpg:bone_wand",
+    "iter_rpg:pearl_wand",
+    "iter_rpg:nimble_copper_shortstaff"
+  ]
+}

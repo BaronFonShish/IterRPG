@@ -66,10 +66,10 @@
     "knockbackResistance": 2.0,
     "movementSpeed": 0.0,
     "stepHeight": 0.6,
-    "armorBaseValue": 16.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 80,
     "followRange": 16,
-    "health": 20,
+    "health": 10,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {

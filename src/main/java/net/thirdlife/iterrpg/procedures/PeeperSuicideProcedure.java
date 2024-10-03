@@ -45,21 +45,22 @@ public class PeeperSuicideProcedure {
 				_level.sendParticles(ParticleTypes.POOF, (sourceentity.getX()), (sourceentity.getY() + 1), (sourceentity.getZ()), 8, 0.2, 0.2, 0.2, 0.025);
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.ASH, (sourceentity.getX()), (sourceentity.getY() + 1), (sourceentity.getZ()), 8, 0.2, 0.2, 0.2, 0.025);
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, 2); index0++) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.SILVERFISH.spawn(_level, BlockPos.containing(sourceentity.getX() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2), sourceentity.getY() + Mth.nextDouble(RandomSource.create(), 0.3, 0.6),
-							sourceentity.getZ() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2)), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 2, 4); index0++) {
+				if (Math.random() < (1) / ((float) 2)) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = IterRpgModEntities.SPIDERLING.get().spawn(_level, BlockPos.containing(sourceentity.getX() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2),
+								sourceentity.getY() + Mth.nextDouble(RandomSource.create(), 0.3, 0.6), sourceentity.getZ() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2)), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+						}
 					}
-				}
-			}
-			for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 1, 2); index1++) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = IterRpgModEntities.SPIDERLING.get().spawn(_level, BlockPos.containing(sourceentity.getX() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2),
-							sourceentity.getY() + Mth.nextDouble(RandomSource.create(), 0.3, 0.6), sourceentity.getZ() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2)), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+				} else {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = EntityType.SILVERFISH.spawn(_level, BlockPos.containing(sourceentity.getX() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2), sourceentity.getY() + Mth.nextDouble(RandomSource.create(), 0.3, 0.6),
+								sourceentity.getZ() + Mth.nextDouble(RandomSource.create(), -0.2, 0.2)), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+						}
 					}
 				}
 			}

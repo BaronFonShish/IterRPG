@@ -281,16 +281,16 @@
             "item": {
               "value": ""
             },
-            "silkTouchMode": 1,
+            "silkTouchMode": 0,
             "block": {
               "value": ""
             },
             "logicField": 0,
             "numberField": 1.0,
             "textDefault": "",
-            "comment": "How often events happen? (default 1.0)",
-            "vardisplay": "Event rate",
-            "varname": "event_rate",
+            "comment": "Do world events happen?",
+            "vardisplay": "Events",
+            "varname": "events",
             "enablecomment": true
           },
           {
@@ -368,25 +368,57 @@
             "logicField": 0,
             "numberField": 0.0,
             "textDefault": "",
-            "comment": "Do end rifts happen?",
-            "vardisplay": "End rifts",
-            "varname": "end_rift",
-            "enablecomment": true
+            "comment": "Do demons appear in overworld after the nether is discovered?",
+            "vardisplay": "Demon hive",
+            "varname": "demon_hive",
+            "enablecomment": false
           },
           {
             "item": {
               "value": ""
             },
-            "silkTouchMode": 0,
+            "silkTouchMode": 1,
             "block": {
               "value": ""
             },
             "logicField": 0,
-            "numberField": 0.0,
+            "numberField": 1.0,
             "textDefault": "",
-            "comment": "Do demons appear in overworld after the nether is discovered?",
-            "vardisplay": "Demon hive",
-            "varname": "demon_hive",
+            "comment": "How long events last (in days)",
+            "vardisplay": "Event duration",
+            "varname": "event_duration",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 7.0,
+            "textDefault": "",
+            "comment": "Minimal time between events (in days)",
+            "vardisplay": "Event min time",
+            "varname": "event_mintime",
+            "enablecomment": false
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 28.0,
+            "textDefault": "",
+            "comment": "Maximum time between events (in days)",
+            "vardisplay": "Event max time",
+            "varname": "event_maxtime",
             "enablecomment": false
           }
         ]

@@ -5,8 +5,45 @@
     "renderType": 0,
     "texture": "gobsteel_crossbow",
     "customModelName": "Ranged item",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "pulling": {
+        "name": "GetPullingValue"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "stinger_0",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "stinger_1",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 8.0
+          }
+        ]
+      }
+    ],
     "name": "Stinger",
     "rarity": "COMMON",
     "creativeTab": {

@@ -1,9 +1,9 @@
 
 package net.thirdlife.iterrpg.entity;
 
+import net.thirdlife.iterrpg.procedures.DropletHitProcedure;
+import net.thirdlife.iterrpg.procedures.DropletHitBlockProcedure;
 import net.thirdlife.iterrpg.procedures.BubbleProjectileHomeProcedure;
-import net.thirdlife.iterrpg.procedures.BubbleProjectileHitProcedure;
-import net.thirdlife.iterrpg.procedures.BubbleProjectileHitBlockProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
 
 import net.minecraftforge.network.PlayMessages;
@@ -69,13 +69,13 @@ public class HomingBubbleEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		BubbleProjectileHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
+		DropletHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		BubbleProjectileHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		DropletHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override

@@ -26,7 +26,8 @@ public class WaterSigilParticle extends TextureSheetParticle {
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-			return new WaterSigilParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			WaterSigilParticle particle = new WaterSigilParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
+			return particle;
 		}
 	}
 

@@ -5,6 +5,8 @@
     "minecraft:ice",
     "minecraft:packed_ice",
     "minecraft:blue_ice",
-    "minecraft:wet_sponge"
+    "minecraft:wet_sponge",
+    "iter_rpg:water_seal",
+    "minecraft:clay"
   ]
 }

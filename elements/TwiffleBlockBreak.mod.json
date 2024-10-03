@@ -26,29 +26,6 @@
             "silkTouchMode": 1
           }
         ]
-      },
-      {
-        "minrolls": 1,
-        "maxrolls": 1,
-        "minbonusrolls": 1,
-        "maxbonusrolls": 1,
-        "hasbonusrolls": false,
-        "entries": [
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:TwiffleLump"
-            },
-            "weight": 1,
-            "minCount": 2,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 2
-          }
-        ]
       }
     ],
     "name": "blocks/twiffle_block",

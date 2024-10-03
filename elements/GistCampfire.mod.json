@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "TAG:mod:gist_source"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:Gist"
+    },
+    "name": "gist_campfire",
+    "namespace": "mod"
+  }
+}

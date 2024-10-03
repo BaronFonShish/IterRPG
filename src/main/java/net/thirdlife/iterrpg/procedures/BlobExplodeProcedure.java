@@ -32,7 +32,7 @@ public class BlobExplodeProcedure {
 			return;
 		double attacktype = 0;
 		entity.getPersistentData().putDouble("deathtime", 25);
-		if (entity.getPersistentData().getDouble("timer") >= entity.getPersistentData().getDouble("deathtime") && entity.getPersistentData().getDouble("timer") >= 2) {
+		if (entity.getPersistentData().getDouble("timer") >= entity.getPersistentData().getDouble("deathtime") && entity.onGround()) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.BUBBLE_POP, x, y, z, 16, 0.5, 0.5, 0.5, 0.025);
 			if (world instanceof ServerLevel _level)
@@ -61,7 +61,7 @@ public class BlobExplodeProcedure {
 			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Player || entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("forge:player_allies")))) {
 						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 4);

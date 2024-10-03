@@ -47,7 +47,7 @@ public class HarvestSpiralUnravelProcedure {
 					if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
 							&& !(entityiterator instanceof Player) && !(entityiterator instanceof HarvestSpiralEntity) && entityiterator instanceof LivingEntity && !(entity == entityiterator)
 							&& Math.abs((entityiterator.getY() + entityiterator.getBbHeight() / 2) - (entity.getY() + entity.getBbHeight() / 2)) <= 1 + entity.getPersistentData().getDouble("time") / 10) {
-						if (entityiterator.isAlive() && entityiterator.invulnerableTime == 0) {
+						if (entityiterator.isAlive() && entityiterator.invulnerableTime < 10) {
 							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) entity.getPersistentData().getDouble("damage"));
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.SWEEP_ATTACK, (entityiterator.getX()), (entityiterator.getY() + entityiterator.getBbHeight() / 4), (entityiterator.getZ()), 1, 0, 0, 0, 0);

@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.util.RandomSource;
@@ -21,7 +22,7 @@ public class AbyssQuartzGrowProcedure {
 			if (((world.getBlockState(BlockPos.containing(x + 1, y + 0, z + 0))).getBlock() == Blocks.BEDROCK || (world.getBlockState(BlockPos.containing(x - 1, y + 0, z + 0))).getBlock() == Blocks.BEDROCK
 					|| (world.getBlockState(BlockPos.containing(x + 0, y + 0, z + 1))).getBlock() == Blocks.BEDROCK || (world.getBlockState(BlockPos.containing(x + 0, y + 0, z - 1))).getBlock() == Blocks.BEDROCK
 					|| (world.getBlockState(BlockPos.containing(x + 0, y + 1, z + 0))).getBlock() == Blocks.BEDROCK || (world.getBlockState(BlockPos.containing(x + 0, y - 1, z + 0))).getBlock() == Blocks.BEDROCK)
-					&& (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD && y <= -58) {
+					&& (world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD && y <= -58) {
 				direct = Direction.getRandom(RandomSource.create());
 				if (world.isEmptyBlock(BlockPos.containing(x + direct.getStepX(), y + direct.getStepY(), z + direct.getStepZ()))) {
 					world.setBlock(BlockPos.containing(x + direct.getStepX(), y + direct.getStepY(), z + direct.getStepZ()), IterRpgModBlocks.ABYSS_QUARTZ.get().defaultBlockState(), 3);

@@ -25,7 +25,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 150,
-          "y": 80
+          "y": 71
         }
       },
       {
@@ -43,7 +43,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 186,
-          "y": 80
+          "y": 62
         }
       },
       {
@@ -61,7 +61,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 204,
-          "y": 80
+          "y": 62
         }
       },
       {
@@ -88,19 +88,7 @@
             "name": "Scroll1Condition"
           },
           "x": 151,
-          "y": 81
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "paper_ink.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "PaperinkCondition"
-          },
-          "x": 187,
-          "y": 81
+          "y": 72
         }
       },
       {
@@ -118,7 +106,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 222,
-          "y": 80
+          "y": 62
         }
       },
       {
@@ -130,7 +118,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 258,
-          "y": 80
+          "y": 71
         }
       },
       {
@@ -142,7 +130,7 @@
             "name": "SpellCopyCondition"
           },
           "x": 186,
-          "y": 80
+          "y": 62
         }
       },
       {
@@ -172,13 +160,67 @@
           "x": 203,
           "y": 101
         }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 222,
+          "y": 80
+        }
       }
     ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 11,
-      "oy": 15,
+      "oy": 50,
       "snapOnGrid": false
     }
   }

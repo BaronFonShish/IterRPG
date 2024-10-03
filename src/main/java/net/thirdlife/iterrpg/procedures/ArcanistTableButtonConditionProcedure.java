@@ -2,7 +2,6 @@ package net.thirdlife.iterrpg.procedures;
 
 import net.thirdlife.iterrpg.init.IterRpgModItems;
 
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -29,13 +28,13 @@ public class ArcanistTableButtonConditionProcedure {
 		resource2 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY);
 		resource3 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY);
 		if (output.getItem() == ItemStack.EMPTY.getItem()) {
-			if (initial.getItem() == IterRpgModItems.UNIDENTIFIED_SPELL.get() && resource1.getItem() == Items.PAPER && resource2.getItem() == Items.INK_SAC && resource3.getItem() == ItemStack.EMPTY.getItem()) {
+			if (initial.getItem() == IterRpgModItems.UNIDENTIFIED_SPELL.get() && resource1.getItem() == ItemStack.EMPTY.getItem() && resource2.getItem() == ItemStack.EMPTY.getItem() && resource3.getItem() == ItemStack.EMPTY.getItem()) {
 				if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) >= 5) {
 					return true;
 				}
 			}
-			if (initial.is(ItemTags.create(new ResourceLocation("iter_rpg:spell_scrolls"))) && resource1.getItem() == Items.PAPER && resource2.getItem() == Items.INK_SAC && resource3.getItem() == IterRpgModItems.GIST.get()
-					&& resource3.getCount() >= 5) {
+			if (initial.is(ItemTags.create(new ResourceLocation("iter_rpg:spell_scrolls"))) && resource1.getItem() == IterRpgModItems.ENCHANTED_PAGE.get() && resource2.getItem() == IterRpgModItems.INK_BOTTLE.get()
+					&& resource3.getItem() == IterRpgModItems.GIST.get() && resource3.getCount() >= 3) {
 				if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) >= 5) {
 					return true;
 				}

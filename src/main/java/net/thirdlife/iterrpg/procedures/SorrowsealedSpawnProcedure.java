@@ -16,9 +16,9 @@ import net.minecraft.core.BlockPos;
 public class SorrowsealedSpawnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world.getLevelData().getGameRules().getBoolean(IterRpgModGameRules.BUILDINGDEBUG) == false) {
-			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, (y - 3), z), 32, 32, 32), e -> true).isEmpty()) {
+			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, (y - 8), z), 48, 48, 48), e -> true).isEmpty()) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = IterRpgModEntities.SORROWSEALED.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = IterRpgModEntities.SORROWSEALED.get().spawn(_level, BlockPos.containing(x + 0.5, y, z + 0.5), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}

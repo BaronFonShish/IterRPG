@@ -1,0 +1,56 @@
+{
+  "_fv": 60,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "bottle_concoction",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Seven Seas Concoction",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "MATERIALS"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onDroppedByPlayer": {
+      "name": "InsatiableSummon"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:FireballProjectileProjectile"
+    },
+    "isFood": false,
+    "nutritionalValue": 1,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": "Items.GLASS_BOTTLE"
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}
