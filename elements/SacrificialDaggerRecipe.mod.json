@@ -18,29 +18,29 @@
         "value": "Items.IRON_NUGGET"
       },
       {
-        "value": "Items.IRON_NUGGET"
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Sanguarnet"
       },
       {
         "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": ""
       },
       {
         "value": "Items.STICK"
       },
       {
-        "value": ""
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SacrificialDagger"
+      "value": "CUSTOM:Bloodletter"
     },
     "name": "sacrificial_dagger_recipe",
     "namespace": "mod"

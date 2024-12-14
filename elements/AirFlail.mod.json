@@ -1,0 +1,39 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "sky_flail",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Air Flail",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 3,
+    "efficiency": 8.0,
+    "attackSpeed": 0.5,
+    "enchantability": 16,
+    "damageVsEntity": 14.0,
+    "usageCount": 1230,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "ElementalAttack"
+    },
+    "onItemInInventoryTick": {
+      "name": "ElementalToolMend"
+    }
+  }
+}

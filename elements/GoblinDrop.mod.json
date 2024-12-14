@@ -5,7 +5,7 @@
     "type": "Entity",
     "pools": [
       {
-        "minrolls": 1,
+        "minrolls": 0,
         "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,

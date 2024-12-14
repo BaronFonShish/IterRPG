@@ -75,7 +75,7 @@ public class MarrowProjectileEntity extends AbstractArrow implements ItemSupplie
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		MarrowHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		MarrowHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getY(), this);
 	}
 
 	@Override

@@ -1,0 +1,26 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "iter_rpg:item/reinforced_bow"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "iter_rpg:recurve_bow_pulling": 1
+      },
+      "model": "iter_rpg:item/reinforced_bow_0"
+    },
+    {
+      "predicate": {
+        "iter_rpg:recurve_bow_pulling": 13
+      },
+      "model": "iter_rpg:item/reinforced_bow_1"
+    },
+    {
+      "predicate": {
+        "iter_rpg:recurve_bow_pulling": 18
+      },
+      "model": "iter_rpg:item/reinforced_bow_2"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "achievementName": "Iter Rpg",
     "achievementDescription": "...a new story begins",
     "achievementIcon": {
-      "value": "CUSTOM:ElementalIngot"
+      "value": "CUSTOM:PrimordialIngot"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -20,6 +20,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"185\" y=\"103\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
   }
 }

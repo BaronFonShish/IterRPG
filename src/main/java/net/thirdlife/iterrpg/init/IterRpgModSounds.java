@@ -31,4 +31,6 @@ public class IterRpgModSounds {
 	public static final RegistryObject<SoundEvent> GIANT_SPIDER_HURT = REGISTRY.register("giant_spider_hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "giant_spider_hurt")));
 	public static final RegistryObject<SoundEvent> GIANT_SPIDER_DEATH = REGISTRY.register("giant_spider_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "giant_spider_death")));
 	public static final RegistryObject<SoundEvent> FIEND_HURT = REGISTRY.register("fiend_hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "fiend_hurt")));
+	public static final RegistryObject<SoundEvent> CRUNCHERBITE = REGISTRY.register("cruncherbite", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "cruncherbite")));
+	public static final RegistryObject<SoundEvent> CRUNCHERBREAK = REGISTRY.register("cruncherbreak", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("iter_rpg", "cruncherbreak")));
 }

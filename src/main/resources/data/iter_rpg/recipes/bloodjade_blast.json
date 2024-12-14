@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "iter_rpg:sanguarnet_ore"
+  },
+  "result": "iter_rpg:sanguarnet"
+}

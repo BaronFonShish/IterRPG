@@ -38,7 +38,6 @@ public class Modelrevenant<T extends Entity> extends EntityModel<T> {
 		this.arm_left = root.getChild("arm_left");
 		this.leg_right = root.getChild("leg_right");
 		this.leg_left = root.getChild("leg_left");
-
 		this.jaw = head.getChild("jaw");
 	}
 
@@ -80,7 +79,6 @@ public class Modelrevenant<T extends Entity> extends EntityModel<T> {
 	}
 
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
 		this.head.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.head.xRot = headPitch / (180F / (float) Math.PI);
 		this.jaw.xRot = (Mth.sin(ageInTicks / 12) / 20) + (30 * Mth.PI / 180);

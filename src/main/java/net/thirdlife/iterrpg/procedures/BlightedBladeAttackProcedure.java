@@ -37,9 +37,8 @@ public class BlightedBladeAttackProcedure {
 		if ((damagesource.is(DamageTypes.MOB_ATTACK) || damagesource.is(DamageTypes.PLAYER_ATTACK))
 				&& EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.BLIGHTED_BLADE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(
-						new MobEffectInstance(MobEffects.POISON, (int) (50 + (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(IterRpgModEnchantments.BLIGHTED_BLADE.get()) * 20),
-								(int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(IterRpgModEnchantments.BLIGHTED_BLADE.get()) - 1), false, true));
+				_entity.addEffect(new MobEffectInstance(MobEffects.POISON,
+						(int) (50 + (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(IterRpgModEnchantments.BLIGHTED_BLADE.get()) * 20), 0, false, true));
 		}
 	}
 }

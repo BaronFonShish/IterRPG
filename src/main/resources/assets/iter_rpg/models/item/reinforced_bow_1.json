@@ -1,0 +1,6 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "iter_rpg:item/reinforced_bow_1"
+  }
+}

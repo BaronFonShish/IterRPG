@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:earth_sword",
+    "iter_rpg:earth_scythe",
+    "iter_rpg:earth_spear",
+    "iter_rpg:earth_flail",
+    "iter_rpg:earth_dagger",
+    "iter_rpg:earth_armor_helmet",
+    "iter_rpg:earth_armor_chestplate",
+    "iter_rpg:earth_armor_leggings",
+    "iter_rpg:earth_armor_boots",
+    "iter_rpg:earth_pickaxe",
+    "iter_rpg:earth_axe",
+    "iter_rpg:earth_shovel",
+    "iter_rpg:earth_hoe"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    " b",
+    "b "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:void_ingot"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:void_scythe",
+    "count": 1
+  }
+}

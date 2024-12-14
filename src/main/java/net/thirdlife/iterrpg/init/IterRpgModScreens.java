@@ -5,9 +5,11 @@
 package net.thirdlife.iterrpg.init;
 
 import net.thirdlife.iterrpg.client.gui.VoidMawGuiScreen;
+import net.thirdlife.iterrpg.client.gui.TradingScreenScreen;
 import net.thirdlife.iterrpg.client.gui.SpellbookGuiScreen;
 import net.thirdlife.iterrpg.client.gui.MobPlacerGUIScreen;
 import net.thirdlife.iterrpg.client.gui.GrimLockerGuiScreen;
+import net.thirdlife.iterrpg.client.gui.GnawerGuiScreen;
 import net.thirdlife.iterrpg.client.gui.ElementalArmorModeSwitchGuiScreen;
 import net.thirdlife.iterrpg.client.gui.CoinPouchGuiScreen;
 import net.thirdlife.iterrpg.client.gui.ArcanistTableGuiScreen;
@@ -31,6 +33,8 @@ public class IterRpgModScreens {
 			MenuScreens.register(IterRpgModMenus.ARCANIST_TABLE_GUI.get(), ArcanistTableGuiScreen::new);
 			MenuScreens.register(IterRpgModMenus.ELEMENTAL_ARMOR_MODE_SWITCH_GUI.get(), ElementalArmorModeSwitchGuiScreen::new);
 			MenuScreens.register(IterRpgModMenus.COIN_POUCH_GUI.get(), CoinPouchGuiScreen::new);
+			MenuScreens.register(IterRpgModMenus.TRADING_SCREEN.get(), TradingScreenScreen::new);
+			MenuScreens.register(IterRpgModMenus.GNAWER_GUI.get(), GnawerGuiScreen::new);
 		});
 	}
 }

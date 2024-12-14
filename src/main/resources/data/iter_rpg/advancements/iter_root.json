@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "iter_rpg:elemental_ingot"
+      "item": "iter_rpg:primordial_ingot"
     },
     "title": {
       "translate": "advancements.iter_root.title"

@@ -258,5 +258,23 @@
         "stream": false
       }
     ]
+  },
+  "cruncherbite": {
+    "subtitle": "subtitles.cruncherbite",
+    "sounds": [
+      {
+        "name": "iter_rpg:dwarfhead1",
+        "stream": false
+      }
+    ]
+  },
+  "cruncherbreak": {
+    "subtitle": "subtitles.cruncherbreak",
+    "sounds": [
+      {
+        "name": "iter_rpg:dwarfhead2",
+        "stream": false
+      }
+    ]
   }
 }

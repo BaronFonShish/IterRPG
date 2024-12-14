@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:hollow_visage"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:damned_chestplate",
+    "count": 1
+  }
+}

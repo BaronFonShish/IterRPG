@@ -15,6 +15,9 @@
     "knockback": 0,
     "entityModel": "Modelgobjavelin_projectile",
     "customModelTexture": "gobsteel_javelin_projectile.png",
+    "onHitsBlock": {
+      "name": "SpearHit"
+    },
     "onHitsEntity": {
       "name": "SpearHit"
     }

@@ -1,6 +1,7 @@
 
 package net.thirdlife.iterrpg.entity;
 
+import net.thirdlife.iterrpg.procedures.UndeadBurnProcedure;
 import net.thirdlife.iterrpg.procedures.ScallopSpawnConditionProcedure;
 import net.thirdlife.iterrpg.procedures.BloatedBurstProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
@@ -104,6 +105,12 @@ public class BloatedEntity extends Monster {
 	public void die(DamageSource source) {
 		super.die(source);
 		BloatedBurstProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		UndeadBurnProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init() {

@@ -3,18 +3,24 @@
   "category": "misc",
   "pattern": [
     " ab",
-    " ca",
-    "c  "
+    "cda",
+    "ec "
   ],
   "key": {
     "a": {
-      "item": "iter_rpg:water_fragment"
+      "item": "minecraft:prismarine_shard"
     },
     "b": {
       "item": "minecraft:heart_of_the_sea"
     },
     "c": {
-      "item": "minecraft:prismarine_shard"
+      "item": "iter_rpg:water_ingot"
+    },
+    "d": {
+      "item": "iter_rpg:elemental_upgrade"
+    },
+    "e": {
+      "item": "minecraft:prismarine_crystals"
     }
   },
   "result": {

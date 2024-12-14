@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:air_sword",
+    "iter_rpg:air_scythe",
+    "iter_rpg:air_spear",
+    "iter_rpg:air_flail",
+    "iter_rpg:air_dagger",
+    "iter_rpg:air_armor_helmet",
+    "iter_rpg:air_armor_chestplate",
+    "iter_rpg:air_armor_leggings",
+    "iter_rpg:air_armor_boots",
+    "iter_rpg:air_pickaxe",
+    "iter_rpg:air_axe",
+    "iter_rpg:air_shovel",
+    "iter_rpg:air_hoe"
+  ]
+}

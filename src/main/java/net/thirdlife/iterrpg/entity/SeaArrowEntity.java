@@ -71,13 +71,13 @@ public class SeaArrowEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		SeaArrowHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, this.getOwner());
+		SeaArrowHitProcedure.execute(this.level(), this, this.getOwner());
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		SeaArrowHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
+		SeaArrowHitBlockProcedure.execute(this.level(), this);
 	}
 
 	@Override

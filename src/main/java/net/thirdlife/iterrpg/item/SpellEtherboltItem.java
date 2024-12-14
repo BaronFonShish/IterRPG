@@ -1,6 +1,8 @@
 
 package net.thirdlife.iterrpg.item;
 
+import net.thirdlife.iterrpg.procedures.SpellReturnLevelProcedure;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
@@ -22,7 +24,7 @@ public class SpellEtherboltItem extends Item {
 		list.add(Component.literal(" "));
 		list.add(Component.translatable("iterpg.spell.domain.arcane"));
 		list.add(Component.translatable("iterpg.spell.level.basic"));
-		list.add(Component.translatable("iterpg.spell.etherbolt.damage"));
+		list.add(Component.literal(SpellReturnLevelProcedure.execute(itemstack)));
 		list.add(Component.translatable("iterpg.spell.mana.2"));
 		list.add(Component.translatable("iterpg.spell.desc.etherbolt"));
 	}

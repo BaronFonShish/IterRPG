@@ -2,6 +2,7 @@ package net.thirdlife.iterrpg.procedures;
 
 import net.thirdlife.iterrpg.init.IterRpgModItems;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -34,6 +35,14 @@ public class ArcanistTableButtonConditionProcedure {
 				}
 			}
 			if (initial.is(ItemTags.create(new ResourceLocation("iter_rpg:spell_scrolls"))) && resource1.getItem() == IterRpgModItems.ENCHANTED_PAGE.get() && resource2.getItem() == IterRpgModItems.INK_BOTTLE.get()
+					&& resource3.getItem() == IterRpgModItems.GIST.get() && resource3.getCount() >= 3) {
+				if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) >= 5) {
+					return true;
+				}
+			}
+			if (initial.is(ItemTags.create(new ResourceLocation("iter_rpg:spell_scrolls"))) && !initial.is(ItemTags.create(new ResourceLocation("iter_rpg:spell_no_leveling"))) && resource1.getItem() == initial.getItem()
+					&& initial.getOrCreateTag().getDouble("level") == resource1.getOrCreateTag().getDouble("level") && (initial.getOrCreateTag().getDouble("level") == 0 && resource2.getItem() == Items.LAPIS_LAZULI
+							|| initial.getOrCreateTag().getDouble("level") == 1 && resource2.getItem() == Items.DIAMOND || initial.getOrCreateTag().getDouble("level") == 2 && resource2.getItem() == IterRpgModItems.ESSENCE_OF_CREATION.get())
 					&& resource3.getItem() == IterRpgModItems.GIST.get() && resource3.getCount() >= 3) {
 				if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) >= 5) {
 					return true;

@@ -5,9 +5,11 @@
 package net.thirdlife.iterrpg.init;
 
 import net.thirdlife.iterrpg.world.inventory.VoidMawGuiMenu;
+import net.thirdlife.iterrpg.world.inventory.TradingScreenMenu;
 import net.thirdlife.iterrpg.world.inventory.SpellbookGuiMenu;
 import net.thirdlife.iterrpg.world.inventory.MobPlacerGUIMenu;
 import net.thirdlife.iterrpg.world.inventory.GrimLockerGuiMenu;
+import net.thirdlife.iterrpg.world.inventory.GnawerGuiMenu;
 import net.thirdlife.iterrpg.world.inventory.ElementalArmorModeSwitchGuiMenu;
 import net.thirdlife.iterrpg.world.inventory.CoinPouchGuiMenu;
 import net.thirdlife.iterrpg.world.inventory.ArcanistTableGuiMenu;
@@ -29,4 +31,6 @@ public class IterRpgModMenus {
 	public static final RegistryObject<MenuType<ArcanistTableGuiMenu>> ARCANIST_TABLE_GUI = REGISTRY.register("arcanist_table_gui", () -> IForgeMenuType.create(ArcanistTableGuiMenu::new));
 	public static final RegistryObject<MenuType<ElementalArmorModeSwitchGuiMenu>> ELEMENTAL_ARMOR_MODE_SWITCH_GUI = REGISTRY.register("elemental_armor_mode_switch_gui", () -> IForgeMenuType.create(ElementalArmorModeSwitchGuiMenu::new));
 	public static final RegistryObject<MenuType<CoinPouchGuiMenu>> COIN_POUCH_GUI = REGISTRY.register("coin_pouch_gui", () -> IForgeMenuType.create(CoinPouchGuiMenu::new));
+	public static final RegistryObject<MenuType<TradingScreenMenu>> TRADING_SCREEN = REGISTRY.register("trading_screen", () -> IForgeMenuType.create(TradingScreenMenu::new));
+	public static final RegistryObject<MenuType<GnawerGuiMenu>> GNAWER_GUI = REGISTRY.register("gnawer_gui", () -> IForgeMenuType.create(GnawerGuiMenu::new));
 }

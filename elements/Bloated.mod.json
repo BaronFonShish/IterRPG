@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modelbloated",
     "mobModelTexture": "drowned.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.7000000000000001,
@@ -60,6 +72,9 @@
     "health": 12,
     "xpAmount": 4,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -102,6 +117,9 @@
     "entityDataEntries": [],
     "whenMobDies": {
       "name": "BloatedBurst"
+    },
+    "onMobTickUpdate": {
+      "name": "UndeadBurn"
     },
     "hasAI": true,
     "aiBase": "(none)",

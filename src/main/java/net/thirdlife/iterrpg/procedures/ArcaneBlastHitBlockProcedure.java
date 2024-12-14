@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class ArcaneBlastHitBlockProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
+	public static void execute(LevelAccessor world, Entity immediatesourceentity) {
 		if (immediatesourceentity == null)
 			return;
 		double damage = 0;
@@ -29,20 +29,21 @@ public class ArcaneBlastHitBlockProcedure {
 		boolean hit = false;
 		boolean particle = false;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ARCANE_PARTICLE.get()), (x + 0.5), (y + 0.5), (z + 0.5), 16, 0.75, 0.75, 0.75, 0.1);
+			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ARCANE_PARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 16, 0.75, 0.75, 0.75, 0.1);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ARCANE_PARTICLE.get()), (x + 0.5), (y + 0.5), (z + 0.5), 16, 0, 0, 0, 0.25);
+			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ARCANE_PARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 16, 0, 0, 0, 0.25);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.EXPLOSION, (x + 0.5), (y + 0.5), (z + 0.5), 1, 0, 0, 0, 0);
+			_level.sendParticles(ParticleTypes.EXPLOSION, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 1, 0, 0, 0, 0);
 		distance = 1;
 		for (int index0 = 0; index0 < 4; index0++) {
 			{
-				final Vec3 _center = new Vec3((x + 0.5), (y + 0.5), (z + 0.5));
+				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()));
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((distance * 1.75) / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
 							&& !(immediatesourceentity == entityiterator) && entityiterator instanceof LivingEntity) {
-						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("iter_rpg:arcane_damage")))),
+						entityiterator.hurt(
+								new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("iter_rpg:arcane_damage"))), immediatesourceentity),
 								(float) ((5 - distance) / 2));
 					}
 				}

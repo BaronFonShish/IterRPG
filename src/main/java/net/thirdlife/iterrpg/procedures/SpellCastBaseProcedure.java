@@ -7,7 +7,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,11 +16,8 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 public class SpellCastBaseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -100,7 +96,7 @@ public class SpellCastBaseProcedure {
 				mana = 2 * WandReturnManaProcedure.execute(entity);
 				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
 					cast = true;
-					ArcaneBoltCastProcedure.execute(world, x, y, z, entity);
+					ArcaneBoltCastProcedure.execute(entity);
 				}
 			} else if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_HEAL.get()) {
 				cooldown = 250 * WandReturnCooldownProcedure.execute(entity);
@@ -114,7 +110,7 @@ public class SpellCastBaseProcedure {
 				mana = 5 * WandReturnManaProcedure.execute(entity);
 				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
 					cast = true;
-					ArcaneBlastCastProcedure.execute(world, x, y, z, entity);
+					ArcaneBlastCastProcedure.execute(entity);
 				}
 			} else if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_IGNITE.get()) {
 				cooldown = 35 * WandReturnCooldownProcedure.execute(entity);
@@ -132,7 +128,7 @@ public class SpellCastBaseProcedure {
 				}
 			} else if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_SPLASHES.get()) {
 				cooldown = 35 * WandReturnCooldownProcedure.execute(entity);
-				mana = 2 * WandReturnManaProcedure.execute(entity);
+				mana = 1 * WandReturnManaProcedure.execute(entity);
 				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
 					cast = true;
 					SplashesCastProcedure.execute(world, x, y, z, entity);
@@ -192,7 +188,7 @@ public class SpellCastBaseProcedure {
 				}
 			}
 			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_FLAMEBOLT.get()) {
-				cooldown = 30 * WandReturnCooldownProcedure.execute(entity);
+				cooldown = 25 * WandReturnCooldownProcedure.execute(entity);
 				mana = 4 * WandReturnManaProcedure.execute(entity);
 				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
 					cast = true;
@@ -207,6 +203,38 @@ public class SpellCastBaseProcedure {
 					VoidbeamCastProcedure.execute(world, entity);
 				}
 			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_FROST_SPIKE.get()) {
+				cooldown = 25 * WandReturnCooldownProcedure.execute(entity);
+				mana = 4 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					FrostSpikeCastProcedure.execute(world, x, y, z, entity);
+				}
+			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_SCRIBBLES.get()) {
+				cooldown = 14 * WandReturnCooldownProcedure.execute(entity);
+				mana = 1 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					ScribblesCastProcedure.execute(world, entity);
+				}
+			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_RECALL.get()) {
+				cooldown = 5000 * WandReturnCooldownProcedure.execute(entity);
+				mana = 50 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					RecallCastProcedure.execute(world, x, y, z, entity);
+				}
+			}
+			if (((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem() == IterRpgModItems.SPELL_MEND.get()) {
+				cooldown = 50 * WandReturnCooldownProcedure.execute(entity);
+				mana = 20 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					MendCastProcedure.execute(world, x, y, z, entity);
+				}
+			}
 			if (cast) {
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getItem(), (int) cooldown);
@@ -219,10 +247,7 @@ public class SpellCastBaseProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.experience_orb.pickup")), SoundSource.PLAYERS, (float) 0.5,
-								(float) Mth.nextDouble(RandomSource.create(), 1.5, 1.75));
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.experience_orb.pickup")), SoundSource.PLAYERS, (float) 0.5, (float) Mth.nextDouble(RandomSource.create(), 1.5, 1.75), false);
+						_level.playSound(null, x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.experience_orb.pickup")), SoundSource.PLAYERS, (float) 0.5, (float) Mth.nextDouble(RandomSource.create(), 1.5, 1.75));
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
@@ -233,25 +258,6 @@ public class SpellCastBaseProcedure {
 				} else {
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(focus.getItem(), (int) (cooldown * 0.5));
-				}
-				if (!(new Object() {
-					public boolean checkGamemode(Entity _ent) {
-						if (_ent instanceof ServerPlayer _serverPlayer) {
-							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-						} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-						}
-						return false;
-					}
-				}.checkGamemode(entity))) {
-					{
-						ItemStack _ist = focus;
-						if (_ist.hurt(1, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
-						}
-					}
 				}
 				AftercastEffectProcedure.execute(entity);
 			}

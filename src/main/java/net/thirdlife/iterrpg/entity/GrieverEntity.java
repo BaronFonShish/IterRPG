@@ -15,6 +15,8 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.monster.piglin.PiglinBrute;
+import net.minecraft.world.entity.monster.piglin.Piglin;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.animal.SnowGolem;
 import net.minecraft.world.entity.animal.IronGolem;
@@ -65,11 +67,13 @@ public class GrieverEntity extends Monster {
 		this.goalSelector.addGoal(1, new PanicGoal(this, 1.2));
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, IronGolem.class, false, false));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, SnowGolem.class, false, false));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false));
-		this.goalSelector.addGoal(6, new AvoidEntityGoal<>(this, Player.class, (float) 8, 1, 1));
-		this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, PiglinBrute.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Piglin.class, false, false));
+		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, SnowGolem.class, false, false));
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.goalSelector.addGoal(8, new AvoidEntityGoal<>(this, Player.class, (float) 8, 1, 1));
+		this.goalSelector.addGoal(9, new WaterAvoidingRandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
 	}
 
 	@Override

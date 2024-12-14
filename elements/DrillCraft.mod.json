@@ -12,22 +12,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:GobsteelScrap"
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:GobsteelScrap"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:GobsteelScrap"
+        "value": "CUSTOM:DwarvenComponents"
       },
       {
         "value": "Items.REDSTONE"
       },
       {
-        "value": "CUSTOM:GobsteelScrap"
+        "value": "CUSTOM:DwarvenComponents"
       },
       {
         "value": "Items.IRON_INGOT"

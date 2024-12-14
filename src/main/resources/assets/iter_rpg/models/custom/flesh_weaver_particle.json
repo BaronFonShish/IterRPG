@@ -1,0 +1,6 @@
+{
+  "parent": "iter_rpg:displaysettings/flesh_weaver.item",
+  "textures": {
+    "particle": "iter_rpg:block/flesh_block"
+  }
+}

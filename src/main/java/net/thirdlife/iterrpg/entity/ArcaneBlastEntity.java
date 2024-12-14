@@ -69,13 +69,13 @@ public class ArcaneBlastEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		ArcaneBlastHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, this.getOwner());
+		ArcaneBlastHitProcedure.execute(this.level(), this, this.getOwner());
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		ArcaneBlastHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
+		ArcaneBlastHitBlockProcedure.execute(this.level(), this);
 	}
 
 	@Override

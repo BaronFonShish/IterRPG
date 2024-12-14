@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:water_sword",
+    "iter_rpg:water_scythe",
+    "iter_rpg:water_spear",
+    "iter_rpg:water_flail",
+    "iter_rpg:water_dagger",
+    "iter_rpg:water_armor_helmet",
+    "iter_rpg:water_armor_chestplate",
+    "iter_rpg:water_armor_leggings",
+    "iter_rpg:water_armor_boots",
+    "iter_rpg:water_pickaxe",
+    "iter_rpg:water_axe",
+    "iter_rpg:water_shovel",
+    "iter_rpg:water_hoe"
+  ]
+}

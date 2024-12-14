@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "savanna",
+    "savanna_plateau",
+    "windswept_savanna"
+  ],
+  "spawners": {
+    "type": "iter_rpg:axebeak",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

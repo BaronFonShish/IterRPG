@@ -14,13 +14,13 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 
 public class SeaArrowHitProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity, Entity sourceentity) {
+	public static void execute(LevelAccessor world, Entity immediatesourceentity, Entity sourceentity) {
 		if (immediatesourceentity == null || sourceentity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.SPLASH, x, y, z, 8, 0.1, 0.1, 0.1, 0);
+			_level.sendParticles(ParticleTypes.SPLASH, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 8, 0.1, 0.1, 0.1, 0);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.BUBBLE_POP, x, y, z, 4, 0.1, 0.1, 0.1, 0.01);
+			_level.sendParticles(ParticleTypes.BUBBLE_POP, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 4, 0.1, 0.1, 0.1, 0.01);
 		if (!immediatesourceentity.level().isClientSide())
 			immediatesourceentity.discard();
 		for (int index0 = 0; index0 < 6; index0++) {
@@ -35,7 +35,7 @@ public class SeaArrowHitProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, sourceentity, (float) 2.5, 0);
-				_entityToSpawn.setPos(x, y, z);
+				_entityToSpawn.setPos((immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()));
 				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.75), 0);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}

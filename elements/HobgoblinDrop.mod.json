@@ -79,20 +79,6 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Coin"
-            },
-            "weight": 8,
-            "minCount": 0,
-            "maxCount": 2,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "Items.IRON_NUGGET"
             },
             "weight": 6,

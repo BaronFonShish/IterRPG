@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CloudBlock"
+      },
+      {
+        "value": "CUSTOM:CloudBlock"
+      },
+      {
+        "value": "CUSTOM:CloudBlock"
+      },
+      {
+        "value": "CUSTOM:AirIngot"
+      },
+      {
+        "value": "CUSTOM:ElementalUpgrade"
+      },
+      {
+        "value": "CUSTOM:AirIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CloudBlock"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Thunderclap"
+    },
+    "name": "thunderclap_recipe",
+    "namespace": "mod"
+  }
+}

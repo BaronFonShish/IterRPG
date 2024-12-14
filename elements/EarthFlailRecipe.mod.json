@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EarthIngot"
+      },
+      {
+        "value": "CUSTOM:EarthIngot"
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": "CUSTOM:EarthIngot"
+      },
+      {
+        "value": "CUSTOM:EarthIngot"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EarthFlail"
+    },
+    "name": "earth_flail_recipe",
+    "namespace": "mod"
+  }
+}

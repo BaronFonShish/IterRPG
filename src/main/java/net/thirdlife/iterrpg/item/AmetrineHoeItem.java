@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.item;
 
-import net.thirdlife.iterrpg.procedures.AmetrineMendProcedure;
+import net.thirdlife.iterrpg.procedures.AmetrineToolMendProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModItems;
 
 import net.minecraft.world.level.Level;
@@ -10,9 +10,7 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.Entity;
 
 public class AmetrineHoeItem extends HoeItem {
 	public AmetrineHoeItem() {
@@ -44,9 +42,8 @@ public class AmetrineHoeItem extends HoeItem {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		AmetrineMendProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
-		return ar;
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		AmetrineToolMendProcedure.execute(entity, itemstack);
 	}
 }

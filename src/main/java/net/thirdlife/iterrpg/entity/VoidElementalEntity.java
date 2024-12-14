@@ -19,7 +19,6 @@ import net.thirdlife.iterrpg.init.IterRpgModEntities;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -242,7 +241,6 @@ public class VoidElementalEntity extends Monster implements GeoEntity {
 			int z = pos.getZ();
 			return VoidElementalSpawnConditionProcedure.execute(world, x, y, z);
 		});
-		DungeonHooks.addDungeonMob(IterRpgModEntities.VOID_ELEMENTAL.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

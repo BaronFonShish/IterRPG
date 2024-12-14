@@ -3,7 +3,7 @@ package net.thirdlife.iterrpg.item;
 
 import net.thirdlife.iterrpg.procedures.ScytheSplashDamageProcedure;
 import net.thirdlife.iterrpg.procedures.ScytheReapProcedure;
-import net.thirdlife.iterrpg.procedures.AmetrineMendProcedure;
+import net.thirdlife.iterrpg.procedures.AmetrineToolMendProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModItems;
 
 import net.minecraft.world.level.Level;
@@ -13,11 +13,9 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
 
 public class AmetrineScytheItem extends SwordItem {
 	public AmetrineScytheItem() {
@@ -56,17 +54,16 @@ public class AmetrineScytheItem extends SwordItem {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		AmetrineMendProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
-		return ar;
-	}
-
-	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
 		ScytheReapProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getLevel().getBlockState(context.getClickedPos()), context.getPlayer(),
 				context.getItemInHand());
 		return InteractionResult.SUCCESS;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		AmetrineToolMendProcedure.execute(entity, itemstack);
 	}
 }

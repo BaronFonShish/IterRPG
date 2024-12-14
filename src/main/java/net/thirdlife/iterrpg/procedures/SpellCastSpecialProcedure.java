@@ -52,6 +52,14 @@ public class SpellCastSpecialProcedure {
 					SmolderingTomeCastSpecialProcedure.execute(world, x, y, z, entity);
 				}
 			}
+			if (focus.getItem() == IterRpgModItems.THUNDERCLAP.get()) {
+				cooldown = 35 * WandReturnCooldownProcedure.execute(entity);
+				mana = 10 * WandReturnManaProcedure.execute(entity);
+				if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= mana) {
+					cast = true;
+					ThunderclapCastProcedure.execute(world, entity);
+				}
+			}
 		} else {
 			SpellCastBaseProcedure.execute(world, x, y, z, entity);
 		}

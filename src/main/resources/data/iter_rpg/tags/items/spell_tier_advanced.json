@@ -3,6 +3,9 @@
   "values": [
     "iter_rpg:spell_etherblast",
     "iter_rpg:spell_flamebolt",
-    "iter_rpg:spell_voidbeam"
+    "iter_rpg:spell_voidbeam",
+    "iter_rpg:spell_frost_spike",
+    "iter_rpg:spell_recall",
+    "iter_rpg:spell_mend"
   ]
 }

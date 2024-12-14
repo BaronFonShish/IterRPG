@@ -11,6 +11,6 @@ public class BonbExplodeBlockProcedure {
 		double distance = 0;
 		boolean hit = false;
 		boolean particle = false;
-		BonbExplodeProcedure.execute(world, (x + 0.5), (y + 0.5), (z + 0.5), immediatesourceentity);
+		BonbExplodeProcedure.execute(world, immediatesourceentity);
 	}
 }

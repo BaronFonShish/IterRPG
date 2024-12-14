@@ -27,5 +27,7 @@ public class IterRpgModFuels {
 			event.setBurnTime(300);
 		else if (itemstack.getItem() == IterRpgModItems.MAGMANUM_CHUNK.get())
 			event.setBurnTime(6400);
+		else if (itemstack.getItem() == IterRpgModItems.WODDEN_DAGGER.get())
+			event.setBurnTime(200);
 	}
 }

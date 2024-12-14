@@ -3,6 +3,7 @@ package net.thirdlife.iterrpg.procedures;
 import net.thirdlife.iterrpg.network.IterRpgModVariables;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.ModList;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -45,7 +46,8 @@ public class MagmanumSlashProcedure {
 		double distabs = 0;
 		double iteration = 0;
 		double true_pitch = 0;
-		if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).MeleeAttackCooldown <= 0) {
+		if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).MeleeAttackCooldown <= 0
+				&& !(ModList.get().isLoaded("better_combat") || ModList.get().isLoaded("bettercombat"))) {
 			{
 				double _setval = 13;
 				entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

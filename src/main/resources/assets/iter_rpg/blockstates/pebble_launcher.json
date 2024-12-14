@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "iter_rpg:block/pebble_launcher"
+    },
+    "facing=east": {
+      "model": "iter_rpg:block/pebble_launcher",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "iter_rpg:block/pebble_launcher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "iter_rpg:block/pebble_launcher",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "iter_rpg:block/pebble_launcher",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "iter_rpg:block/pebble_launcher",
+      "x": 90
+    }
+  }
+}

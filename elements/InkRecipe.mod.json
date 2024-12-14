@@ -14,7 +14,7 @@
       "value": "POTION:WATER"
     },
     "brewingIngredientStack": {
-      "value": "Items.DYE#0"
+      "value": "Items.DYE#16"
     },
     "brewingReturnStack": {
       "value": "CUSTOM:InkBottle"

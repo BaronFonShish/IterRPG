@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:void_sword",
+    "iter_rpg:void_scythe",
+    "iter_rpg:void_spear",
+    "iter_rpg:void_flail",
+    "iter_rpg:void_dagger",
+    "iter_rpg:void_armor_helmet",
+    "iter_rpg:void_armor_chestplate",
+    "iter_rpg:void_armor_leggings",
+    "iter_rpg:void_armor_boots",
+    "iter_rpg:void_pickaxe",
+    "iter_rpg:void_axe",
+    "iter_rpg:void_shovel",
+    "iter_rpg:void_hoe"
+  ]
+}

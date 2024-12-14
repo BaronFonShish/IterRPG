@@ -34,9 +34,6 @@
     },
     "onEntityHitWith": {
       "name": "StarlessnessStrike"
-    },
-    "onItemInInventoryTick": {
-      "name": "VoidSetRepair"
     }
   }
 }

@@ -1,0 +1,39 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "hell_spear",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Fire Spear",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 4,
+    "efficiency": 5.0,
+    "attackSpeed": 1.4,
+    "enchantability": 16,
+    "damageVsEntity": 7.0,
+    "usageCount": 1025,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "ElementalAttack"
+    },
+    "onItemInInventoryTick": {
+      "name": "ElementalToolMend"
+    }
+  }
+}

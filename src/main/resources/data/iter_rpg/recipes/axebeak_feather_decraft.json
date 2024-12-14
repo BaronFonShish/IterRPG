@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:axebeak_feather"
+    }
+  ],
+  "result": {
+    "item": "minecraft:feather",
+    "count": 2
+  }
+}

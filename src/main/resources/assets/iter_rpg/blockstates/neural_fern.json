@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "iter_rpg:block/neural_fern"
+    },
+    "half=lower": {
+      "model": "iter_rpg:block/neural_fern_bottom"
+    }
+  }
+}

@@ -7,9 +7,11 @@ package net.thirdlife.iterrpg.init;
 import net.thirdlife.iterrpg.client.particle.WeeperTearParticleParticle;
 import net.thirdlife.iterrpg.client.particle.WaterSigilParticle;
 import net.thirdlife.iterrpg.client.particle.VoidSigilParticle;
+import net.thirdlife.iterrpg.client.particle.VoidPoofParticle;
 import net.thirdlife.iterrpg.client.particle.VoidEyeParticleParticle;
 import net.thirdlife.iterrpg.client.particle.VengefulParticleParticle;
 import net.thirdlife.iterrpg.client.particle.SpiritParticleParticle;
+import net.thirdlife.iterrpg.client.particle.SnowShardsParticle;
 import net.thirdlife.iterrpg.client.particle.PortalSparkParticleParticle;
 import net.thirdlife.iterrpg.client.particle.PoisonCloudParticle;
 import net.thirdlife.iterrpg.client.particle.LightningParticleParticle;
@@ -58,5 +60,7 @@ public class IterRpgModParticles {
 		event.registerSpriteSet(IterRpgModParticleTypes.VENGEFUL_PARTICLE.get(), VengefulParticleParticle::provider);
 		event.registerSpriteSet(IterRpgModParticleTypes.ELEM_FLAME.get(), ElemFlameParticle::provider);
 		event.registerSpriteSet(IterRpgModParticleTypes.POISON_CLOUD.get(), PoisonCloudParticle::provider);
+		event.registerSpriteSet(IterRpgModParticleTypes.SNOW_SHARDS.get(), SnowShardsParticle::provider);
+		event.registerSpriteSet(IterRpgModParticleTypes.VOID_POOF.get(), VoidPoofParticle::provider);
 	}
 }

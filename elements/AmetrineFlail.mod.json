@@ -20,7 +20,7 @@
     "attackSpeed": 0.5,
     "enchantability": 32,
     "damageVsEntity": 13.0,
-    "usageCount": 152,
+    "usageCount": 200,
     "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
@@ -33,11 +33,11 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "AmetrineMend"
-    },
     "onEntityHitWith": {
       "name": "FlailPlaysound"
+    },
+    "onItemInInventoryTick": {
+      "name": "AmetrineToolMend"
     }
   }
 }

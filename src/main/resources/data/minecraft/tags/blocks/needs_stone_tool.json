@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "iter_rpg:pebble_launcher",
+    "iter_rpg:sanguarnet_block",
+    "iter_rpg:cruncher",
+    "iter_rpg:abyssquartz_block",
     "iter_rpg:drill",
     "iter_rpg:arthropod_catacombs_gen_block",
     "iter_rpg:goblin_dungeon_gen",

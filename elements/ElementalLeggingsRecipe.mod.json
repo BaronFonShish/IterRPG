@@ -2,24 +2,44 @@
   "_fv": 60,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.NETHERITE_LEGGINGS"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:ElementalIngot"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:ElementalUpgrade"
-    },
-    "smithingReturnStack": {
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EarthArmor.legs"
+      },
+      {
+        "value": "CUSTOM:WaterArmor.legs"
+      },
+      {
+        "value": "CUSTOM:AirArmor.legs"
+      },
+      {
+        "value": "CUSTOM:FireArmor.legs"
+      },
+      {
+        "value": "CUSTOM:VoidArmor.legs"
+      },
+      {
+        "value": "CUSTOM:PrimordialIngot"
+      },
+      {
+        "value": "CUSTOM:ElementalUpgrade"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:ElementalArmor.legs"
     },
     "name": "elemental_leggings_recipe",

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "iter_rpg:block/tall_neural_appendage"
+    },
+    "half=lower": {
+      "model": "iter_rpg:block/tall_neural_appendage_bottom"
+    }
+  }
+}

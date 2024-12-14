@@ -115,6 +115,24 @@
             "maxTrades": 2,
             "xp": 10,
             "priceMultiplier": 0.15
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "CUSTOM:Coin"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:UnidentifiedSpell"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 5,
+            "xp": 5,
+            "priceMultiplier": 0.05
           }
         ]
       }

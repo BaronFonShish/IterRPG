@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:deepsteel_ingot"
+    },
+    "b": {
+      "item": "iter_rpg:dwarven_components"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:cog_heart",
+    "count": 1
+  }
+}

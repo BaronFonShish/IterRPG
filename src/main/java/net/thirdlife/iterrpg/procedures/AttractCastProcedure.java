@@ -9,6 +9,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ExperienceOrb;
@@ -70,8 +71,8 @@ public class AttractCastProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate((1.5 * (1 + dist / 10)) / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 							.toList();
 					for (Entity entityiterator : _entfound) {
-						if (!entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage"))) && !(entity == entityiterator) && entityiterator instanceof LivingEntity
-								|| entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb || entityiterator instanceof Projectile) {
+						if (!entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage"))) && !(entity == entityiterator)
+								&& (entityiterator instanceof LivingEntity || entityiterator instanceof Player) || entityiterator instanceof ItemEntity || entityiterator instanceof ExperienceOrb || entityiterator instanceof Projectile) {
 							entityiterator.setDeltaMovement(new Vec3((xdir * (1 + dist / 20) * push), (ydir * (1 + dist / 20) * push), (zdir * (1 + dist / 20) * push)));
 						}
 					}

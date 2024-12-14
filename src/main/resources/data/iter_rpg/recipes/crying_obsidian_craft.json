@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    },
+    {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    },
+    {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    },
+    {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    }
+  ],
+  "result": {
+    "item": "minecraft:crying_obsidian",
+    "count": 1
+  }
+}

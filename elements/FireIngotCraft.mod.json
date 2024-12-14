@@ -9,7 +9,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": "CUSTOM:FireFragment"
@@ -27,16 +27,16 @@
         "value": "CUSTOM:AmetrineIngot"
       },
       {
-        "value": "CUSTOM:FireFragment"
+        "value": "CUSTOM:FireRune"
       },
       {
-        "value": "CUSTOM:FireFragment"
+        "value": ""
       },
       {
-        "value": "CUSTOM:FireFragment"
+        "value": ""
       },
       {
-        "value": "CUSTOM:FireFragment"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

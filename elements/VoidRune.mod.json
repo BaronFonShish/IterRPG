@@ -22,7 +22,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
@@ -38,8 +38,8 @@
     "onRightClickedOnBlock": {
       "name": "MonolithRuneActivate"
     },
-    "onItemInInventoryTick": {
-      "name": "RuneSummonVoidElemental"
+    "onItemInUseTick": {
+      "name": "RuneLure"
     },
     "enableRanged": false,
     "shootConstantly": false,

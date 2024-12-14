@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class BonbExplodeProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
+	public static void execute(LevelAccessor world, Entity immediatesourceentity) {
 		if (immediatesourceentity == null)
 			return;
 		double damage = 0;
@@ -30,18 +30,18 @@ public class BonbExplodeProcedure {
 		boolean hit = false;
 		boolean particle = false;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.GOBSTEEL_SHARDS.get()), x, y, z, 32, 0.016, 0.016, 0.016, 0.5);
+			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.GOBSTEEL_SHARDS.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 32, 0, 0, 0, 0.5);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.SMOKE, x, y, z, 8, 0.016, 0.016, 0.016, 0.08);
+			_level.sendParticles(ParticleTypes.SMOKE, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 8, 0, 0, 0, 0.08);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ELEM_FLAME.get()), x, y, z, 8, 0.016, 0.016, 0.016, 0.08);
+			_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ELEM_FLAME.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 8, 0, 0, 0, 0.08);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 4, 0.016, 0.016, 0.016, 0.08);
+			_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 4, 0, 0, 0, 0.08);
 		distance = 1;
 		damage = 5;
 		for (int index0 = 0; index0 < 5; index0++) {
 			{
-				final Vec3 _center = new Vec3(x, y, z);
+				final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()));
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(distance / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
@@ -54,7 +54,7 @@ public class BonbExplodeProcedure {
 			distance = distance + 1.25;
 		}
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, (float) 0.1, Level.ExplosionInteraction.NONE);
+			_level.explode(null, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), (float) 0.1, Level.ExplosionInteraction.NONE);
 		if (!immediatesourceentity.level().isClientSide())
 			immediatesourceentity.discard();
 	}

@@ -35,9 +35,9 @@ public class VolatileFireballHitBlocksProcedure {
 			world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.FIRE.defaultBlockState(), 3);
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.LAVA, x, y, z, 6, 0, 0, 0, 0.05);
+			_level.sendParticles(ParticleTypes.FLAME, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 6, 0, 0, 0, 0.05);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.FLAME, x, y, z, 6, 0, 0, 0, 0.05);
+			_level.sendParticles(ParticleTypes.LAVA, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 6, 0, 0, 0, 0.05);
 		for (int index0 = 0; index0 < 4; index0++) {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
@@ -49,7 +49,8 @@ public class VolatileFireballHitBlocksProcedure {
 						return entityToSpawn;
 					}
 				}.getArrow(projectileLevel, 2, 0);
-				_entityToSpawn.setPos((x + 0.5 + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)), (y + 0.5 + Mth.nextDouble(RandomSource.create(), 0.5, 1.25)), (z + 0.5 + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)));
+				_entityToSpawn.setPos((immediatesourceentity.getX() + Mth.nextDouble(RandomSource.create(), -0.25, 0.25)), (immediatesourceentity.getY() + Mth.nextDouble(RandomSource.create(), 0.1, 0.5)),
+						(immediatesourceentity.getZ() + Mth.nextDouble(RandomSource.create(), -0.25, 0.25)));
 				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 0, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) 0.25, 20);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}

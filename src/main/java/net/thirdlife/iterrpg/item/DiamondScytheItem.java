@@ -22,7 +22,7 @@ public class DiamondScytheItem extends SwordItem {
 			}
 
 			public float getSpeed() {
-				return 4f;
+				return 8f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -30,7 +30,7 @@ public class DiamondScytheItem extends SwordItem {
 			}
 
 			public int getLevel() {
-				return 4;
+				return 3;
 			}
 
 			public int getEnchantmentValue() {

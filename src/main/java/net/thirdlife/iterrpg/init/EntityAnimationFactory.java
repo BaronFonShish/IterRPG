@@ -3,6 +3,7 @@ package net.thirdlife.iterrpg.init;
 import net.thirdlife.iterrpg.entity.WaterElementalEntity;
 import net.thirdlife.iterrpg.entity.VoidElementalEntity;
 import net.thirdlife.iterrpg.entity.InsatiableEntity;
+import net.thirdlife.iterrpg.entity.FiendEntity;
 import net.thirdlife.iterrpg.entity.AirElementalEntity;
 
 import net.minecraftforge.fml.common.Mod;
@@ -36,6 +37,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof InsatiableEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FiendEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

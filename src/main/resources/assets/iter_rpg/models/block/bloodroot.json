@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "iter_rpg:block/bloodroot",
+    "particle": "iter_rpg:block/bloodroot"
+  },
+  "render_type": "cutout"
+}

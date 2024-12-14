@@ -17,7 +17,7 @@ import net.minecraft.core.BlockPos;
 public class FireballHitBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.LAVA, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.25, 0.25, 0.25, 0.15);
+			_level.sendParticles(ParticleTypes.LAVA, (x + 0.5), (y + 0.5), (z + 0.5), 8, 0.05, 0.05, 0.05, 0.15);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.firecharge.use")), SoundSource.HOSTILE, 1, (float) Mth.nextDouble(RandomSource.create(), 2, 4));

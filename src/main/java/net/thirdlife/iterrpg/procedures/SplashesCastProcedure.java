@@ -9,6 +9,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Strider;
@@ -51,6 +52,9 @@ public class SplashesCastProcedure {
 		double splashdmg = 0;
 		double push = 0;
 		power = WandReturnPowerProcedure.execute(entity);
+		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.NETHER) {
+			power = power * 0.6;
+		}
 		dist = 0;
 		yheight = y + entity.getBbHeight() * 0.85;
 		xdir = entity.getLookAngle().x;
@@ -75,8 +79,8 @@ public class SplashesCastProcedure {
 				}
 				if (((world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).is(BlockTags.create(new ResourceLocation("minecraft:campfires")))
 						|| (world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).is(BlockTags.create(new ResourceLocation("minecraft:candles"))))
-						&& ((world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp15
-								&& (world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).getValue(_getbp15)) == true) {
+						&& ((world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).getBlock().getStateDefinition().getProperty("lit") instanceof BooleanProperty _getbp18
+								&& (world.getBlockState(BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist))).getValue(_getbp18)) == true) {
 					{
 						BlockPos _pos = BlockPos.containing(x + xdir * dist, yheight + ydir * dist, z + zdir * dist);
 						BlockState _bs = world.getBlockState(_pos);
@@ -98,7 +102,9 @@ public class SplashesCastProcedure {
 						entityiterator.clearFire();
 						if (entityiterator instanceof EnderMan || entityiterator instanceof Endermite || entityiterator instanceof FireElementalEntity || entityiterator instanceof Blaze || entityiterator instanceof Strider
 								|| entityiterator instanceof MagmaCube) {
-							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) (3 * power));
+							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC), entity), (float) (3 * power));
+						} else if (entityiterator.fireImmune()) {
+							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC), entity), (float) power);
 						}
 					}
 				}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:netherite_ring_sanguarnet"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:sanguarnet",
+    "count": 1
+  }
+}

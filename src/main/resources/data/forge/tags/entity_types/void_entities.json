@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "enderman"
+    "enderman",
+    "endermite",
+    "iter_rpg:void_elemental"
   ]
 }

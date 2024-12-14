@@ -13,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class BlightedBladeEnchantment extends Enchantment {
 	public BlightedBladeEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, slots);
+		super(Enchantment.Rarity.VERY_RARE, EnchantmentCategory.WEAPON, slots);
 	}
 
 	@Override

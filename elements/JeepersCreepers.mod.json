@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Jeepers Creepers!",
-    "achievementDescription": "Encounter and defeat a giant spider, ferocious right-legged predator",
+    "achievementDescription": "Encounter and defeat a giant spider, ferocious eight-legged predator",
     "achievementIcon": {
       "value": "CUSTOM:SpiderSilk"
     },

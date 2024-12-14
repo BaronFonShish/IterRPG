@@ -7,6 +7,10 @@
     "iter_rpg:polished_grimstone",
     "iter_rpg:chiseled_grimstone_bricks",
     "iter_rpg:charged_grimstone_bricks",
-    "iter_rpg:grim_keyhole"
+    "iter_rpg:grim_keyhole",
+    "iter_rpg:polished_grimstone_stairs",
+    "iter_rpg:grimstone_bricks_stairs",
+    "iter_rpg:polished_grimstone_wall",
+    "iter_rpg:grimstone_bricks_wall"
   ]
 }

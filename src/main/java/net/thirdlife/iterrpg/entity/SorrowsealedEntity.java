@@ -168,8 +168,8 @@ public class SorrowsealedEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
-		builder = builder.add(Attributes.MAX_HEALTH, 250);
-		builder = builder.add(Attributes.ARMOR, 8);
+		builder = builder.add(Attributes.MAX_HEALTH, 580);
+		builder = builder.add(Attributes.ARMOR, 12);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);

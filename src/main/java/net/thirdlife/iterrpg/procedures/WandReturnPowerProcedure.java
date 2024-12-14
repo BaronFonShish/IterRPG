@@ -2,6 +2,7 @@ package net.thirdlife.iterrpg.procedures;
 
 import top.theillusivec4.curios.api.CuriosApi;
 
+import net.thirdlife.iterrpg.network.IterRpgModVariables;
 import net.thirdlife.iterrpg.init.IterRpgModItems;
 import net.thirdlife.iterrpg.init.IterRpgModEnchantments;
 import net.thirdlife.iterrpg.init.IterRpgModAttributes;
@@ -28,12 +29,12 @@ public class WandReturnPowerProcedure {
 			wand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 		}
 		power = ((LivingEntity) entity).getAttribute(IterRpgModAttributes.SPELLCASTINGPOWER.get()).getValue();
-		if (EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get(), wand) != 0) {
-			power = power * (1 + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 50);
-			power = power + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 25;
+		power = power + ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).SpellItem).getOrCreateTag().getDouble("level") / 10;
+		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.ANCIENT_KNOWLEDGE.get(), lv).isPresent() : false) {
+			power = power + 0.15;
 		}
-		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.ARCANE_BOUQUETE.get(), lv).isPresent() : false) {
-			power = power + 0.05;
+		if (EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get(), wand) != 0) {
+			power = power * (1 + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 75) + wand.getEnchantmentLevel(IterRpgModEnchantments.ATTUNEMENT.get()) / 75;
 		}
 		return power;
 	}

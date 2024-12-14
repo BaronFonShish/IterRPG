@@ -71,7 +71,7 @@ public class DropletMagicEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		DropletHitMagicProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
+		DropletHitMagicProcedure.execute(this.level(), entityHitResult.getEntity(), this);
 	}
 
 	@Override

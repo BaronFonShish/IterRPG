@@ -1,6 +1,7 @@
 
 package net.thirdlife.iterrpg.world.inventory;
 
+import net.thirdlife.iterrpg.procedures.SpellbookSoundProcedure;
 import net.thirdlife.iterrpg.procedures.SpellbookScrollConditionProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModMenus;
 
@@ -102,7 +103,7 @@ public class SpellbookGuiMenu extends AbstractContainerMenu implements Supplier<
 				return !SpellbookScrollConditionProcedure.execute(itemstack);
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 179, 124) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 178, 124) {
 			private final int slot = 4;
 
 			@Override
@@ -515,6 +516,7 @@ public class SpellbookGuiMenu extends AbstractContainerMenu implements Supplier<
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 67 + 8 + sj * 18, 85 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 67 + 8 + si * 18, 85 + 142));
+		SpellbookSoundProcedure.execute(world, entity);
 	}
 
 	@Override
@@ -641,6 +643,7 @@ public class SpellbookGuiMenu extends AbstractContainerMenu implements Supplier<
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		SpellbookSoundProcedure.execute(world, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

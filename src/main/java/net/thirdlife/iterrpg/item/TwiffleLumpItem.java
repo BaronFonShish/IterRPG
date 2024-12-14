@@ -7,6 +7,6 @@ import net.minecraft.world.food.FoodProperties;
 
 public class TwiffleLumpItem extends Item {
 	public TwiffleLumpItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(12f).meat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(4f).meat().build()));
 	}
 }

@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
-    "iter_rpg:etherbloom_decoction"
+    "iter_rpg:etherbloom_decoction",
+    "iter_rpg:ametrine_sword",
+    "iter_rpg:ametrine_pickaxe",
+    "iter_rpg:ametrine_axe",
+    "iter_rpg:ametrine_shovel",
+    "iter_rpg:ametrine_hoe",
+    "iter_rpg:ametrine_dagger",
+    "iter_rpg:ametrine_spear",
+    "iter_rpg:ametrine_scythe",
+    "iter_rpg:ametrine_flail",
+    "iter_rpg:etherbrew"
   ]
 }

@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
-  ],
-  "key": {
-    "a": {
+  "ingredients": [
+    {
       "item": "iter_rpg:water_fragment"
     },
-    "b": {
+    {
+      "item": "iter_rpg:water_fragment"
+    },
+    {
+      "item": "iter_rpg:water_fragment"
+    },
+    {
+      "item": "iter_rpg:water_fragment"
+    },
+    {
       "item": "iter_rpg:ametrine_ingot"
+    },
+    {
+      "item": "iter_rpg:water_rune"
     }
-  },
+  ],
   "result": {
     "item": "iter_rpg:water_ingot",
     "count": 1

@@ -17,13 +17,18 @@ import net.thirdlife.iterrpg.entity.SolsphereEntity;
 import net.thirdlife.iterrpg.entity.SmallScallopEntity;
 import net.thirdlife.iterrpg.entity.SeaArrowEntity;
 import net.thirdlife.iterrpg.entity.ScallopEntity;
+import net.thirdlife.iterrpg.entity.ScabEntity;
+import net.thirdlife.iterrpg.entity.RockProjectileEntity;
+import net.thirdlife.iterrpg.entity.RevenantEntity;
 import net.thirdlife.iterrpg.entity.PeeperEntity;
+import net.thirdlife.iterrpg.entity.PebbleheadEntity;
 import net.thirdlife.iterrpg.entity.MudkinEntity;
 import net.thirdlife.iterrpg.entity.MournstoneEntity;
 import net.thirdlife.iterrpg.entity.MarrowProjectileEntity;
 import net.thirdlife.iterrpg.entity.JavelinProjectileEntity;
 import net.thirdlife.iterrpg.entity.InsatiableEntity;
 import net.thirdlife.iterrpg.entity.HydraBubbleEntity;
+import net.thirdlife.iterrpg.entity.HomingZapEntity;
 import net.thirdlife.iterrpg.entity.HomingTearEntity;
 import net.thirdlife.iterrpg.entity.HomingBubbleEntity;
 import net.thirdlife.iterrpg.entity.HobgoblinEntity;
@@ -35,10 +40,13 @@ import net.thirdlife.iterrpg.entity.GrieverEntity;
 import net.thirdlife.iterrpg.entity.GoblinWarriorEntity;
 import net.thirdlife.iterrpg.entity.GoblinEntity;
 import net.thirdlife.iterrpg.entity.GiantSpiderEntity;
+import net.thirdlife.iterrpg.entity.FrostSpikeEntity;
 import net.thirdlife.iterrpg.entity.ForestVinesEntity;
+import net.thirdlife.iterrpg.entity.FleshmiteEntity;
 import net.thirdlife.iterrpg.entity.FlameboltEntity;
 import net.thirdlife.iterrpg.entity.FireballProjectileProjectileEntity;
 import net.thirdlife.iterrpg.entity.FireElementalEntity;
+import net.thirdlife.iterrpg.entity.FiendEntity;
 import net.thirdlife.iterrpg.entity.EventSpawnEntity;
 import net.thirdlife.iterrpg.entity.EmberProjEntity;
 import net.thirdlife.iterrpg.entity.EarthElementalEntity;
@@ -55,6 +63,7 @@ import net.thirdlife.iterrpg.entity.CaltropThrownEntity;
 import net.thirdlife.iterrpg.entity.BonbProjectileEntity;
 import net.thirdlife.iterrpg.entity.BlobEntity;
 import net.thirdlife.iterrpg.entity.BloatedEntity;
+import net.thirdlife.iterrpg.entity.AxebeakEntity;
 import net.thirdlife.iterrpg.entity.AuraTearburstEntity;
 import net.thirdlife.iterrpg.entity.AuraSoulfireEntity;
 import net.thirdlife.iterrpg.entity.AuraMobspawnEntity;
@@ -233,6 +242,34 @@ public class IterRpgModEntities {
 			.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(HydraBubbleEntity::new).fireImmune().sized(0.8f, 0.8f));
 	public static final RegistryObject<EntityType<VolatileFireballEntity>> VOLATILE_FIREBALL = register("volatile_fireball", EntityType.Builder.<VolatileFireballEntity>of(VolatileFireballEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(VolatileFireballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FrostSpikeEntity>> FROST_SPIKE = register("frost_spike",
+			EntityType.Builder.<FrostSpikeEntity>of(FrostSpikeEntity::new, MobCategory.MISC).setCustomClientFactory(FrostSpikeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HomingZapEntity>> HOMING_ZAP = register("homing_zap",
+			EntityType.Builder.<HomingZapEntity>of(HomingZapEntity::new, MobCategory.MISC).setCustomClientFactory(HomingZapEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ScabEntity>> SCAB = register("scab",
+			EntityType.Builder.<ScabEntity>of(ScabEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ScabEntity::new)
+
+					.sized(0.8f, 0.6f));
+	public static final RegistryObject<EntityType<FleshmiteEntity>> FLESHMITE = register("fleshmite",
+			EntityType.Builder.<FleshmiteEntity>of(FleshmiteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FleshmiteEntity::new)
+
+					.sized(0.5f, 0.4f));
+	public static final RegistryObject<EntityType<RevenantEntity>> REVENANT = register("revenant",
+			EntityType.Builder.<RevenantEntity>of(RevenantEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RevenantEntity::new)
+
+					.sized(0.6f, 1.95f));
+	public static final RegistryObject<EntityType<FiendEntity>> FIEND = register("fiend",
+			EntityType.Builder.<FiendEntity>of(FiendEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FiendEntity::new)
+
+					.sized(0.8f, 1.5f));
+	public static final RegistryObject<EntityType<PebbleheadEntity>> PEBBLEHEAD = register("pebblehead", EntityType.Builder.<PebbleheadEntity>of(PebbleheadEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(PebbleheadEntity::new).fireImmune().sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<RockProjectileEntity>> ROCK_PROJECTILE = register("rock_projectile",
+			EntityType.Builder.<RockProjectileEntity>of(RockProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(RockProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AxebeakEntity>> AXEBEAK = register("axebeak",
+			EntityType.Builder.<AxebeakEntity>of(AxebeakEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AxebeakEntity::new)
+
+					.sized(1.2f, 2.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -284,6 +321,12 @@ public class IterRpgModEntities {
 			ChaosApparitionEntity.init();
 			EventSpawnEntity.init();
 			HydraBubbleEntity.init();
+			ScabEntity.init();
+			FleshmiteEntity.init();
+			RevenantEntity.init();
+			FiendEntity.init();
+			PebbleheadEntity.init();
+			AxebeakEntity.init();
 		});
 	}
 
@@ -332,5 +375,11 @@ public class IterRpgModEntities {
 		event.put(CHAOS_APPARITION.get(), ChaosApparitionEntity.createAttributes().build());
 		event.put(EVENT_SPAWN.get(), EventSpawnEntity.createAttributes().build());
 		event.put(HYDRA_BUBBLE.get(), HydraBubbleEntity.createAttributes().build());
+		event.put(SCAB.get(), ScabEntity.createAttributes().build());
+		event.put(FLESHMITE.get(), FleshmiteEntity.createAttributes().build());
+		event.put(REVENANT.get(), RevenantEntity.createAttributes().build());
+		event.put(FIEND.get(), FiendEntity.createAttributes().build());
+		event.put(PEBBLEHEAD.get(), PebbleheadEntity.createAttributes().build());
+		event.put(AXEBEAK.get(), AxebeakEntity.createAttributes().build());
 	}
 }

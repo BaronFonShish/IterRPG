@@ -26,8 +26,8 @@ public class IterRpgModAttributes {
 	public static final RegistryObject<Attribute> BASEMANAREGENERATION = ATTRIBUTES.register("base_mana_regeneration", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".base_mana_regeneration", 0.025, 0, 10000)).setSyncable(true));
 	public static final RegistryObject<Attribute> BASEMANACAPACITY = ATTRIBUTES.register("base_mana_capacity", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".base_mana_capacity", 50, 0, 10000)).setSyncable(true));
 	public static final RegistryObject<Attribute> SPELLCASTINGPOWER = ATTRIBUTES.register("spellcasting_power", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".spellcasting_power", 0, 0, 10000000)).setSyncable(true));
-	public static final RegistryObject<Attribute> SPELLCOOLDOWN = ATTRIBUTES.register("spell_cooldown", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".spell_cooldown", 0, 0, 10000000)).setSyncable(true));
-	public static final RegistryObject<Attribute> MANACONSUMPTION = ATTRIBUTES.register("mana_consumption", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".mana_consumption", 0, 0, 10000000)).setSyncable(true));
+	public static final RegistryObject<Attribute> SPELLCOOLDOWN = ATTRIBUTES.register("spell_cooldown", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".spell_cooldown", 0, -1, 10000000)).setSyncable(true));
+	public static final RegistryObject<Attribute> MANACONSUMPTION = ATTRIBUTES.register("mana_consumption", () -> (new RangedAttribute("attribute." + IterRpgMod.MODID + ".mana_consumption", 0, -1, 10000000)).setSyncable(true));
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {

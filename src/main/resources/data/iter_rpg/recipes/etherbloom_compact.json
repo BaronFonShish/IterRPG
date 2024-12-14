@@ -15,7 +15,7 @@
       "item": "iter_rpg:etherbloom"
     },
     {
-      "item": "iter_rpg:etherbloom"
+      "item": "minecraft:amethyst_shard"
     },
     {
       "item": "iter_rpg:etherbloom"
@@ -32,6 +32,6 @@
   ],
   "result": {
     "item": "minecraft:amethyst_shard",
-    "count": 1
+    "count": 2
   }
 }

@@ -15,7 +15,7 @@
         "value": "Items.STRING"
       },
       {
-        "value": "Items.RABBIT_HIDE"
+        "value": "Items.IRON_NUGGET"
       },
       {
         "value": "Items.STRING"
@@ -24,7 +24,7 @@
         "value": "Items.LEATHER"
       },
       {
-        "value": "CUSTOM:CoinBlock"
+        "value": "CUSTOM:Coin"
       },
       {
         "value": "Items.LEATHER"

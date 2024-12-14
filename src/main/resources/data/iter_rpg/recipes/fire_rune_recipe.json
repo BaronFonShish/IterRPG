@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:fire_fragment"
+    },
+    {
+      "item": "iter_rpg:fire_fragment"
+    },
+    {
+      "item": "iter_rpg:fire_fragment"
+    },
+    {
+      "item": "iter_rpg:fire_fragment"
+    },
+    {
+      "item": "iter_rpg:empty_rune"
+    },
+    {
+      "item": "iter_rpg:fire_fragment"
+    },
+    {
+      "item": "iter_rpg:fire_fragment"
+    },
+    {
+      "item": "iter_rpg:fire_fragment"
+    },
+    {
+      "item": "iter_rpg:fire_fragment"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:fire_rune",
+    "count": 1
+  }
+}

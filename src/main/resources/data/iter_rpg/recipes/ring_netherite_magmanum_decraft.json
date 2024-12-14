@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:netherite_ring_magmanum"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:magmanum_chunk",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "iter_rpg:block/fangs"
+  },
+  "render_type": "translucent"
+}

@@ -26,35 +26,35 @@ public class MobmorphTurnProcedure {
 		double y_decide = 0;
 		if (world.getLevelData().getGameRules().getBoolean(IterRpgModGameRules.BUILDINGDEBUG) == false) {
 			if ((entity.getPersistentData().getString("TurnInto")).equals("goblin")) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = IterRpgModEntities.GOBLIN.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYHeadRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entitytospawn = IterRpgModEntities.GOBLIN.get().spawn(_serverLevel, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entitytospawn != null) {
+						entitytospawn.setYRot(world.getRandom().nextFloat() * 360.0F);
 					}
+					if ((entitytospawn) instanceof Mob _entity)
+						_entity.setPersistenceRequired();
 				}
 				if (!entity.level().isClientSide())
 					entity.discard();
 			} else if ((entity.getPersistentData().getString("TurnInto")).equals("goblin_warrior")) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = IterRpgModEntities.GOBLIN_WARRIOR.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYHeadRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entitytospawn = IterRpgModEntities.GOBLIN_WARRIOR.get().spawn(_serverLevel, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entitytospawn != null) {
+						entitytospawn.setYRot(world.getRandom().nextFloat() * 360.0F);
 					}
+					if ((entitytospawn) instanceof Mob _entity)
+						_entity.setPersistenceRequired();
 				}
 				if (!entity.level().isClientSide())
 					entity.discard();
 			} else if ((entity.getPersistentData().getString("TurnInto")).equals("hobgoblin")) {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = IterRpgModEntities.HOBGOBLIN.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYHeadRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entitytospawn = IterRpgModEntities.HOBGOBLIN.get().spawn(_serverLevel, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entitytospawn != null) {
+						entitytospawn.setYRot(world.getRandom().nextFloat() * 360.0F);
 					}
+					if ((entitytospawn) instanceof Mob _entity)
+						_entity.setPersistenceRequired();
 				}
 				if (!entity.level().isClientSide())
 					entity.discard();
@@ -106,15 +106,25 @@ public class MobmorphTurnProcedure {
 					entity.discard();
 			} else if ((entity.getPersistentData().getString("TurnInto")).equals("dungeon_spider")) {
 				if (IterRpgModVariables.MapVariables.get(world).config_spider_catacombs) {
-					y_decide = Mth.nextInt(RandomSource.create(), -40, 40);
-					ArthropodCatacombsPrepareProcedure.execute(world, x, y_decide, z);
+					for (int index0 = 0; index0 < 8; index0++) {
+						y_decide = Mth.nextInt(RandomSource.create(), -40, 40);
+						if (world.getBlockState(BlockPos.containing(x, y_decide, z)).canOcclude()) {
+							ArthropodCatacombsPrepareProcedure.execute(world, x, y_decide, z);
+						}
+						break;
+					}
 				}
 				if (!entity.level().isClientSide())
 					entity.discard();
 			} else if ((entity.getPersistentData().getString("TurnInto")).equals("dungeon_generic")) {
 				if (IterRpgModVariables.MapVariables.get(world).config_generic_dungeons) {
-					y_decide = Mth.nextInt(RandomSource.create(), -40, 40);
-					GenericDungeonPrepareProcedure.execute(world, x, y_decide, z);
+					for (int index1 = 0; index1 < 8; index1++) {
+						y_decide = Mth.nextInt(RandomSource.create(), -40, 40);
+						if (world.getBlockState(BlockPos.containing(x, y_decide, z)).canOcclude()) {
+							GenericDungeonPrepareProcedure.execute(world, x, y_decide, z);
+						}
+						break;
+					}
 				}
 				if (!entity.level().isClientSide())
 					entity.discard();

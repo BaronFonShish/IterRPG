@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:TheRock"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.snowball.throw"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 0.5,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "RockHit"
+    },
+    "onHitsEntity": {
+      "name": "RockHit"
+    }
+  }
+}

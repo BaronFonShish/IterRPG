@@ -102,6 +102,15 @@ public class IterRpgModVariables {
 				clone.fire_lure = original.fire_lure;
 				clone.void_lure = original.void_lure;
 				clone.DropLuck = original.DropLuck;
+				clone.spellbook = original.spellbook;
+				clone.spellbookslot = original.spellbookslot;
+				clone.CurrentlyTrading = original.CurrentlyTrading;
+				clone.price1 = original.price1;
+				clone.price2 = original.price2;
+				clone.price3 = original.price3;
+				clone.price4 = original.price4;
+				clone.price5 = original.price5;
+				clone.flaps_left = original.flaps_left;
 			}
 		}
 
@@ -406,6 +415,15 @@ public class IterRpgModVariables {
 		public boolean ManaOverlay = false;
 		public double PlayerCoinAmount = 0;
 		public boolean demon_friendly = false;
+		public boolean spellbook = false;
+		public double spellbookslot = 0;
+		public String CurrentlyTrading = "\"\"";
+		public double price1 = 0;
+		public double price2 = 0;
+		public double price3 = 0;
+		public double price4 = 0;
+		public double price5 = 0;
+		public double flaps_left = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -442,6 +460,15 @@ public class IterRpgModVariables {
 			nbt.putBoolean("ManaOverlay", ManaOverlay);
 			nbt.putDouble("PlayerCoinAmount", PlayerCoinAmount);
 			nbt.putBoolean("demon_friendly", demon_friendly);
+			nbt.putBoolean("spellbook", spellbook);
+			nbt.putDouble("spellbookslot", spellbookslot);
+			nbt.putString("CurrentlyTrading", CurrentlyTrading);
+			nbt.putDouble("price1", price1);
+			nbt.putDouble("price2", price2);
+			nbt.putDouble("price3", price3);
+			nbt.putDouble("price4", price4);
+			nbt.putDouble("price5", price5);
+			nbt.putDouble("flaps_left", flaps_left);
 			return nbt;
 		}
 
@@ -475,6 +502,15 @@ public class IterRpgModVariables {
 			ManaOverlay = nbt.getBoolean("ManaOverlay");
 			PlayerCoinAmount = nbt.getDouble("PlayerCoinAmount");
 			demon_friendly = nbt.getBoolean("demon_friendly");
+			spellbook = nbt.getBoolean("spellbook");
+			spellbookslot = nbt.getDouble("spellbookslot");
+			CurrentlyTrading = nbt.getString("CurrentlyTrading");
+			price1 = nbt.getDouble("price1");
+			price2 = nbt.getDouble("price2");
+			price3 = nbt.getDouble("price3");
+			price4 = nbt.getDouble("price4");
+			price5 = nbt.getDouble("price5");
+			flaps_left = nbt.getDouble("flaps_left");
 		}
 	}
 
@@ -527,6 +563,15 @@ public class IterRpgModVariables {
 					variables.ManaOverlay = message.data.ManaOverlay;
 					variables.PlayerCoinAmount = message.data.PlayerCoinAmount;
 					variables.demon_friendly = message.data.demon_friendly;
+					variables.spellbook = message.data.spellbook;
+					variables.spellbookslot = message.data.spellbookslot;
+					variables.CurrentlyTrading = message.data.CurrentlyTrading;
+					variables.price1 = message.data.price1;
+					variables.price2 = message.data.price2;
+					variables.price3 = message.data.price3;
+					variables.price4 = message.data.price4;
+					variables.price5 = message.data.price5;
+					variables.flaps_left = message.data.flaps_left;
 				}
 			});
 			context.setPacketHandled(true);

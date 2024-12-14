@@ -1037,6 +1037,12 @@
         }
       }
     ],
+    "onOpen": {
+      "name": "SpellbookSound"
+    },
+    "onClosed": {
+      "name": "SpellbookSound"
+    },
     "gridSettings": {
       "sx": 16,
       "sy": 16,

@@ -15,8 +15,8 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "harvestLevel": 4,
-    "efficiency": 4.0,
+    "harvestLevel": 3,
+    "efficiency": 8.0,
     "attackSpeed": 1.4,
     "enchantability": 10,
     "damageVsEntity": 7.0,

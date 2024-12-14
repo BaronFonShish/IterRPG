@@ -18,7 +18,8 @@ public class HydraSpecialSpellProcedure {
 			if (entitytospawn != null) {
 				entitytospawn.setYRot(world.getRandom().nextFloat() * 360.0F);
 			}
-			(entitytospawn).getPersistentData().putDouble("lifetime", (WandReturnPowerProcedure.execute(entity) * 100));
+			(entitytospawn).getPersistentData().putDouble("lifetime", 100);
+			(entitytospawn).getPersistentData().putDouble("power", Math.log(WandReturnPowerProcedure.execute(entity) + 1));
 			(entitytospawn).setDeltaMovement(new Vec3((entity.getLookAngle().x / 4), (entity.getLookAngle().y / 4), (entity.getLookAngle().z / 4)));
 			(entitytospawn).setNoGravity(true);
 			(entitytospawn).getPersistentData().putDouble("speed", 0.25);

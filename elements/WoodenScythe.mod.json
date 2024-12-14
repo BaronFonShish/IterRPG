@@ -16,7 +16,7 @@
       "value": "COMBAT"
     },
     "harvestLevel": 0,
-    "efficiency": 4.0,
+    "efficiency": 2.0,
     "attackSpeed": 1.4,
     "enchantability": 15,
     "damageVsEntity": 3.0,

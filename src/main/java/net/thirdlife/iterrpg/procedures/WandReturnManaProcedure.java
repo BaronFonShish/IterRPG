@@ -1,5 +1,8 @@
 package net.thirdlife.iterrpg.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
+import net.thirdlife.iterrpg.init.IterRpgModItems;
 import net.thirdlife.iterrpg.init.IterRpgModEnchantments;
 import net.thirdlife.iterrpg.init.IterRpgModAttributes;
 
@@ -25,8 +28,11 @@ public class WandReturnManaProcedure {
 			wand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 		}
 		manacost = ((LivingEntity) entity).getAttribute(IterRpgModAttributes.MANACONSUMPTION.get()).getValue();
+		if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.ARCANE_BOUQUETE.get(), lv).isPresent() : false) {
+			manacost = manacost * 0.92;
+		}
 		if (EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.RIGOUR.get(), wand) != 0) {
-			manacost = manacost * (1 - wand.getEnchantmentLevel(IterRpgModEnchantments.RIGOUR.get()) / 10);
+			manacost = manacost * (1 - wand.getEnchantmentLevel(IterRpgModEnchantments.RIGOUR.get()) / 15);
 		}
 		return manacost;
 	}

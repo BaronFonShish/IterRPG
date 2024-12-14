@@ -20,6 +20,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.tags.TagKey;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -34,9 +35,6 @@ public class WaterElementalAttackProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		boolean shouldtick = false;
-		boolean shouldspawn = false;
-		boolean shouldattack = false;
 		double attack = 0;
 		double timer = 0;
 		double particle = 0;
@@ -47,6 +45,18 @@ public class WaterElementalAttackProcedure {
 		double yspawn = 0;
 		double decide = 0;
 		double attacktype = 0;
+		double sx = 0;
+		double sy = 0;
+		double sz = 0;
+		double dist = 0;
+		double attachy = 0;
+		double attachz = 0;
+		double attachx = 0;
+		boolean shouldtick = false;
+		boolean shouldspawn = false;
+		boolean shouldattack = false;
+		boolean chaindisplay = false;
+		boolean entityhost = false;
 		WaterElementalDripProcedure.execute(world, x, y, z, entity);
 		ElementalFlightBehaviourProcedure.execute(world, x, y, z, entity);
 		if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()))).getBlock() == Blocks.LAVA) {
@@ -93,31 +103,52 @@ public class WaterElementalAttackProcedure {
 			}
 		}
 		if (entity.getPersistentData().getDouble("attack") >= 100) {
-			entity.getPersistentData().putDouble("attack", 0);
-			if (entity.getPersistentData().getDouble("attacktype") >= 2) {
-				entity.getPersistentData().putDouble("attacktype", 0);
-				if (world instanceof ServerLevel _serverLevel) {
-					Entity entitytospawn = IterRpgModEntities.SMALL_SCALLOP.get().spawn(_serverLevel, BlockPos.containing((entity.getX()), (entity.getY() + 0.25), (entity.getZ())), MobSpawnType.MOB_SUMMONED);
-					if (entitytospawn != null) {
-						entitytospawn.setYRot(world.getRandom().nextFloat() * 360.0F);
+			if (entity.isUnderWater()) {
+				entity.getPersistentData().putDouble("attack", 40);
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator == (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) {
+							entity.getPersistentData().putDouble("waterblast", 30);
+							entity.getPersistentData().putDouble("xstart", x);
+							entity.getPersistentData().putDouble("ystart", (y + 1.2));
+							entity.getPersistentData().putDouble("zstart", z);
+							entity.getPersistentData().putDouble("xfinish",
+									(entityiterator.getX() + Mth.nextDouble(RandomSource.create(), -0.01, 0.01) * new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())))));
+							entity.getPersistentData().putDouble("yfinish", (entityiterator.getY() + 1));
+							entity.getPersistentData().putDouble("zfinish",
+									(entityiterator.getZ() + Mth.nextDouble(RandomSource.create(), -0.01, 0.01) * new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())))));
+						}
 					}
-					(entitytospawn).getPersistentData().putBoolean("summoned", true);
 				}
-			} else if (entity.getPersistentData().getDouble("attacktype") >= 1) {
-				entity.getPersistentData().putDouble("attacktype", (entity.getPersistentData().getDouble("attacktype") + 1));
-				entity.getPersistentData().putDouble("barrage", 20);
 			} else {
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = IterRpgModEntities.BLOB.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 0.8, entity.getZ()), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setYHeadRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setXRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
-						entityToSpawn.setDeltaMovement((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z));
+				entity.getPersistentData().putDouble("attack", 0);
+				if (entity.getPersistentData().getDouble("attacktype") >= 2) {
+					entity.getPersistentData().putDouble("attacktype", 0);
+					if (world instanceof ServerLevel _serverLevel) {
+						Entity entitytospawn = IterRpgModEntities.SMALL_SCALLOP.get().spawn(_serverLevel, BlockPos.containing((entity.getX()), (entity.getY() + 0.25), (entity.getZ())), MobSpawnType.MOB_SUMMONED);
+						if (entitytospawn != null) {
+							entitytospawn.setYRot(world.getRandom().nextFloat() * 360.0F);
+						}
+						(entitytospawn).getPersistentData().putBoolean("summoned", true);
 					}
+				} else if (entity.getPersistentData().getDouble("attacktype") >= 1) {
+					entity.getPersistentData().putDouble("attacktype", (entity.getPersistentData().getDouble("attacktype") + 1));
+					entity.getPersistentData().putDouble("barrage", 20);
+				} else {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = IterRpgModEntities.BLOB.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 0.8, entity.getZ()), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+							entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
+							entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
+							entityToSpawn.setYHeadRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
+							entityToSpawn.setXRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
+							entityToSpawn.setDeltaMovement((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z));
+						}
+					}
+					entity.getPersistentData().putDouble("attacktype", (entity.getPersistentData().getDouble("attacktype") + 1));
 				}
-				entity.getPersistentData().putDouble("attacktype", (entity.getPersistentData().getDouble("attacktype") + 1));
 			}
 		} else {
 			{
@@ -151,6 +182,24 @@ public class WaterElementalAttackProcedure {
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) Mth.nextDouble(RandomSource.create(), 0.5, 1), 15);
 					projectileLevel.addFreshEntity(_entityToSpawn);
+				}
+			}
+		}
+		if (entity.getPersistentData().getDouble("waterblast") >= 1) {
+			entity.getPersistentData().putDouble("waterblast", (entity.getPersistentData().getDouble("waterblast") - 1));
+			sx = entity.getPersistentData().getDouble("xstart") + (entity.getPersistentData().getDouble("xfinish") - entity.getPersistentData().getDouble("xstart")) * (1 - (entity.getPersistentData().getDouble("waterblast") - 5) / 25);
+			sy = entity.getPersistentData().getDouble("ystart") + (entity.getPersistentData().getDouble("yfinish") - entity.getPersistentData().getDouble("ystart")) * (1 - (entity.getPersistentData().getDouble("waterblast") - 5) / 25);
+			sz = entity.getPersistentData().getDouble("zstart") + (entity.getPersistentData().getDouble("zfinish") - entity.getPersistentData().getDouble("zstart")) * (1 - (entity.getPersistentData().getDouble("waterblast") - 5) / 25);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.BUBBLE, sx, sy, sz, 4, 0.05, 0.05, 0.05, 0.025);
+			{
+				final Vec3 _center = new Vec3(sx, sy, sz);
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				for (Entity entityiterator : _entfound) {
+					if (!entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:elementals")))
+							&& !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage"))) && !(entityiterator == entity) && entityiterator instanceof LivingEntity) {
+						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 5);
+					}
 				}
 			}
 		}

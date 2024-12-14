@@ -212,7 +212,7 @@ public class InsatiableEntity extends Monster implements GeoEntity {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
-		builder = builder.add(Attributes.MAX_HEALTH, 150);
+		builder = builder.add(Attributes.MAX_HEALTH, 200);
 		builder = builder.add(Attributes.ARMOR, 8);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 16);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);

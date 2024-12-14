@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:cloud_block"
+    }
+  ],
+  "result": {
+    "item": "cloudstorage:cloud",
+    "count": 1
+  }
+}

@@ -59,17 +59,19 @@ public class VoidbeamCastProcedure {
 						if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
 								&& !(entity == entityiterator) && entityiterator instanceof LivingEntity) {
 							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("iter_rpg:arcane_damage"))), entity),
-									(float) (5 * power));
+									(float) (6 * power));
 							hitcontinue = false;
-							if (world instanceof ServerLevel _level)
-								_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ELEMENTAL_VOID.get()), xnew, ynew, znew, (int) (8 + Math.log(power + 1)), 0.05, 0.05, 0.05, 0.05);
 						}
 					}
 				}
 				if (world.getBlockState(BlockPos.containing(xnew, ynew, znew)).canOcclude()) {
+					hitcontinue = false;
+				}
+				if (!hitcontinue) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.VOID_POOF.get()), xnew, ynew, znew, 1, 0, 0, 0, 0);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.ELEMENTAL_VOID.get()), xnew, ynew, znew, (int) (8 + Math.log(power + 1)), 0.05, 0.05, 0.05, 0.05);
-					hitcontinue = false;
 				}
 				dist = dist + 0.025;
 			}

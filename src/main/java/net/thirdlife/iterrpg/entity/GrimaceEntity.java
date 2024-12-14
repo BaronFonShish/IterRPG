@@ -15,6 +15,8 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.monster.piglin.PiglinBrute;
+import net.minecraft.world.entity.monster.piglin.Piglin;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.animal.SnowGolem;
 import net.minecraft.world.entity.animal.IronGolem;
@@ -72,9 +74,11 @@ public class GrimaceEntity extends Monster {
 		super.registerGoals();
 		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, IronGolem.class, false, false));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, SnowGolem.class, false, false));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Villager.class, false, false));
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 0.8, 20) {
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, PiglinBrute.class, false, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Piglin.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, SnowGolem.class, false, false));
+		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = GrimaceEntity.this.getRandom();
@@ -84,7 +88,7 @@ public class GrimaceEntity extends Monster {
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
 	}
 
 	@Override

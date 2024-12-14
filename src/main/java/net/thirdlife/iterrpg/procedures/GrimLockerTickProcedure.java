@@ -58,7 +58,7 @@ public class GrimLockerTickProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, BlockPos.containing(x, y, z), "timer") >= 50) {
+			}.getValue(world, BlockPos.containing(x, y, z), "timer") >= 35) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);

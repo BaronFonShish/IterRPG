@@ -2,6 +2,8 @@
 package net.thirdlife.iterrpg.entity;
 
 import net.thirdlife.iterrpg.procedures.DwarfStopWhenTradingProcedure;
+import net.thirdlife.iterrpg.procedures.DwarfSpawnProcedure;
+import net.thirdlife.iterrpg.procedures.DwarfClickProcedure;
 import net.thirdlife.iterrpg.procedures.DwarfAiProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
 
@@ -9,7 +11,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -22,13 +26,18 @@ import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -38,8 +47,10 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import javax.annotation.Nullable;
+
 public class DwarfEntity extends Monster {
-	public static final EntityDataAccessor<Integer> DATA_tradingtype = SynchedEntityData.defineId(DwarfEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> DATA_profession = SynchedEntityData.defineId(DwarfEntity.class, EntityDataSerializers.INT);
 
 	public DwarfEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(IterRpgModEntities.DWARF.get(), world);
@@ -61,7 +72,7 @@ public class DwarfEntity extends Monster {
 	@Override
 	protected void defineSynchedData() {
 		super.defineSynchedData();
-		this.entityData.define(DATA_tradingtype, 0);
+		this.entityData.define(DATA_profession, 0);
 	}
 
 	@Override
@@ -139,16 +150,38 @@ public class DwarfEntity extends Monster {
 	}
 
 	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+		DwarfSpawnProcedure.execute(this);
+		return retval;
+	}
+
+	@Override
 	public void addAdditionalSaveData(CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
-		compound.putInt("Datatradingtype", this.entityData.get(DATA_tradingtype));
+		compound.putInt("Dataprofession", this.entityData.get(DATA_profession));
 	}
 
 	@Override
 	public void readAdditionalSaveData(CompoundTag compound) {
 		super.readAdditionalSaveData(compound);
-		if (compound.contains("Datatradingtype"))
-			this.entityData.set(DATA_tradingtype, compound.getInt("Datatradingtype"));
+		if (compound.contains("Dataprofession"))
+			this.entityData.set(DATA_profession, compound.getInt("Dataprofession"));
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+		super.mobInteract(sourceentity, hand);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		DwarfClickProcedure.execute(world, x, y, z, entity, sourceentity);
+		return retval;
 	}
 
 	@Override

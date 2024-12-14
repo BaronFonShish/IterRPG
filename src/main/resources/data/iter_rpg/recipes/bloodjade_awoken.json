@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:blood_bottle"
+    },
+    {
+      "item": "iter_rpg:blood_bottle"
+    },
+    {
+      "item": "iter_rpg:sanguarnet"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "iter_rpg:blood_bottle"
+    },
+    {
+      "item": "iter_rpg:blood_bottle"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:awakened_sanguarnet",
+    "count": 1
+  }
+}

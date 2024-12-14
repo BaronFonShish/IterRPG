@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Gist"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
+        "value": "Items.DIAMOND"
       },
       {
         "value": "CUSTOM:AmetrineIngot"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
+        "value": "Items.DIAMOND"
       },
       {
         "value": "Items.GOLD_INGOT"
       },
       {
+        "value": "CUSTOM:AmethystWand"
+      },
+      {
         "value": "Items.GOLD_INGOT"
       },
       {
-        "value": ""
+        "value": "Items.BLAZE_POWDER"
       },
       {
-        "value": "CUSTOM:Gist"
+        "value": "CUSTOM:AbyssquartzWand"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
       }
     ],
     "recipeReturnStack": {

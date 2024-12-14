@@ -2,20 +2,26 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " aa",
-    "aa ",
-    "b  "
+    " ab",
+    "bca",
+    "db "
   ],
   "key": {
     "a": {
       "item": "minecraft:iron_nugget"
     },
     "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "iter_rpg:sanguarnet"
+    },
+    "d": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "iter_rpg:sacrificial_dagger",
+    "item": "iter_rpg:bloodletter",
     "count": 1
   }
 }

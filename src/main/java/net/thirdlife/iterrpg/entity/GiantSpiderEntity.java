@@ -28,6 +28,7 @@ import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -97,8 +98,9 @@ public class GiantSpiderEntity extends Monster {
 				return super.canUse() && SpiderHealthConditionProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(11, new FloatGoal(this));
+		this.goalSelector.addGoal(10, new AvoidEntityGoal<>(this, DwarfEntity.class, (float) 12, 1, 1.2));
+		this.goalSelector.addGoal(11, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(12, new FloatGoal(this));
 	}
 
 	@Override

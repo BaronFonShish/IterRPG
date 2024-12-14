@@ -1,7 +1,7 @@
 
 package net.thirdlife.iterrpg.item;
 
-import net.thirdlife.iterrpg.procedures.RuneSummonAirElementalProcedure;
+import net.thirdlife.iterrpg.procedures.RuneLureProcedure;
 import net.thirdlife.iterrpg.procedures.MonolithRuneActivateProcedure;
 
 import net.minecraft.world.level.Level;
@@ -18,6 +18,16 @@ public class AirRuneItem extends Item {
 	}
 
 	@Override
+	public boolean hasCraftingRemainingItem() {
+		return true;
+	}
+
+	@Override
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+		return new ItemStack(this);
+	}
+
+	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
 		MonolithRuneActivateProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getLevel().getBlockState(context.getClickedPos()), context.getItemInHand());
@@ -27,6 +37,7 @@ public class AirRuneItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		RuneSummonAirElementalProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		if (selected)
+			RuneLureProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 	}
 }

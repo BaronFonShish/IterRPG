@@ -27,7 +27,7 @@ public class WandReturnCooldownProcedure {
 		}
 		cooldown = ((LivingEntity) entity).getAttribute(IterRpgModAttributes.SPELLCOOLDOWN.get()).getValue();
 		if (EnchantmentHelper.getItemEnchantmentLevel(IterRpgModEnchantments.DEXTERITY.get(), wand) != 0) {
-			cooldown = cooldown * (1 - wand.getEnchantmentLevel(IterRpgModEnchantments.DEXTERITY.get()) / 7.5);
+			cooldown = cooldown * (1 - wand.getEnchantmentLevel(IterRpgModEnchantments.DEXTERITY.get()) / 12.5);
 		}
 		return cooldown;
 	}

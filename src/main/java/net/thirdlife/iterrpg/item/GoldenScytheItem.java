@@ -22,7 +22,7 @@ public class GoldenScytheItem extends SwordItem {
 			}
 
 			public float getSpeed() {
-				return 4f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {

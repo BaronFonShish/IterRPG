@@ -68,11 +68,6 @@ public class SpellbookGuiScreen extends AbstractContainerScreen<SpellbookGuiMenu
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

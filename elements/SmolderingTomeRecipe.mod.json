@@ -12,7 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:FireFragment"
+        "value": "CUSTOM:FireIngot"
       },
       {
         "value": "Items.NETHERBRICK"
@@ -24,13 +24,13 @@
         "value": "Items.GOLD_INGOT"
       },
       {
-        "value": "Items.NETHERBRICK"
+        "value": "CUSTOM:ElementalUpgrade"
       },
       {
         "value": "Items.LEATHER"
       },
       {
-        "value": "CUSTOM:FireFragment"
+        "value": "CUSTOM:FireIngot"
       },
       {
         "value": "Items.NETHERBRICK"

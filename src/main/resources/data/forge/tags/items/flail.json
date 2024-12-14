@@ -7,6 +7,11 @@
     "iter_rpg:golden_flail",
     "iter_rpg:diamond_flail",
     "iter_rpg:netherite_flail",
-    "iter_rpg:solstice"
+    "iter_rpg:solstice",
+    "iter_rpg:earth_flail",
+    "iter_rpg:water_flail",
+    "iter_rpg:air_flail",
+    "iter_rpg:fire_flail",
+    "iter_rpg:void_flail"
   ]
 }

@@ -102,41 +102,11 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 6,
+    "frequencyOnChunks": 3,
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "meadow"
-      },
-      {
-        "value": "smaller_extreme_hills"
-      },
-      {
-        "value": "snowy_mountains"
-      },
-      {
-        "value": "frozen_peaks"
-      },
-      {
-        "value": "stony_peaks"
-      },
-      {
-        "value": "jagged_peaks"
-      },
-      {
-        "value": "mutated_forest"
-      },
-      {
-        "value": "birch_forest"
-      },
-      {
-        "value": "cherry_grove"
-      },
-      {
-        "value": "forest"
-      },
-      {
-        "value": "roofed_forest"
+        "value": "#minecraft:is_overworld"
       }
     ],
     "generationType": "Flower",

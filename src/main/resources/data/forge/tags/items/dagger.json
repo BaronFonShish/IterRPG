@@ -2,12 +2,16 @@
   "replace": false,
   "values": [
     "iter_rpg:wodden_dagger",
-    "iter_rpg:sacrificial_dagger",
     "iter_rpg:stone_dagger",
     "iter_rpg:iron_dagger",
     "iter_rpg:golden_dagger",
     "iter_rpg:diamond_dagger",
     "iter_rpg:netherite_dagger",
-    "iter_rpg:starlessness"
+    "iter_rpg:starlessness",
+    "iter_rpg:earth_dagger",
+    "iter_rpg:water_dagger",
+    "iter_rpg:air_dagger",
+    "iter_rpg:fire_dagger",
+    "iter_rpg:void_dagger"
   ]
 }

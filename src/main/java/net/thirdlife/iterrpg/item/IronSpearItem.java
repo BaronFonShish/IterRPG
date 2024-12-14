@@ -16,7 +16,7 @@ public class IronSpearItem extends SwordItem {
 			}
 
 			public float getSpeed() {
-				return 4f;
+				return 6f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -24,7 +24,7 @@ public class IronSpearItem extends SwordItem {
 			}
 
 			public int getLevel() {
-				return 0;
+				return 2;
 			}
 
 			public int getEnchantmentValue() {

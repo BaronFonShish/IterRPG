@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "guardian",
-    "elder_guardian"
+    "elder_guardian",
+    "stray",
+    "iter_rpg:water_elemental"
   ]
 }

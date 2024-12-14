@@ -13,10 +13,13 @@
     },
     {
       "item": "iter_rpg:ether_dust"
+    },
+    {
+      "item": "minecraft:string"
     }
   ],
   "result": {
     "item": "iter_rpg:abstruse_cloth",
-    "count": 2
+    "count": 4
   }
 }

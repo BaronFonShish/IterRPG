@@ -3,17 +3,17 @@ package net.thirdlife.iterrpg.world.features;
 
 import net.thirdlife.iterrpg.procedures.GeodesConfigConditionProcedure;
 
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.OreFeature;
+import net.minecraft.world.level.levelgen.feature.configurations.ReplaceBlockConfiguration;
+import net.minecraft.world.level.levelgen.feature.ReplaceBlockFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.WorldGenLevel;
 
-public class GeoditeFeatureFeature extends OreFeature {
+public class GeoditeFeatureFeature extends ReplaceBlockFeature {
 	public GeoditeFeatureFeature() {
-		super(OreConfiguration.CODEC);
+		super(ReplaceBlockConfiguration.CODEC);
 	}
 
-	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
+	public boolean place(FeaturePlaceContext<ReplaceBlockConfiguration> context) {
 		WorldGenLevel world = context.level();
 		int x = context.origin().getX();
 		int y = context.origin().getY();

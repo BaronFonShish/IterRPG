@@ -1,0 +1,1 @@
+{"bookshelf:load_conditions":[{"type":"bookshelf:item_exists","values":["minecraft:amethyst_block"]}],"type":"botanypots:soil","input":[{"item":"minecraft:amethyst_block"},{"item":"minecraft:amethyst_block"}],"display":{"block":"minecraft:amethyst_block"},"categories":["ametrine"],"growthModifier":1}

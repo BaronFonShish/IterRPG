@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BloodBottle"
+      },
+      {
+        "value": "CUSTOM:BloodBottle"
+      },
+      {
+        "value": "CUSTOM:Sanguarnet"
+      },
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "CUSTOM:BloodBottle"
+      },
+      {
+        "value": "CUSTOM:BloodBottle"
+      },
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AwakenedSanguarnet"
+    },
+    "name": "bloodjade_awoken",
+    "namespace": "mod"
+  }
+}

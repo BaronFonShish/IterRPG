@@ -18,11 +18,11 @@
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": ""
+      "value": "Items.GLASS_BOTTLE"
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
-    "stayInGridWhenCrafting": false,
+    "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,

@@ -69,13 +69,13 @@ public class ArcaneBoltEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		ArcaneParticleHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
+		ArcaneParticleHitProcedure.execute(this.level(), entityHitResult.getEntity(), this);
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		ArcaneParticleHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		ArcaneParticleHitBlockProcedure.execute(this.level(), this);
 	}
 
 	@Override

@@ -6,6 +6,12 @@
     "iter_rpg:iron_scythe",
     "iter_rpg:golden_scythe",
     "iter_rpg:diamond_scythe",
-    "iter_rpg:harvest"
+    "iter_rpg:harvest",
+    "iter_rpg:earth_scythe",
+    "iter_rpg:water_scythe",
+    "iter_rpg:air_scythe",
+    "iter_rpg:fire_scythe",
+    "iter_rpg:void_scythe",
+    "iter_rpg:ametrine_scythe"
   ]
 }

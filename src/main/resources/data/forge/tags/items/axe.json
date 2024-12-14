@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:ametrine_axe",
+    "iter_rpg:deepsteel_axe",
+    "iter_rpg:earth_axe",
+    "iter_rpg:water_axe",
+    "iter_rpg:air_axe",
+    "iter_rpg:fire_axe",
+    "iter_rpg:void_axe"
+  ]
+}

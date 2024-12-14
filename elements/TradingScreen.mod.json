@@ -1,0 +1,213 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 181,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 8,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "TradePrice1Condition"
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "Trade1Take"
+          },
+          "x": 133,
+          "y": 47
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "TradePrice2Condition"
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "Trade2Take"
+          },
+          "x": 169,
+          "y": 47
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "TradePrice3Condition"
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "Trade3Take"
+          },
+          "x": 205,
+          "y": 47
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "TradePrice4Condition"
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "Trade4Take"
+          },
+          "x": 241,
+          "y": 47
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "TradePrice5Condition"
+          },
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "Trade5Take"
+          },
+          "x": 277,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_trade_price_1_label",
+          "text": {
+            "fixedValue": "",
+            "name": "TradePrice1Label"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 137,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_trade_price_2_label",
+          "text": {
+            "fixedValue": "",
+            "name": "TradePrice2Label"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_trade_price_3_label",
+          "text": {
+            "fixedValue": "",
+            "name": "TradePrice3Label"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 209,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_trade_price_4_label",
+          "text": {
+            "fixedValue": "",
+            "name": "TradePrice4Label"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 245,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_trade_price_5_label",
+          "text": {
+            "fixedValue": "",
+            "name": "TradePrice5Label"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "x": 281,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_coin_display",
+          "text": {
+            "fixedValue": "",
+            "name": "CoinDisplay"
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "x": 147,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "small_coin.png",
+          "use1Xscale": false,
+          "x": 137,
+          "y": 116
+        }
+      }
+    ],
+    "onTick": {
+      "name": "MobTradeTick"
+    },
+    "onClosed": {
+      "name": "TradeAbort"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 3,
+      "oy": 21,
+      "snapOnGrid": true
+    }
+  }
+}

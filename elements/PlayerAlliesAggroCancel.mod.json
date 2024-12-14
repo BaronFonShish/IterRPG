@@ -1,0 +1,7 @@
+{
+  "_fv": 60,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_changes_attack_target</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_binary_ops\" inline=\"false\"><field name=\"OP\">AND</field><value name=\"A\"><block type=\"entity_is_tagged_in\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"tag\"><block type=\"text\"><field name=\"TEXT\">forge:player_allies</field></block></value></block></value><value name=\"B\"><block type=\"entity_is_tagged_in\"><value name=\"entity\"><block type=\"source_entity_from_deps\"></block></value><value name=\"tag\"><block type=\"text\"><field name=\"TEXT\">forge:player_allies</field></block></value></block></value></block></value><statement name=\"DO0\"><block type=\"cancel_event\"></block></statement></block></next></block></xml>"
+  }
+}

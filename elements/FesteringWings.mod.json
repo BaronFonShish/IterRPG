@@ -1,0 +1,59 @@
+{
+  "_fv": 60,
+  "_type": "curiosbauble",
+  "definition": {
+    "renderType": 0,
+    "texture": "festering_wings",
+    "customModelName": "Normal",
+    "name": "Festering Wings",
+    "rarity": "COMMON",
+    "slotType": "BACK",
+    "baubleModel": "Modelpestering_wings",
+    "baubleModelTexture": "pestering_wings.png",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "addSlot": true,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hasGlow": false,
+    "customProperties": {},
+    "states": [],
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "slotAmount": 1,
+    "curioTick": {
+      "name": "PesteringWingsCooldown"
+    },
+    "isFood": false,
+    "friendlyPigs": false,
+    "enderMask": false,
+    "rotateModel": true,
+    "translateModel": true,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "hasModel": true,
+    "animation": "none"
+  }
+}

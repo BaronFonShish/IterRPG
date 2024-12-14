@@ -7,6 +7,12 @@
     "iter_rpg:golden_spear",
     "iter_rpg:diamond_spear",
     "iter_rpg:netherite_spear",
-    "iter_rpg:eternal_torrent"
+    "iter_rpg:eternal_torrent",
+    "iter_rpg:earth_spear",
+    "iter_rpg:water_spear",
+    "iter_rpg:air_spear",
+    "iter_rpg:fire_spear",
+    "iter_rpg:void_spear",
+    "iter_rpg:ametrine_spear"
   ]
 }

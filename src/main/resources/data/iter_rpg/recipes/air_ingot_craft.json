@@ -1,19 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
-  ],
-  "key": {
-    "a": {
+  "ingredients": [
+    {
       "item": "iter_rpg:air_fragment"
     },
-    "b": {
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
       "item": "iter_rpg:ametrine_ingot"
+    },
+    {
+      "item": "iter_rpg:air_rune"
     }
-  },
+  ],
   "result": {
     "item": "iter_rpg:air_ingot",
     "count": 1

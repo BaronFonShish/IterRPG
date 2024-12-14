@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "iter_rpg:block/cruncher_bottom",
+    "up": "iter_rpg:block/cruncher_top_on",
+    "north": "iter_rpg:block/cruncher_front_open",
+    "east": "iter_rpg:block/cruncher_right_on",
+    "south": "iter_rpg:block/cruncher_back",
+    "west": "iter_rpg:block/cruncher_left_on",
+    "particle": "iter_rpg:block/cruncher_front"
+  },
+  "render_type": "solid"
+}

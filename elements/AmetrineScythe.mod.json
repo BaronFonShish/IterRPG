@@ -33,14 +33,14 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "AmetrineMend"
-    },
     "onRightClickedOnBlock": {
       "name": "ScytheReap"
     },
     "onEntityHitWith": {
       "name": "ScytheSplashDamage"
+    },
+    "onItemInInventoryTick": {
+      "name": "AmetrineToolMend"
     }
   }
 }

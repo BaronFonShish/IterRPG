@@ -1,15 +1,36 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "iter_rpg:elemental_upgrade"
-  },
-  "base": {
-    "item": "minecraft:netherite_helmet"
-  },
-  "addition": {
-    "item": "iter_rpg:elemental_ingot"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "g  "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:earth_armor_helmet"
+    },
+    "b": {
+      "item": "iter_rpg:water_armor_helmet"
+    },
+    "c": {
+      "item": "iter_rpg:air_armor_helmet"
+    },
+    "d": {
+      "item": "iter_rpg:fire_armor_helmet"
+    },
+    "e": {
+      "item": "iter_rpg:void_armor_helmet"
+    },
+    "f": {
+      "item": "iter_rpg:primordial_ingot"
+    },
+    "g": {
+      "item": "iter_rpg:elemental_upgrade"
+    }
   },
   "result": {
-    "item": "iter_rpg:elemental_armor_helmet"
+    "item": "iter_rpg:elemental_armor_helmet",
+    "count": 1
   }
 }

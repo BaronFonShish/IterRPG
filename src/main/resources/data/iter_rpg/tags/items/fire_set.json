@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "iter_rpg:fire_sword",
+    "iter_rpg:fire_scythe",
+    "iter_rpg:fire_spear",
+    "iter_rpg:fire_flail",
+    "iter_rpg:fire_dagger",
+    "iter_rpg:fire_armor_helmet",
+    "iter_rpg:fire_armor_chestplate",
+    "iter_rpg:fire_armor_leggings",
+    "iter_rpg:fire_armor_boots",
+    "iter_rpg:fire_pickaxe",
+    "iter_rpg:fire_axe",
+    "iter_rpg:fire_shovel",
+    "iter_rpg:fire_hoe"
+  ]
+}

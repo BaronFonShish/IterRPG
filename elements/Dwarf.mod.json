@@ -80,7 +80,7 @@
     },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
-    "inventorySize": 6,
+    "inventorySize": 5,
     "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": false,
@@ -118,13 +118,19 @@
       {
         "min": -2147483648,
         "max": 2147483647,
-        "name": "tradingtype",
+        "name": "profession",
         "type": "integer",
         "value": 0
       }
     ],
+    "onRightClickedOn": {
+      "name": "DwarfClick"
+    },
     "onMobTickUpdate": {
       "name": "DwarfAi"
+    },
+    "onInitialSpawn": {
+      "name": "DwarfSpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

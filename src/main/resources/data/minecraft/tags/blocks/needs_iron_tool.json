@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "iter_rpg:grim_locker",
+    "iter_rpg:component_deposit",
+    "iter_rpg:sanguarnet_ore",
     "iter_rpg:runic_grimstone_active",
     "iter_rpg:runic_grimstone",
     "iter_rpg:barrier_projector",

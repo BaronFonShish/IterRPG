@@ -29,14 +29,20 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:FireballProjectileProjectile"
+    },
     "isFood": true,
-    "nutritionalValue": 6,
-    "saturation": 12.0,
+    "nutritionalValue": 8,
+    "saturation": 4.0,
     "eatResultItem": {
       "value": ""
     },

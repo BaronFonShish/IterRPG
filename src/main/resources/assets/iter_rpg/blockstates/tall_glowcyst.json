@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "iter_rpg:block/tall_glowcyst"
+    },
+    "half=lower": {
+      "model": "iter_rpg:block/tall_glowcyst_bottom"
+    }
+  }
+}

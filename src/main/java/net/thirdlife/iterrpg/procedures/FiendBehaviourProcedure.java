@@ -19,6 +19,7 @@ public class FiendBehaviourProcedure {
 			return;
 		Entity target = null;
 		boolean targeting = false;
+		DemonRegenProcedure.execute(entity);
 		if (entity.getPersistentData().getDouble("dashduration") > 0) {
 			entity.setDeltaMovement(new Vec3((entity.getPersistentData().getDouble("xdsah")), (entity.getPersistentData().getDouble("ydash")), (entity.getPersistentData().getDouble("zdash"))));
 			if (world instanceof ServerLevel _level)

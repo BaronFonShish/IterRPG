@@ -15,6 +15,9 @@
     "iter_rpg:spell_poison_gas",
     "iter_rpg:spell_shadelash",
     "iter_rpg:spell_flamebolt",
-    "iter_rpg:spell_voidbeam"
+    "iter_rpg:spell_voidbeam",
+    "iter_rpg:spell_frost_spike",
+    "iter_rpg:spell_recall",
+    "iter_rpg:spell_mend"
   ]
 }

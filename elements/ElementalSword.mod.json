@@ -25,14 +25,7 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "repairItems": [
-      {
-        "value": "CUSTOM:ElementalIngot"
-      },
-      {
-        "value": "CUSTOM:ElementalFragment"
-      }
-    ],
+    "repairItems": [],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,

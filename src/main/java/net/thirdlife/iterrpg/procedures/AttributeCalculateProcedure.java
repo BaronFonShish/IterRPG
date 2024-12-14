@@ -32,6 +32,9 @@ public class AttributeCalculateProcedure {
 
 	private static void execute(@Nullable Event event, ItemStack itemstack) {
 		double damage = 0;
+		double spellbonus = 0;
+		double dexbonus = 0;
+		double mconbonus = 0;
 		String spellpowerWand = "";
 		String spellcooldownWand = "";
 		String spellmanacostWand = "";
@@ -55,6 +58,10 @@ public class AttributeCalculateProcedure {
 		String spellmanacostChest = "";
 		String spellmanacostLegs = "";
 		String spellmanacostFeet = "";
+		String maxhpaccessory = "";
+		String WandAttunement = "";
+		String WandDexterity = "";
+		String WandRigour = "";
 		spellpowerWand = "f1e411bf-85d7-3fa1-84ca-89a2387579f6";
 		spellcooldownWand = "76d8ee49-b607-34ac-bce4-0e78763278b8";
 		spellmanacostWand = "755fe73d-3ba9-3a70-abc4-54a29fa80cb3";
@@ -78,6 +85,10 @@ public class AttributeCalculateProcedure {
 		spellmanacostChest = "87d705a8-bc6d-370a-8c1d-2b00abbe6d98";
 		spellmanacostLegs = "5041f650-0ae2-373f-802f-733513d51b78";
 		spellmanacostFeet = "6219dc93-32b7-316e-82af-d07526a91ccb";
+		maxhpaccessory = "df537308-b5bd-3cfe-bc40-670b5f582c9d";
+		WandAttunement = "6eec0f7a-8099-39a2-b2f9-91b9fe5724fa";
+		WandDexterity = "d18dc566-0212-3498-8bff-09b2634ed960";
+		WandRigour = "96267ea5-ea2c-314f-88d3-2ba3d83bde46";
 		if (itemstack.is(ItemTags.create(new ResourceLocation("forge:spear")))) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(ForgeMod.ENTITY_REACH.get(), (new AttributeModifier(UUID.fromString("25dbb59e-e4d5-3e0b-9f78-0a2a506ce0d7"), "Attack range", 1.25, AttributeModifier.Operation.ADDITION)));
@@ -91,116 +102,69 @@ public class AttributeCalculateProcedure {
 		if (itemstack.getItem() == IterRpgModItems.AMETHYST_WAND.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 1, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 1, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.ABYSSQUARTZ_WAND.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 1, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
+				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 0.8, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 1.2, AttributeModifier.Operation.ADDITION)));
 				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 1, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.PEARL_WAND.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.05, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.95, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 1, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.BONE_WAND.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 0.75, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 1.15, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
+				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 2, AttributeModifier.Operation.ADDITION)));
 				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 1, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.NIMBLE_COPPER_SHORTSTAFF.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 0.5, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.7, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.8, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.AMETRINE_STAFF.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.2, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.85, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.85, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.125, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.9, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.9, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.ENCHANTOME.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
+				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.1, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.9, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.95, AttributeModifier.Operation.ADDITION)));
+			}
+		}
+		if (itemstack.getItem() == IterRpgModItems.HYDRA_STAFF.get() || itemstack.getItem() == IterRpgModItems.SMOLDERING_TOME.get() || itemstack.getItem() == IterRpgModItems.THUNDERCLAP.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.15, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.9, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.85, AttributeModifier.Operation.ADDITION)));
-			}
-		}
-		if (itemstack.getItem() == IterRpgModItems.HYDRA_STAFF.get()) {
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.2, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.9, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.85, AttributeModifier.Operation.ADDITION)));
-			}
-		}
-		if (itemstack.getItem() == IterRpgModItems.SMOLDERING_TOME.get()) {
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.2, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.9, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
 				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.85, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.MAGMANUM_STAFF.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.1, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
+				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerWand), "Spellcasting power", 1.05, AttributeModifier.Operation.ADDITION)));
 				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownWand), "Spell cooldown", 0.9, AttributeModifier.Operation.ADDITION)));
-			}
-			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.MAINHAND) {
-				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.8, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostWand), "Mana consumption", 0.875, AttributeModifier.Operation.ADDITION)));
 			}
 		}
 		if (itemstack.getItem() == IterRpgModItems.RAGGED_HELMET.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.HEAD) {
-				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityHead), "Mana capacity", 10, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityHead), "Mana capacity", 15, AttributeModifier.Operation.ADDITION)));
 			}
 		} else if (itemstack.getItem() == IterRpgModItems.RAGGED_CHESTPLATE.get()) {
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.CHEST) {
@@ -245,6 +209,80 @@ public class AttributeCalculateProcedure {
 			}
 			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.FEET) {
 				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenFeet), "Mana regeneration", 0.025, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+		}
+		if (itemstack.getItem() == IterRpgModItems.AZURE_HELMET.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.HEAD) {
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityHead), "Mana capacity", 10, AttributeModifier.Operation.ADDITION)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.HEAD) {
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenHead), "Mana regeneration", 0.05, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.HEAD) {
+				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostHead), "Mana consumption", (-0.075), AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+		} else if (itemstack.getItem() == IterRpgModItems.AZURE_CHESTPLATE.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.CHEST) {
+				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerChest), "Spellcasting power", 0.05, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.CHEST) {
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityChest), "Mana capacity", 15, AttributeModifier.Operation.ADDITION)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.CHEST) {
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenChest), "Mana regeneration", 0.05, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+		} else if (itemstack.getItem() == IterRpgModItems.AZURE_LEGGINGS.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.LEGS) {
+				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownLegs), "Spell cooldown", (-0.15), AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.LEGS) {
+				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellpowerLegs), "Spellcasting power", 0.05, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.LEGS) {
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenLegs), "Mana regeneration", 0.05, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+		} else if (itemstack.getItem() == IterRpgModItems.AZURE_BOOTS.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.FEET) {
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenFeet), "Mana regeneration", 0.05, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.FEET) {
+				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostFeet), "Mana consumption", (-0.075), AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.FEET) {
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityFeet), "Mana capacity", 5, AttributeModifier.Operation.ADDITION)));
+			}
+		}
+		if (itemstack.getItem() == IterRpgModItems.DAMNED_HELMET.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.HEAD) {
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityHead), "Mana capacity", 10, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenHead), "Mana regeneration", 0.1, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.HEAD) {
+				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostHead), "Mana consumption", (-0.075), AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+		} else if (itemstack.getItem() == IterRpgModItems.DAMNED_CHESTPLATE.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.CHEST) {
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityChest), "Mana capacity", 15, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenChest), "Mana regeneration", 0.1, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.CHEST) {
+				_event.addModifier(IterRpgModAttributes.SPELLCASTINGPOWER.get(), (new AttributeModifier(UUID.fromString(spellcooldownChest), "Spellcasting power", 0.15, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+		} else if (itemstack.getItem() == IterRpgModItems.DAMNED_LEGGINGS.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.LEGS) {
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityLegs), "Mana capacity", 15, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenLegs), "Mana regeneration", 0.1, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.LEGS) {
+				_event.addModifier(IterRpgModAttributes.SPELLCOOLDOWN.get(), (new AttributeModifier(UUID.fromString(spellcooldownLegs), "Spell cooldown", (-0.2), AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+		} else if (itemstack.getItem() == IterRpgModItems.DAMNED_BOOTS.get()) {
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.FEET) {
+				_event.addModifier(IterRpgModAttributes.BASEMANACAPACITY.get(), (new AttributeModifier(UUID.fromString(manacapacityFeet), "Mana capacity", 10, AttributeModifier.Operation.ADDITION)));
+				_event.addModifier(IterRpgModAttributes.BASEMANAREGENERATION.get(), (new AttributeModifier(UUID.fromString(manaregenFeet), "Mana regeneration", 0.1, AttributeModifier.Operation.MULTIPLY_TOTAL)));
+			}
+			if (event instanceof ItemAttributeModifierEvent _event && _event.getSlotType() == EquipmentSlot.FEET) {
+				_event.addModifier(IterRpgModAttributes.MANACONSUMPTION.get(), (new AttributeModifier(UUID.fromString(spellmanacostFeet), "Mana consumption", (-0.075), AttributeModifier.Operation.MULTIPLY_TOTAL)));
 			}
 		}
 	}

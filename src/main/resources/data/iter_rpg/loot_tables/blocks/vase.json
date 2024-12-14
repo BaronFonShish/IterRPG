@@ -417,6 +417,23 @@
               "function": "minecraft:explosion_decay"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iter_rpg:unidentified_spell",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
         }
       ]
     },

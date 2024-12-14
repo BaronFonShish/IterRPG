@@ -3,7 +3,7 @@
   "_type": "attribute",
   "definition": {
     "description": "Mana consumption",
-    "minValue": 0.0,
+    "minValue": -1.0,
     "maxValue": 1.0E7,
     "defaultValue": 0.0,
     "isPersistent": true,

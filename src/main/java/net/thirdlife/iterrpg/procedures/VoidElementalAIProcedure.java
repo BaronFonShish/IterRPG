@@ -61,7 +61,7 @@ public class VoidElementalAIProcedure {
 						}
 					}
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.PORTAL_SPARK_PARTICLE.get()), (entity.getX() + xpos), (entity.getY() + ypos + 0.2), (entity.getZ() + zpos), 8, 0.25, 0.5, 0.25, 0.0025);
+						_level.sendParticles(ParticleTypes.DRAGON_BREATH, (entity.getX() + xpos), (entity.getY() + ypos + 0.2), (entity.getZ() + zpos), 8, 0.25, 0.5, 0.25, 0.0025);
 				}
 			}
 		} else {

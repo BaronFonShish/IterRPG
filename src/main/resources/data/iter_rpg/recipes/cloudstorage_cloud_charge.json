@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cloudstorage:cloud"
+    },
+	{
+      "item": "iter_rpg:air_fragment"
+    }
+  ],
+  "result": {
+    "item": "cloudstorage:static_cloud",
+    "count": 1
+  }
+}

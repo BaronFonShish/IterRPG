@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:honeycomb"
+    },
+    "b": {
+      "item": "iter_rpg:iron_ring"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ring_mould",
+    "count": 1
+  }
+}

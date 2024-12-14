@@ -6,7 +6,7 @@
       "item": "iter_rpg:earth_ingot"
     },
     {
-      "item": "iter_rpg:elemental_fragment"
+      "item": "iter_rpg:primordial_fragment"
     },
     {
       "item": "iter_rpg:water_ingot"
@@ -22,7 +22,7 @@
     }
   ],
   "result": {
-    "item": "iter_rpg:elemental_ingot",
+    "item": "iter_rpg:primordial_ingot",
     "count": 2
   }
 }

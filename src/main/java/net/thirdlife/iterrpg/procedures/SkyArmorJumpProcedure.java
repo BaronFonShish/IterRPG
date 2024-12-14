@@ -1,5 +1,8 @@
 package net.thirdlife.iterrpg.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
+import net.thirdlife.iterrpg.network.IterRpgModVariables;
 import net.thirdlife.iterrpg.init.IterRpgModItems;
 import net.thirdlife.iterrpg.IterRpgMod;
 
@@ -60,6 +63,39 @@ public class SkyArmorJumpProcedure {
 					entity.fallDistance = 0;
 				});
 				IterRpgMod.queueServerWork(50, () -> {
+					entity.fallDistance = 0;
+				});
+			}
+		}
+		if (entity instanceof Player && entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(IterRpgModItems.FESTERING_WINGS.get(), lv).isPresent() : false) {
+			if (!entity.onGround() && (entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).flaps_left > 0) {
+				{
+					double _setval = (entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).flaps_left - 1;
+					entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.flaps_left = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0.5, (entity.getDeltaMovement().z())));
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.ASH, x, y, z, 12, 0.25, 0.025, 0.25, 0.025);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.phantom.flap")), SoundSource.PLAYERS, 1, (float) 1.2);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.phantom.flap")), SoundSource.PLAYERS, 1, (float) 1.2, false);
+					}
+				}
+				IterRpgMod.queueServerWork(5, () -> {
+					entity.fallDistance = 0;
+				});
+				IterRpgMod.queueServerWork(10, () -> {
+					entity.fallDistance = 0;
+				});
+				IterRpgMod.queueServerWork(15, () -> {
+					entity.fallDistance = 0;
+				});
+				IterRpgMod.queueServerWork(20, () -> {
 					entity.fallDistance = 0;
 				});
 			}

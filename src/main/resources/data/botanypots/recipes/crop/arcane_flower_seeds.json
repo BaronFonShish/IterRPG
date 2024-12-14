@@ -1,0 +1,1 @@
+{"bookshelf:load_conditions":[{"type":"bookshelf:item_exists","values":["iter_rpg:arcane_flower_seeds","iter_rpg:etherbloom"]}],"type":"botanypots:crop","seed":{"item":"iter_rpg:arcane_flower_seeds"},"categories":["ametrine"],"growthTicks":6000,"display":{"type":"botanypots:aging","block":"iter_rpg:etherbloom"},"drops":[{"chance":1.00,"output":{"item":"iter_rpg:etherbloom"}}]}

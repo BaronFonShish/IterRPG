@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 2,
+    "recipeRetstackSize": 4,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -24,7 +24,7 @@
         "value": "CUSTOM:ArcanePowder"
       },
       {
-        "value": ""
+        "value": "Items.STRING"
       },
       {
         "value": ""

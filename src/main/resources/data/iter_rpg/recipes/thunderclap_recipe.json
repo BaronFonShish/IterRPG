@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:cloud_block"
+    },
+    "b": {
+      "item": "iter_rpg:air_ingot"
+    },
+    "c": {
+      "item": "iter_rpg:elemental_upgrade"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:thunderclap",
+    "count": 1
+  }
+}

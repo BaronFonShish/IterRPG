@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:gobsteel_scrap"
+    },
+    {
+      "item": "iter_rpg:gobsteel_scrap"
+    },
+    {
+      "item": "iter_rpg:gobsteel_scrap"
+    },
+    {
+      "item": "iter_rpg:gobsteel_scrap"
+    },
+    {
+      "item": "iter_rpg:deepsteel_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:deepsteel_ingot",
+    "count": 2
+  }
+}

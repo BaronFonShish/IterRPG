@@ -9,7 +9,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": "CUSTOM:WaterFragment"
@@ -27,16 +27,16 @@
         "value": "CUSTOM:AmetrineIngot"
       },
       {
-        "value": "CUSTOM:WaterFragment"
+        "value": "CUSTOM:WaterRune"
       },
       {
-        "value": "CUSTOM:WaterFragment"
+        "value": ""
       },
       {
-        "value": "CUSTOM:WaterFragment"
+        "value": ""
       },
       {
-        "value": "CUSTOM:WaterFragment"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

@@ -3,21 +3,21 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "aca",
-    "ded"
+    "cdc",
+    "aea"
   ],
   "key": {
     "a": {
-      "item": "iter_rpg:gobsteel_scrap"
+      "item": "minecraft:iron_ingot"
     },
     "b": {
       "item": "minecraft:diamond"
     },
     "c": {
-      "item": "minecraft:redstone"
+      "item": "iter_rpg:dwarven_components"
     },
     "d": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:redstone"
     },
     "e": {
       "item": "minecraft:hopper"

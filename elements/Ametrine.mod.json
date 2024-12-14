@@ -10,6 +10,18 @@
     "textureLeggings": "ametrine_leggings",
     "enableBoots": true,
     "textureBoots": "ametrine_boots",
+    "onHelmetTick": {
+      "name": "AmetrineArmorMend"
+    },
+    "onBodyTick": {
+      "name": "AmetrineArmorMend"
+    },
+    "onLeggingsTick": {
+      "name": "AmetrineArmorMend"
+    },
+    "onBootsTick": {
+      "name": "AmetrineArmorMend"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -71,10 +83,10 @@
       "fixedValue": false
     },
     "maxDamage": 9,
-    "damageValueHelmet": 3,
-    "damageValueBody": 7,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
     "damageValueLeggings": 5,
-    "damageValueBoots": 3,
+    "damageValueBoots": 2,
     "enchantability": 10,
     "toughness": 1.0,
     "knockbackResistance": 0.0,

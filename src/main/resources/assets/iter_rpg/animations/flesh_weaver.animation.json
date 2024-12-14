@@ -1,53 +1,171 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.flesh_weaver.0": {
+		"0": {
 			"loop": true,
-			"animation_length": 2.4,
+			"animation_length": 2.88,
 			"bones": {
 				"block": {
 					"scale": {
-						"vector": ["1 + Math.sin(query.anim_time*150)/100", 1, "1 + Math.cos(query.anim_time*150)/100"]
+						"0.0": {
+							"vector": [0.975, 1, 0.975]
+						},
+						"1.44": {
+							"vector": [1.025, 1, 1.025],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [0.975, 1, 0.975],
+							"easing": "easeInOutSine"
+						}
 					}
 				},
 				"fang1rot": {
 					"rotation": {
-						"vector": [0, 0, "-45+Math.sin((query.anim_time)*150)*7.5"]
+						"0.0": {
+							"vector": [0, 0, -45]
+						},
+						"0.64": {
+							"vector": [0, 0, -52.5],
+							"easing": "easeOutSine"
+						},
+						"2.24": {
+							"vector": [0, 0, -35],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [0, 0, -45],
+							"easing": "easeInSine"
+						}
 					}
 				},
 				"claw4": {
 					"rotation": {
-						"vector": ["-Math.sin((query.anim_time+0.3)*150)*7.5", 0, 0]
+						"0.0": {
+							"vector": [2.5, 0, 0]
+						},
+						"0.72": {
+							"vector": [5, 0, 0]
+						},
+						"2.16": {
+							"vector": [-5, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [2.5, 0, 0],
+							"easing": "easeInSine"
+						}
 					}
 				},
 				"claw1": {
 					"rotation": {
-						"vector": [0, 0, "-Math.sin((query.anim_time+0.9)*150)*7.5"]
+						"0.0": {
+							"vector": [0, 0, 2.5]
+						},
+						"0.72": {
+							"vector": [0, 0, 5]
+						},
+						"2.16": {
+							"vector": [0, 0, -5],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [0, 0, 2.5],
+							"easing": "easeInSine"
+						}
 					}
 				},
 				"claw2": {
 					"rotation": {
-						"vector": [0, 0, "Math.sin((query.anim_time+2.1)*150)*7.5"]
+						"0.0": {
+							"vector": [0, 0, -2.5]
+						},
+						"0.72": {
+							"vector": [0, 0, -5]
+						},
+						"2.16": {
+							"vector": [0, 0, 5],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [0, 0, -2.5],
+							"easing": "easeInSine"
+						}
 					}
 				},
 				"fang2rot": {
 					"rotation": {
-						"vector": [0, 0, "45-Math.sin((query.anim_time+0.6)*150)*7.5"]
-					}
-				},
-				"fang3rot": {
-					"rotation": {
-						"vector": [0, 0, "45-Math.sin((query.anim_time+1.2)*150)*7.5"]
+						"0.0": {
+							"vector": [0, 0, 45]
+						},
+						"0.64": {
+							"vector": [0, 0, 52.5],
+							"easing": "easeOutSine"
+						},
+						"2.24": {
+							"vector": [0, 0, 35],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [0, 0, 45],
+							"easing": "easeInSine"
+						}
 					}
 				},
 				"fang4rot": {
 					"rotation": {
-						"vector": [0, 0, "-45+Math.sin((query.anim_time+1.8)*150)*7.5"]
+						"0.0": {
+							"vector": [0, 0, -45]
+						},
+						"0.64": {
+							"vector": [0, 0, -52.5],
+							"easing": "easeOutSine"
+						},
+						"2.24": {
+							"vector": [0, 0, -35],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [0, 0, -45],
+							"easing": "easeInSine"
+						}
 					}
 				},
 				"claw3": {
 					"rotation": {
-						"vector": ["Math.sin((query.anim_time+1.5)*150)*7.5", 0, 0]
+						"0.0": {
+							"vector": [-2.5, 0, 0]
+						},
+						"0.72": {
+							"vector": [-5, 0, 0]
+						},
+						"2.16": {
+							"vector": [5, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [-2.5, 0, 0],
+							"easing": "easeInSine"
+						}
+					}
+				},
+				"fang3rot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 45]
+						},
+						"0.64": {
+							"vector": [0, 0, 52.5],
+							"easing": "easeOutSine"
+						},
+						"2.24": {
+							"vector": [0, 0, 35],
+							"easing": "easeInOutSine"
+						},
+						"2.88": {
+							"vector": [0, 0, 45],
+							"easing": "easeInSine"
+						}
 					}
 				}
 			}

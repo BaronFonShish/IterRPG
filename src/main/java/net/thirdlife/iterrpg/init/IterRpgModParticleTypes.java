@@ -37,4 +37,6 @@ public class IterRpgModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> VENGEFUL_PARTICLE = REGISTRY.register("vengeful_particle", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> ELEM_FLAME = REGISTRY.register("elem_flame", () -> new SimpleParticleType(false));
 	public static final RegistryObject<SimpleParticleType> POISON_CLOUD = REGISTRY.register("poison_cloud", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> SNOW_SHARDS = REGISTRY.register("snow_shards", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> VOID_POOF = REGISTRY.register("void_poof", () -> new SimpleParticleType(false));
 }

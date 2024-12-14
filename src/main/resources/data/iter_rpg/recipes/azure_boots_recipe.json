@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "b": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "c": {
+      "item": "minecraft:gold_ingot"
+    },
+    "d": {
+      "item": "iter_rpg:ragged_boots"
+    },
+    "e": {
+      "item": "iter_rpg:ametrine_ingot"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:azure_boots",
+    "count": 1
+  }
+}

@@ -11,13 +11,13 @@
       "item": "minecraft:string"
     },
     "b": {
-      "item": "minecraft:rabbit_hide"
+      "item": "minecraft:iron_nugget"
     },
     "c": {
       "item": "minecraft:leather"
     },
     "d": {
-      "item": "iter_rpg:coin_block"
+      "item": "iter_rpg:coin"
     }
   },
   "result": {

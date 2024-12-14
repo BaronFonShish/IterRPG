@@ -85,7 +85,7 @@ public class ShadeLashCastProcedure {
 						if (!(entityiterator instanceof TamableAnimal _tamEnt ? _tamEnt.isTame() : false) && !entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("iter_rpg:entity_not_damage")))
 								&& entityiterator instanceof LivingEntity && !(entity == entityiterator)) {
 							entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("iter_rpg:arcane_damage"))), entity),
-									(float) (0.2 * (0.75 + Math.log(power + 1) / 2.5)));
+									(float) (0.2 * power));
 						}
 					}
 				}

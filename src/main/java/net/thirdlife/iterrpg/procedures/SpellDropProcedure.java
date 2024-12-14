@@ -11,10 +11,10 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Witch;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Evoker;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -48,16 +48,21 @@ public class SpellDropProcedure {
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
-				} else if (entity instanceof Witch) {
-					luck = Mth.nextInt(RandomSource.create(), 1, 4);
+					if (luck <= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.UNIDENTIFIED_SPELL.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+					}
 				} else if (entity instanceof Monster) {
-					luck = Mth.nextInt(RandomSource.create(), 1, 5000);
-				}
-				if (luck == 1) {
-					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.UNIDENTIFIED_SPELL.get()));
-						entityToSpawn.setPickUpDelay(10);
-						_level.addFreshEntity(entityToSpawn);
+					luck = Mth.nextInt(RandomSource.create(), 0, 5000);
+					if (luck <= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(IterRpgModItems.UNIDENTIFIED_SPELL.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
 					}
 				}
 			}

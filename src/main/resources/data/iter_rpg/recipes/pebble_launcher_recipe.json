@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "iter_rpg:dwarven_components"
+    },
+    "c": {
+      "item": "minecraft:water_bucket"
+    },
+    "d": {
+      "item": "minecraft:piston"
+    },
+    "e": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:pebble_launcher",
+    "count": 1
+  }
+}

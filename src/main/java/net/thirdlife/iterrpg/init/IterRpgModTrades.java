@@ -36,6 +36,7 @@ public class IterRpgModTrades {
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 34),
 
 				new ItemStack(IterRpgModBlocks.SACRED_SAPLING.get()), 2, 10, 0.15f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 5), new ItemStack(IterRpgModItems.COIN.get()), new ItemStack(IterRpgModItems.UNIDENTIFIED_SPELL.get()), 5, 5, 0.05f));
 	}
 
 	@SubscribeEvent

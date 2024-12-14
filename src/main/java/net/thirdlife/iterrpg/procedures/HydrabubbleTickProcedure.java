@@ -50,7 +50,7 @@ public class HydrabubbleTickProcedure {
 						entityToSpawn.setSilent(true);
 						return entityToSpawn;
 					}
-				}.getArrow(projectileLevel, (float) 2.5, 0);
+				}.getArrow(projectileLevel, (float) (2.5 * entity.getPersistentData().getDouble("power")), 0);
 				_entityToSpawn.setPos(x, y, z);
 				_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (float) 0.5, 0);
 				projectileLevel.addFreshEntity(_entityToSpawn);
@@ -63,7 +63,7 @@ public class HydrabubbleTickProcedure {
 		if (entity.getPersistentData().getDouble("time") >= entity.getPersistentData().getDouble("lifetime")) {
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, x, y, z, (float) 0.1, Level.ExplosionInteraction.NONE);
-			for (int index0 = 0; index0 < 25; index0++) {
+			for (int index0 = 0; index0 < Math.round(25 * entity.getPersistentData().getDouble("power")); index0++) {
 				if (world instanceof ServerLevel projectileLevel) {
 					Projectile _entityToSpawn = new Object() {
 						public Projectile getArrow(Level level, float damage, int knockback) {
@@ -73,7 +73,7 @@ public class HydrabubbleTickProcedure {
 							entityToSpawn.setSilent(true);
 							return entityToSpawn;
 						}
-					}.getArrow(projectileLevel, 5, 0);
+					}.getArrow(projectileLevel, (float) (5 * entity.getPersistentData().getDouble("power")), 0);
 					_entityToSpawn.setPos(x, y, z);
 					_entityToSpawn.shoot((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), -1, 1)), 1, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);

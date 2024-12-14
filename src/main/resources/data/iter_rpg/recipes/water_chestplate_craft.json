@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:water_ingot"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:water_armor_chestplate",
+    "count": 1
+  }
+}

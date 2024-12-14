@@ -19,11 +19,11 @@ public class AmetrineMendProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= 3 && itemstack.getDamageValue() >= 1) {
+		if ((entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana >= 5 && itemstack.getDamageValue() >= 1) {
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 12);
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 16);
 			{
-				double _setval = (entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana - 3;
+				double _setval = (entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IterRpgModVariables.PlayerVariables())).Mana - 5;
 				entity.getCapability(IterRpgModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Mana = _setval;
 					capability.syncPlayerVariables(entity);
@@ -31,7 +31,7 @@ public class AmetrineMendProcedure {
 			}
 			{
 				ItemStack _ist = itemstack;
-				if (_ist.hurt(-1, RandomSource.create(), null)) {
+				if (_ist.hurt(-3, RandomSource.create(), null)) {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
 				}

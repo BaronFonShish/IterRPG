@@ -24,7 +24,7 @@ public class StoneSpearItem extends SwordItem {
 			}
 
 			public int getLevel() {
-				return 0;
+				return 1;
 			}
 
 			public int getEnchantmentValue() {

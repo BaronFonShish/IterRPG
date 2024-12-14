@@ -1,0 +1,10 @@
+{
+  "type": "iter_rpg:iter_rpg_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+  ],
+  "lootTable": "iter_rpg:gameplay/magic_loot_addition"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcc",
+    "acc"
+  ],
+  "key": {
+    "a": {
+      "item": "iter_rpg:hollow_visage"
+    },
+    "b": {
+      "item": "iter_rpg:bottle_of_obsidian_tears"
+    },
+    "c": {
+      "item": "iter_rpg:grimstone"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ancient_knowledge",
+    "count": 1
+  }
+}

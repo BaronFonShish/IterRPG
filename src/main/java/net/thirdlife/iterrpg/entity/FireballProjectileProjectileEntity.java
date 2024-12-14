@@ -72,7 +72,7 @@ public class FireballProjectileProjectileEntity extends AbstractArrow implements
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		FireballHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
+		FireballHitProcedure.execute(this.level(), entityHitResult.getEntity(), this);
 	}
 
 	@Override

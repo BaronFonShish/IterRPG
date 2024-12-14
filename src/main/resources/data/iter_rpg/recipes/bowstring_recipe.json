@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "iter_rpg:spider_silk"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:bowstring",
+    "count": 1
+  }
+}

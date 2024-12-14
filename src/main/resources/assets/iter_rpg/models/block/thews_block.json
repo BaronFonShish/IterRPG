@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iter_rpg:block/flesh_alternate",
+    "particle": "iter_rpg:block/flesh_alternate"
+  },
+  "render_type": "solid"
+}

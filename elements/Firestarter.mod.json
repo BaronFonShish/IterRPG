@@ -1,0 +1,109 @@
+{
+  "_fv": 60,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "firestarter",
+    "customModelName": "Ranged item",
+    "customProperties": {
+      "pulling": {
+        "name": "GetPullingValue"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "firestarter_pull1",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 8.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "firestarter_pull2",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 15.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "firestarter_pull3",
+        "customModelName": "Ranged item",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pulling",
+              "type": "number"
+            },
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "name": "Firestarter",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 9000,
+    "toolType": 1.0,
+    "damageCount": 754,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onStoppedUsing": {
+      "name": "FirestarterFired"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:FireballProjectileProjectile"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "bow"
+  }
+}

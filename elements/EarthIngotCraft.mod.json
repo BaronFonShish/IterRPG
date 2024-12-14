@@ -9,7 +9,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": "CUSTOM:EarthFragment"
@@ -27,16 +27,16 @@
         "value": "CUSTOM:AmetrineIngot"
       },
       {
-        "value": "CUSTOM:EarthFragment"
+        "value": "CUSTOM:EarthRune"
       },
       {
-        "value": "CUSTOM:EarthFragment"
+        "value": ""
       },
       {
-        "value": "CUSTOM:EarthFragment"
+        "value": ""
       },
       {
-        "value": "CUSTOM:EarthFragment"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

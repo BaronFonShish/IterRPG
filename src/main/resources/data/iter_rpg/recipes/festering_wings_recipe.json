@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cac",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bone"
+    },
+    "b": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "c": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "d": {
+      "item": "iter_rpg:ether_dust"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:festering_wings",
+    "count": 1
+  }
+}

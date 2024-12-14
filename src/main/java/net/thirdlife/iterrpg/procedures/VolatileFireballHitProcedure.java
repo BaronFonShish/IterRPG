@@ -18,9 +18,9 @@ public class VolatileFireballHitProcedure {
 		if (entity == null || immediatesourceentity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.LAVA, x, y, z, 6, 0, 0, 0, 0.05);
+			_level.sendParticles(ParticleTypes.FLAME, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 6, 0, 0, 0, 0.05);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.FLAME, x, y, z, 6, 0, 0, 0, 0.05);
+			_level.sendParticles(ParticleTypes.LAVA, (immediatesourceentity.getX()), (immediatesourceentity.getY() + 0.1), (immediatesourceentity.getZ()), 6, 0, 0, 0, 0.05);
 		for (int index0 = 0; index0 < 4; index0++) {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {

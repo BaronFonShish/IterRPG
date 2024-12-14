@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ac"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:charcoal"
+    },
+    "b": {
+      "item": "minecraft:ink_sac"
+    },
+    "c": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "iter_rpg:ink_bottle",
+    "count": 1
+  }
+}

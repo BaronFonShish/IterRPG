@@ -48,7 +48,7 @@ public class DriftbowFiredProcedure {
 			} else {
 				shoot = false;
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.GLASS_BOTTLE)) : false) {
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.ARROW)) : false) {
 				shoot = true;
 			}
 			if (shoot) {
@@ -97,7 +97,7 @@ public class DriftbowFiredProcedure {
 					}
 				}.checkGamemode(entity))) {
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(Items.GLASS_BOTTLE);
+						ItemStack _stktoremove = new ItemStack(Items.ARROW);
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					{

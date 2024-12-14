@@ -20,7 +20,7 @@ public class GoblinDungeonSpawnProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("iter_rpg", "goblin_camp_small"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, BlockPos.containing(x - 4, y - 1, z - 4), BlockPos.containing(x - 4, y - 1, z - 4), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(_serverworld, BlockPos.containing(x - 4, y - 0, z - 4), BlockPos.containing(x - 4, y - 0, z - 4), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 							_serverworld.random, 3);
 				}
 			}

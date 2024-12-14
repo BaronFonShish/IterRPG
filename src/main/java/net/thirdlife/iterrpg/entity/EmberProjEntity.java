@@ -67,7 +67,7 @@ public class EmberProjEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		EmberHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity(), this);
+		EmberHitProcedure.execute(this.level(), entityHitResult.getEntity(), this);
 	}
 
 	@Override

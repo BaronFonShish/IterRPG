@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:gold_ring_amethyst"
+    }
+  ],
+  "result": {
+    "item": "minecraft:amethyst_shard",
+    "count": 1
+  }
+}

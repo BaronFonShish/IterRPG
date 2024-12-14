@@ -69,13 +69,13 @@ public class HomingTearEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		GiantWeeperTearHitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		GiantWeeperTearHitProcedure.execute(this.level(), this);
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		GiantWeeperTearHitBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
+		GiantWeeperTearHitBlockProcedure.execute(this.level(), this);
 	}
 
 	@Override

@@ -1,15 +1,11 @@
 {
   "type": "iter_rpg:geodite_feature",
   "config": {
-    "size": 1,
-    "discard_chance_on_air_exposure": 0.5,
     "targets": [
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:stone"
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:stone"
         },
         "state": {
           "Name": "iter_rpg:geodite"
@@ -17,10 +13,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:granite"
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:granite"
         },
         "state": {
           "Name": "iter_rpg:geodite"
@@ -28,10 +22,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:diorite"
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:diorite"
         },
         "state": {
           "Name": "iter_rpg:geodite"
@@ -39,10 +31,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:andesite"
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:andesite"
         },
         "state": {
           "Name": "iter_rpg:geodite"
@@ -50,13 +40,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:deepslate",
-            "Properties": {
-              "axis": "y"
-            }
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:deepslate"
         },
         "state": {
           "Name": "iter_rpg:deepslate_geodite"
@@ -64,10 +49,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:netherrack"
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:netherrack"
         },
         "state": {
           "Name": "iter_rpg:netherrack_geodite"
@@ -75,10 +58,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:blackstone"
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:blackstone"
         },
         "state": {
           "Name": "iter_rpg:blackstone_geodite"
@@ -86,13 +67,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:basalt"
         },
         "state": {
           "Name": "iter_rpg:blackstone_geodite"
@@ -100,10 +76,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:end_stone"
-          }
+          "predicate_type": "block_match",
+          "block": "minecraft:end_stone"
         },
         "state": {
           "Name": "iter_rpg:endstone_geodite"

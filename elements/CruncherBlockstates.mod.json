@@ -1,0 +1,35 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Cruncher",
+    "blockstateList": [
+      {
+        "texture": "cruncher_bottom",
+        "textureTop": "cruncher_top_on",
+        "textureLeft": "cruncher_right_on",
+        "textureFront": "cruncher_front_open",
+        "textureRight": "cruncher_left_on",
+        "textureBack": "cruncher_back",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "cruncher_bottom",
+        "textureTop": "cruncher_top_on",
+        "textureLeft": "cruncher_right_on",
+        "textureFront": "cruncher_front",
+        "textureRight": "cruncher_left_on",
+        "textureBack": "cruncher_back",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

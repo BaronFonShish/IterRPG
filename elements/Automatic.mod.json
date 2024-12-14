@@ -1,0 +1,37 @@
+{
+  "_fv": 60,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Automatic",
+    "type": "BOW",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "excludeEnchantments": false,
+    "compatibleItems": [
+      {
+        "value": "Items.BOW"
+      },
+      {
+        "value": "CUSTOM:Driftbow"
+      },
+      {
+        "value": "CUSTOM:Firestarter"
+      },
+      {
+        "value": "CUSTOM:Bloodbranch"
+      },
+      {
+        "value": "CUSTOM:RecurveBow"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

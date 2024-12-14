@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,16 +10,36 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.NETHERITE_HELMET"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:ElementalIngot"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:ElementalUpgrade"
-    },
-    "smithingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EarthArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:WaterArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:AirArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:FireArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:VoidArmor.helmet"
+      },
+      {
+        "value": "CUSTOM:PrimordialIngot"
+      },
+      {
+        "value": "CUSTOM:ElementalUpgrade"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:ElementalArmor.helmet"
     },
     "name": "elemental_helmet_recipe",

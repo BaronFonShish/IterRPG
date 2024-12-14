@@ -26,7 +26,7 @@ public class SpellEssenceConditionProcedure {
 		resource2 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY);
 		resource3 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY);
 		if (initial.is(ItemTags.create(new ResourceLocation("iter_rpg:spell_scrolls"))) && resource1.getItem() == initial.getItem() && initial.getOrCreateTag().getDouble("level") == resource1.getOrCreateTag().getDouble("level")
-				&& initial.getOrCreateTag().getDouble("level") == 3) {
+				&& initial.getOrCreateTag().getDouble("level") == 2) {
 			return true;
 		}
 		return false;

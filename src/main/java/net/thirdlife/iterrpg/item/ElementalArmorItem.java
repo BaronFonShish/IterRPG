@@ -44,7 +44,7 @@ public abstract class ElementalArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(IterRpgModItems.ELEMENTAL_INGOT.get()));
+				return Ingredient.of(new ItemStack(IterRpgModItems.PRIMORDIAL_INGOT.get()));
 			}
 
 			@Override

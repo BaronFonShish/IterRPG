@@ -3,12 +3,12 @@
   "category": "misc",
   "pattern": [
     "abc",
-    "dbc",
+    "dec",
     "abc"
   ],
   "key": {
     "a": {
-      "item": "iter_rpg:fire_fragment"
+      "item": "iter_rpg:fire_ingot"
     },
     "b": {
       "item": "minecraft:nether_brick"
@@ -18,6 +18,9 @@
     },
     "d": {
       "item": "minecraft:gold_ingot"
+    },
+    "e": {
+      "item": "iter_rpg:elemental_upgrade"
     }
   },
   "result": {

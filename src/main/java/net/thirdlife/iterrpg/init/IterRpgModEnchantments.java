@@ -7,7 +7,9 @@ package net.thirdlife.iterrpg.init;
 import net.thirdlife.iterrpg.enchantment.RigourEnchantment;
 import net.thirdlife.iterrpg.enchantment.DexterityEnchantment;
 import net.thirdlife.iterrpg.enchantment.BlightedBladeEnchantment;
+import net.thirdlife.iterrpg.enchantment.AutomaticEnchantment;
 import net.thirdlife.iterrpg.enchantment.AttunementEnchantment;
+import net.thirdlife.iterrpg.enchantment.ArcaneKineticsEnchantment;
 import net.thirdlife.iterrpg.enchantment.ArcaneConductivityEnchantment;
 import net.thirdlife.iterrpg.enchantment.ArcaneCapacityEnchantment;
 import net.thirdlife.iterrpg.IterRpgMod;
@@ -26,4 +28,6 @@ public class IterRpgModEnchantments {
 	public static final RegistryObject<Enchantment> DEXTERITY = REGISTRY.register("dexterity", () -> new DexterityEnchantment());
 	public static final RegistryObject<Enchantment> RIGOUR = REGISTRY.register("rigour", () -> new RigourEnchantment());
 	public static final RegistryObject<Enchantment> ARCANE_CAPACITY = REGISTRY.register("arcane_capacity", () -> new ArcaneCapacityEnchantment());
+	public static final RegistryObject<Enchantment> ARCANE_KINETICS = REGISTRY.register("arcane_kinetics", () -> new ArcaneKineticsEnchantment());
+	public static final RegistryObject<Enchantment> AUTOMATIC = REGISTRY.register("automatic", () -> new AutomaticEnchantment());
 }

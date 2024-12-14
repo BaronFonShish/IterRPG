@@ -4,6 +4,8 @@ import net.thirdlife.iterrpg.entity.ScallopEntity;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
@@ -17,7 +19,10 @@ import java.util.Comparator;
 public class ScallopSpawnConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		double count = 0;
-		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, new ResourceLocation("iter_rpg:scallop_biomes"))) && y > 0 && y < 80) {
+		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, new ResourceLocation("iter_rpg:scallop_biomes"))) && y > 0 && y < 80 && world.getBrightness(LightLayer.BLOCK, BlockPos.containing(x, y, z)) <= 2
+				&& ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.SAND || (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.DIRT
+						|| (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.CLAY || (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK
+						|| (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.GRAVEL || (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.STONE)) {
 			count = 0;
 			{
 				final Vec3 _center = new Vec3(x, y, z);
@@ -28,7 +33,7 @@ public class ScallopSpawnConditionProcedure {
 					}
 				}
 			}
-			if (count <= 6) {
+			if (count <= 3) {
 				return true;
 			}
 		}

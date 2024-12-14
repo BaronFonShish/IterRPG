@@ -94,7 +94,7 @@ public class GoblinSpawnerRepopulateProcedure {
 							} else if (decide == 2 && gobpoints >= 1) {
 								gobwar = gobwar + 1;
 								gobpoints = gobpoints - 1;
-							} else if (decide == 3 && gobpoints >= 0.75) {
+							} else if (decide == 3 && gobpoints >= 0.5) {
 								gob = gob + 1;
 								gobpoints = gobpoints - 0.75;
 							}
@@ -105,8 +105,8 @@ public class GoblinSpawnerRepopulateProcedure {
 							xc = Mth.nextInt(RandomSource.create(), -2, 2);
 							zc = Mth.nextInt(RandomSource.create(), -2, 2);
 							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = IterRpgModEntities.HOBGOBLIN.get().spawn(_level, BlockPos.containing(x + xc, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc), (int) (z + zc)), z + zc),
-										MobSpawnType.MOB_SUMMONED);
+								Entity entityToSpawn = IterRpgModEntities.HOBGOBLIN.get().spawn(_level,
+										BlockPos.containing(x + xc + 0.5, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc + 0.5), (int) (z + zc + 0.5)), z + zc + 0.5), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
 									entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
 									entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
@@ -114,7 +114,7 @@ public class GoblinSpawnerRepopulateProcedure {
 								}
 							}
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.POOF, (x + xc), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc), (int) (z + zc))), (z + zc), 8, 0.08, 0.16, 0.08, 0.08);
+								_level.sendParticles(ParticleTypes.POOF, (x + xc + 0.5), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc + 0.5), (int) (z + zc + 0.5))), (z + zc + 0.5), 8, 0.08, 0.16, 0.08, 0.08);
 							hobgob = hobgob - 1;
 						}
 					}
@@ -123,8 +123,8 @@ public class GoblinSpawnerRepopulateProcedure {
 							xc = Mth.nextInt(RandomSource.create(), -2, 2);
 							zc = Mth.nextInt(RandomSource.create(), -2, 2);
 							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = IterRpgModEntities.GOBLIN_WARRIOR.get().spawn(_level, BlockPos.containing(x + xc, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc), (int) (z + zc)), z + zc),
-										MobSpawnType.MOB_SUMMONED);
+								Entity entityToSpawn = IterRpgModEntities.GOBLIN_WARRIOR.get().spawn(_level,
+										BlockPos.containing(x + xc + 0.5, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc + 0.5), (int) (z + zc + 0.5)), z + zc + 0.5), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
 									entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
 									entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
@@ -132,7 +132,7 @@ public class GoblinSpawnerRepopulateProcedure {
 								}
 							}
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.POOF, (x + xc), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc), (int) (z + zc))), (z + zc), 8, 0.08, 0.16, 0.08, 0.08);
+								_level.sendParticles(ParticleTypes.POOF, (x + xc + 0.5), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc + 0.5), (int) (z + zc + 0.5))), (z + zc + 0.5), 8, 0.08, 0.16, 0.08, 0.08);
 							gobwar = gobwar - 1;
 						}
 					}
@@ -141,8 +141,8 @@ public class GoblinSpawnerRepopulateProcedure {
 							xc = Mth.nextInt(RandomSource.create(), -2, 2);
 							zc = Mth.nextInt(RandomSource.create(), -2, 2);
 							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = IterRpgModEntities.GOBLIN.get().spawn(_level, BlockPos.containing(x + xc, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc), (int) (z + zc)), z + zc),
-										MobSpawnType.MOB_SUMMONED);
+								Entity entityToSpawn = IterRpgModEntities.GOBLIN.get().spawn(_level,
+										BlockPos.containing(x + xc + 0.5, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc + 0.5), (int) (z + zc + 0.5)), z + zc + 0.5), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
 									entityToSpawn.setYRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
 									entityToSpawn.setYBodyRot((float) Mth.nextDouble(RandomSource.create(), -360, 360));
@@ -150,7 +150,7 @@ public class GoblinSpawnerRepopulateProcedure {
 								}
 							}
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles(ParticleTypes.POOF, (x + xc), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc), (int) (z + zc))), (z + zc), 8, 0.08, 0.16, 0.08, 0.08);
+								_level.sendParticles(ParticleTypes.POOF, (x + xc + 0.5), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + xc + 0.5), (int) (z + zc + 0.5))), (z + zc + 0.5), 8, 0.08, 0.16, 0.08, 0.08);
 							gob = gob - 1;
 						}
 					}

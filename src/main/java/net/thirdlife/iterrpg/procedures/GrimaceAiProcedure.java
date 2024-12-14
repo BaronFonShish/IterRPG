@@ -57,7 +57,7 @@ public class GrimaceAiProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.WITCH, x, y, z, 5, 0.05, 0.05, 0.05, 0.025);
 				}
-				if (dist >= 2.5) {
+				if (dist >= 2) {
 					entity.setDeltaMovement(new Vec3(((attachx - x) * (dist / 250)), ((attachy - y) * (dist / 250)), ((attachz - z) * (dist / 250))));
 				}
 			} else if ((entity.getPersistentData().getString("latchtype")).equals("mob")) {
@@ -88,7 +88,7 @@ public class GrimaceAiProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.WITCH, x, y, z, 5, 0.05, 0.05, 0.05, 0.025);
 				}
-				if (dist >= 2.5) {
+				if (dist >= 2) {
 					entity.setDeltaMovement(new Vec3(((attachx - x) * (dist / 250)), ((attachy - y) * (dist / 250)), ((attachz - z) * (dist / 250))));
 				}
 			} else {

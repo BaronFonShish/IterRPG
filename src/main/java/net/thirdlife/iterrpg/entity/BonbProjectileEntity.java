@@ -3,7 +3,6 @@ package net.thirdlife.iterrpg.entity;
 
 import net.thirdlife.iterrpg.procedures.BonbParticleProcedure;
 import net.thirdlife.iterrpg.procedures.BonbExplodeProcedure;
-import net.thirdlife.iterrpg.procedures.BonbExplodeBlockProcedure;
 import net.thirdlife.iterrpg.init.IterRpgModItems;
 import net.thirdlife.iterrpg.init.IterRpgModEntities;
 
@@ -72,13 +71,13 @@ public class BonbProjectileEntity extends AbstractArrow implements ItemSupplier 
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		BonbExplodeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		BonbExplodeProcedure.execute(this.level(), this);
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		BonbExplodeBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
+		BonbExplodeProcedure.execute(this.level(), this);
 	}
 
 	@Override

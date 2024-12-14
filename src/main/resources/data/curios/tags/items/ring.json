@@ -1,6 +1,27 @@
 {
   "replace": "false",
   "values": [
-    "minecraft:air"
+    "minecraft:air",
+    "iter_rpg:iron_ring",
+    "iter_rpg:gold_ring",
+    "iter_rpg:netherite_ring",
+    "iter_rpg:iron_ring_amethyst",
+    "iter_rpg:gold_ring_amethyst",
+    "iter_rpg:netherite_ring_amethyst",
+    "iter_rpg:iron_ring_diamond",
+    "iter_rpg:gold_ring_diamond",
+    "iter_rpg:netherite_ring_diamond",
+    "iter_rpg:iron_ring_abyssquartz",
+    "iter_rpg:gold_ring_abyssquartz",
+    "iter_rpg:netherite_ring_abyssquartz",
+    "iter_rpg:iron_ring_magmanum",
+    "iter_rpg:gold_ring_magmanum",
+    "iter_rpg:netherite_ring_magmanum",
+    "iter_rpg:iron_ring_emerald",
+    "iter_rpg:gold_ring_emerald",
+    "iter_rpg:netherite_ring_emerald",
+    "iter_rpg:iron_ring_sanguarnet",
+    "iter_rpg:gold_ring_sanguarnet",
+    "iter_rpg:netherite_ring_sanguarnet"
   ]
 }

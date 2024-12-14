@@ -2,22 +2,28 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc",
-    " db",
-    "b a"
+    "aba",
+    "cdc",
+    "efe"
   ],
   "key": {
     "a": {
-      "item": "iter_rpg:gist"
+      "item": "minecraft:diamond"
     },
     "b": {
-      "item": "minecraft:gold_ingot"
-    },
-    "c": {
       "item": "iter_rpg:ametrine_ingot"
     },
+    "c": {
+      "item": "minecraft:gold_ingot"
+    },
     "d": {
-      "item": "minecraft:stick"
+      "item": "iter_rpg:amethyst_wand"
+    },
+    "e": {
+      "item": "minecraft:blaze_powder"
+    },
+    "f": {
+      "item": "iter_rpg:abyssquartz_wand"
     }
   },
   "result": {

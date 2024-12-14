@@ -16,7 +16,7 @@
     "entityModel": "Default",
     "customModelTexture": "",
     "onHitsBlock": {
-      "name": "BonbExplodeBlock"
+      "name": "BonbExplode"
     },
     "onHitsEntity": {
       "name": "BonbExplode"

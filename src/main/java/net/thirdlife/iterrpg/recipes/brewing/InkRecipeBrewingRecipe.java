@@ -31,7 +31,7 @@ public class InkRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return Ingredient.of(new ItemStack(Items.INK_SAC)).test(ingredient);
+		return Ingredient.of(new ItemStack(Items.BLACK_DYE)).test(ingredient);
 	}
 
 	@Override

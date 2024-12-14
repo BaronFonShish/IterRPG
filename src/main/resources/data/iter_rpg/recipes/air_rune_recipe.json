@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:empty_rune"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    },
+    {
+      "item": "iter_rpg:air_fragment"
+    }
+  ],
+  "result": {
+    "item": "iter_rpg:air_rune",
+    "count": 1
+  }
+}

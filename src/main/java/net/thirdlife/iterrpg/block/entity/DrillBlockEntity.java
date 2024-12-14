@@ -91,7 +91,7 @@ public class DrillBlockEntity extends RandomizableContainerBlockEntity implement
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Drill");
+		return Component.literal("Geodrill");
 	}
 
 	@Override

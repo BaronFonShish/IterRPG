@@ -1,0 +1,1 @@
+{"bookshelf:load_conditions":[{"type":"bookshelf:item_exists","values":["iter_rpg:ametrine_block"]}],"type":"botanypots:soil","input":[{"item":"iter_rpg:ametrine_block"},{"item":"iter_rpg:ametrine_block"}],"display":{"block":"iter_rpg:ametrine_block"},"categories":["ametrine"],"growthModifier":1.25}

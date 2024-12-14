@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,16 +10,36 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.NETHERITE_CHESTPLATE"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:ElementalIngot"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:ElementalUpgrade"
-    },
-    "smithingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:EarthArmor.body"
+      },
+      {
+        "value": "CUSTOM:WaterArmor.body"
+      },
+      {
+        "value": "CUSTOM:AirArmor.body"
+      },
+      {
+        "value": "CUSTOM:FireArmor.body"
+      },
+      {
+        "value": "CUSTOM:VoidArmor.body"
+      },
+      {
+        "value": "CUSTOM:PrimordialIngot"
+      },
+      {
+        "value": "CUSTOM:ElementalUpgrade"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:ElementalArmor.body"
     },
     "name": "elemental_chestplate_recipe",

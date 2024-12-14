@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "iter_rpg:block/fangs",
+    "particle": "iter_rpg:block/fangs"
+  },
+  "render_type": "cutout_mipped"
+}

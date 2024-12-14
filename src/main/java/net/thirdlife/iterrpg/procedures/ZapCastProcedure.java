@@ -47,14 +47,14 @@ public class ZapCastProcedure {
 		ynew = entity.getY() + entity.getBbHeight() * 0.85 + ydir * dist;
 		znew = entity.getZ() + zdir * dist;
 		hitcontinue = true;
-		for (int index0 = 0; index0 < (int) (20 + Math.round(12.5 * power)); index0++) {
+		for (int index0 = 0; index0 < (int) (25 + Math.round(15 * power)); index0++) {
 			if (hitcontinue) {
 				xnew = xnew + xdir * dist;
 				ynew = ynew + ydir * dist;
 				znew = znew + zdir * dist;
-				xnew = xnew + Mth.nextDouble(RandomSource.create(), -0.1, 0.1) * dist;
-				ynew = ynew + Mth.nextDouble(RandomSource.create(), -0.1, 0.1) * dist;
-				znew = znew + Mth.nextDouble(RandomSource.create(), -0.1, 0.1) * dist;
+				xnew = xnew + Mth.nextDouble(RandomSource.create(), -0.25, 0.25) * dist;
+				ynew = ynew + Mth.nextDouble(RandomSource.create(), -0.25, 0.25) * dist;
+				znew = znew + Mth.nextDouble(RandomSource.create(), -0.25, 0.25) * dist;
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (IterRpgModParticleTypes.LIGHTNING_PARTICLE.get()), xnew, ynew, znew, 1, 0.05, 0.05, 0.05, 0.00025);
 				{

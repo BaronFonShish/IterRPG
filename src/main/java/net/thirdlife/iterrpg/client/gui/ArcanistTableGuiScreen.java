@@ -1,6 +1,10 @@
 package net.thirdlife.iterrpg.client.gui;
 
 import net.thirdlife.iterrpg.world.inventory.ArcanistTableGuiMenu;
+import net.thirdlife.iterrpg.procedures.SpellUpgradeConditionProcedure;
+import net.thirdlife.iterrpg.procedures.SpellLapisConditionProcedure;
+import net.thirdlife.iterrpg.procedures.SpellEssenceConditionProcedure;
+import net.thirdlife.iterrpg.procedures.SpellDiamondConditionProcedure;
 import net.thirdlife.iterrpg.procedures.SpellCopyConditionProcedure;
 import net.thirdlife.iterrpg.procedures.Scroll1ConditionProcedure;
 import net.thirdlife.iterrpg.procedures.ArcanistTableButtonConditionReverseProcedure;
@@ -62,6 +66,18 @@ public class ArcanistTableGuiScreen extends AbstractContainerScreen<ArcanistTabl
 		}
 		if (ArcanistTableButtonConditionReverseProcedure.execute(entity)) {
 			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/arcanist_table_button_deny.png"), this.leftPos + 77, this.topPos + 64, 0, 0, 20, 15, 20, 15);
+		}
+		if (SpellUpgradeConditionProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/spell_upgrade_base.png"), this.leftPos + 60, this.topPos + 25, 0, 0, 54, 18, 54, 18);
+		}
+		if (SpellLapisConditionProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/spell_upgrade_lapis.png"), this.leftPos + 60, this.topPos + 25, 0, 0, 54, 18, 54, 18);
+		}
+		if (SpellDiamondConditionProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/spell_upgrade_diamond.png"), this.leftPos + 60, this.topPos + 25, 0, 0, 54, 18, 54, 18);
+		}
+		if (SpellEssenceConditionProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("iter_rpg:textures/screens/spell_upgrade_essence.png"), this.leftPos + 60, this.topPos + 25, 0, 0, 54, 18, 54, 18);
 		}
 		RenderSystem.disableBlend();
 	}

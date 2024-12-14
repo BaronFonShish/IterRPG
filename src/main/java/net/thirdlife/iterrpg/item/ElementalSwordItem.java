@@ -3,7 +3,6 @@ package net.thirdlife.iterrpg.item;
 
 import net.thirdlife.iterrpg.procedures.ElementalSetRepairProcedure;
 import net.thirdlife.iterrpg.procedures.ElementalAttackProcedure;
-import net.thirdlife.iterrpg.init.IterRpgModItems;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -38,7 +37,7 @@ public class ElementalSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(IterRpgModItems.ELEMENTAL_INGOT.get()), new ItemStack(IterRpgModItems.ELEMENTAL_FRAGMENT.get()));
+				return Ingredient.of();
 			}
 		}, 3, -2.4f, new Item.Properties().fireResistant());
 	}
